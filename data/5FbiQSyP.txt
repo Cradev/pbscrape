@@ -1,8 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>// FOV, Mouse, Hud
-cl_fov 73
-pl_movement.power_sprint_targetFov 73
-r_drawnearfov 73
-cl_sensitivityMultiplierADS = 0.7
-cl_sensitivity 2.7
-hud_canvas_width_adjustment 0.9</p></body></html>

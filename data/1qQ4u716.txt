@@ -1,6 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>def htmler(df):
-    to_html = df[["static_poster", "title", "year", "plot", "genre", "code", "tomato_url"]]
-    # for i in range(to_html.shape[0]):
-    to_html = list(zip(to_html['static_poster'], to_html['title'], to_html['year'], to_html['plot'], to_html['genre'], to_html['code'], to_html['tomato_url']))
-    return to_html</p></body></html>

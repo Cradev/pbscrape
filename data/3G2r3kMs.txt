@@ -1,2 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>https://www.paypal.com/us/signin?expId=confirmEmail&amp;cc=00126830343468449494&amp;em=eilneamorris%40gmail%2ecom&amp;ppid=PPX000364&amp;cnac=US&amp;rsta=en_US(en_NO)&amp;cust=&amp;unptid=b84b1660-9954-11e6-b5d5-441ea14ddefc&amp;t=&amp;cal=194a6bbfab949&amp;calc=194a6bbfab949&amp;calf=194a6bbfab949&amp;unp_tpcid=email-email-confirmation-new-personal&amp;page=main:email&amp;pgrp=main:email&amp;e=op&amp;mchn=em&amp;s=ci&amp;mail=sys</p></body></html>

@@ -1,9 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>begin{frame}frametitle{Traduction automatique statistique}
-   En appliquant la r&egrave;gle de Bayes, l'expression ci-dessus peut &ecirc;tre r&eacute;&eacute;crite comme suit :
-    begin{block}
-    begin{equation}
-    hat{e} = argmax_{e} P(f | e) P(e) 
-  end{equation}
-     end{block}
-end{frame}</p></body></html>
