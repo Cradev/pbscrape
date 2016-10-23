@@ -1,9 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>Debug message: Cannot send message, no server connection!
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:Log(Object)
-Networking.NetworkPeer:OnDebugMessage(NetIncomingMessage) (at C:\Users\PC\Documents\Wild West\Assets\Scripts\Networking\NetworkPeer.cs:126)
-Networking.NetworkPeer:MessagePump() (at C:\Users\PC\Documents\Wild West\Assets\Scripts\Networking\NetworkPeer.cs:70)
-Networking.Client.NetworkClientBehaviour:FixedUpdate() (at C:\Users\PC\Documents\Wild West\Assets\Scripts\Networking\Client\NetworkClientBehaviour.cs:2</p></body></html>

@@ -32,9 +32,22 @@ def save(parsed_url, parsed_key)
     end
 end
 
-parsed = JSON.parse(scrape(url))
-
-parsed.each do |i|
-    save(i["scrape_url"], i["key"])
+def secondly_loop
+  last = Time.now
+  while true
+    yield
+    now = Time.now
+    _next = [last + 10,now].max
+    sleep (_next-now)
+    last = _next
+  end
 end
 
+def main(url)
+  parsed = JSON.parse(scrape(url))
+  parsed.each do |i|
+    save(i["scrape_url"], i["key"])
+  end
+end
+
+secondly_loop {main(url)}

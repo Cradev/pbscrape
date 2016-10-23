@@ -1,8 +1,0 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><body><p>require'prime'
-a,b=gets.split(" ").collect{|x|x.to_i}
-h,g=Hash[Prime.prime_division(a)],Hash.new
-h.each_key{|k|g[k],c=0,b
-g[k]+=c/=k while c&gt;=k
-g[k]/=h[k]}
-p g.values.min</p></body></html>
