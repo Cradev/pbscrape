@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package com.example.teacher.lab10_includemergetransition;
+
+import android.content.Intent;
+import android.view.View;
+
+public class Activity2 extends QuestionActivity {
+
+    public static final String Q2_ANSWER_KEY = "Q2";
+
+    // &#25353;&#19979; BACK
+    @Override
+    public void back(View view) {
+        // &#24314;&#31435;&#26032; Intent: new Intent( &#20358;&#28304; , &#30446;&#30340;)
+        Intent intent = new Intent(this, Activity1.class);
+        // &#23559;&#20808;&#21069;&#30340; Acvivity &#31227;&#21040;&#26368;&#19978;&#23652;&#65292;&#32780;&#38750;&#29986;&#29983;&#26032;&#30340; Activity
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    // &#25353;&#19979; NEXT
+    @Override
+    public void next(View view) {
+        // &#24314;&#31435;&#26032; Intent: new Intent( &#20358;&#28304; , &#30446;&#30340;)
+        Intent intent = new Intent(this, Activity3.class);
+
+        Intent q1Intent = getIntent(); // &#21462;&#24471; Activity1 &#20659;&#20358;&#30340; Intent
+        CharSequence q1Answer = q1Intent.getStringExtra(Activity1.Q1_ANSWER_KEY);
+        CharSequence q2Answer = m_answer;
+        intent.putExtra(Activity1.Q1_ANSWER_KEY, q1Answer);
+        intent.putExtra(Activity2.Q2_ANSWER_KEY, q2Answer);
+        startActivity(intent);
+        // overridePendingTransition( &#36914;&#22580;&#25928;&#26524; , &#20986;&#22580;&#25928;&#26524; )
+        overridePendingTransition(R.anim.push_right_in, R.anim.push_left_out);
+    }
+
+
+}</p></body></html>

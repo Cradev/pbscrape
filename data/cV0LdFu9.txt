@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>BOO (Cascoon) @ Eviolite  
+Ability: Shed Skin  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Bug Bite  
+- Electroweb  
+- Poison Sting  
+- Tackle  
+
+InHiding (Forretress) @ Leftovers  
+Ability: Sturdy  
+EVs: 252 HP / 4 Atk / 252 Def  
+Impish Nature  
+- Stealth Rock  
+- Spikes  
+- Rapid Spin  
+- Explosion  
+
+CatchDisTBOLT (Galvantula) @ Focus Sash  
+Ability: Compound Eyes  
+EVs: 248 HP / 8 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sticky Web  
+- Disable  
+- Thunder Wave  
+- Flash  
+
+I hate this job... (Whimsicott) @ Focus Sash  
+Ability: Prankster  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Leech Seed  
+- Giga Drain  
+- Memento  
+- Encore  
+
+Got Bulk? (Mew) @ Leftovers  
+Ability: Synchronize  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Iron Defense  
+- Amnesia  
+- Substitute  
+- Baton Pass  
+
+Got&#8986;? (Scolipede) @ Leftovers  
+Ability: Speed Boost  
+EVs: 248 HP / 8 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Swords Dance  
+- Substitute  
+- Protect  
+- Baton Pass</p></body></html>

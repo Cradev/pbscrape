@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <iostream>
+#include "cstrdeque"
+#include "cstrdequeconst"
+#include "strdequeconst.h"
+
+namespace {
+	/* Zwraca ID pustej kolejki, je&#313;&#155;li wywo&#313;&#130;ana po raz pierwszy - tworzy j&Auml;&#133; */
+	unsigned long giveID() {
+		static unsigned long id = strdeque_new();
+		return id;
+	}
+}
+
+namespace jnp1 {
+	//TODO: Nie wiem czy w ten spos&#258;&#322;b nie dojdzie do static init order fiasco
+	unsigned long emptystrdeque() {
+		return giveID();
+	}
+}
+
+unsigned long emptystrdeque() {
+	return jnp1::emptystrdeque();
+}</iostream></p></body></html>

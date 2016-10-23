@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <stdio.h>
+#include <stdlib.h>
+
+char wordsum(char FW[256],char SW[256]){
+    int i;
+    int j=strlen(FW);
+    for (i=0;i&lt;=strlen(SW);i++)
+      FW[i+j+1]=SW[i];
+    printf("%c",FW);
+    return FW;
+}
+
+int main()
+{
+   char F[256];
+   char S[256];
+   printf("Enter the first wordn");
+   gets(F);
+   printf("Enter the Second wordn");
+   gets(S);
+   wordsum(F,S);
+   return 0;
+}
+	
+char* mystrcat(char *dest, const char *src)
+{
+    char *ret = dest;
+
+    while (*dest)
+        dest++;
+
+    while ((*dest++ = *src++))
+        ;
+
+    return ret;
+}
+	
+void mystrcat(char *dest, const char *src)
+{
+    while (*dest)
+        dest++;
+
+    while ((*dest++ = *src++))
+        ;
+}
+	
+char *wordsum(char FW[256],char SW[256]){      // correct function type
+   int i;
+
+   int j=strlen(FW); 
+
+   for (i = 0; i &lt;= strlen(SW); i++)
+       FW[i+j] = SW[i]; //change 'i + j + 1' to 'i + j'
+
+    printf("%s",FW); //change format specifier as you are printing string not character
+
+    return FW;
+}
+	
+char *result = malloc(256 * 2);
+result = wordsum(F,S);
+printf("n%sn", result);
+
+//use result
+
+//after using free it
+free(result);</stdlib.h></stdio.h></p></body></html>

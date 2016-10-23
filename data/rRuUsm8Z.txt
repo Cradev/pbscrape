@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public class Main {
+	public static void main(String[] args) {
+		
+		String pen = "pen";
+		String app = "apple";
+		String pin = "pineapple";
+		String ihm = "I have my";
+		String nyog = "ahh";
+		
+		System.out.println( ihm + " " + pen);
+		System.out.println( ihm + " " + app);
+		System.out.println(nyog);
+		System.out.println(app + "-" + pen);
+		System.out.println(ihm + " " + pen);
+		String ih = ihm.substring(0,ihm.indexOf(" my"));
+		System.out.println(ih + " " + pin);
+		System.out.println(nyog);
+		System.out.println(pin + "-" + pen);
+		System.out.println(app + "-"+ pen + " , " + pin + "-" + pen);
+		System.out.println(nyog);
+		System.out.println(pen + "-" + pin + "-" + app + "-" + pen);
+	}
+}</p></body></html>

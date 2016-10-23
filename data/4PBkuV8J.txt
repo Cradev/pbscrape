@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>function revisar(){
+	echo `date +"%d-%m-%Y"`
+	hoy="`date +"%d-%m-%Y"`"
+	echo "$hoy"
+	n=1
+	echo "		         Listado de procesos"
+	echo "-------------------------------------------------------------------------"
+	echo "NUM  PROCESO	   FECHA    	PERIODO    HORARIO ACTUAL     ESTADO"
+
+	IFS=$':'
+	while read proceso fecha periodo
+		do
+		hoy="`date +"%d-%m-%Y"`"
+		horas="`date +"%k"`"
+		mins=`date +"%M"`
+		segs="`date +"%S"`"
+		#echo "$hoy $horas:$mins:$segs"
+		avance=$[ $segs + $mins * 60 + $horas * 60 * 60 ]
+		#echo $avance
+		#echo $fecha
+		ejecutar=$[ $avance % $periodo ]
+		#echo "Ejecutar:  $ejecutar"
+		estado="En espera"
+		if [[ "$fecha" == "$hoy" &amp;&amp; $ejecutar == 0 ]]; then
+			estado="Ejecutando"
+		fi
+		echo -e "$n]   $proceso      $fecha \t $periodo \t $hoy  $horas:$mins:$segs $estado"
+		let n++
+		done &lt; procesos.txt
+		unset IFS
+ }
+
+while [[ true ]]; do
+	revisar
+	sleep 1
+done</p></body></html>

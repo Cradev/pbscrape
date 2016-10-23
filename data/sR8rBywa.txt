@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>//&#1055;&#1086;&#1082;&#1072;&#1079;&#1099;&#1074;&#1072;&#1077;&#1090; &#1088;&#1072;&#1076;&#1080;&#1091;&#1089; &#1089;&#1082;&#1080;&#1083;&#1083;&#1086;&#1074; &#1085;&#1072;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1085;&#1099;&#1093; &#1085;&#1072; &#1090;&#1086;&#1095;&#1082;&#1091; &#1080;&#1083;&#1080; &#1102;&#1085;&#1080;&#1090;&#1086;&#1074;
+
+try{ Game.Panels.AbilityRange.DeleteAsync(0) }catch(e){}
+for (i in Game.Subscribes.AbilityRange)
+	try{ GameEvents.Unsubscribe( Game.Subscribes.AbilityRange[i] ) }catch(e){}
+for(i in Game.Particles.AbilityRange)
+	try{ Particles.DestroyParticleEffect(Game.Particles.AbilityRange[i],Game.Particles.AbilityRange[i]) }catch(e){}
+
+Game.Particles.AbilityRange = []
+Game.Subscribes.AbilityRange = []
+Game.Panels.AbilityRange = []
+var LensInInv = false
+var Config = []
+
+function GetAbilityRange( Abil ){
+	var MyEnt = Players.GetPlayerHeroEntityIndex( Game.GetLocalPlayerID() )
+	var Range = 0
+	var Lens = Entities.HasItemInInventory( MyEnt, 'item_aether_lens' ) 
+	Range = Abilities.GetCastRange( parseInt(Abil) )
+	var Behavior = Game.Behaviors( parseInt(Abil) )
+	if ( Lens &amp;&amp; ( Behavior.indexOf(16)!=-1 || Behavior.indexOf(8)!=-1 ) )
+		Range += 200
+	return Range
+}
+
+function InventoryChanged(data){
+	if (!AbilityRange.checked)
+		return
+	var MyID = Game.GetLocalPlayerID()
+	if ( MyID==-1 )
+		return
+	MyEnt = Players.GetPlayerHeroEntityIndex(MyID)
+	if ( MyEnt==-1 )
+		return
+	var Lens = Entities.HasItemInInventory( MyEnt, 'item_aether_lens' )
+	if (Lens == LensInInv)
+		return
+	LensInInv = Lens
+	if ( Game.Particles.AbilityRange.length == 0 )
+		return
+	for(var i in Game.Particles.AbilityRange){
+		Range = GetAbilityRange(i)
+		Particles.DestroyParticleEffect(Game.Particles.AbilityRange[i],Game.Particles.AbilityRange[i])
+		if ( !Range || Range &lt;= 0 )
+			return
+		Game.Particles.AbilityRange[i] = Particles.CreateParticle("particles/ui_mouseactions/range_display.vpcf", ParticleAttachment_t.PATTACH_ABSORIGIN_FOLLOW , MyEnt)
+		Particles.SetParticleControl(Game.Particles.AbilityRange[i], 1,  [Range,0,0])
+	}
+}
+
+Destroy=function(){
+	try{ Game.Panels.AbilityRange.DeleteAsync(0) }catch(e){}
+	for (i in Game.Subscribes.AbilityRange.length)
+		try{ GameEvents.Unsubscribe( Game.Subscribes.AbilityRange[i] ) }catch(e){}
+	for(i in Game.Particles.AbilityRange)
+		try{ Particles.DestroyParticleEffect(Game.Particles.AbilityRange[i],Game.Particles.AbilityRange[i]) }catch(e){}
+	Game.Subscribes.AbilityRange = []
+	Game.Particles.AbilityRange = []
+}
+
+function SkillLearned(data){
+	if (!AbilityRange.checked)
+		return
+	var MyID = Game.GetLocalPlayerID()
+	var MyEnt = Players.GetPlayerHeroEntityIndex(MyID)
+	if ( data.PlayerID != MyID )
+		return
+	var LearnedAbil =  Entities.GetAbilityByName( MyEnt, data.abilityname )
+	if ( LearnedAbil == -1 )
+		return
+	Range = GetAbilityRange( LearnedAbil )
+	if ( data.abilityname == 'attribute_bonus' || Range&lt;=0 )
+		return
+	if (Game.Particles.AbilityRange[LearnedAbil]){
+		Particles.DestroyParticleEffect(Game.Particles.AbilityRange[LearnedAbil],Game.Particles.AbilityRange[LearnedAbil])
+		Game.Particles.AbilityRange[LearnedAbil] = Particles.CreateParticle("particles/ui_mouseactions/range_display.vpcf", ParticleAttachment_t.PATTACH_ABSORIGIN_FOLLOW , MyEnt)
+		Particles.SetParticleControl(Game.Particles.AbilityRange[LearnedAbil], 1,  [Range,0,0])
+	}
+	CheckBs = AbilityRangePanel.Children()
+	for(c=0;c<checkbs.length abil="CheckBs[c].GetAttributeInt('Skill'," if learnedabil return var checkb="$.CreatePanel(" abilityrangepanel checkb.bloadlayoutfromstring><styles><include src="s2r://panorama/styles/magadan.css"></include><include src="s2r://panorama/styles/dotastyles.vcss_c"></include></styles><panel><togglebutton class="CheckBox" style="vertical-align:center;"></togglebutton><dotaabilityimage style="width:30px;margin:30px;border-radius:15px;"></dotaabilityimage></panel>", false, false)  
+	CheckB.Children()[1].abilityname = Abilities.GetAbilityName(LearnedAbil)
+	CheckB.SetAttributeInt('Skill', LearnedAbil)
+	CheckB.SetPanelEvent( 'onactivate', chkboxpressed )
+}
+
+function MapLoaded(data){
+	Destroy()
+	AbilityRange.checked = false
+}
+
+function chkboxpressed(){
+	var MyEnt = Players.GetPlayerHeroEntityIndex(Game.GetLocalPlayerID())
+	var CheckBs = AbilityRangePanel.Children()
+	for(c=0;c<checkbs.length var checked abil="CheckBs[c].GetAttributeInt('Skill'," if continue game.particles.abilityrange particles.createparticle particleattachment_t.pattach_absorigin_follow myent range="GetAbilityRange(" particles.setparticlecontrol particles.destroyparticleeffect delete abilityrangef="function(){" myid="Game.GetLocalPlayerID()" abilityrange.checked="false" destroy return game.panels.abilityrange="$.CreatePanel(" game.getmainhud game.panels.abilityrange.bloadlayoutfromstring><panel class="AbilityRangePanel" style="flow-children: down;background-color:#00000099;border-radius:15px;padding:20px 0;"></panel>", false, false )
+		GameUI.MovePanel(Game.Panels.AbilityRange,function(p){
+			var position = Game.Panels.AbilityRange.style.position.split(' ')
+			Config.MainPanel.x = position[0]
+			Config.MainPanel.y = position[1]
+			Game.SaveConfig('abilityrange/config.conf', Config)
+		})
+		Game.GetConfig('abilityrange/config.conf',function(a){
+			Config = a[0]
+			Game.Panels.AbilityRange.style.position = Config.MainPanel.x + ' ' + Config.MainPanel.y + ' 0'
+			Game.Panels.AbilityRange.style.flowChildren = Config.MainPanel.flow
+		});
+		Game.AddCommand( '__AbilityRange_Rotate', function(){
+			if (Game.Panels.AbilityRange.style.flowChildren == 'right')
+				Game.Panels.AbilityRange.style.flowChildren = 'down'
+			else
+				Game.Panels.AbilityRange.style.flowChildren = 'right'
+			Config.MainPanel.flow = Game.Panels.AbilityRange.style.flowChildren
+			Game.SaveConfig('abilityrange/config.conf', Config)
+		}, '',0 )
+	}else{
+		Game.ScriptLogMsg('Script disabled: AbilityRange', '#ff0000')
+		Destroy()
+		return
+	}
+	AbilityRangePanel = Game.GetMainHUD().FindChildrenWithClassTraverse( 'AbilityRangePanel' )[0]
+	for ( i = 0; i &lt; Entities.GetAbilityCount(MyEnt ); i++){
+		Abil = Entities.GetAbility(MyEnt,i)
+		if ( Abil == -1 )
+			continue
+		Range = GetAbilityRange( Abil )
+		if (Abilities.GetAbilityName(Abil) == 'attribute_bonus' || Range&lt;=0 )
+			continue
+		Behavior = Abilities.GetBehavior( Abil )
+		CheckB = $.CreatePanel( "ToggleButton", AbilityRangePanel, "AbilityRangeSkill" )
+		CheckB.BLoadLayoutFromString( "<root><styles><include src="s2r://panorama/styles/magadan.css"></include><include src="s2r://panorama/styles/dotastyles.vcss_c"></include></styles><panel><togglebutton class="CheckBox" style="vertical-align:center;"></togglebutton><dotaabilityimage style="width:30px;margin:3px;border-radius:15px;"></dotaabilityimage></panel></root>", false, false)  
+		CheckB.Children()[1].abilityname = Abilities.GetAbilityName(Abil)
+		CheckB.SetAttributeInt('Skill', Abil)
+		CheckB.SetPanelEvent( 'onactivate', chkboxpressed )
+	}
+	Game.Subscribes.AbilityRange.push( GameEvents.Subscribe('game_newmap', MapLoaded) )
+	Game.Subscribes.AbilityRange.push( GameEvents.Subscribe('dota_player_learned_ability', SkillLearned) )
+	Game.Subscribes.AbilityRange.push( GameEvents.Subscribe('dota_inventory_changed', InventoryChanged) )
+	Game.ScriptLogMsg('Script enabled: AbilityRange', '#00ff00')
+}
+		
+var Temp = $.CreatePanel( "Panel", $('#scripts'), "AbilityRange" )
+Temp.SetPanelEvent( 'onactivate', AbilityRangeF )
+Temp.BLoadLayoutFromString( '<root><styles><include src="s2r://panorama/styles/dotastyles.vcss_c"></include><include src="s2r://panorama/styles/magadan.vcss_c"></include></styles><panel><togglebutton class="CheckBox" id="AbilityRange" text="AbilityRange"></togglebutton></panel></root>', false, false)
+var AbilityRange = $.GetContextPanel().FindChildTraverse( 'AbilityRange' ).Children()[0]</checkbs.length></checkbs.length></p></body></html>

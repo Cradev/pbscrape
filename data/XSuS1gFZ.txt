@@ -1,0 +1,10 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>import numpy as np
+
+x_i = [1, 0]
+T = np.matrix([[.99, 0.01],[0.01,.99]])
+T_3 = np.linalg.matrix_power(T, 3)
+print(np.dot(T, x_i))
+	
+trans_mat_1000 = np.linalg.matrix_power(trans_mat, 1000)
+print(np.dot(T, x_i))</p></body></html>

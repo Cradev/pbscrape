@@ -1,0 +1,435 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#EXTINF:-1,IT:TG24
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3879.ts
+#EXTINF:-1,IT:Super Tennis
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3935.ts
+#EXTINF:-1,IT:Sky Uno
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3878.ts
+#EXTINF:-1,IT:Sky Super Calcio
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3929.ts
+#EXTINF:-1,IT:Sky Sport MotoGP
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3934.ts
+#EXTINF:-1,IT:Sky Sport F1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3933.ts
+#EXTINF:-1,IT:Sky Sport 24
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3932.ts
+#EXTINF:-1,IT:Sky Sport 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3931.ts
+#EXTINF:-1,IT:Sky Sport 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3930.ts
+#EXTINF:-1,IT:Sky Calcio 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3928.ts
+#EXTINF:-1,IT:Sky Calcio 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3927.ts
+#EXTINF:-1,IT:Rete 4
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3881.ts
+#EXTINF:-1,IT:Rai Sport2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3926.ts
+#EXTINF:-1,IT:Rai Sport1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3925.ts
+#EXTINF:-1,IT:Rai 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3877.ts
+#EXTINF:-1,IT:Rai 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3876.ts
+#EXTINF:-1,IT:Rai 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3875.ts
+#EXTINF:-1,IT:Radio Italia Tv
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3886.ts
+#EXTINF:-1,IT:Primafila9
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3923.ts
+#EXTINF:-1,IT:Primafila8
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3922.ts
+#EXTINF:-1,IT:Primafila7
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3921.ts
+#EXTINF:-1,IT:Primafila6
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3920.ts
+#EXTINF:-1,IT:Primafila5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3919.ts
+#EXTINF:-1,IT:Primafila4
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3918.ts
+#EXTINF:-1,IT:Primafila3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3917.ts
+#EXTINF:-1,IT:Primafila2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3916.ts
+#EXTINF:-1,IT:Primafila10
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3924.ts
+#EXTINF:-1,IT:Primafila1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3915.ts
+#EXTINF:-1,IT:Premium Studio Universal
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3910.ts
+#EXTINF:-1,IT:Premium Story
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3900.ts
+#EXTINF:-1,IT:Premium Sport
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3913.ts
+#EXTINF:-1,IT:Premium Joi
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3901.ts
+#EXTINF:-1,IT:Premium Energy
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3909.ts
+#EXTINF:-1,IT:Premium Emotion
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3907.ts
+#EXTINF:-1,IT:Premium Disney Junior
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3911.ts
+#EXTINF:-1,IT:Premium Disney Channel
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3912.ts
+#EXTINF:-1,IT:Premium Comedy
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3908.ts
+#EXTINF:-1,IT:Premium Cinema 24
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3906.ts
+#EXTINF:-1,IT:Premium Cinema 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3905.ts
+#EXTINF:-1,IT:Premium Cinema
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3904.ts
+#EXTINF:-1,IT:Premium BBC
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3914.ts
+#EXTINF:-1,IT:Premium Action Prima
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3903.ts
+#EXTINF:-1,IT:Premium Action
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3902.ts
+#EXTINF:-1,IT:Nat Geo Wild
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3889.ts
+#EXTINF:-1,IT:Nat Geo People
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3890.ts
+#EXTINF:-1,IT:Nat Geo
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3888.ts
+#EXTINF:-1,IT:Iris
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3882.ts
+#EXTINF:-1,IT:History
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3893.ts
+#EXTINF:-1,IT:Fox Crime
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3884.ts
+#EXTINF:-1,IT:Dmax
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3885.ts
+#EXTINF:-1,IT:Disney XD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3887.ts
+#EXTINF:-1,IT:Discovery World
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3892.ts
+#EXTINF:-1,IT:Discovery Channel
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3891.ts
+#EXTINF:-1,IT:Cinema Passion
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3895.ts
+#EXTINF:-1,IT:Cinema Max
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3896.ts
+#EXTINF:-1,IT:Cinema Hits
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3897.ts
+#EXTINF:-1,IT:Cinema Comedy
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3898.ts
+#EXTINF:-1,IT:Cinema Atlantic
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3899.ts
+#EXTINF:-1,IT:Cinema 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3894.ts
+#EXTINF:-1,IT:Cielo
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3883.ts
+#EXTINF:-1,IT:Canale 5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3880.ts
+#EXTINF:-1,=== &gt;&gt; FRANSA &lt;&lt; ===
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3083.ts
+#EXTINF:-1,FR:Bein Sports 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3084.ts
+#EXTINF:-1,FR:Bein Sports 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3085.ts
+#EXTINF:-1,FR:Bein Sports 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3086.ts
+#EXTINF:-1,FR:France O
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3095.ts
+#EXTINF:-1,FR:France 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3096.ts
+#EXTINF:-1,FR:France 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3097.ts
+#EXTINF:-1,FR:France 4
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3098.ts
+#EXTINF:-1,FR:France 5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3099.ts
+#EXTINF:-1,FR:France 24
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3100.ts
+#EXTINF:-1,FR:TV5 Monde Europe
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3107.ts
+#EXTINF:-1,FR:TF1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3105.ts
+#EXTINF:-1,FR:TMC
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3106.ts
+#EXTINF:-1,FR:NRJ 12
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3104.ts
+#EXTINF:-1,FR:M6 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3101.ts
+#EXTINF:-1,FR:Cine  Premier
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3094.ts
+#EXTINF:-1,FR:Cine  Frisson
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3093.ts
+#EXTINF:-1,FR:Cine  Famiz
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3092.ts
+#EXTINF:-1,FR:Cine  Emotion
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3091.ts
+#EXTINF:-1,FR:Cine  Classic
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3090.ts
+#EXTINF:-1,FR:Canal Series
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3088.ts
+#EXTINF:-1,FR:Canal Cinema
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3087.ts
+#EXTINF:-1,FR:Cartoon Network
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3089.ts
+#EXTINF:-1,FR:Nat Geo HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3102.ts
+#EXTINF:-1,FR:Nat Geo Wild
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3103.ts
+#EXTINF:-1,(FR) W9 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3224.ts
+#EXTINF:-1,(FR) VOYAGE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3280.ts
+#EXTINF:-1,(FR) USHUAIA TV
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3271.ts
+#EXTINF:-1,(FR) TV BREIZH
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3229.ts
+#EXTINF:-1,(FR) TREK
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3279.ts
+#EXTINF:-1,(FR) TOUTE L HISTOIRE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3273.ts
+#EXTINF:-1,(FR) TIJI
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3261.ts
+#EXTINF:-1,(FR) TEVA
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3228.ts
+#EXTINF:-1,(FR) TELETOON  HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3254.ts
+#EXTINF:-1,(FR) TCM CINEMA
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3294.ts
+#EXTINF:-1,(FR) SYFY HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3227.ts
+#EXTINF:-1,(FR) SERIE CLUB
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3230.ts
+#EXTINF:-1,(FR) SEASONS
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3278.ts
+#EXTINF:-1,(FR) SCIENCE ET VIE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3276.ts
+#EXTINF:-1,(FR) RTS 2 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3247.ts
+#EXTINF:-1,(FR) RTS 1 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3246.ts
+#EXTINF:-1,(FR) RTL 9
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3236.ts
+#EXTINF:-1,(FR) RMC DECOUVERTE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3272.ts
+#EXTINF:-1,(FR) PLANETE  HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3264.ts
+#EXTINF:-1,(FR) PLANETE  CI HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3266.ts
+#EXTINF:-1,(FR) PLANETE  AE HD (FR)
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3265.ts
+#EXTINF:-1,(FR) PIWI
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3262.ts
+#EXTINF:-1,(FR) PARIS PREMIERE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3235.ts
+#EXTINF:-1,(FR) PARAMOUNT CHANNEL
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3233.ts
+#EXTINF:-1,(FR) OLTV HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3329.ts
+#EXTINF:-1,(FR) OCS Max
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3286.ts
+#EXTINF:-1,(FR) OCS GEANTS
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3297.ts
+#EXTINF:-1,(FR) OCS City
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3287.ts
+#EXTINF:-1,(FR) Ocs Choc HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3288.ts
+#EXTINF:-1,(FR) NUMERO 23 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3243.ts
+#EXTINF:-1,(FR) NT1 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3238.ts
+#EXTINF:-1,(FR) NRJ 12 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3245.ts
+#EXTINF:-1,(FR) NICKELODEON JUNIOR
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3258.ts
+#EXTINF:-1,(FR) NICKELODEON
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3259.ts
+#EXTINF:-1,(FR) MTV HITS
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3338.ts
+#EXTINF:-1,(FR) MTV DANCE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3339.ts
+#EXTINF:-1,(FR) MANGAS
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3256.ts
+#EXTINF:-1,(FR) M6 MUSIC HITS
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3337.ts
+#EXTINF:-1,(FR) LCP HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3343.ts
+#EXTINF:-1,(FR) LCI HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3344.ts
+#EXTINF:-1,(FR) L EQUIPE 21 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3334.ts
+#EXTINF:-1,(FR) KTO
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3345.ts
+#EXTINF:-1,(FR) JUNE TV
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3232.ts
+#EXTINF:-1,(FR) INFOSPORT
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3331.ts
+#EXTINF:-1,(FR) I TELE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3340.ts
+#EXTINF:-1,(FR) HISTOIRE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3277.ts
+#EXTINF:-1,(FR) HD1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3241.ts
+#EXTINF:-1,(FR) GULLI HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3257.ts
+#EXTINF:-1,(FR) GAME ONE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3260.ts
+#EXTINF:-1,(FR) Foot
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3330.ts
+#EXTINF:-1,(FR) EUROSPORT FRANCE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3332.ts
+#EXTINF:-1,(FR) EUROSPORT 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3333.ts
+#EXTINF:-1,(FR) EQUIDIA LIVE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3335.ts
+#EXTINF:-1,(FR) E!
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3231.ts
+#EXTINF:-1,(FR) DISNEY XD HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3252.ts
+#EXTINF:-1,(FR) DISNEY CINEMAGIC HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3250.ts
+#EXTINF:-1,(FR) DISNEY CHANNEL HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3248.ts
+#EXTINF:-1,(FR) DISNEY CHANNEL  1 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3249.ts
+#EXTINF:-1,(FR) DISCOVERY SCIENCE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3270.ts
+#EXTINF:-1,(FR) DISCOVERY FRANCE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3269.ts
+#EXTINF:-1,(FR) D8 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3221.ts
+#EXTINF:-1,(FR) D17 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3244.ts
+#EXTINF:-1,(FR) COMEDIE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3234.ts
+#EXTINF:-1,(FR) CINE FX
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3296.ts
+#EXTINF:-1,(FR) CINE   POLAR
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3295.ts
+#EXTINF:-1,(FR) CHERIE 25 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3242.ts
+#EXTINF:-1,(FR) CHASSE ET PECHE
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3274.ts
+#EXTINF:-1,(FR) CANAL J
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3263.ts
+#EXTINF:-1,(FR) CANAL  HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3281.ts
+#EXTINF:-1,(FR) CANAL   SPORT HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3325.ts
+#EXTINF:-1,(FR) CANAL   FAMILY HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3284.ts
+#EXTINF:-1,(FR) CANAL   DECALE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3285.ts
+#EXTINF:-1,(FR) CANAL   CINEMA HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3282.ts
+#EXTINF:-1,(FR) BOOMERANG HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3255.ts
+#EXTINF:-1,(FR) BFM TV HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3342.ts
+#EXTINF:-1,(FR) ARTE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3219.ts
+#EXTINF:-1,(FR) ANIMAUX
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3275.ts
+#EXTINF:-1,(FR) ACTION
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3237.ts
+#EXTINF:-1,(FR) AB MOTEUR
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3336.ts
+#EXTINF:-1,(FR) A La Carte 7 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3304.ts
+#EXTINF:-1,(FR) A La Carte 6 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3303.ts
+#EXTINF:-1,(FR) A La Carte 5 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3302.ts
+#EXTINF:-1,(FR) A La Carte 4 HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3301.ts
+#EXTINF:-1,(FR) A LA CARTE 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3300.ts
+#EXTINF:-1,(FR) A LA CARTE 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3299.ts
+#EXTINF:-1,(FR) A LA CARTE 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3298.ts
+#EXTINF:-1,(FR) 6TER HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3240.ts
+#EXTINF:-1,(FR) 13EME RUE HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3226.ts
+#EXTINF:-1,=== &gt;&gt; HOLLANDA &lt;&lt; ===
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3108.ts
+#EXTINF:-1,NL:Nat Geo
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3140.ts
+#EXTINF:-1,NL:History
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3124.ts
+#EXTINF:-1,NL:Discovery Channel
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3141.ts
+#EXTINF:-1,NL:MTV
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3123.ts
+#EXTINF:-1,NL:Net 5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3118.ts
+#EXTINF:-1,NL:TLC
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3144.ts
+#EXTINF:-1,NL:Nickelodeon / Spike
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3121.ts
+#EXTINF:-1,NL:Veronica Disney XD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3119.ts
+#EXTINF:-1,NL:Ziggo Sport Voetbal
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3138.ts
+#EXTINF:-1,NL:Ziggo Sport Select
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3139.ts
+#EXTINF:-1,NL:Ziggo Sport Golf
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3137.ts
+#EXTINF:-1,NL:HBO 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3129.ts
+#EXTINF:-1,NL:HBO 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3130.ts
+#EXTINF:-1,NL:HBO 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3131.ts
+#EXTINF:-1,NL:NPO 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3110.ts
+#EXTINF:-1,NL:NPO 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3109.ts
+#EXTINF:-1,NL:NPO 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3111.ts
+#EXTINF:-1,NL:RTL 4
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3112.ts
+#EXTINF:-1,NL:RTL 5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3113.ts
+#EXTINF:-1,NL:RTL 7
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3115.ts
+#EXTINF:-1,NL:RTL 8
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3116.ts
+#EXTINF:-1,NL:SBS 6
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3114.ts
+#EXTINF:-1,NL:SBS 9
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3117.ts
+#EXTINF:-1,NL:AT5
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3120.ts
+#EXTINF:-1,NL:Fox Sports 5 Eredivisie
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3136.ts
+#EXTINF:-1,NL:Fox Sports 4 Internationaal
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3135.ts
+#EXTINF:-1,NL:Fox Sports 3 Eredivisie
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3134.ts
+#EXTINF:-1,NL:Fox Sports 2 International
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3133.ts
+#EXTINF:-1,NL:Fox Sports 1 Eredivisie HD
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3132.ts
+#EXTINF:-1,NL:Film 1 Sundance
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3128.ts
+#EXTINF:-1,NL:Film 1 Premiere
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3126.ts
+#EXTINF:-1,NL:Film 1 Comedy
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3127.ts
+#EXTINF:-1,NL:Film 1 Action
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3125.ts
+#EXTINF:-1,NL:Crime Investigation
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3142.ts
+#EXTINF:-1,NL:Comedy Central
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3143.ts
+#EXTINF:-1,NL:Cartoon Network
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3122.ts
+#EXTINF:-1,BE:RTBF 1
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3145.ts
+#EXTINF:-1,BE:RTBF 2
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3146.ts
+#EXTINF:-1,BE:RTBF 3
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3147.ts
+#EXTINF:-1,BE:RTL TVI
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3148.ts
+#EXTINF:-1,BE:Plug RTL
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3149.ts
+#EXTINF:-1,BE:Club RTL
+http://149.202.71.237:8000/live/DenizTok/DenizTok/3150.ts</p></body></html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#EXTM3U
+#EXTINF:-1,-------- Deutsch TV HD  --------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1483.ts
+#EXTINF:-1,Das Erste HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1469.ts
+#EXTINF:-1,ZDF HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1484.ts
+#EXTINF:-1,RTL HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1470.ts
+#EXTINF:-1,RTL II HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1471.ts
+#EXTINF:-1,Kabel Eins HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1479.ts
+#EXTINF:-1,Sat 1 HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1475.ts
+#EXTINF:-1,Prosieben HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1477.ts
+#EXTINF:-1,VOX HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1473.ts
+#EXTINF:-1,SIXX HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1478.ts
+#EXTINF:-1,DMAX HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1474.ts
+#EXTINF:-1,Super RTL HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1472.ts
+#EXTINF:-1,Pro7 FUN HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1476.ts
+#EXTINF:-1,kabel eins classics
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1480.ts
+#EXTINF:-1,joiz
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1482.ts
+#EXTINF:-1,----- Sky Deutschland -----
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/626.ts
+#EXTINF:-1,------ Sky Film ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/215.ts
+#EXTINF:-1,Sky Cinema HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/216.ts
+#EXTINF:-1,Sky Cinema +1 HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/574.ts
+#EXTINF:-1,Sky Cinema +24
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/217.ts
+#EXTINF:-1,Sky Atlantic HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/218.ts
+#EXTINF:-1,Sky Atlantic +1 HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1490.ts
+#EXTINF:-1,Sky Hits HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/219.ts
+#EXTINF:-1,Sky Action HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/220.ts
+#EXTINF:-1,Sky Comedy
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/221.ts
+#EXTINF:-1,Sky Emotion
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/222.ts
+#EXTINF:-1,Sky Krimi
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/575.ts
+#EXTINF:-1,Sky Nostalgie
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/223.ts
+#EXTINF:-1,Universal HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/224.ts
+#EXTINF:-1,Silverline Movie Channel
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/226.ts
+#EXTINF:-1,Kinowelt TV
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/225.ts
+#EXTINF:-1,13th Street HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/227.ts
+#EXTINF:-1,MGM HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/229.ts
+#EXTINF:-1,MGM
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1498.ts
+#EXTINF:-1,Fox HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/230.ts
+#EXTINF:-1,Fox Serie
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1499.ts
+#EXTINF:-1,TNT Comedy HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1488.ts
+#EXTINF:-1,TNT Film (TCM)
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/232.ts
+#EXTINF:-1,TNT Serie HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/231.ts
+#EXTINF:-1,AXN HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/233.ts
+#EXTINF:-1,AXN Action
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1501.ts
+#EXTINF:-1,Classica
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1502.ts
+#EXTINF:-1,Goldstar TV
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1503.ts
+#EXTINF:-1,Heimatkanal
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/573.ts
+#EXTINF:-1,Syfy HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/228.ts
+#EXTINF:-1,Romance TV
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/234.ts
+#EXTINF:-1,RTL Passion
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/235.ts
+#EXTINF:-1,RTL LIVING
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/447.ts
+#EXTINF:-1,RTL CRIME
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/446.ts
+#EXTINF:-1,------ Sky Kids ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/236.ts
+#EXTINF:-1,Disney Junior
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1529.ts
+#EXTINF:-1,Disney Cinemagic
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1528.ts
+#EXTINF:-1,Disney Channel HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1487.ts
+#EXTINF:-1,Cartoon Network
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1531.ts
+#EXTINF:-1,Boomerang HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1491.ts
+#EXTINF:-1,Disney Cinemagic HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/237.ts
+#EXTINF:-1,Disney Junior HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/238.ts
+#EXTINF:-1,Disney XD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/576.ts
+#EXTINF:-1,Junior
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1530.ts
+#EXTINF:-1,Animax
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/593.ts
+#EXTINF:-1,VIVA / Comedy Central HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1338.ts
+#EXTINF:-1,------ Sky Doku ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/239.ts
+#EXTINF:-1,Discovery HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/240.ts
+#EXTINF:-1,Discovery Channel
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1532.ts
+#EXTINF:-1,Spiegel Geschichte
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/592.ts
+#EXTINF:-1,Spiegel Geschichte HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1535.ts
+#EXTINF:-1,NatGeo HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/241.ts
+#EXTINF:-1,National Geographic
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1533.ts
+#EXTINF:-1,Nat Geo Wild HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/242.ts
+#EXTINF:-1,NatGeo Wild
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1534.ts
+#EXTINF:-1,NatGeo People
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1486.ts
+#EXTINF:-1,History HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/243.ts
+#EXTINF:-1,Spiegel TV Wissen HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/244.ts
+#EXTINF:-1,Planet HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/245.ts
+#EXTINF:-1,Animal Planet HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/450.ts
+#EXTINF:-1,A&amp;E
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/451.ts
+#EXTINF:-1,------ Sky Sport ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/246.ts
+#EXTINF:-1,Sport 1+ HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1481.ts
+#EXTINF:-1,Sport1+ HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1505.ts
+#EXTINF:-1,Eurosport 1 HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1506.ts
+#EXTINF:-1,Eurosport 2 HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1507.ts
+#EXTINF:-1,Sky Sport News HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/247.ts
+#EXTINF:-1,Sky Sport News
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1508.ts
+#EXTINF:-1,Sky Bundesliga 1
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1509.ts
+#EXTINF:-1,Sky Sport 1
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1510.ts
+#EXTINF:-1,Sky Sport 2
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1511.ts
+#EXTINF:-1,Sky Fanzone HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/452.ts
+#EXTINF:-1,Sky Sport HD 1
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/248.ts
+#EXTINF:-1,Sky Sport HD 2
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/249.ts
+#EXTINF:-1,Sky Sport HD 3
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/250.ts
+#EXTINF:-1,Sky Sport HD 4
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/251.ts
+#EXTINF:-1,Sky Sport HD 5
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/252.ts
+#EXTINF:-1,Sky Sport HD 6
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1512.ts
+#EXTINF:-1,Sky Sport HD 7
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1513.ts
+#EXTINF:-1,Sky Sport HD 9
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1515.ts
+#EXTINF:-1,Sky Sport HD 8
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1514.ts
+#EXTINF:-1,Sky Sport HD 10
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1516.ts
+#EXTINF:-1,Sky Sport HD 11
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1517.ts
+#EXTINF:-1,Sky Bundesliga HD 1
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/253.ts
+#EXTINF:-1,Sky Bundesliga HD 2
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/254.ts
+#EXTINF:-1,Sky Bundesliga HD 3
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/255.ts
+#EXTINF:-1,Sky Bundesliga HD 4
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/256.ts
+#EXTINF:-1,Sky Bundesliga HD 5
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1518.ts
+#EXTINF:-1,Sky Bundesliga HD 6
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1519.ts
+#EXTINF:-1,Sky Bundesliga HD 7
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1520.ts
+#EXTINF:-1,Sky Bundesliga HD 8
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1521.ts
+#EXTINF:-1,Sky Bundesliga HD 9
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1522.ts
+#EXTINF:-1,Sky Bundesliga HD 10
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1523.ts
+#EXTINF:-1,Sky Sport Austria HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/453.ts
+#EXTINF:-1,Sky Sport Austria
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1524.ts
+#EXTINF:-1,Auto Motor Sport TV HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/785.ts
+#EXTINF:-1,Motorvision TV
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/454.ts
+#EXTINF:-1,Sport1 US HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/455.ts
+#EXTINF:-1,Sport1 1+ HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/1525.ts
+#EXTINF:-1,sportdigital HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/258.ts
+#EXTINF:-1,------ Sky Music ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/259.ts
+#EXTINF:-1,Deluxe Music HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/260.ts
+#EXTINF:-1,MTV HD
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/261.ts
+#EXTINF:-1,------ Sky Select - Stream ------
+http://rts-tv-service.webhop.biz:7664/live/michele/rheinheim/262.ts
+#EXTINF:-1,Sky Select 1 - Ich bin dann mal weg
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/555.mp4
+#EXTINF:-1,Sky Select 2 - Daddy's Home - Ein Vater zu viel
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/556.mp4
+#EXTINF:-1,Sky Select 3 - G&auml;nsehaut
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/557.mkv
+#EXTINF:-1,Sky Select 4 - Hilfe, ich hab meine Lehrerin geschrumpft
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/558.mp4
+#EXTINF:-1,Sky Select 5 - The Forest - Verlass nie den Weg
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1571.mp4
+#EXTINF:-1,Sky Select 6 - Ride Along: Next Level Miami
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1576.mp4
+#EXTINF:-1,Sky Select 7 - The Big Short
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1572.mp4
+#EXTINF:-1,Sky Select 8 - Heidi
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1570.mp4
+#EXTINF:-1,Sky Select 9 - Die 5. Welle
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1578.mp4
+#EXTINF:-1,Sky Select 10 - Die Vorsehung - Solace
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1577.mkv
+#EXTINF:-1,Sky Select 11 - The Revenant - Der R&uuml;ckkehrer
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1569.mkv
+#EXTINF:-1,Sky Select 12 - Bridge of Spies - Der Unterh&auml;ndler
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1579.mp4
+#EXTINF:-1,Sky Select 13 - Joy - Alles au&szlig;er gew&ouml;hnlich
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1574.mp4
+#EXTINF:-1,Sky Select 14 - Legend
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1573.mp4
+#EXTINF:-1,Sky Select 15 - Creed - Rocky's Legacy
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1575.mkv
+#EXTINF:-1,Sky Select 16 - Pandemic - Fear the Dead
+http://rts-tv-service.webhop.biz:7664/movie/michele/rheinheim/1580.mp4</p></body></html>

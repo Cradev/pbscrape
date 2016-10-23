@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package com.example.teacher.lab10_includemergetransition;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.support.v7.app.AlertDialog;
+import android.view.View;
+
+public class Activity3 extends QuestionActivity {
+
+    public static final String Q3_ANSWER_KEY = "Q3";
+
+    // &#25353;&#19979; BACK
+    public void back(View view) {
+        // &#24314;&#31435;&#26032; Intent: new Intent( &#20358;&#28304; , &#30446;&#30340;)
+        Intent intent = new Intent(this, Activity2.class);
+        // &#23559;&#20808;&#21069;&#30340; Acvivity &#31227;&#21040;&#26368;&#19978;&#23652;&#65292;&#32780;&#38750;&#29986;&#29983;&#26032;&#30340; Activity
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(intent);
+    }
+
+    // &#25353;&#19979; MAIN
+    @Override
+    public void next(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+
+        Intent q2Intent = getIntent(); // &#21462;&#24471; Activity1 &#20659;&#20358;&#30340; Intent
+        CharSequence q1Answer = q2Intent.getStringExtra(Activity1.Q1_ANSWER_KEY);
+        CharSequence q2Answer = q2Intent.getStringExtra(Activity2.Q2_ANSWER_KEY);
+        CharSequence q3Answer = m_answer;
+        //String answers = q1Answer + "\n" + q2Answer + "\n" + q3Answer;
+        //m_tv_no.setText(answers); // &#26283;&#26178;&#23559;&#31572;&#26696;&#39023;&#31034;&#22312; TextView
+        StringBuilder message = new StringBuilder(100); // &#21021;&#22987;&#23481;&#37327; 100 &#23383;
+        message.append("&#24744;&#30340;&#20316;&#31572;&#22914;&#19979;\n")
+                .append(q1Answer)
+                .append("\n")
+                .append(q2Answer)
+                .append("\n")
+                .append(q3Answer)
+                .append("\n&#30906;&#23450;&#35201;&#32080;&#26463;?");
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage(message)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent intent = new Intent(Activity3.this, MainActivity.class);
+                        // &#23559;&#20808;&#21069;&#30340; Acvivity &#31227;&#21040;&#26368;&#19978;&#23652;&#65292;&#32780;&#38750;&#29986;&#29983;&#26032;&#30340; Activity
+                        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                })
+                .show();
+    }
+
+}</p></body></html>

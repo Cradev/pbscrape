@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>int n = 1, flag = 0, flag2 = 0;
+    char c = ' ';
+
+    while (!flag &amp;&amp; c == ' ')
+    {
+        scanf("%c", &amp;c);
+
+        while ((c &gt;= '0' &amp;&amp; c &lt;= '9') || (c == '-'))
+        {
+            n *= flag;
+            flag = 1;
+
+            if (c == '-')
+            {
+                flag2 = 1;
+            }
+            else
+            {
+                n *= 10;
+                n += c - '0';
+            }
+
+            scanf("%c", &amp;c);
+        }
+    }
+
+    if (flag2) n = -n;</p></body></html>

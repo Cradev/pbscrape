@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// Sprawdzanie poprawno&#347;ci daty.cpp: Okre&#347;la punkt wej&#347;cia dla aplikacji konsoli.
+//
+
+#include "stdafx.h"
+#include <conio.h>
+ 
+int main()
+{
+        int y, m, d;
+        while(true)
+        {
+                printf("Podaj date w takiej formie [yyyy mm dd]: ");
+                scanf("%d %d %d", &amp;y, &amp;m, &amp;d);
+ 
+                if( !(y&gt;=1900 &amp;&amp; y&lt;=2100) )
+                {
+                        printf("Niepoprawny rok.\n");
+                        continue;
+                }
+ 
+                switch(m)
+                {
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                        if(d&gt;0 &amp;&amp; d&lt;31)
+                                printf("Data jest poprawna.\n");
+                        else
+                                printf("Niepoprawny dzien.\n");
+                        break;
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                        if(d&gt;0 &amp;&amp; d&lt;32)
+                                printf("Data jest poprawna.\n");
+                        else
+                                printf("Niepoprawny dzien.\n");
+                        break;
+                case 2:
+                        if( (y%4==0 &amp;&amp; y%100!=0) || y%400==0)
+                        {
+                                if(d&gt;0 &amp;&amp; d&lt;30)
+                                        printf("Data jest poprawna.\n");
+                                else
+                                        printf("Niepoprawny dzien.\n");
+                        }
+                        else
+                        {
+                                if(d&gt;0 &amp;&amp; d&lt;29)
+                                        printf("Data jest poprawna.\n");
+                                else
+                                        printf("Niepoprawny dzien.\n");
+                        }
+                        break;
+                default:
+                        printf("Niepoprawny miesiac.\n");
+                }
+        }
+        _getch();
+        return 0;
+}</conio.h></p></body></html>

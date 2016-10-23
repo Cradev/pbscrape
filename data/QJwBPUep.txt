@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public ActionResult JpegCompress( int id)
+    {
+        string user = User.Identity.GetUserId();
+        ApplicationUser au = db.Users.Include(t =&gt; t.Pictures).FirstOrDefault(t =&gt; (t.Id) == user);
+        Picture pic = au.Pictures.Where(p =&gt; p.Id == id).First();
+        Bitmap bmp;
+        using (var ms = new MemoryStream(pic.Image))
+        {
+            bmp = new Bitmap(ms);
+        }
+  ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
+        System.Drawing.Imaging.Encoder myEncoder =
+                System.Drawing.Imaging.Encoder.Quality;
+        EncoderParameters myEncoderParameters = new EncoderParameters(1);
+
+        EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, 50L);
+        myEncoderParameters.Param[0] = myEncoderParameter;
+
+
+        var stream = new System.IO.MemoryStream();
+        bmp.Save(stream, jpgEncoder, myEncoderParameters);
+
+        string file_type = "application/jpg";
+        string file_name = "Image.jpg";
+        return File(stream, file_type, file_name);
+	
+public ActionResult JpegCompress( int id)
+ {
+        string user = User.Identity.GetUserId();
+        ApplicationUser au = db.Users.Include(t =&gt; t.Pictures).FirstOrDefault(t =&gt; (t.Id) == user);
+        Picture pic = au.Pictures.Where(p =&gt; p.Id == id).First();
+        string imageName = Convert.ToBase64String(pic.Image);
+        Bitmap bmp;
+        using (var ms = new MemoryStream(pic.Image))
+        {
+            bmp = new Bitmap(ms);
+            Image original = bmp;
+            ImageCodecInfo jpgEncoder = GetEncoder(ImageFormat.Jpeg);
+            System.Drawing.Imaging.Encoder myEncoder =
+                        System.Drawing.Imaging.Encoder.Quality;
+            EncoderParameters myEncoderParameters = new EncoderParameters(1);
+
+            EncoderParameter myEncoderParameter = new EncoderParameter(myEncoder, 50L);
+            myEncoderParameters.Param[0] = myEncoderParameter;
+
+            var stream = new System.IO.MemoryStream();
+            bmp.Save(stream, jpgEncoder, myEncoderParameters);
+
+            string file_type = "application/jpg";
+            string file_name = "Image.jpg";
+            return File(stream, file_type, file_name);
+        }
+   }</p></body></html>

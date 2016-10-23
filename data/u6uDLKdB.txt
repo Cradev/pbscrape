@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>a&ntilde;adiria a la base: clase pago, que tenga string mes y float cuota y de primary el dni del socio
+en reserva un boolean pagado y un string que sea cuota/efectivo (o un boolean, como veais)
+a socio un boolean que sea para saber si asistio a una actividad, o directamente en actividad meter el dni de los socios y si asiste o no 
+entonces actividad seria: nombre(actividad) dni(socio) asistencia(true/false)
+
+
+
+numero de plazas??
+-Como calcular cuotas: tengo un boton contable que cuando le de, me calcula la cuota de x socio. Para eso, busca todas las reservas de ese socio no pagadas, suma su cantidad y hace un insert en la base de datos (o update) (reserva tenia fecha no??)
+-Si alguien pone que paga en cuota no hay problema, pero si dice que paga en efectivo y luego paga en cuota, deberia de haber un boton que cambie el string o boolean de la reserva de efectivo, a cuota
+-Si alguien cancela la reserva, como se borra, no hay problema a la hora de a&ntilde;adir a la cuota</p></body></html>

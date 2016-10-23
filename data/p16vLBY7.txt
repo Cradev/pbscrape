@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>function isAdmin($community_id) {
+	$result = runQuery("SELECT * FROM gban_admins WHERE community_id='".escapeS($community_id)."' LIMIT 1");
+	if($result-&gt;num_rows&gt;0){
+		return true;
+	}
+}
+
+function isSuperAdmin($community_id) {
+	$result = runQuery("SELECT * FROM gban_admins WHERE community_id='".escapeS($community_id)."' AND type='2' LIMIT 1");
+	if($result-&gt;num_rows&gt;0){
+		return true;
+	}
+}</p></body></html>

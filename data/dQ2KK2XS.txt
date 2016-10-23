@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lab3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a = Math.PI / 5, b = Math.PI, x, y, SE, SN, step,s;
+            int i, k=10, n=20, ii;
+            step = (b - a) / k; 
+            for (i = 1; ; i++) 
+            {   x = a;
+                a += step;
+                if (x &gt;= b) break;
+                else { y = 0.25*(Math.Pow(x, 2) - Math.Pow(Math.PI / 3, 2)); };
+                    SN = 0;
+                         for (ii = 1; ii &lt;= n; ii++)
+                         {
+                            
+                            s = Math.Pow(n, n);
+                            SN += (Math.Pow(-1, n) * Math.Cos(n * x))/s;
+                         };
+                Console.WriteLine("X={0}\t SN={1}\t Y={2}", x, SN, y);
+                         
+            };
+        }
+    } }</p></body></html>

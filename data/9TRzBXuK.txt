@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>void Solver::solve() {
+    int argc = 1;
+    MPI_Init(&amp;argc, NULL);
+    
+    int nz = problem.getRHSSize();
+    const double *matrix = problem.getMatrix();
+    const double *rhs = problem.getRHS();
+    
+    int *proc_config = (int *) calloc(AZ_PROC_SIZE, sizeof(int));
+    AZ_set_proc_config(proc_config, MPI_COMM_WORLD);
+    
+    
+    int N_Update;
+    int *update;
+    
+    AZ_read_update(&amp;N_Update, &amp;update, proc_config, nz, 1, 0);
+    
+    assert(proc_config[AZ_N_procs] == 1);
+    assert(N_Update == nz);
+    
+    double *val = (double *) calloc((nz + 1) * (nz + 1), sizeof(double));
+    int *bindx = (int *) calloc((nz + 1) * (nz + 1), sizeof(double));
+    
+    val[N_Update] = -1.0;
+    
+    
+    int count = N_Update + 1;
+    
+    for (int i = 0; i &lt; N_Update; i++) {
+        int currentRow = update[i];
+        assert(currentRow == i);
+        
+        bool non_diagonal_non_zero_found = false;
+        
+        for (int j = 0; j &lt; nz; j++) {
+            if (i == j) {
+                //current diagonal element
+                val[currentRow] = matrix[i * nz + j];
+            } else {
+                double v = matrix[i * nz + j];
+                if (!fequal(v, 0.0)) {
+                    val[count] = v;
+                    bindx[count] = j;
+                    if (!non_diagonal_non_zero_found) {
+                        bindx[currentRow] = count;
+                        non_diagonal_non_zero_found = true;
+                    }
+                    count += 1;
+                }
+                
+            }
+        }
+    }
+    
+    bindx[N_Update] = count;
+    
+    for (int i = 0; i &lt; count; i++) {
+        //printf("%d ", bindx[i]);
+    }
+    printf("\n");
+    for (int i = 0; i &lt; count; i++) {
+        //printf("%f ", val[i]);
+    }
+    printf("\n");
+    
+    
+    
+    int *external;
+    int *update_index;
+    int *extern_index;
+    int *data_org;
+    
+    AZ_transform(proc_config, &amp;external, bindx, val, update, &amp;update_index, &amp;extern_index, &amp;data_org, N_Update, NULL, NULL, NULL, NULL, AZ_MSR_MATRIX);
+    
+    x = (double *) calloc(nz, sizeof(double));
+    
+    double *rhs_modified = (double *) calloc(nz, sizeof(double));
+    for (int i = 0; i &lt; nz; i++) {
+        rhs_modified[update_index[i]] = rhs[i];
+        //printf("%.3f ", rhs_modified[update_index[i]]);
+    }
+    //printf("\n");
+    
+    
+    
+    int *options = (int *) calloc(AZ_OPTIONS_SIZE, sizeof(int));
+    double *params = (double *) calloc(AZ_PARAMS_SIZE, sizeof(double));
+    double *status = (double *) calloc(AZ_STATUS_SIZE, sizeof(double));
+    AZ_defaults(options, params);
+    
+    options[AZ_solver] = AZ_cg;
+    //options[AZ_conv] = AZ_sol;
+    options[AZ_precond] = AZ_none;
+    options[AZ_output] = AZ_warnings;
+    
+    params[AZ_tol] = 1.0e-6;
+    
+    AZ_solve(x, rhs_modified, options, params, NULL, bindx, NULL, NULL, NULL, val, data_org, status, proc_config);
+    
+    free(rhs_modified);
+    free(status);
+    free(options);
+    free(params);
+    free(val);
+    free(bindx);
+    MPI_Finalize();
+}</p></body></html>

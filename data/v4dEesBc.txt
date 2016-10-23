@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include "mainwindow.h"
+#include "ui_mainwindow.h"
+
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui-&gt;setupUi(this);
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    double a = -1;
+    double b = 10; 
+    double h = 0.01; 
+    int N=(b-a)/h + 2; 
+    QVector<double> x(N), y(N);
+    int i=0;
+    for (double X=a; X&lt;=b; X+=h)
+    {
+        x[i] = X;
+        y[i] = sqrt(X+1)*cos(X*X);
+        i++;
+    }
+    ui-&gt;widget-&gt;clearGraphs();
+    ui-&gt;widget-&gt;addGraph();
+    ui-&gt;widget-&gt;graph(0)-&gt;setData(x, y);
+    ui-&gt;widget-&gt;xAxis-&gt;setLabel("x");
+    ui-&gt;widget-&gt;yAxis-&gt;setLabel("f(x)");
+    ui-&gt;widget-&gt;xAxis-&gt;setRange(a, b);
+    double minY = y[0], maxY = y[0];
+    for (int i=0; i<n i if miny="y[i];">maxY) maxY = y[i];
+    }
+    ui-&gt;widget-&gt;yAxis-&gt;setRange(minY, maxY);
+    ui-&gt;widget-&gt;replot();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+        float a = 0.2;
+        int b = 1.8;
+        float x;
+        float y;
+        int n = 80;
+        double dx = (b - a) / n;
+        double integral = (sqrt(a+1)*cos(a*a) + sqrt(b+1)*cos(b*b))/2;
+        for (int i = 1; i &lt; n; i++) {
+        x = a + i*dx;
+        y = sqrt(x+1)*cos(x*x);
+        integral += y;
+        }
+        integral *= dx;
+        QMessageBox::information (this, "Integral", QString("Result: %1").arg(integral));
+}
+
+void MainWindow::on_pushButton_3_clicked()
+{
+        double a = 0;
+        double b = 20;
+        double n = 0;
+        double m = 5;
+        double h = 0.01;
+        int N=(b-a)/h + 2;
+        QVector<double> x(N), y(N);
+        int i=0;
+        for (double X=a; X&lt;=b; X+=h) {
+        x[i] = X;
+        y[i] = (sqrt(X+1)*cos(X*X));
+        i++;
+        }
+        ui-&gt;widget-&gt;addGraph();
+        ui-&gt;widget-&gt;graph(0)-&gt;setData(x, y);
+        ui-&gt;widget-&gt;xAxis-&gt;setLabel("X");
+        ui-&gt;widget-&gt;yAxis-&gt;setLabel("Y");
+        ui-&gt;widget-&gt;xAxis-&gt;setRange(a, b);
+        ui-&gt;widget-&gt;yAxis-&gt;setRange(n, m);
+        ui-&gt;widget-&gt;replot();
+}</double></n></double></p></body></html>

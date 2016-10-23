@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Chansey @ Eviolite  
+Ability: Natural Cure  
+Shiny: Yes  
+EVs: 252 Def / 252 SpD / 4 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Soft-Boiled  
+- Seismic Toss  
+- Toxic  
+- Protect  
+
+Blissey @ Leftovers  
+Ability: Natural Cure  
+Shiny: Yes  
+EVs: 252 Def / 4 SpA / 252 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Ice Beam  
+- Thunderbolt  
+- Soft-Boiled  
+
+Happiny @ Eviolite  
+Ability: Natural Cure  
+Shiny: Yes  
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+- Heal Bell  
+- Thunder Wave  
+- Counter  
+- Rest  
+
+Clefable @ Leftovers  
+Ability: Unaware  
+Shiny: Yes  
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Soft-Boiled  
+- Moonblast  
+- Stealth Rock  
+
+Alomomola @ Rocky Helmet  
+Ability: Regenerator  
+Shiny: Yes  
+EVs: 252 HP / 252 Def / 4 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Scald  
+- Wish  
+- Protect  
+- Toxic  
+
+Sableye-Mega @ Sablenite  
+Ability: Prankster  
+EVs: 248 HP / 8 Atk / 252 SpD  
+Careful Nature  
+- Fake Out  
+- Recover  
+- Will-O-Wisp  
+- Knock Off</p></body></html>

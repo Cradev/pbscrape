@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// Ubytek masy.cpp: Okre&#347;la punkt wej&#347;cia dla aplikacji konsoli.
+//
+
+#include "stdafx.h"
+#include <conio.h>
+#include <locale.h>
+ 
+int _tmain(int argc, _TCHAR* argv[])
+{
+        setlocale(LC_ALL, "PL");
+        float masa, ubytek, procent = 100;
+ 
+        do
+        {
+                printf("Podaj pocz&#261;tkow&#261; mas&#281; substancji (m &gt;= 10)\noraz cotygodniowy procentowy ubytek masy (0%% - 100%%): ");
+                scanf("%f %f", &amp;masa, &amp;ubytek);
+        }while(masa &lt; 10 || masa &gt; 100 || ubytek &lt;= 0 || ubytek &gt;= 100);
+ 
+        printf("\n| Tydzie&#324; | masa | ubytek %% |\n|---------|------|----------|");
+ 
+        for(int i = 1; masa &gt;= 1.0; i++)
+        {      
+                printf("\n|%8d |%6.2f|%9.2f |", i, masa, procent);
+                masa=masa - masa * (ubytek/100);
+				procent=procent - procent * (ubytek/100);
+        }
+        printf("\n-----------------------------");
+        _getch();
+        return 0;
+}</locale.h></conio.h></p></body></html>

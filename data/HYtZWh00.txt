@@ -1,0 +1,1676 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>EXTM3U
+#EXTINF:-1,[COLOR blue][I][B]--- 23-10-2016 ---[/B][/I][/COLOR]
+#EXTINF:-1, [COLOR green]--REDENEOBUX.COM 23-10-2016--[/COLOR]
+
+
+
+#EXTINF:-1,[I][B][COLOR red]-------------------------- [COLOR green]ATTENTION[/COLOR] --------------------------[/COLOR][/B][/I]
+
+
+#EXTINF:-1,[I][B][COLOR white]All these streams can be easily found over the internet.[/COLOR][/B][/I]
+
+ 
+#EXTINF:-1,[I][B][COLOR white]We DO NOT host any streams on this list. All content is copyright of their respective owners.[/COLOR][/B][/I]
+
+
+#EXTINF:-1,[I][B][COLOR yellow]If our list isn't working or is outdated, please install one of[/COLOR][/B][/I]
+
+
+#EXTINF:-1,[I][B][COLOR yellow]various IPTV add-ons for Kodi available on our website.[/COLOR][/B][/I]  [COLOR pink][B] (redeneobux.com) [/B][/COLOR]
+
+
+#EXTINF:-1,[I][B][COLOR white]We have LOTS of add-ons working perfectly for any country![/COLOR][/B][/I]
+
+ 
+#EXTINF:-1,[I][B][COLOR orange]------------------- WE ONLY SHARE! --------------------[/COLOR][/B][/I]
+
+
+ 
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+
+#EXTINF:-1,[I][B][COLOR yellow]---&#9733; Temporare Kanale &#9733;---[/COLOR][/B][/I]
+http://0.0.0.0:1234
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+#EXTINF:-1,[COLOR white][I][B]-------------- Bitte installieren Sie f4mTester Addon fur Kodi -----------[/B][/I][/COLOR]
+
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+#EXTINF:-1,DE: Sky 3D HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9670.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Pro7 Maxx HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9671.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Pro7 Fun HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9672.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,De: Nickelodeon HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9673.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Eurosport 2 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9674.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Eurosport 1 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9675.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Dmax HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9676.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Boomerang
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9677.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: AXN HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9678.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 7
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9563.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 6
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9562.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 5
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9561.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 4
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9560.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 3
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9559.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Universal HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9551.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Fox HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9552.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: E! Enterteinment HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9553.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Cartoon Network
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/9554.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky cinema
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4572.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Cinema +1
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4296.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky-Emotion
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3820.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Comedy
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3800.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SKY CINEMA  24 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3803.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Atlantic
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4297.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SKY ACTION HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3804.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SKY HITS
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3797.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky-Action
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3823.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Nostalgie
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4298.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: DMAX*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3791.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: AXN Action
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4239.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SF1
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4301.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SF2
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4300.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sat 1 Gold
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4285.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL Passion
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4299.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL Crime
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4629.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Romance TV
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4286.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: MGM
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4292.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: HeimatKanal
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4295.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: National Geographic
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4293.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Discovery Channel
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4291.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Das Erster
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4284.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Pro Sieben Maxx
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4244.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: 1-2-3.TV
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4243.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: N24
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4242.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sixx
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4238.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL Television*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4241.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL Living*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4240.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Dysney Channel
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4236.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: DISNEY JUNIOR
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3814.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: DISNEY CINEMAGIC
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3815.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: VOX
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3792.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: TNT Film
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/8434.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: TNT SERIE
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3793.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Ard
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4848.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: ZDF info*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4849.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: ZDF*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4850.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: TLC
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4851.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SYFY HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3794.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SUPER RTL*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3787.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky RTL HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3795.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SKY KRIMI
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3796.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: KIKA*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3805.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: DISNEY XD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3816.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: SAT 1
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3806.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL NITRO*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3807.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL 2*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3808.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: RTL
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3826.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: N-TV*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3789.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Pro 7 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3783.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: ORF 2 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3810.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: ORF 1 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3785.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: 3sat*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3830.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: ZDF Kultur*
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3829.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Spiegel Geschichte
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3812.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Nat-Geo Wild
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3827.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: HISTORY-CHANNEL
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3828.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Big Brother
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/3784.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport News
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4294.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 1
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4571.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Sky Sport 2
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/4237.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,DE: Bundesliga 1
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/1551.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,Sky Select 1 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/1106.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+#EXTINF:-1,Sky Select 2 HD
+plugin://plugin.video.f4mTester/?url=http://v-iptv.dyndns.org:8000/live/franco.as/e8jzCynij4/1115.ts&amp;streamtype=TSDOWNLOADER|User-Agent=Mozilla/5.0 (iPad; CPU OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25
+
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+#EXTINF:-1,[COLOR white][I][B]-------- SOMETIMES ON / OFF --------[/B][/I][/COLOR]
+
+
+#EXTINF:-1,Sky Cinema
+http://95.88.122.222:8001/1:0:16:A:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema +1
+http://95.88.122.222:8001/1:0:16:B:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema +24
+http://95.88.122.222:8001/1:0:16:2B:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Family
+http://95.88.122.222:8001/1:0:16:197:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Comedy
+http://95.88.122.222:8001/1:0:16:8:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Emotion
+http://95.88.122.222:8001/1:0:16:14:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Action
+http://95.88.122.222:8001/1:0:16:9:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Nostalgie
+http://95.88.122.222:8001/1:0:16:204:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Cinema Star Wars
+http://95.88.122.222:8001/1:0:16:29:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Atlantic
+http://95.88.122.222:8001/1:0:16:22:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Krimi
+http://95.88.122.222:8001/1:0:16:17:4:85:C00000:0:0:0:
+#EXTINF:-1,AXN Action
+http://95.88.122.222:8001/1:0:16:25:F:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport News
+http://95.88.122.222:8001/1:0:16:11:4:85:C00000:0:0:0:
+#EXTINF:-1,13th Street
+http://95.88.122.222:8001/1:0:16:2A:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 1
+http://95.88.122.222:8001/1:0:16:DF:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 2
+http://95.88.122.222:8001/1:0:D3:106:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 3
+http://95.88.122.222:8001/1:0:D3:110:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 4
+http://95.88.122.222:8001/1:0:D3:11A:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 5
+http://95.88.122.222:8001/1:0:D3:124:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 6
+http://95.88.122.222:8001/1:0:D3:12E:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 7
+http://95.88.122.222:8001/1:0:D3:138:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 8
+http://95.88.122.222:8001/1:0:D3:142:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 9
+http://95.88.122.222:8001/1:0:D3:14C:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 10
+http://95.88.122.222:8001/1:0:D3:FC:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 1
+http://95.88.122.222:8001/1:0:16:DD:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 2
+http://95.88.122.222:8001/1:0:16:DE:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 3
+http://95.88.122.222:8001/1:0:D3:107:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 4
+http://95.88.122.222:8001/1:0:D3:111:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 5
+http://95.88.122.222:8001/1:0:D3:11B:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 6
+http://95.88.122.222:8001/1:0:D3:125:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 7
+http://95.88.122.222:8001/1:0:D3:12F:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 8
+http://95.88.122.222:8001/1:0:D3:139:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 9
+http://95.88.122.222:8001/1:0:D3:143:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 10
+http://95.88.122.222:8001/1:0:D3:14D:2:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport 11
+http://95.88.122.222:8001/1:0:D3:FD:3:85:C00000:0:0:0:
+#EXTINF:-1,Sky Sport Austria
+http://95.88.122.222:8001/1:0:16:1E:2:85:C00000:0:0:0:
+#EXTINF:-1,N24 Austria
+http://95.88.122.222:8001/1:0:1:35:7:85:C00000:0:0:0:
+#EXTINF:-1,National Geographic
+http://95.88.122.222:8001/1:0:16:D:4:85:C00000:0:0:0:
+#EXTINF:-1,NatGeo Wild
+http://95.88.122.222:8001/1:0:16:C:2:85:C00000:0:0:0:
+#EXTINF:-1,TNT Serie
+http://95.88.122.222:8001/1:0:16:32:2:85:C00000:0:0:0:
+#EXTINF:-1,Discovery Channel
+http://95.88.122.222:8001/1:0:16:E:4:85:C00000:0:0:0:
+#EXTINF:-1,Romance TV
+http://95.88.122.222:8001/1:0:1:26:F:85:C00000:0:0:0:
+#EXTINF:-1,BB-MV Lokal-TV
+http://95.88.122.222:8001/1:0:1:46:7:85:C00000:0:0:0:
+#EXTINF:-1,Syfy
+http://95.88.122.222:8001/1:0:16:24:2:85:C00000:0:0:0:
+#EXTINF:-1,Spiegel Geschichte
+http://95.88.122.222:8001/1:0:16:34:2:85:C00000:0:0:0:
+#EXTINF:-1,Fox Serie
+http://95.88.122.222:8001/1:0:16:10:2:85:C00000:0:0:0:
+#EXTINF:-1,A&amp;E
+http://95.88.122.222:8001/1:0:1:39:F:85:C00000:0:0:0:
+#EXTINF:-1,TNT Film (TCM)
+http://95.88.122.222:8001/1:0:16:195:6:85:C00000:0:0:0:
+#EXTINF:-1,Beate-Uhse.TV
+http://95.88.122.222:8001/1:0:16:15:3:85:C00000:0:0:0:
+#EXTINF:-1,Family TV
+http://95.88.122.222:8001/1:0:1:21:F:85:C00000:0:0:0:
+#EXTINF:-1,kabel eins classics
+http://95.88.122.222:8001/1:0:16:3268:45F:35:C00000:0:0:0:
+#EXTINF:-1,kabel eins Doku
+http://95.88.122.222:8001/1:0:1:4465:453:1:C00000:0:0:0:
+#EXTINF:-1,RTL Passion
+http://95.88.122.222:8001/1:0:16:1D:4:85:C00000:0:0:0:
+#EXTINF:-1,RTL Crime
+http://95.88.122.222:8001/1:0:16:1B:4:85:C00000:0:0:0:
+#EXTINF:-1,RTL Living
+http://95.88.122.222:8001/1:0:1:2EC3:411:1:C00000:0:0:0:
+#EXTINF:-1,Motorvision TV
+http://95.88.122.222:8001/1:0:16:A8:9:85:C00000:0:0:0:
+#EXTINF:-1,Motorvision TV
+http://95.88.122.222:8001/1:0:16:A8:2:85:C00000:0:0:0:
+#EXTINF:-1,Kinowelt TV
+http://95.88.122.222:8001/1:0:16:196:4:85:C00000:0:0:0:
+#EXTINF:-1,MGM
+http://95.88.122.222:8001/1:0:16:203:4:85:C00000:0:0:0:
+#EXTINF:-1,Goldstar TV
+http://95.88.122.222:8001/1:0:16:206:2:85:C00000:0:0:0:
+#EXTINF:-1,Heimatkanal
+http://95.88.122.222:8001/1:0:16:16:2:85:C00000:0:0:0:
+#EXTINF:-1,Jukebox
+http://95.88.122.222:8001/1:0:16:191:4:85:C00000:0:0:0:
+#EXTINF:-1,Classica
+http://95.88.122.222:8001/1:0:16:18:3:85:C00000:0:0:0:
+#EXTINF:-1,sportdigital HD
+http://95.88.122.222:8001/1:0:16:325F:45F:35:C00000:0:0:0:
+#EXTINF:-1,MTV Dance
+http://95.88.122.222:8001/1:0:1:6FEF:42A:1:C00000:0:0:0:
+#EXTINF:-1,MTV Hits
+http://95.88.122.222:8001/1:0:1:6FEE:42A:1:C00000:0:0:0:
+#EXTINF:-1,Comedy Central Nederland
+http://95.88.122.222:8001/1:0:1:7003:436:1:C00000:0:0:0:
+#EXTINF:-1,MTV Music 24
+http://95.88.122.222:8001/1:0:1:6FFF:436:1:C00000:0:0:0:
+#EXTINF:-1,MTV Nederland
+http://95.88.122.222:8001/1:0:1:7002:436:1:C00000:0:0:0:
+#EXTINF:-1,MTV ROCKS
+http://95.88.122.222:8001/1:0:1:6FF3:42A:1:C00000:0:0:0:
+#EXTINF:-1,Sky Select
+http://95.88.122.222:8001/1:0:16:12:4:85:C00000:0:0:0:
+#EXTINF:-1,Blue Movie
+http://95.88.122.222:8001/1:0:16:201:4:85:C00000:0:0:0:
+#EXTINF:-1,Sky 3D
+http://95.88.122.222:8001/1:0:19:75:A:85:C00000:0:0:0:
+#EXTINF:-1,Hustler TV
+http://95.88.122.222:8001/1:0:16:3253:45F:35:C00000:0:0:0:
+#EXTINF:-1,Vivid
+http://95.88.122.222:8001/1:0:16:FE0:451:35:C00000:0:0:0:
+#EXTINF:-1,Vivid CZ
+http://95.88.122.222:8001/1:0:16:FE1:451:35:C00000:0:0:0:
+
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+
+#EXTVLCOPT--http-reconnect=true
+#EXTINF:-1,KBW_DS_evol3
+http://46.5.95.129:8001/1:0:0:BC5:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,BonGusto
+http://46.5.95.129:8001/1:0:1:3B00:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Blue Movie
+http://46.5.95.129:8001/1:0:1:201:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Disney Junior
+http://46.5.95.129:8001/1:0:1:402:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Fashion TV
+http://46.5.95.129:8001/1:0:1:3B02:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,MGM
+http://46.5.95.129:8001/1:0:1:203:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Crime
+http://46.5.95.129:8001/1:0:1:403:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,E! Entertainment
+http://46.5.95.129:8001/1:0:1:3B03:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Nostalgie
+http://46.5.95.129:8001/1:0:1:204:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Disney XD
+http://46.5.95.129:8001/1:0:1:404:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Lust Pur
+http://46.5.95.129:8001/1:0:1:3B04:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Passion
+http://46.5.95.129:8001/1:0:1:405:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,PENTHOUSE
+http://46.5.95.129:8001/1:0:1:3B05:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Mediaset
+http://46.5.95.129:8001/1:0:1:6605:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Goldstar TV
+http://46.5.95.129:8001/1:0:1:206:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Bibel TV
+http://46.5.95.129:8001/1:0:1:3B06:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Comedy
+http://46.5.95.129:8001/1:0:1:6606:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Cartoon Network
+http://46.5.95.129:8001/1:0:1:3B07:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Comedy
+http://46.5.95.129:8001/1:0:1:8:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,VH1 Classic
+http://46.5.95.129:8001/1:0:1:3B08:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,pearl.tv
+http://46.5.95.129:8001/1:0:1:6608:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Action
+http://46.5.95.129:8001/1:0:1:9:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Folx.TV
+http://46.5.95.129:8001/1:0:1:6609:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema
+http://46.5.95.129:8001/1:0:1:A:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema +1
+http://46.5.95.129:8001/1:0:1:B:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Universal Channel
+http://46.5.95.129:8001/1:0:1:660B:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NatGeo Wild
+http://46.5.95.129:8001/1:0:1:C:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,Syfy
+http://46.5.95.129:8001/1:0:1:40C:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sport1+
+http://46.5.95.129:8001/1:0:1:3B0C:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,National Geographic (S)
+http://46.5.95.129:8001/1:0:1:D:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,730 SID 0x0d
+http://46.5.95.129:8001/1:0:1:D:A433:0:FFFF0000:0:0:0:
+#EXTINF:-1,Infokanal
+http://46.5.95.129:8001/1:0:1:620D:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Discovery Channel (S)
+http://46.5.95.129:8001/1:0:1:E:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,TV5MONDE Europe
+http://46.5.95.129:8001/1:0:1:620E:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Big Brother
+http://46.5.95.129:8001/1:0:1:F:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,CLASSICA
+http://46.5.95.129:8001/1:0:1:620F:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Fox Serie (S)
+http://46.5.95.129:8001/1:0:1:10:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,A&amp;E
+http://46.5.95.129:8001/1:0:1:6210:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport News
+http://46.5.95.129:8001/1:0:1:11:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,TOGGO plus
+http://46.5.95.129:8001/1:0:1:6211:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select
+http://46.5.95.129:8001/1:0:1:12:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,13th Street
+http://46.5.95.129:8001/1:0:1:412:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,MTV Brand New
+http://46.5.95.129:8001/1:0:1:6212:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Junior
+http://46.5.95.129:8001/1:0:1:13:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Power T&uuml;rk TV
+http://46.5.95.129:8001/1:0:1:6213:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Emotion
+http://46.5.95.129:8001/1:0:1:14:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,SAMANYOLU TV
+http://46.5.95.129:8001/1:0:1:6214:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Beate-Uhse.TV
+http://46.5.95.129:8001/1:0:1:15:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,TVN 24
+http://46.5.95.129:8001/1:0:1:6215:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Heimatkanal
+http://46.5.95.129:8001/1:0:1:16:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,BBC Entertainment
+http://46.5.95.129:8001/1:0:1:3716:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Krimi
+http://46.5.95.129:8001/1:0:1:17:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,CNBC
+http://46.5.95.129:8001/1:0:1:3717:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,sportdigital
+http://46.5.95.129:8001/1:0:1:6217:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Classica
+http://46.5.95.129:8001/1:0:1:18:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Spiegel TV Wissen
+http://46.5.95.129:8001/1:0:1:3718:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney Cinemagic
+http://46.5.95.129:8001/1:0:1:19:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Boomerang
+http://46.5.95.129:8001/1:0:1:3719:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TF 1
+http://46.5.95.129:8001/1:0:1:B419:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney Junior (S)
+http://46.5.95.129:8001/1:0:1:1A:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Serie
+http://46.5.95.129:8001/1:0:1:41A:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Crime (S)
+http://46.5.95.129:8001/1:0:1:1B:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,Disney XD (S)
+http://46.5.95.129:8001/1:0:1:1C:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sport 1 US
+http://46.5.95.129:8001/1:0:1:371C:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Passion (S)
+http://46.5.95.129:8001/1:0:1:1D:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,Motors TV
+http://46.5.95.129:8001/1:0:1:371D:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney Junior GB
+http://46.5.95.129:8001/1:0:1:621D:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Austria
+http://46.5.95.129:8001/1:0:1:1E:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,EUROSPORT 2
+http://46.5.95.129:8001/1:0:1:371E:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pink Film
+http://46.5.95.129:8001/1:0:1:621E:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Al Arabiya
+http://46.5.95.129:8001/1:0:1:B41E:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Film
+http://46.5.95.129:8001/1:0:1:371F:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pink FOLK
+http://46.5.95.129:8001/1:0:1:621F:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,BN TV
+http://46.5.95.129:8001/1:0:1:B41F:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney XD GB
+http://46.5.95.129:8001/1:0:1:6220:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Atlantic
+http://46.5.95.129:8001/1:0:1:22:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Syfy (S)
+http://46.5.95.129:8001/1:0:1:24:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,VIVA/COMEDY CENTRAL
+http://46.5.95.129:8001/1:0:1:5E25:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,QVC
+http://46.5.95.129:8001/1:0:1:5E27:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Klan Kosova
+http://46.5.95.129:8001/1:0:1:6227:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HSE24
+http://46.5.95.129:8001/1:0:1:5E28:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTK1
+http://46.5.95.129:8001/1:0:1:6228:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Hits
+http://46.5.95.129:8001/1:0:1:29:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Channel21
+http://46.5.95.129:8001/1:0:1:5E29:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai News 24
+http://46.5.95.129:8001/1:0:1:6229:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,13th Street (S)
+http://46.5.95.129:8001/1:0:1:2A:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,1-2-3.tv
+http://46.5.95.129:8001/1:0:1:5E2A:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,France 4
+http://46.5.95.129:8001/1:0:1:622A:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,bw family
+http://46.5.95.129:8001/1:0:1:892A:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema +24
+http://46.5.95.129:8001/1:0:1:2B:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Romance TV
+http://46.5.95.129:8001/1:0:1:372B:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai Storia
+http://46.5.95.129:8001/1:0:1:622B:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Travel Channel Deutschland 
+http://46.5.95.129:8001/1:0:1:372C:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DMAX
+http://46.5.95.129:8001/1:0:1:5E2C:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTS Sat
+http://46.5.95.129:8001/1:0:1:622C:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,CNN
+http://46.5.95.129:8001/1:0:1:5E2D:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TV Crne Gore Sat
+http://46.5.95.129:8001/1:0:1:622D:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,rbb Brandenburg
+http://46.5.95.129:8001/1:0:1:6E2D:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,HISTORY
+http://46.5.95.129:8001/1:0:1:332E:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bloomberg
+http://46.5.95.129:8001/1:0:1:5E2E:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTV21
+http://46.5.95.129:8001/1:0:1:622E:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,rbb Berlin
+http://46.5.95.129:8001/1:0:1:6E2E:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Kohavision TV
+http://46.5.95.129:8001/1:0:1:622F:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,PLANET
+http://46.5.95.129:8001/1:0:1:3330:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,sonnenklar.TV
+http://46.5.95.129:8001/1:0:1:5E30:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DM SAT
+http://46.5.95.129:8001/1:0:1:6230:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,tagesschau24
+http://46.5.95.129:8001/1:0:1:7031:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Serie (S)
+http://46.5.95.129:8001/1:0:1:32:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,ONE
+http://46.5.95.129:8001/1:0:1:7032:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Kinowelt TV
+http://46.5.95.129:8001/1:0:1:3333:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,EinsPlus
+http://46.5.95.129:8001/1:0:1:7033:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Spiegel Geschichte
+http://46.5.95.129:8001/1:0:1:34:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,Silverline Movie Channel
+http://46.5.95.129:8001/1:0:1:3334:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,arte
+http://46.5.95.129:8001/1:0:1:7034:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,AXN Action
+http://46.5.95.129:8001/1:0:1:3335:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,PHOENIX
+http://46.5.95.129:8001/1:0:1:7035:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Gute Laune TV
+http://46.5.95.129:8001/1:0:1:3337:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,kabel eins classics
+http://46.5.95.129:8001/1:0:1:3338:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,XITE
+http://46.5.95.129:8001/1:0:1:5E38:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sat.1 Emotions
+http://46.5.95.129:8001/1:0:1:3339:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,L-TV
+http://46.5.95.129:8001/1:0:1:893A:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,RNF
+http://46.5.95.129:8001/1:0:1:893B:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,TV 8
+http://46.5.95.129:8001/1:0:1:5A3D:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,24Horas
+http://46.5.95.129:8001/1:0:1:5A3E:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,EURO STAR
+http://46.5.95.129:8001/1:0:1:5A40:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NDR FS MV
+http://46.5.95.129:8001/1:0:1:6E40:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,EURO D
+http://46.5.95.129:8001/1:0:1:5A41:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NDR FS HH
+http://46.5.95.129:8001/1:0:1:6E41:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Nasch Kinomir
+http://46.5.95.129:8001/1:0:1:5A42:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NDR FS NDS
+http://46.5.95.129:8001/1:0:1:6E42:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,RTPi
+http://46.5.95.129:8001/1:0:1:5A43:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NDR FS SH
+http://46.5.95.129:8001/1:0:1:6E43:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,RTR Planeta 
+http://46.5.95.129:8001/1:0:1:5A44:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MDR Sachsen
+http://46.5.95.129:8001/1:0:1:6E44:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Television
+http://46.5.95.129:8001/1:0:1:2F45:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTVD
+http://46.5.95.129:8001/1:0:1:5A45:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MDR S-Anhalt
+http://46.5.95.129:8001/1:0:1:6E45:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SAT.1
+http://46.5.95.129:8001/1:0:1:2F46:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TV Polonia
+http://46.5.95.129:8001/1:0:1:5A46:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MDR Th&uuml;ringen
+http://46.5.95.129:8001/1:0:1:6E46:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben
+http://46.5.95.129:8001/1:0:1:2F47:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TVE Internacional
+http://46.5.95.129:8001/1:0:1:5A47:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR Fernsehen RP
+http://46.5.95.129:8001/1:0:1:6E47:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,ARD-alpha
+http://46.5.95.129:8001/1:0:1:6F47:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,QVC Beauty
+http://46.5.95.129:8001/1:0:1:AC47:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,VOX
+http://46.5.95.129:8001/1:0:1:2F48:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TRT T&uuml;rk
+http://46.5.95.129:8001/1:0:1:5A48:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL2
+http://46.5.95.129:8001/1:0:1:2F49:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,kabel eins
+http://46.5.95.129:8001/1:0:1:2F4A:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Super RTL
+http://46.5.95.129:8001/1:0:1:2F4B:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SPORT1
+http://46.5.95.129:8001/1:0:1:2F4C:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,n-tv
+http://46.5.95.129:8001/1:0:1:2F4D:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Deutsches Musik Fernsehen
+http://46.5.95.129:8001/1:0:1:5A4D:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,N24
+http://46.5.95.129:8001/1:0:1:2F4E:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,H2D Handshake 2 Deutschland
+http://46.5.95.129:8001/1:0:1:5A4E:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Tele 5
+http://46.5.95.129:8001/1:0:1:2F4F:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,N24 Doku
+http://46.5.95.129:8001/1:0:1:5A4F:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MTV Brand New
+http://46.5.95.129:8001/1:0:1:2F50:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben MAXX
+http://46.5.95.129:8001/1:0:1:2F51:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Videothek
+http://46.5.95.129:8001/1:0:1:3351:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pro TV International
+http://46.5.95.129:8001/1:0:1:AC51:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,CMC
+http://46.5.95.129:8001/1:0:1:AC55:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Telebom / Tele Dom
+http://46.5.95.129:8001/1:0:1:5656:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,itvn
+http://46.5.95.129:8001/1:0:1:5657:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Kanal 7
+http://46.5.95.129:8001/1:0:1:5658:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,OCKO
+http://46.5.95.129:8001/1:0:1:AC58:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai Uno
+http://46.5.95.129:8001/1:0:1:565A:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai Due
+http://46.5.95.129:8001/1:0:1:565B:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai Tre
+http://46.5.95.129:8001/1:0:1:565C:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SHOW TURK
+http://46.5.95.129:8001/1:0:1:565D:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney SD
+http://46.5.95.129:8001/1:0:1:2B5E:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,CNN T&uuml;rk
+http://46.5.95.129:8001/1:0:1:565F:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Nickelodeon/Nicknight
+http://46.5.95.129:8001/1:0:1:2B60:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Channel One Russia 
+http://46.5.95.129:8001/1:0:1:5660:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (ESP)
+http://46.5.95.129:8001/1:0:1:5661:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (F)
+http://46.5.95.129:8001/1:0:1:5662:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,EUROSPORT 1
+http://46.5.95.129:8001/1:0:1:2B63:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (E)
+http://46.5.95.129:8001/1:0:1:5663:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (I)
+http://46.5.95.129:8001/1:0:1:5664:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Living
+http://46.5.95.129:8001/1:0:1:2B65:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (POR)
+http://46.5.95.129:8001/1:0:1:5665:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (RUS)
+http://46.5.95.129:8001/1:0:1:5666:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ZDF
+http://46.5.95.129:8001/1:0:1:6D66:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,Joiz
+http://46.5.95.129:8001/1:0:1:2B67:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (D)
+http://46.5.95.129:8001/1:0:1:5667:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,3sat
+http://46.5.95.129:8001/1:0:1:6D67:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,KiKa
+http://46.5.95.129:8001/1:0:1:6D68:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (Arab.)
+http://46.5.95.129:8001/1:0:1:566B:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ZDFinfo
+http://46.5.95.129:8001/1:0:1:6D6B:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (Turk)
+http://46.5.95.129:8001/1:0:1:566C:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Fix&amp;Foxi
+http://46.5.95.129:8001/1:0:1:526D:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,euronews (Farsi)
+http://46.5.95.129:8001/1:0:1:566D:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NatGeo People
+http://46.5.95.129:8001/1:0:1:526E:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,zdf_neo
+http://46.5.95.129:8001/1:0:1:6D6E:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,Nicktoons
+http://46.5.95.129:8001/1:0:1:526F:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,zdf.kultur
+http://46.5.95.129:8001/1:0:1:6D70:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,BabyTV
+http://46.5.95.129:8001/1:0:1:5271:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Nick Jr.
+http://46.5.95.129:8001/1:0:1:5272:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,858 SID 0xcb84
+http://46.5.95.129:8001/1:0:1:CB84:209:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SonLife
+http://46.5.95.129:8001/1:0:1:4E85:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,CCTV 9
+http://46.5.95.129:8001/1:0:1:4E86:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Juwelo
+http://46.5.95.129:8001/1:0:1:4E8C:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SIXX
+http://46.5.95.129:8001/1:0:1:4E94:A1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sony TV
+http://46.5.95.129:8001/1:0:1:4E9B:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTLplus
+http://46.5.95.129:8001/1:0:1:4E9C:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ZEE.ONE
+http://46.5.95.129:8001/1:0:1:4E9D:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MAD TV
+http://46.5.95.129:8001/1:0:1:759F:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HSE24 EXTRA
+http://46.5.95.129:8001/1:0:1:75A0:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Schnupperkanal
+http://46.5.95.129:8001/1:0:1:75A1:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL NITRO
+http://46.5.95.129:8001/1:0:1:75A2:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben FUN
+http://46.5.95.129:8001/1:0:1:75A3:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Motorvision TV
+http://46.5.95.129:8001/1:0:1:A8:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,auto motor und sport channel
+http://46.5.95.129:8001/1:0:1:4AAB:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Animal Planet
+http://46.5.95.129:8001/1:0:1:4AAC:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Record Internacional
+http://46.5.95.129:8001/1:0:1:71AD:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Habert&uuml;rk
+http://46.5.95.129:8001/1:0:1:71AF:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,KAZAKH TV
+http://46.5.95.129:8001/1:0:1:71B1:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NTV Avrupa
+http://46.5.95.129:8001/1:0:1:71B3:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Astro TV
+http://46.5.95.129:8001/1:0:1:71B4:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sat.1 Gold
+http://46.5.95.129:8001/1:0:1:71B6:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,kabel eins Doku
+http://46.5.95.129:8001/1:0:1:46C5:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,France 24 (en francais)
+http://46.5.95.129:8001/1:0:1:6DC8:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,France 2
+http://46.5.95.129:8001/1:0:1:6DC9:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Das Erste
+http://46.5.95.129:8001/1:0:1:6DCA:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,France 3
+http://46.5.95.129:8001/1:0:1:6DCA:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,BR Fernsehen S&uuml;d
+http://46.5.95.129:8001/1:0:1:6DCB:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,France 5
+http://46.5.95.129:8001/1:0:1:6DCB:D3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,hr-fernsehen
+http://46.5.95.129:8001/1:0:1:6DCC:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,BR Fernsehen Nord
+http://46.5.95.129:8001/1:0:1:6DCE:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Ginx TV
+http://46.5.95.129:8001/1:0:1:6DCE:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,WDR K&ouml;ln
+http://46.5.95.129:8001/1:0:1:6DCF:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SWR Fernsehen BW
+http://46.5.95.129:8001/1:0:1:6DD1:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Servus TV
+http://46.5.95.129:8001/1:0:1:42D8:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HSE24 TREND
+http://46.5.95.129:8001/1:0:1:42DC:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 1
+http://46.5.95.129:8001/1:0:1:DD:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,QVC Plus
+http://46.5.95.129:8001/1:0:1:42DD:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 2
+http://46.5.95.129:8001/1:0:1:DE:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,DELUXE MUSIC
+http://46.5.95.129:8001/1:0:1:69DE:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 1
+http://46.5.95.129:8001/1:0:1:DF:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,RiC
+http://46.5.95.129:8001/1:0:1:42DF:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TLC
+http://46.5.95.129:8001/1:0:1:69DF:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,BVN
+http://46.5.95.129:8001/1:0:1:42E0:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SparhandyTV
+http://46.5.95.129:8001/1:0:1:42E1:AB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NTV Mir
+http://46.5.95.129:8001/1:0:1:BBE5:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,k-tv
+http://46.5.95.129:8001/1:0:1:69EB:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,National Geographic
+http://46.5.95.129:8001/1:0:1:3F5:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,Discovery Channel
+http://46.5.95.129:8001/1:0:1:3F6:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,JSTV
+http://46.5.95.129:8001/1:0:1:65F6:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Fox Serie
+http://46.5.95.129:8001/1:0:1:3F8:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Balkanika Music Television
+http://46.5.95.129:8001/1:0:1:65FA:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HRT TV 1
+http://46.5.95.129:8001/1:0:1:65FB:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pink Plus
+http://46.5.95.129:8001/1:0:1:65FC:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pink Extra
+http://46.5.95.129:8001/1:0:1:65FD:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Extreme Sports
+http://46.5.95.129:8001/1:0:1:3AFE:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Hayat TV
+http://46.5.95.129:8001/1:0:1:65FE:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Nautical Channel
+http://46.5.95.129:8001/1:0:1:3AFF:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Pink Music
+http://46.5.95.129:8001/1:0:1:65FF:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HRT HR1
+http://46.5.95.129:8001/1:0:2:6601:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Pink Radio
+http://46.5.95.129:8001/1:0:2:6602:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Kral FM Avrupa
+http://46.5.95.129:8001/1:0:2:6603:1CD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,hr1
+http://46.5.95.129:8001/1:0:2:6F03:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Slow T&uuml;rk
+http://46.5.95.129:8001/1:0:2:6604:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,hr2
+http://46.5.95.129:8001/1:0:2:6F04:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,hr3
+http://46.5.95.129:8001/1:0:2:6F05:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,hr4
+http://46.5.95.129:8001/1:0:2:6F06:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,YOU FM
+http://46.5.95.129:8001/1:0:2:6F07:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,hr-iNFO
+http://46.5.95.129:8001/1:0:2:6F08:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Klassik Radio
+http://46.5.95.129:8001/1:0:2:660A:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MDR SACHSEN 
+http://46.5.95.129:8001/1:0:2:6F0C:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR S-ANHALT
+http://46.5.95.129:8001/1:0:2:6F0D:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR TH&Uuml;RINGEN
+http://46.5.95.129:8001/1:0:2:6F0E:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR KULTUR
+http://46.5.95.129:8001/1:0:2:6F0F:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR JUMP
+http://46.5.95.129:8001/1:0:2:6F10:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR SPUTNIK
+http://46.5.95.129:8001/1:0:2:6F11:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR AKTUELL
+http://46.5.95.129:8001/1:0:2:6F12:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,MDR KLASSIK
+http://46.5.95.129:8001/1:0:2:6F13:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR 2
+http://46.5.95.129:8001/1:0:2:6F15:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR Kultur
+http://46.5.95.129:8001/1:0:2:6F16:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR Info
+http://46.5.95.129:8001/1:0:2:6F17:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,N-JOY
+http://46.5.95.129:8001/1:0:2:6F18:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR 90,3
+http://46.5.95.129:8001/1:0:2:6F19:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR1WelleNord
+http://46.5.95.129:8001/1:0:2:6F1A:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR 1 Radio MV
+http://46.5.95.129:8001/1:0:2:6F1B:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR 1 Nieders.
+http://46.5.95.129:8001/1:0:2:6F1C:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,NDR Info Spez.
+http://46.5.95.129:8001/1:0:2:6F1D:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Bremen Eins
+http://46.5.95.129:8001/1:0:2:6F20:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Nordwestradio
+http://46.5.95.129:8001/1:0:2:6F21:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Bremen Vier
+http://46.5.95.129:8001/1:0:2:6F22:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Inforadio
+http://46.5.95.129:8001/1:0:2:6F24:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Kulturradio
+http://46.5.95.129:8001/1:0:2:6F25:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Antenne Brandenburg
+http://46.5.95.129:8001/1:0:2:6F26:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,radioBERLIN 88,8
+http://46.5.95.129:8001/1:0:2:6F27:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,radioeins
+http://46.5.95.129:8001/1:0:2:6F28:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,BBC World Service (E)
+http://46.5.95.129:8001/1:0:2:3729:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Fritz
+http://46.5.95.129:8001/1:0:2:6F29:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,BBC World Service (Arab.)
+http://46.5.95.129:8001/1:0:2:372A:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SR 1 Europawelle
+http://46.5.95.129:8001/1:0:2:6F2D:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SR 2 KulturRadio
+http://46.5.95.129:8001/1:0:2:6F2E:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SR 3 Saarlandwelle
+http://46.5.95.129:8001/1:0:2:6F2F:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,JAM FM
+http://46.5.95.129:8001/1:0:2:5E31:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR1 BW
+http://46.5.95.129:8001/1:0:2:6F31:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Paloma
+http://46.5.95.129:8001/1:0:2:5E32:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR1 RP
+http://46.5.95.129:8001/1:0:2:6F32:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,RADIO BOB!
+http://46.5.95.129:8001/1:0:2:5E33:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR2
+http://46.5.95.129:8001/1:0:2:6F33:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Radio ZET
+http://46.5.95.129:8001/1:0:2:5E34:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR3
+http://46.5.95.129:8001/1:0:2:6F34:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SWR4 BW
+http://46.5.95.129:8001/1:0:2:6F35:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SWR4 RP
+http://46.5.95.129:8001/1:0:2:6F36:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,DASDING
+http://46.5.95.129:8001/1:0:2:6F37:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,SWRinfo
+http://46.5.95.129:8001/1:0:2:6F38:431:A401:FFFF0000:0:0:0:
+#EXTINF:-1,radio B2
+http://46.5.95.129:8001/1:0:2:5E39:F1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Radio
+http://46.5.95.129:8001/1:0:2:B03A:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,1LIVE
+http://46.5.95.129:8001/1:0:2:6F3B:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,WDR 2
+http://46.5.95.129:8001/1:0:2:6F3C:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,WDR 3
+http://46.5.95.129:8001/1:0:2:6F3D:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,WDR 4
+http://46.5.95.129:8001/1:0:2:6F3E:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,WDR 5
+http://46.5.95.129:8001/1:0:2:6F3F:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,WDR Funkhaus Europa
+http://46.5.95.129:8001/1:0:2:6F40:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Rock Hymnen 
+http://46.5.95.129:8001/1:0:2:3341:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,1LIVE diggi
+http://46.5.95.129:8001/1:0:2:6F41:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Headbangers
+http://46.5.95.129:8001/1:0:2:3342:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,KIRAKA
+http://46.5.95.129:8001/1:0:2:6F42:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,The Alternative
+http://46.5.95.129:8001/1:0:2:3343:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,WDR Event
+http://46.5.95.129:8001/1:0:2:6F43:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Dancefloor Fillers 
+http://46.5.95.129:8001/1:0:2:3344:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bass Breaks &amp; Beats 
+http://46.5.95.129:8001/1:0:2:3345:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Chillout 
+http://46.5.95.129:8001/1:0:2:3346:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sommer Hits
+http://46.5.95.129:8001/1:0:2:3347:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,All Day Party
+http://46.5.95.129:8001/1:0:2:3348:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Kuschelsongs
+http://46.5.95.129:8001/1:0:2:3349:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Groove (Disco &amp; Funk)
+http://46.5.95.129:8001/1:0:2:334A:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radyo Metropol
+http://46.5.95.129:8001/1:0:2:5A4A:E7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Blues 
+http://46.5.95.129:8001/1:0:2:334B:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,R'n'B &amp; Soul Classic 
+http://46.5.95.129:8001/1:0:2:334C:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Hip Hop 
+http://46.5.95.129:8001/1:0:2:334D:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Reggae 
+http://46.5.95.129:8001/1:0:2:334E:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Independent Classics 
+http://46.5.95.129:8001/1:0:2:334F:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Aprez-Ski
+http://46.5.95.129:8001/1:0:2:3350:83:270F:FFFF0000:0:0:0:
+#EXTINF:-1,planet radio
+http://46.5.95.129:8001/1:0:2:AC59:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,FM4
+http://46.5.95.129:8001/1:0:2:AC60:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NL-Radio 1
+http://46.5.95.129:8001/1:0:2:AC64:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NL-Radio 5
+http://46.5.95.129:8001/1:0:2:AC65:1FF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,OE 1
+http://46.5.95.129:8001/1:0:2:AC66:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,OE 2V
+http://46.5.95.129:8001/1:0:2:AC67:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,OE 3
+http://46.5.95.129:8001/1:0:2:AC68:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rai Radio 1
+http://46.5.95.129:8001/1:0:2:5669:DD:270F:FFFF0000:0:0:0:
+#EXTINF:-1,domradio
+http://46.5.95.129:8001/1:0:2:AC69:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DKULTUR
+http://46.5.95.129:8001/1:0:2:6D6C:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,DIE NEUE 107.7
+http://46.5.95.129:8001/1:0:2:AC6C:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DLF
+http://46.5.95.129:8001/1:0:2:6D6D:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,Donau 3 FM
+http://46.5.95.129:8001/1:0:2:AC6D:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Regenbogen
+http://46.5.95.129:8001/1:0:2:AC6E:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,die neue welle
+http://46.5.95.129:8001/1:0:2:AC6F:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Antenne 1
+http://46.5.95.129:8001/1:0:2:AC70:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Klassik 
+http://46.5.95.129:8001/1:0:2:2B71:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DRadio Wissen
+http://46.5.95.129:8001/1:0:2:6D71:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,ENERGY
+http://46.5.95.129:8001/1:0:2:AC71:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Klassik Sinfonie 
+http://46.5.95.129:8001/1:0:2:2B72:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Ton HN
+http://46.5.95.129:8001/1:0:2:AC72:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,2000er
+http://46.5.95.129:8001/1:0:2:2B73:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ANTENNE BAYERN
+http://46.5.95.129:8001/1:0:2:AC73:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Hot Country
+http://46.5.95.129:8001/1:0:2:2B74:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SRG-DRS 1
+http://46.5.95.129:8001/1:0:2:AC74:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Kinder
+http://46.5.95.129:8001/1:0:2:2B75:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SRG-DRS 2
+http://46.5.95.129:8001/1:0:2:AC75:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Drive
+http://46.5.95.129:8001/1:0:2:2B76:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SRG-DRS 3
+http://46.5.95.129:8001/1:0:2:AC76:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,New Age
+http://46.5.95.129:8001/1:0:2:2B77:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Swiss Classic
+http://46.5.95.129:8001/1:0:2:AC77:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rewind - 80er &amp; 90er
+http://46.5.95.129:8001/1:0:2:2B78:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Swiss Pop
+http://46.5.95.129:8001/1:0:2:AC78:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Total Hits Frankreich
+http://46.5.95.129:8001/1:0:2:2B79:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Swiss Jazz
+http://46.5.95.129:8001/1:0:2:AC79:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Total Hits Russland
+http://46.5.95.129:8001/1:0:2:2B7A:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Exterior
+http://46.5.95.129:8001/1:0:2:AC7A:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Urban
+http://46.5.95.129:8001/1:0:2:2B7B:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Schlager
+http://46.5.95.129:8001/1:0:2:2B7C:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Total Hits Deutschland
+http://46.5.95.129:8001/1:0:2:2B7D:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,AlternativeFM
+http://46.5.95.129:8001/1:0:2:AC7D:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Total Hits Italien
+http://46.5.95.129:8001/1:0:2:2B7E:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rockland Radio
+http://46.5.95.129:8001/1:0:2:AC7E:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Heavy Metal
+http://46.5.95.129:8001/1:0:2:2B7F:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio 21
+http://46.5.95.129:8001/1:0:2:AC7F:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bollywood Hits
+http://46.5.95.129:8001/1:0:2:2B80:BF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Dukagjini
+http://46.5.95.129:8001/1:0:2:AC80:1E1:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Turk Muzigi
+http://46.5.95.129:8001/1:0:2:2B81:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Latin
+http://46.5.95.129:8001/1:0:2:2B82:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Volksmusik (ehem. Indian Classics)
+http://46.5.95.129:8001/1:0:2:2B83:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Cool Jazz 
+http://46.5.95.129:8001/1:0:2:2B84:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Jazz Classics
+http://46.5.95.129:8001/1:0:2:2B85:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Cocktail Lounge
+http://46.5.95.129:8001/1:0:2:2B86:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Easy Listening Charts
+http://46.5.95.129:8001/1:0:2:2B87:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Arabisch
+http://46.5.95.129:8001/1:0:2:2B88:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Revival - 60er &amp; 70er
+http://46.5.95.129:8001/1:0:2:2B89:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Classic Calm
+http://46.5.95.129:8001/1:0:2:2B8A:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Rock 'n' Roll
+http://46.5.95.129:8001/1:0:2:2B8B:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Total Hits Polen
+http://46.5.95.129:8001/1:0:2:2B8C:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,80er
+http://46.5.95.129:8001/1:0:2:2B8D:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,90er
+http://46.5.95.129:8001/1:0:2:2B8E:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Chansons
+http://46.5.95.129:8001/1:0:2:2B8F:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Classic Rock
+http://46.5.95.129:8001/1:0:2:2B90:8D:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ERF (Evangeliums-Rundfunk)
+http://46.5.95.129:8001/1:0:2:46C0:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Horeb
+http://46.5.95.129:8001/1:0:2:46C1:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Radio Sunshine Live
+http://46.5.95.129:8001/1:0:2:46C2:B5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bayern 1
+http://46.5.95.129:8001/1:0:2:6EF0:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Bayern 2
+http://46.5.95.129:8001/1:0:2:6EF1:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,Bayern 3
+http://46.5.95.129:8001/1:0:2:6EF2:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,BR-KLASSIK
+http://46.5.95.129:8001/1:0:2:6EF3:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,B5 aktuell
+http://46.5.95.129:8001/1:0:2:6EF4:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,BAYERN plus
+http://46.5.95.129:8001/1:0:2:6EF5:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,PULS
+http://46.5.95.129:8001/1:0:2:6EF6:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,JSTV Radio Japan
+http://46.5.95.129:8001/1:0:2:65F7:1D7:270F:FFFF0000:0:0:0:
+#EXTINF:-1,B5 plus
+http://46.5.95.129:8001/1:0:2:6EF8:44D:A401:FFFF0000:0:0:0:
+#EXTINF:-1,OSDL d-box II
+http://46.5.95.129:8001/1:0:C:F03:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Humax PR-HD2000C
+http://46.5.95.129:8001/1:0:C:F07:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Humax PR-HD3000C
+http://46.5.95.129:8001/1:0:C:F8C:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Pace TDC 866 NSDX
+http://46.5.95.129:8001/1:0:C:F9A:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,STB channel config.
+http://46.5.95.129:8001/1:0:C:DAB:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 2 HD
+http://46.5.95.129:8001/1:0:19:10B:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 3 HD
+http://46.5.95.129:8001/1:0:19:10C:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 3 HD
+http://46.5.95.129:8001/1:0:19:115:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Living HD
+http://46.5.95.129:8001/1:0:19:B415:187:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 4 HD
+http://46.5.95.129:8001/1:0:19:116:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Passion HD
+http://46.5.95.129:8001/1:0:19:B416:187:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DELUXE MUSIC HD
+http://46.5.95.129:8001/1:0:19:B417:1C3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,QVC Plus HD
+http://46.5.95.129:8001/1:0:19:B418:1C3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,13th Street HD
+http://46.5.95.129:8001/1:0:19:6219:19B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Auto Motor und Sport TV HD
+http://46.5.95.129:8001/1:0:19:621A:1B9:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Spiegel TV Wissen HD 
+http://46.5.95.129:8001/1:0:19:621B:1B9:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 4 HD
+http://46.5.95.129:8001/1:0:19:11F:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 5 HD
+http://46.5.95.129:8001/1:0:19:120:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sonnenklar TV HD
+http://46.5.95.129:8001/1:0:19:DB25:231:270F:FFFF0000:0:0:0:
+#EXTINF:-1,1-2-3.TV HD
+http://46.5.95.129:8001/1:0:19:DB26:231:270F:FFFF0000:0:0:0:
+#EXTINF:-1,A&amp;E HD
+http://46.5.95.129:8001/1:0:19:DB27:231:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HD Campus TV
+http://46.5.95.129:8001/1:0:19:8928:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,VIVA/COMEDY CENTRAL HD
+http://46.5.95.129:8001/1:0:19:B02D:1C3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Mehr HD
+http://46.5.95.129:8001/1:0:19:8B2E:172:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Animal Planet HD
+http://46.5.95.129:8001/1:0:19:B02E:1C3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SWR BW HD
+http://46.5.95.129:8001/1:0:19:D73D:227:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL HD
+http://46.5.95.129:8001/1:0:19:D73E:227:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sat.1 HD
+http://46.5.95.129:8001/1:0:19:D73F:227:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Mehr HD
+http://46.5.95.129:8001/1:0:19:D740:227:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Mehr HD
+http://46.5.95.129:8001/1:0:19:D741:227:270F:FFFF0000:0:0:0:
+#EXTINF:-1,QVC HD
+http://46.5.95.129:8001/1:0:19:AC45:191:270F:FFFF0000:0:0:0:
+#EXTINF:-1,HSE24 HD
+http://46.5.95.129:8001/1:0:19:AC46:191:270F:FFFF0000:0:0:0:
+#EXTINF:-1,PLANET HD
+http://46.5.95.129:8001/1:0:19:AC48:1AF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Nickelodeon HD
+http://46.5.95.129:8001/1:0:19:AC4A:1B9:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL2 HD
+http://46.5.95.129:8001/1:0:19:814E:14B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,VOX HD
+http://46.5.95.129:8001/1:0:19:814F:14B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Super RTL HD
+http://46.5.95.129:8001/1:0:19:8150:14B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Nitro HD
+http://46.5.95.129:8001/1:0:19:8151:14B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Phoenix HD
+http://46.5.95.129:8001/1:0:19:2F53:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NatGeo HD
+http://46.5.95.129:8001/1:0:19:458:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,History HD
+http://46.5.95.129:8001/1:0:19:459:B:85:FFFF0000:0:0:0:
+#EXTINF:-1,Das Erste HD
+http://46.5.95.129:8001/1:0:19:2B5C:41B:A401:FFFF0000:0:0:0:
+#EXTINF:-1,CNN International HD
+http://46.5.95.129:8001/1:0:19:A85D:1AF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Serie HD
+http://46.5.95.129:8001/1:0:19:463:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Fox HD
+http://46.5.95.129:8001/1:0:19:464:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,ZDF HD
+http://46.5.95.129:8001/1:0:19:2B66:437:66:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben HD
+http://46.5.95.129:8001/1:0:19:7D66:141:270F:FFFF0000:0:0:0:
+#EXTINF:-1,kabel eins HD
+http://46.5.95.129:8001/1:0:19:7D67:141:270F:FFFF0000:0:0:0:
+#EXTINF:-1,sixx HD
+http://46.5.95.129:8001/1:0:19:7D68:141:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 1 HD
+http://46.5.95.129:8001/1:0:19:69:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben Maxx HD
+http://46.5.95.129:8001/1:0:19:7D69:141:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Discovery HD
+http://46.5.95.129:8001/1:0:19:46A:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sat.1 Gold HD
+http://46.5.95.129:8001/1:0:19:7D6A:141:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Star Wars HD
+http://46.5.95.129:8001/1:0:19:6B:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport News HD
+http://46.5.95.129:8001/1:0:19:6C:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Atlantic HD
+http://46.5.95.129:8001/1:0:19:6E:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,Disney Cinemagic HD
+http://46.5.95.129:8001/1:0:19:6F:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,NatGeo HD (S)
+http://46.5.95.129:8001/1:0:19:70:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,History HD (S)
+http://46.5.95.129:8001/1:0:19:71:B:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 2 HD
+http://46.5.95.129:8001/1:0:19:72:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema Action HD
+http://46.5.95.129:8001/1:0:19:74:D:85:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Film HD
+http://46.5.95.129:8001/1:0:19:5274:19B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky 3D
+http://46.5.95.129:8001/1:0:19:75:B:85:FFFF0000:0:0:0:
+#EXTINF:-1,Nat Geo Wild HD
+http://46.5.95.129:8001/1:0:19:76:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Serie HD (S)
+http://46.5.95.129:8001/1:0:19:7B:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Fox HD (S)
+http://46.5.95.129:8001/1:0:19:7C:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Romance TV HD
+http://46.5.95.129:8001/1:0:19:797F:1AF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,DMAX HD
+http://46.5.95.129:8001/1:0:19:7980:1C3:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 1 HD
+http://46.5.95.129:8001/1:0:19:81:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Discovery HD (S)
+http://46.5.95.129:8001/1:0:19:82:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Cinema HD
+http://46.5.95.129:8001/1:0:19:83:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,EUROSPORT 1 HD
+http://46.5.95.129:8001/1:0:19:84:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,3Sat HD
+http://46.5.95.129:8001/1:0:19:A08D:19B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ONE HD
+http://46.5.95.129:8001/1:0:19:A08E:1A5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ZDF_neo HD
+http://46.5.95.129:8001/1:0:19:A08F:191:270F:FFFF0000:0:0:0:
+#EXTINF:-1,BBC HD
+http://46.5.95.129:8001/1:0:19:A090:1B9:270F:FFFF0000:0:0:0:
+#EXTINF:-1,KIKA HD
+http://46.5.95.129:8001/1:0:19:2B91:6F:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Universal Channel HD
+http://46.5.95.129:8001/1:0:19:2B92:6F:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sport1 HD
+http://46.5.95.129:8001/1:0:19:4E96:19B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,CLASSICA HD
+http://46.5.95.129:8001/1:0:19:759C:1A5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,N24 HD
+http://46.5.95.129:8001/1:0:19:C79D:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,n-tv HD
+http://46.5.95.129:8001/1:0:19:C79E:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bibel TV HD
+http://46.5.95.129:8001/1:0:19:C79F:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Kinowelt TV HD
+http://46.5.95.129:8001/1:0:19:75A4:1A5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,AXN HD
+http://46.5.95.129:8001/1:0:19:9CA5:191:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Tele 5 HD
+http://46.5.95.129:8001/1:0:19:9CA6:6F:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MTV HD
+http://46.5.95.129:8001/1:0:19:9CA7:6F:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ServusTV HD
+http://46.5.95.129:8001/1:0:19:71B5:191:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TLC HD
+http://46.5.95.129:8001/1:0:19:C3B5:6F:270F:FFFF0000:0:0:0:
+#EXTINF:-1,kabeleinsclassics HD
+http://46.5.95.129:8001/1:0:19:98BD:187:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Bon Gusto HD
+http://46.5.95.129:8001/1:0:19:6DCF:1B9:270F:FFFF0000:0:0:0:
+#EXTINF:-1,MTV Live HD
+http://46.5.95.129:8001/1:0:19:6DD0:1A5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,ProSieben Fun HD
+http://46.5.95.129:8001/1:0:19:94D5:187:270F:FFFF0000:0:0:0:
+#EXTINF:-1,TNT Comedy HD
+http://46.5.95.129:8001/1:0:19:94D6:1AF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,RTL Crime HD
+http://46.5.95.129:8001/1:0:19:94D7:14B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Lust Pur HD
+http://46.5.95.129:8001/1:0:19:94D8:1AF:270F:FFFF0000:0:0:0:
+#EXTINF:-1,arte HD
+http://46.5.95.129:8001/1:0:19:42D9:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Sport1+ HD
+http://46.5.95.129:8001/1:0:19:42DA:1A5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Disney HD
+http://46.5.95.129:8001/1:0:19:69E7:79:270F:FFFF0000:0:0:0:
+#EXTINF:-1,SyFy HD
+http://46.5.95.129:8001/1:0:19:69EA:19B:270F:FFFF0000:0:0:0:
+#EXTINF:-1,Penthouse HD
+http://46.5.95.129:8001/1:0:19:B7FD:1F5:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6222
+http://46.5.95.129:8001/1:0:64:6222:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6223
+http://46.5.95.129:8001/1:0:64:6223:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6224
+http://46.5.95.129:8001/1:0:64:6224:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6225
+http://46.5.95.129:8001/1:0:64:6225:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6235
+http://46.5.95.129:8001/1:0:64:6235:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6236
+http://46.5.95.129:8001/1:0:64:6236:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6237
+http://46.5.95.129:8001/1:0:64:6237:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,610 SID 0x6238
+http://46.5.95.129:8001/1:0:64:6238:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,394 SID 0xfa8
+http://46.5.95.129:8001/1:0:64:FA8:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,378 SID 0xbb9
+http://46.5.95.129:8001/1:0:64:BB9:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,410 SID 0xbba
+http://46.5.95.129:8001/1:0:64:BBA:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,410 SID 0xbbb
+http://46.5.95.129:8001/1:0:64:BBB:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,410 SID 0xbbc
+http://46.5.95.129:8001/1:0:64:BBC:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,410 SID 0xbbd
+http://46.5.95.129:8001/1:0:64:BBD:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,410 SID 0xbbe
+http://46.5.95.129:8001/1:0:64:BBE:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,378 SID 0xbbf
+http://46.5.95.129:8001/1:0:64:BBF:6:85:FFFF0000:0:0:0:
+#EXTINF:-1,SW Evolution
+http://46.5.95.129:8001/1:0:8A:1999:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,Videotextapplikation (d-box I)
+http://46.5.95.129:8001/1:0:B2:A82:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,HZN iStreamer
+http://46.5.95.129:8001/1:0:C1:6221:FB:270F:FFFF0000:0:0:0:
+#EXTINF:-1,NDS Applikation
+http://46.5.95.129:8001/1:0:C1:A83:4:85:FFFF0000:0:0:0:
+#EXTINF:-1,KBW_DS_evol1
+http://46.5.95.129:8001/1:0:C1:BC3:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,KBW_DS_evol4
+http://46.5.95.129:8001/1:0:C1:BC6:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,KBW_DS_evol5
+http://46.5.95.129:8001/1:0:C1:BC7:D8:A018:FFFF0000:0:0:0:
+#EXTINF:-1,BDL VoD
+http://46.5.95.129:8001/1:0:C6:C8:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 2
+http://46.5.95.129:8001/1:0:D3:105:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 2
+http://46.5.95.129:8001/1:0:D3:106:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 3
+http://46.5.95.129:8001/1:0:D3:107:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 3
+http://46.5.95.129:8001/1:0:D3:10F:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 3
+http://46.5.95.129:8001/1:0:D3:110:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 4
+http://46.5.95.129:8001/1:0:D3:111:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 4
+http://46.5.95.129:8001/1:0:D3:119:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 4
+http://46.5.95.129:8001/1:0:D3:11A:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 5
+http://46.5.95.129:8001/1:0:D3:11B:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 5
+http://46.5.95.129:8001/1:0:D3:123:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 5
+http://46.5.95.129:8001/1:0:D3:124:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 6
+http://46.5.95.129:8001/1:0:D3:125:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 6
+http://46.5.95.129:8001/1:0:D3:12D:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 6
+http://46.5.95.129:8001/1:0:D3:12E:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 7
+http://46.5.95.129:8001/1:0:D3:12F:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 7
+http://46.5.95.129:8001/1:0:D3:137:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 7
+http://46.5.95.129:8001/1:0:D3:138:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 8
+http://46.5.95.129:8001/1:0:D3:139:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 8
+http://46.5.95.129:8001/1:0:D3:141:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 8
+http://46.5.95.129:8001/1:0:D3:142:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 9
+http://46.5.95.129:8001/1:0:D3:143:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 9
+http://46.5.95.129:8001/1:0:D3:14B:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 9
+http://46.5.95.129:8001/1:0:D3:14C:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 10
+http://46.5.95.129:8001/1:0:D3:14D:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select Event B
+http://46.5.95.129:8001/1:0:D3:14E:1:85:FFFF0000:0:0:0:
+#EXTINF:-1,Blue Movie 1
+http://46.5.95.129:8001/1:0:D3:159:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Blue Movie 2
+http://46.5.95.129:8001/1:0:D3:163:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Blue Movie 3
+http://46.5.95.129:8001/1:0:D3:16D:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport News
+http://46.5.95.129:8001/1:0:D3:F1:3:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport News HD
+http://46.5.95.129:8001/1:0:D3:F2:C:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select 1
+http://46.5.95.129:8001/1:0:D3:FB:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport Bundesliga 10
+http://46.5.95.129:8001/1:0:D3:FC:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Sport 11
+http://46.5.95.129:8001/1:0:D3:FD:2:85:FFFF0000:0:0:0:
+#EXTINF:-1,Sky Select Event A
+http://46.5.95.129:8001/1:0:D3:FE:2:85:FFFF0000:0:0:0:
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+#EXTINF:-1,[COLOR white][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+
+#EXTINF:-1,ORF 1
+http://apasfiisl.apa.at/ipad/orf1_q6a/orf.sdp/chunklist_w2032200919.m3u8?ip=178.189.161.88&amp;ua=Mozilla%252f5.0+(Windows+NT+5.1)+AppleWebKit%252f537.36+(KHTML%252c+like+Gecko)+Chrome%252f49.0.2623.110+Safari%252f537.36&amp;lbs=20160406203410580&amp;origin=http%253a%252f%252f185.85.29.19%252forf1%252fq6a.sdp%252fchunklist_w2032200919.m3u8%253fip%253d178.189.161.88%2526ua%253dMozilla%2525252f5.0%25252B%252528Windows%25252BNT%25252B5.1%252529%25252BAppleWebKit%2525252f537.36%25252B%252528KHTML%2525252c%25252Blike%25252BGecko%252529%25252BChrome%2525252f49.0.2623.110%25252BSafari%2525252f537.36%2526lbs%253d20160406203410580
+#EXTINF:-1,ORF 2
+http://apasfiisl.apa.at/ipad/orf2_q6a/orf.sdp/chunklist_w873684637.m3u8?ip=178.189.161.88&amp;ua=Mozilla%252f5.0+(Windows+NT+5.1)+AppleWebKit%252f537.36+(KHTML%252c+like+Gecko)+Chrome%252f49.0.2623.110+Safari%252f537.36&amp;lbs=20160406193817512&amp;origin=http%253a%252f%252f185.85.29.18%252forf2%252fq6a.sdp%252fchunklist_w873684637.m3u8%253fip%253d178.189.161.88%2526ua%253dMozilla%2525252f5.0%25252B%252528Windows%25252BNT%25252B5.1%252529%25252BAppleWebKit%2525252f537.36%25252B%252528KHTML%2525252c%25252Blike%25252BGecko%252529%25252BChrome%2525252f49.0.2623.110%25252BSafari%2525252f537.36%2526lbs%253d20160406193817512
+#EXTINF:-1,ORF 3
+http://apasfiisl.apa.at/ipad/orf3_q6a/orf.sdp/chunklist_w465810368.m3u8?ip=178.189.161.88&amp;ua=Mozilla%252f5.0+(Windows+NT+5.1)+AppleWebKit%252f537.36+(KHTML%252c+like+Gecko)+Chrome%252f49.0.2623.110+Safari%252f537.36&amp;lbs=20160406203451167&amp;origin=http%253a%252f%252f185.85.28.17%252forf3%252fq6a.sdp%252fchunklist_w465810368.m3u8%253fip%253d178.189.161.88%2526ua%253dMozilla%2525252f5.0%25252B%252528Windows%25252BNT%25252B5.1%252529%25252BAppleWebKit%2525252f537.36%25252B%252528KHTML%2525252c%25252Blike%25252BGecko%252529%25252BChrome%2525252f49.0.2623.110%25252BSafari%2525252f537.36%2526lbs%253d20160406203451167
+#EXTINF:-1,ORF Sport
+http://apasfiisl.apa.at/ipad/orfs_q6a/orf.sdp/chunklist_w300422080.m3u8?ip=178.189.161.88&amp;ua=Mozilla%252f5.0+(Windows+NT+5.1)+AppleWebKit%252f537.36+(KHTML%252c+like+Gecko)+Chrome%252f49.0.2623.110+Safari%252f537.36&amp;lbs=20160406203514253&amp;origin=http%253a%252f%252f185.85.28.19%252forfs%252fq6a.sdp%252fchunklist_w300422080.m3u8%253fip%253d178.189.161.88%2526ua%253dMozilla%2525252f5.0%25252B%252528Windows%25252BNT%25252B5.1%252529%25252BAppleWebKit%2525252f537.36%25252B%252528KHTML%2525252c%25252Blike%25252BGecko%252529%25252BChrome%2525252f49.0.2623.110%25252BSafari%2525252f537.36%2526lbs%253d20160406203514253
+#EXTINF:-1,Tectime TV (1080p)
+http://tectime.iptv-playoutcenter.de:1935/tectime/tectime.stream/playlist.m3u8
+#EXTINF:-1,ORF eins HD (720p)
+http://185.85.29.19/orf1/q8c.sdp/chunklist.m3u8
+#EXTINF:-1,ORF 2 HD (720p)
+http://185.85.29.19/orf2/q8c.sdp/chunklist.m3u8
+#EXTINF:-1,ORF 3 HD (720p)
+http://185.85.29.19/orf3/q8c.sdp/chunklist.m3u8
+#EXTINF:-1,ORF Sport+ HD (720p)
+http://185.85.29.19/orfs/q8c.sdp/chunklist.m3u8
+#EXTINF:-1,Tectime
+http://178.248.241.121/iptv/tectime.ts
+#EXTINF:-1,ORF2 HD
+http://apasfiisl.apa.at/ipad/orf2_q6a/orf.sdp/chunklist_w873684637.m3u8?ip=178.189.161.88&amp;ua=Mozilla%252f5.0+(Windows+NT+5.1)+AppleWebKit%252f537.36+(KHTML%252c+like+Gecko)+Chrome%252f49.0.2623.110+Safari%252f537.36&amp;lbs=20160406193817512&amp;origin=http%253a%252f%252f185.85.29.18%252forf2%252fq6a.sdp%252fchunklist_w873684637.m3u8%253fip%253d178.189.161.88%2526ua%253dMozilla%2525252f5.0%25252B%252528Windows%25252BNT%25252B5.1%252529%25252BAppleWebKit%2525252f537.36%25252B%252528KHTML%2525252c%25252Blike%25252BGecko%252529%25252BChrome%2525252f49.0.2623.110%25252BSafari%2525252f537.36%2526lbs%253d20160406193817512
+#EXTINF:-1,Kronehit TV
+http://bitcdn-kronehit-live.bitmovin.com/m3u8s/bitcodin.m3u8
+#EXTINF:-1,Okto TV
+http://d2jk87psbjrjdz.cloudfront.net/livehttporigin/okto/zenoiptv.m3u8
+#EXTINF:-1,RNF
+http://rnf.iptv-playoutcenter.de:1935/rnf/rnf.stream_1/playlist.m3u8:RNF
+#EXTINF:-1,RTS TV Salzburg HD
+http://80.237.191.228:1935/live/RTS2015/zenoiptv.m3u8
+#EXTINF:-1,Tele Basel
+http://xapp510394368c1000199.f.l.z.lb.core-cdn.net/10096xtelebase/ios_500/.m3u8
+#EXTINF:-1,Kanal 9 HD
+rtmp.infomaniak.ch/livecast/livesd2/zenoiptv.m3u8
+#EXTINF:-1,SERVUS TV AT
+http://hdiosstv-f.akamaihd.net/i/servustvhd_1@51229/index_2592_av-p.m3u8?sd=10&amp;rebase=on
+
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]
+
+
+#EXTINF:-1,Alex berlin
+http://alex-stream.rosebud-media.de:1935/live/alexlivetv.smil/playlist.m3u8?bitrate=800
+#EXTINF:-1,Austria24 TV
+rtmp://streaming.austria24.tv/live/stream_360p
+#EXTINF:-1,Baden TV
+rtmp://badentv-stream2.siebnich.info/rtplive/vlc.sdp
+#EXTINF:-1,BLK online TV Burgenlandkreis
+rtmp://62.113.210.250/medienasa-live/BLKonline_high
+#EXTINF:-1,Das Erste
+http://daserste_live-lh.akamaihd.net/i/daserste_de@91204/master.m3u8
+#EXTINF:-1,Elbekanal Sch&ouml;nebeck
+rtmp://62.113.210.250/medienasa-live/elbe_high
+#EXTINF:-1,FamilyTV
+rtmp://83.169.58.36/live/Stream3
+#EXTINF:-1,Filstalwelle
+rtmp://62.113.210.27/filstalwelle-live/livestream
+#EXTINF:-1,Halle TV
+rtmp://62.113.210.250/medienasa-live/tvhalle_high
+#EXTINF:-1,Juwelo TV
+rtmp://85.214.107.68/juwelo_hd/live_DE1
+#EXTINF:-1,Leipzig Fernsehen LF
+rtmp://video61.kanal8.de/leipzigfernsehenlive/myStream.sdp
+#EXTINF:-1,Light Channel TV Deutschland
+rtsp://streamer1.streamhost.org:1935/salive/lctvde
+#EXTINF:-1,LT - TV Baden Wuerttemberg
+rtmp://62.113.210.105/ltv-live/livestream
+#EXTINF:-1,MediaShop
+rtmp://streamserver.smartcast.de/mediashop/mediashop.stream
+#EXTINF:-1,NOA4 Hamburg
+mms://wt-wm1.wtnet.de/noa4hh-stream-mid?.wma
+#EXTINF:-1,noa4 Hamburg
+http://wt-wm1.wtnet.de/noa4hh-stream-hi?MSWMExt=.asf
+#EXTINF:-1,NOA4 Hamburg (HQ)
+mmsh://wt-wm1.wtnet.de/noa4hh-stream-hi?MSWMExt=.asf
+#EXTINF:-1,NOA4 Hamburg (MQ)
+mmsh://wt-wm1.wtnet.de/noa4hh-stream-mid?MSWMExt=.asf
+#EXTINF:-1,noa4 Norderstedt
+http://wt-wm1.wtnet.de/noa4-stream-hi?MSWMExt=.asf
+#EXTINF:-1,NOA4 Norderstedt (HQ)
+mmsh://wt-wm1.wtnet.de/noa4-stream-hi?MSWMExt=.asf
+#EXTINF:-1,NOA4 Norderstedt (MQ)
+mmsh://wt-wm1.wtnet.de/noa4-stream-mid?MSWMExt=.asf
+#EXTINF:-1,OK Dessau
+rtmp://62.113.210.250/medienasa-live/ok-dessau_high
+#EXTINF:-1,OK Magdeburg
+rtmp://62.113.210.250/medienasa-live/ok-magdeburg_high
+#EXTINF:-1,OK Merseburg
+rtmp://62.113.210.250/medienasa-live/ok-merseburg_high
+#EXTINF:-1,OK Salzwedel
+rtmp://62.113.210.250/medienasa-live/ok-salzwedel_high
+#EXTINF:-1,OK Stendal
+rtmp://62.113.210.250/medienasa-live/ok-stendal_high
+#EXTINF:-1,OK tv
+http://www.canlitv.com/asx.php?id=10942
+#EXTINF:-1,OK tv
+http://217.151.151.58/oktv
+#EXTINF:-1,OK Wernigerode
+rtmp://62.113.210.250/medienasa-live/ok-wernigerode_high
+#EXTINF:-1,OK Wettin
+rtmp://62.113.210.250/medienasa-live/ok-wettin_high
+#EXTINF:-1,OK54
+mms://streaming.ok54.de/ok54
+#EXTINF:-1,OK54
+http://iptv.ok54.de/stream.asx
+#EXTINF:-1,Oldenburg Eins TV
+rtmp://streaming.orgatech.de/o1/oeins
+#EXTINF:-1,Punktum S&uuml;dharz
+rtmp://62.113.210.250/medienasa-live/punktum_high
+#EXTINF:-1,Ran 1
+rtmp://62.113.210.250/medienasa-live/mp4%3aran1_high
+#EXTINF:-1,RAN 1 Dessau
+rtmp://62.113.210.250/medienasa-live/ran1_high
+#EXTINF:-1,RBW
+rtmp://62.113.210.250/medienasa-live/rbw_high
+#EXTINF:-1,RFH TV
+rtmp://62.113.210.250/medienasa-live/RFH_high
+#EXTINF:-1,RIC TV
+rtmp://83.169.58.36/live/sdf%3a3fb1c9c9-09c8-404a-8c0f-56b27617ab89
+#EXTINF:-1,RTL Tele Letzebourg
+rtmp://wowza01.newmedia.lu/channel1/live
+#EXTINF:-1,SDF = Mein Fernsehen in S&uuml;dtirol
+http://videocdn.sdf.bz.it/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8
+#EXTINF:-1,SF1
+http://5.135.128.148/live/_definst_/sf1.stream/playlist.m3u8
+#EXTINF:-1,Shop 24 Direct
+rtmp://streamserver.smartcast.de/stapa1i/stapa1i.stream
+#EXTINF:-1,Streetclip TV
+rtmp://stream.streetclip.tv:1935/live/high-stream
+#EXTINF:-1,Super RTL
+http://5.135.135.200/live/_definst_/superrtl.stream/playlist.m3u8
+#EXTINF:-1,TeleB&auml;rn
+rtsp://rtmp.infomaniak.ch/livecast/barntele
+#EXTINF:-1,Telebasel (Clyde)
+rtmp://xapp510394c1000199.f.l.f.lb.core-cdn.net:1935/1000199copo/live/app510394368/w509050881/live_de_500
+#EXTINF:-1,TRP 1
+rtsp://stream2.telvi.de:1935/trp1live/livestream1
+#EXTINF:-1,TV S&uuml;dbaden
+rtmp://62.113.210.102/funkhaus-live/livestream
+#EXTINF:-1,TV-DE, Talk TCT TV
+mms://a1683.l2277457829.c22774.n.lm.akamaistream.net/D/1683/22774/v0001/reflector%3a57829?KLI_D=428&amp;asx=6909&amp;entry=1&amp;item=1&amp;atte
+#EXTINF:-1,VISIT-X TV
+rtmp://194.116.150.47/live/visitx.stream1
+#EXTINF:-1,Vox
+http://5.135.128.116/live/_definst_/vox.stream/playlist.m3u8
+#EXTINF:-1,VRF Vogtland
+mms://stream.vrf.de/VRF
+
+#EXTINF:-1,[COLOR red][I][B]---------------------------------------------------------------[/B][/I][/COLOR]</p></body></html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p># Troubleshooting Mom's iPad Air &amp; iTunes Issue
+
+## :angry: Current Issue :rage:
+
+When connecting any apple provided USB (all ports affected) from Mom's iPad Air to her MacBook Pro the following issue happens. 
+
+&gt; The MacBook Pro will connect &amp; disconnect to the iPad Air every second. Example: First connection to MBP is successful and iTunes (or any other .app for that matter) recognizes it. +01 seconds into the connection it disconnects the +02 seconds it reconnects. This pattern will continune until the USB is disconnected from the MBP.
+&gt;
+&gt; &gt; ==Impt Note==
+&gt; &gt; This does not occur and there are no issues when connecting her other iOS devices (iPhone 6 &amp; iPad mini). 
+
+## :information_source: iPad Air Details :information_source:
+
+**Capacity:** `12GB` | **Available:** `241MB`| **Version:** `9.3.5 (13G36)` | **Model:** `MD785LL/A`  
+
+## :question: Troubleshooting Ideas :question:
+
+Google search yeilded the following "fixes" for the *Connectivity Issues: iPad Air &gt; USB &gt; rMBP &amp; iTunes*
+
+- [x] Verify &amp; Repair Disk Permissions | ***This was successful and fixed the issue***
+- [ ] Try *both USB Ports* again
+- [ ] Move the USB cable just a little bit
+- [ ] Hold the USB cable connector up slightly at the rMBP end
+- [ ] Try *Reseting SMC* | see the *Reset the System Management Controller (SMC) on your Mac* document on my iPad Air
+- [ ] Last Option - *Reseting NVRAM*
+
+  &gt; Hold `Command` + `Option` + `P` + `R` immediately after start up chime and continue to hold until your rMBP
+  &gt; restarts &amp; you hear the startup chime again (for the 2nd time).
+  &gt;
+  &gt; Just note that you may have to reconfigure settings for speaker volume, screen resolution, startup disk selection,
+  &gt; and time zone information.</p></body></html>

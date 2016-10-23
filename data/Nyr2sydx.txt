@@ -1,0 +1,511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <linux>
+#include <asm>
+#include <linux>
+#include "rpi_gpio.h"
+
+MODULE_AUTHOR("Adeno");
+MODULE_LICENSE("Dual BSD/GPL");
+
+#define MYSFR9_NUM_DEVS	1			/* &#12371;&#12398;&#12489;&#12521;&#12452;&#12496;&#12364;&#21046;&#24481;&#12377;&#12427;&#12487;&#12496;&#12452;&#12473;&#12398;&#25968; */
+#define MYSFR9_DEVNAME		"MySFR9km"	/* &#12371;&#12398;&#12487;&#12496;&#12452;&#12473;&#12489;&#12521;&#12452;&#12496;&#12398;&#21517;&#31216; */
+#define MYSFR9_MAJOR		0			/* &#12513;&#12472;&#12515;&#12540;&#30058;&#21495;&#12384;&#12364;&#33258;&#21205;&#35373;&#23450;&#12394;&#12398;&#12391;0 */
+#define MYSFR9_MINOR		0			/* &#12510;&#12452;&#12490;&#12540;&#30058;&#21495;&#12398;&#12505;&#12540;&#12473;&#30058;&#21495; */
+
+#define MySFR9_GPIO_MAPNAME	"mysfr9_gpio_map"
+#define MYSFR_GPIO_BASE	    7
+#define UDELAY				50      //us
+#define CHARDELAY			592     //us
+#define RCVPOLL				10000    //us
+
+#define RCV_QUEUE_SIZE      8       //SFR -&gt; 
+#define SND_QUEUE_SIZE      8       // -&gt; SFR
+
+static int _mysfr9_major = MYSFR9_MAJOR;
+static int _mysfr9_minor = MYSFR9_MINOR;
+
+static struct cdev *mysfr9_cdev_array = NULL;
+static struct class *mysfr9_class = NULL;
+
+static void __iomem *gpio_map;
+volatile uint32_t *gpio_base;
+
+static struct timer_list poll_timer;
+
+//RCV&#38306;&#20418;  SFR -&gt; 
+static unsigned char ircv,rcv;
+static unsigned char rcv_queue[RCV_QUEUE_SIZE];
+static int rq_head, rq_tail;
+
+//SND&#38306;&#20418;  -&gt; SFR
+static unsigned char isnd,snd;
+static unsigned char snd_queue[SND_QUEUE_SIZE];
+static int sq_head, sq_tail;
+
+/*&#12503;&#12525;&#12488;&#12479;&#12452;&#12503;&#23459;&#35328;*/
+//GPIO&#12524;&#12472;&#12473;&#12479;&#12398;&#12510;&#12483;&#12503;&#38306;&#20418;
+static int mysfr9_gpio_map(void);
+static int mysfr9_gpio_unmap(void);
+
+static void mysfr9_gpio_setup(void);
+static int rpi_gpio_function_set(int pin, uint32_t func);
+static int rpi_gpio_pull_control(int pin, uint32_t pullmode);
+static void rpi_gpio_set32( uint32_t mask, uint32_t val );
+//static uint32_t rpi_gpio_get32( uint32_t mask );
+static void rpi_gpio_clear32( uint32_t mask, uint32_t val );
+static uint32_t rpi_gpio_getpin( int pin );
+static void gpio_put_msb(unsigned char isend ,unsigned char send, unsigned char *ircv,unsigned char *rcv);
+
+//&#12459;&#12540;&#12493;&#12523;&#12408;&#12398;&#30331;&#37682;&#38306;&#20418;
+static int mysfr9_register_dev(void);
+
+//&#12487;&#12496;&#12452;&#12473;&#12395;&#23550;&#12377;&#12427;&#20966;&#29702;
+static int mysfr9_open(struct inode *inode, struct file *filep);
+static int mysfr9_release(struct inode *inode, struct file *filep);
+static ssize_t mysfr9_write(struct file *filep,const char __user *buf, size_t count, loff_t *f_pos);
+static ssize_t mysfr9_read(struct file *filep,char __user *buf,size_t count, loff_t *f_pos);
+
+//File Operations&#27083;&#36896;&#20307;
+struct file_operations mysfr9_fops = {
+	.open		= mysfr9_open,
+	.release	= mysfr9_release,
+	.write		= mysfr9_write,
+    .read       = mysfr9_read,
+};
+
+//&#12479;&#12452;&#12510;&#12540;&#38306;&#20418;
+static void register_poll_timer(void);
+static void poll_timer_handler(unsigned long data);
+
+//QUEUE&#38306;&#20418;
+static int ArrayEnqueue(unsigned char *queue, int data, int *head, int *tail, size_t n);
+static unsigned char ArrayDequeue(unsigned char *queue, int *head, int *tail, size_t n);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//&#12487;&#12496;&#12452;&#12473;&#12489;&#12521;&#12452;&#12496;&#12364;&#12525;&#12540;&#12489;&#12373;&#12428;&#12383;&#26178;&#12398;&#20966;&#29702;
+static int mysfr9_init(void)
+{
+	int retval;
+	/* &#38283;&#22987;&#12398;&#12513;&#12483;&#12475;&#12540;&#12472; */
+	printk(KERN_INFO "%s loading...\n", MYSFR9_DEVNAME );
+    
+    sq_head=0, sq_tail=0;
+    rq_head=0, rq_tail=0;
+	
+	/* GPIO&#12524;&#12472;&#12473;&#12479;&#12364;&#12510;&#12483;&#12503;&#21487;&#33021;&#12363;&#35519;&#12409;&#12427; */
+	retval = mysfr9_gpio_map();
+	if( retval != 0 ) {
+		printk( KERN_ALERT "Can not use GPIO registers.\n");
+		return -EBUSY;
+	}
+	/* GPIO&#21021;&#26399;&#21270; */
+	mysfr9_gpio_setup();
+
+	isnd=1; snd='I';
+    ircv=0; rcv=0;
+    gpio_put_msb(isnd,snd,&amp;ircv,&amp;rcv);
+    
+	/* &#12487;&#12496;&#12452;&#12473;&#12489;&#12521;&#12452;&#12496;&#12434;&#12459;&#12540;&#12493;&#12523;&#12395;&#30331;&#37682; */
+	retval = mysfr9_register_dev();
+	if( retval != 0 ) {
+		printk( KERN_ALERT "MySFR9 driver register failed.\n");
+		return retval;
+	}
+	printk( KERN_INFO "MySFR9 driver register sccessed.\n");
+	
+	/* GPIO&#12524;&#12472;&#12473;&#12479;&#12398;&#12450;&#12531;&#12510;&#12483;&#12503; */
+	mysfr9_gpio_unmap();
+	
+	return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//&#12487;&#12496;&#12452;&#12473;&#12489;&#12521;&#12452;&#12496;&#12364;&#12450;&#12531;&#12525;&#12540;&#12489;&#12373;&#12428;&#12383;&#26178;&#12398;&#20966;&#29702;
+static void mysfr9_exit(void)
+{
+	int i;
+	dev_t devno;
+	
+    del_timer_sync(&amp;poll_timer);
+    
+	/* &#12461;&#12515;&#12521;&#12463;&#12479;&#12487;&#12496;&#12452;&#12473;&#12398;&#30331;&#37682;&#35299;&#38500; */
+	for( i = 0; i &lt; MYSFR9_NUM_DEVS; i++ ) {
+		cdev_del(&amp;(mysfr9_cdev_array[i]));
+		devno = MKDEV(_mysfr9_major, _mysfr9_minor+i);
+		device_destroy(mysfr9_class, devno);
+	}
+	/* &#12513;&#12472;&#12515;&#12540;&#30058;&#21495;/&#12510;&#12452;&#12490;&#12540;&#30058;&#21495;&#12434;&#21462;&#12426;&#38500;&#12367; */
+	devno = MKDEV(_mysfr9_major,_mysfr9_minor);
+	unregister_chrdev_region(devno, MYSFR9_NUM_DEVS);
+	/* &#12487;&#12496;&#12452;&#12473;&#12494;&#12540;&#12489;&#12434;&#21462;&#12426;&#38500;&#12367; */
+	class_destroy( mysfr9_class );
+    /* GPIO&#12524;&#12472;&#12473;&#12479;&#12398;&#12450;&#12531;&#12510;&#12483;&#12503; */
+	mysfr9_gpio_unmap();
+	kfree(mysfr9_cdev_array);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//&#12487;&#12496;&#12452;&#12473;&#12395;&#23550;&#12377;&#12427;&#20966;&#29702;
+static int mysfr9_open(struct inode *inode, struct file *filep)
+{
+	int retval;
+	
+	if( gpio_base != NULL ) {
+		/* &#12377;&#12391;&#12395;&#12458;&#12540;&#12503;&#12531;&#12373;&#12428;&#12390;&#12356;&#12427; */
+		printk(KERN_ERR "MySFR9 is already open.\n" );
+		return -EIO;
+	}
+	retval = mysfr9_gpio_map();
+	if( retval != 0 ) {
+		printk(KERN_ERR "Can not open MySFR9.\n" );
+		return retval;
+	}
+    
+    printk( KERN_INFO "RPI HZ = %d\n", HZ );
+	register_poll_timer();
+    
+	return 0;
+}
+
+static int mysfr9_release(struct inode *inode, struct file *filep)
+{
+	//&#12414;&#12384;SFR&#12395;&#36865;&#20449;&#12391;&#12365;&#12390;&#12356;&#12394;&#12356;&#12394;&#12356;&#12418;&#12398;&#12364;&#12354;&#12427;&#12398;&#12391;&#12289;&#24453;&#12387;&#12390;&#12415;&#12427;
+    while ( sq_tail - sq_head ) {
+        udelay(UDELAY);
+    }
+    del_timer_sync(&amp;poll_timer);
+    mysfr9_gpio_unmap();
+	return 0;
+}
+
+static ssize_t mysfr9_write(struct file *filep,const char __user *buf, size_t count, loff_t *f_pos)
+{
+	//char cvalue;
+	//int retval;
+    unsigned char c;
+	
+	if(count &gt; 0) {
+        if(copy_from_user( &amp;c, buf, sizeof(char) )) {
+            return -EFAULT;
+        }
+        while(ArrayEnqueue(snd_queue, c, &amp;sq_head, &amp;sq_tail, SND_QUEUE_SIZE) == 0){
+            //udelay(UDELAY);
+            msleep(1);
+        }
+        //isnd=1;
+        
+        //ircv=0; rcv=0;
+        //gpio_put_msb(isnd,snd,&amp;ircv,&amp;rcv);
+    
+		/*retval = ssegled_put(cvalue);
+		if( retval != 0 ) {
+			printk(KERN_ALERT "Can not display %d\n", cvalue );
+		}
+		else {
+			ssegled_display_value = cvalue;
+		}*/
+		return sizeof(char);
+	}
+	return 0;
+}
+static ssize_t mysfr9_read(struct file *filep,char __user *buf,size_t count, loff_t *f_pos){
+    unsigned char c;
+    //printk( KERN_INFO "RCV READ cont=%d, RCVQ=%d\n",count,(rq_tail - rq_head));
+    if(count &gt; 0) {
+        while((rq_tail - rq_head) == 0){
+            //udelay(UDELAY);
+            msleep(1);
+        }        
+        c = ArrayDequeue(rcv_queue, &amp;rq_head, &amp;rq_tail, RCV_QUEUE_SIZE);
+        //printk( KERN_INFO "RCV READ char=%c\n",c);
+        if(copy_to_user( buf,&amp;c, sizeof(char) )) {
+            return -EFAULT;
+        }
+        return sizeof(char);       
+    }
+    return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//&#12459;&#12540;&#12493;&#12523;&#12408;&#12398;&#30331;&#37682;
+static int mysfr9_register_dev(void)
+{
+	int retval;
+	dev_t dev;
+	size_t size;
+	int i;
+	
+	/* &#31354;&#12356;&#12390;&#12356;&#12427;&#12513;&#12472;&#12515;&#12540;&#30058;&#21495;&#12434;&#20351;&#12387;&#12390;&#12513;&#12472;&#12515;&#12540;&amp;
+	   &#12510;&#12452;&#12490;&#12540;&#30058;&#21495;&#12434;&#12459;&#12540;&#12493;&#12523;&#12395;&#30331;&#37682;&#12377;&#12427; */
+	retval =  alloc_chrdev_region(
+		&amp;dev,					/* &#32080;&#26524;&#12434;&#26684;&#32013;&#12377;&#12427;dev_t&#27083;&#36896;&#20307; */
+		MYSFR9_MAJOR,		/* &#12505;&#12540;&#12473;&#12510;&#12452;&#12490;&#12540;&#30058;&#21495; */
+		MYSFR9_NUM_DEVS,	/* &#12487;&#12496;&#12452;&#12473;&#12398;&#25968; */
+		MYSFR9_DEVNAME	/* &#12487;&#12496;&#12452;&#12473;&#12489;&#12521;&#12452;&#12496;&#12398;&#21517;&#21069; */
+	);
+	
+	if( retval &lt; 0 ) {
+		printk(KERN_ERR "alloc_chrdev_region failed.\n" );
+		return retval;
+	}
+	_mysfr9_major = MAJOR(dev);
+	
+	/* &#12487;&#12496;&#12452;&#12473;&#12463;&#12521;&#12473;&#12434;&#20316;&#25104;&#12377;&#12427; */
+	mysfr9_class = class_create(THIS_MODULE,MYSFR9_DEVNAME);
+	if(IS_ERR(mysfr9_class))
+		return PTR_ERR(mysfr9_class);
+	
+	/* cdev&#27083;&#36896;&#20307;&#12398;&#29992;&#24847; */
+	size = sizeof(struct cdev) * MYSFR9_NUM_DEVS;
+	mysfr9_cdev_array =  (struct cdev*)kmalloc(size, GFP_KERNEL);
+	
+	/* &#12487;&#12496;&#12452;&#12473;&#12398;&#25968;&#12384;&#12369;&#12461;&#12515;&#12521;&#12463;&#12479;&#12487;&#12496;&#12452;&#12473;&#12434;&#30331;&#37682;&#12377;&#12427; */
+	/* &#12383;&#12384;&#12375;7&#12475;&#12464;LED&#12399;1&#20491;&#12375;&#12363;&#12394;&#12356; */
+	for( i = 0; i &lt; MYSFR9_NUM_DEVS; i++ ) {
+		dev_t devno = MKDEV(_mysfr9_major, _mysfr9_minor+i);
+		/* &#12461;&#12515;&#12521;&#12463;&#12479;&#12487;&#12496;&#12452;&#12473;&#12392;&#12375;&#12390;&#12371;&#12398;&#12514;&#12472;&#12517;&#12540;&#12523;&#12434;&#12459;&#12540;&#12493;&#12523;&#12395;&#30331;&#37682;&#12377;&#12427; */
+		cdev_init(&amp;(mysfr9_cdev_array[i]), &amp;mysfr9_fops);
+		mysfr9_cdev_array[i].owner = THIS_MODULE;
+		if( cdev_add( &amp;(mysfr9_cdev_array[i]), devno, 1) &lt; 0 ) {
+			/* &#30331;&#37682;&#12395;&#22833;&#25943;&#12375;&#12383; */
+			printk(KERN_ERR "cdev_add failed minor = %d\n", _mysfr9_minor+i );
+		}
+		else {
+			/* &#12487;&#12496;&#12452;&#12473;&#12494;&#12540;&#12489;&#12398;&#20316;&#25104; */
+			device_create(
+					mysfr9_class,
+					NULL,
+					devno,
+					NULL,
+					MYSFR9_DEVNAME"%u",_mysfr9_minor+i
+			);
+		}
+	}
+	return 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//GPIO&#12524;&#12472;&#12473;&#12479;&#12398;&#12510;&#12483;&#12503;&#38306;&#20418;
+static int mysfr9_gpio_map(void)
+{
+	if( !request_mem_region(RPI_GPIO_BASE,
+							RPI_BLOCK_SIZE,
+							MySFR9_GPIO_MAPNAME) ) {
+		printk( KERN_ALERT "request_mem_region failed.\n");
+		//return -EBUSY;
+	}
+	gpio_map = ioremap_nocache(RPI_GPIO_BASE, BLOCK_SIZE);
+	gpio_base = (volatile uint32_t *)gpio_map;
+	
+	return 0;
+}
+static int mysfr9_gpio_unmap(void)
+{
+	iounmap(gpio_map);
+	release_mem_region(RPI_GPIO_BASE, RPI_BLOCK_SIZE);
+
+	gpio_map = NULL;
+	gpio_base = NULL;
+	return 0;
+}
+
+static void  mysfr9_gpio_setup(void)
+{
+	rpi_gpio_function_set(MYSFR_GPIO_BASE+0, RPI_GPF_OUTPUT);//CLK-OUT
+	rpi_gpio_function_set(MYSFR_GPIO_BASE+1, RPI_GPF_OUTPUT);//DATA-OUT
+	rpi_gpio_function_set(MYSFR_GPIO_BASE+2, RPI_GPF_INPUT);//DATA-INPUT
+	
+	rpi_gpio_pull_control(MYSFR_GPIO_BASE+2,RPI_GPIO_PULLUP);
+}
+static int rpi_gpio_function_set(int pin, uint32_t func)
+{
+	int index = RPI_GPFSEL0_INDEX + pin / 10;
+	uint32_t mask = ~(0x7 &lt;&lt; ((pin % 10) * 3));
+	gpio_base[index] = (gpio_base[index] &amp; mask) | ((func &amp; 0x7) &lt;&lt; ((pin % 10) * 3));
+	
+	return 1;
+}
+
+static int rpi_gpio_pull_control(int pin, uint32_t pullmode)
+{
+	gpio_base[RPI_GPPUD_INDEX] = pullmode &amp; 0x03;
+	gpio_base[RPI_GPPUDCLK0_INDEX] = 0x01 &lt;&lt; pin;
+	// wait &gt; 150 cycles
+	udelay(100);
+	 
+	gpio_base[RPI_GPPUDCLK0_INDEX] = 0;
+	gpio_base[RPI_GPPUD_INDEX] = 0;
+	
+	return 1;
+}
+
+static void rpi_gpio_set32(uint32_t mask, uint32_t val )
+{
+	gpio_base[RPI_GPSET0_INDEX] = val &amp; mask;
+}
+
+/*static uint32_t rpi_gpio_get32( uint32_t mask )
+{
+	return gpio_base[RPI_GPLEV0_INDEX] &amp; mask;
+}*/
+
+static void rpi_gpio_clear32(uint32_t mask, uint32_t val )
+{
+	gpio_base[RPI_GPCLR0_INDEX] = val &amp; mask;
+}
+static uint32_t rpi_gpio_getpin(int pin )
+{
+	return (gpio_base[RPI_GPLEV0_INDEX] &amp; (1 &lt;&lt; pin)) != 0;
+}
+static void gpio_put_msb(unsigned char isend ,unsigned char send, unsigned char *ircv,unsigned char *rcv)
+{
+	volatile int i=0;
+	volatile unsigned char _rcv = 0;
+	volatile unsigned char _send = send;
+	unsigned int _ircv = 0;
+	unsigned int rcvbit=0;
+	
+	//D0 &#12487;&#12540;&#12479;&#26377;&#28961;&#12499;&#12483;&#12488;
+	//--DATA
+	if(isend){
+		rpi_gpio_set32( RPI_GPIO_P1MASK, (2 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+	}else{
+		rpi_gpio_clear32( RPI_GPIO_P1MASK, (2 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+	}
+	//--CLK=H
+	rpi_gpio_set32( RPI_GPIO_P1MASK, (1 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+	udelay(UDELAY);
+	//--&#12487;&#12540;&#12479;&#26377;&#28961;&#12499;&#12483;&#12488;&#20837;&#21147;
+	 _ircv = rpi_gpio_getpin(MYSFR_GPIO_BASE+2);
+	//--CLK=L
+	rpi_gpio_clear32( RPI_GPIO_P1MASK, (1 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+	udelay(UDELAY);
+
+		
+	//printf("&#12487;&#12540;&#12479;&#26377;&#28961;\t&#36865;&#20449;:%d(%c)\t&#21463;&#20449;:%d(%c)\n",isend,((isend&gt;0) ? 'X':'-'),_ircv,((_ircv&gt;0) ? 'X':'-'));
+	for(i=0;i&lt;8;i++){
+		//D1-9 &#12487;&#12540;&#12479;&#12499;&#12483;&#12488;
+	  	//--&#12487;&#12540;&#12479;&#20986;&#21147;
+		//printf("i=%d,v=%#x,v2=%d\n",i,v,((v &amp; 0x80) == 0x80 ? 1 : 0));
+		//printf("%d",((v &amp; 0x80) == 0x80 ? 1 : 0));
+		if((_send &amp; 0x80) ==  0x80){
+			rpi_gpio_set32( RPI_GPIO_P1MASK, (2 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+		}else{
+			rpi_gpio_clear32( RPI_GPIO_P1MASK, (2 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+		}
+		//--CLK=H
+		rpi_gpio_set32( RPI_GPIO_P1MASK, (1 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+		udelay(UDELAY);
+		//--&#12487;&#12540;&#12479;&#20837;&#21147;
+		_rcv = _rcv  &lt;&lt; 1 ;
+		rcvbit = rpi_gpio_getpin(MYSFR_GPIO_BASE+2);
+		//printf("c=%d,gpin=%d\n",c,gpin);
+		if(rcvbit &gt; 0){
+		  _rcv  =  _rcv | 0x01;
+		}
+		_send=_send&lt;&lt;1;
+		//--CLK=L
+		rpi_gpio_clear32( RPI_GPIO_P1MASK, (1 &amp; 0x0F) &lt;&lt; MYSFR_GPIO_BASE);
+		udelay(UDELAY);
+	}
+	*ircv = _ircv;
+	*rcv = _rcv;
+	//printf("      &#20869;&#23481;\t&#36865;&#20449;:%c(%#x)\t&#21463;&#20449;:%c(%#x)\n",send,send,*rcv,*rcv);
+	//printf("----------------------------------------------------------------------------------------------------\n");
+	//printf("### &#36865;&#20449;:%c  - %c(%#x)     &#21463;&#20449;:%c - %c(%#x)\n",((isend&gt;0) ? 'O':'X'),send,send,((_ircv&gt;0) ? 'O':'X'),_rcv,_rcv);
+    udelay(CHARDELAY);
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//&#12479;&#12452;&#12510;&#12540;&#20966;&#29702;&#38306;&#20418;
+static void register_poll_timer(void)
+{
+	init_timer(&amp;poll_timer);
+	//poll_timer.expires = jiffies + HZ;
+	poll_timer.expires = jiffies + (HZ * RCVPOLL) / 1000000;
+	/* &#26368;&#30701;&#12398;Tick&#12424;&#12426;&#30701;&#12356;&#22580;&#21512;&#12399;&#26368;&#30701;&#12398;Tick&#12395; */
+	if( poll_timer.expires == 0 ) poll_timer.expires = jiffies + 1;
+	poll_timer.data = jiffies;
+	poll_timer.function = poll_timer_handler;
+	
+	add_timer(&amp;poll_timer);
+}
+static void poll_timer_handler(unsigned long data)
+{
+	//unsigned char ircv,rcv;
+	//unsigned char isnd,snd;
+    do{
+        if(sq_tail - sq_head){
+            isnd = 1;
+            snd = ArrayDequeue(snd_queue, &amp;sq_head, &amp;sq_tail, SND_QUEUE_SIZE);
+        }else{
+            isnd = 0;
+        }
+        gpio_put_msb(isnd,snd,&amp;ircv,&amp;rcv);
+        if(ircv &gt; 0){
+            //printk( KERN_INFO "RCV %c \n",rcv);
+            if(ArrayEnqueue(rcv_queue, rcv, &amp;rq_head, &amp;rq_tail, RCV_QUEUE_SIZE) &gt; 0){
+                
+            }else{
+                printk( KERN_ALERT "RCV Buffer Full.\n");
+            }
+        }
+    }while ((sq_tail - sq_head) || (ircv &gt; 0));
+    
+    /*while ((q_tail - q_head) || (ircv &gt; 0)) {
+        if(q_tail - q_head){
+            isnd = 1;
+            snd = ArrayDequeue(queue, &amp;q_head, &amp;q_tail, QUEUE_SIZE);
+        }else{
+            isnd = 0;
+        }
+        gpio_put_msb(isnd,snd,&amp;ircv,&amp;rcv);
+        isnd = 0;
+    }*/
+    
+    //isnd=1; snd='P';
+    //ircv=0; rcv=0;
+    //gpio_put_msb(isnd,snd,&amp;ircv,&amp;rcv);
+    //isnd=0;
+    
+	register_poll_timer();
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Queue
+static int ArrayEnqueue(unsigned char *queue, int data, int *head, int *tail, size_t n) {
+    if (*head % n != (*tail + 1) % n) {
+        queue[(*tail)++ % n] = data;
+        return *tail - *head;
+    } else {
+        return 0;
+    }
+}
+static unsigned char ArrayDequeue(unsigned char *queue, int *head, int *tail, size_t n) {
+    if (*head != *tail) {
+        return queue[(*head)++ % n];
+    } else {
+        return (unsigned char)0;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//init&#12398;&#30331;&#37682;
+module_init(mysfr9_init);
+
+//exit&#12398;&#30331;&#37682;
+module_exit(mysfr9_exit);</linux></asm></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></linux></p></body></html>

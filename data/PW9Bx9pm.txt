@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>&#9702; Umiej&#281;tno&#347;&#263; mieszania barw w zakresie podstawowych kolor&oacute;w: R, G, B, C, M, Y oraz skala szaro&#347;ci &ndash; przy zadanym kodowaniu
+
+RGB = Red, Green, Blue - model przestrzeni barw, cz&#281;sto stosowany w informatyce. Jako reprezentacj&#281; zwykle przyjmuje si&#281; 24-bitowy zapis kolor&oacute;w - 8 bit&oacute;w na ka&#380;d&#261; sk&#322;adow&#261; RGB, daj&#261;cy zakres 0 - 255 na ka&#380;d&#261; sk&#322;adow&#261;. Ustawienie sk&#322;adowych 0,0,0 daje kolor czarny, a 255, 255, 255 kolor bia&#322;y.  Numer koloru oblicza si&#281; w nast&#281;puj&#261;cy spos&oacute;b:
+
+COLOR = R * 65536 + G * 256 + B
+
+CMYK = Cyan, Magenta, Yellow, Key Colour(czarny) - u&#380;ywany g&#322;&oacute;wnie w procesie drukarskim. Kolory otrzymuje si&#281; poprzez podanie procent&oacute;w(0-100% lub 0.0-1.0). W przeciwie&#324;stwie do RGB kolor bia&#322;y otrzymuje si&#281; poprzez kombinacj&#281; [0, 0, 0, 0].
+
+Skala odcieni szaro&#347;ci -  spos&oacute;b wyra&#380;enia nat&#281;&#380;enia barwy za pomoc&#261; pojedynczego parametru liczbowego. Mo&#380;e to by&#263; np. liczba rzeczywista z zakresu 0.0 (czer&#324;) do 1.0 (biel).
+
+
+Tutorial obliczania:
+Przy RGB565, kt&oacute;rego u&#380;ywamy w &#263;wiczeniu, mamy odpowiednio 5,6,5 bit&oacute;w dla kolor&oacute;w R, G, B, czyli w sumie 16 bit&oacute;w. W celu uzyskania koloru np. czerwonego, ustawiamy wszystkie bity R(5 bit&oacute;w) na 1, a wszystkie bity G i B na zero.
+Poni&#380;ej kr&oacute;tki spis najwa&#380;niejszych kolor&oacute;w(takich, kt&oacute;re nie wymagaj&#261; po&#347;rednich warto&#347;ci). Warto&#347;&#263; &ldquo;1&rdquo; oznacza ustawienie wszystkich bit&oacute;w danego koloru na 1, czyli np. 5 jedynek dla R. W przypadku RGB888, gdzie jest 8 bit&oacute;w na ka&#380;dy kolor, ustawialiby&#347;my 8 jedynek, otrzymuj&#261;c warto&#347;&#263; 255.
+
+	R, G, B
+Black - 0, 0, 0
+White - 1, 1, 1 (czyli np. 255, 255, 255 dla RGB888 lub 31, 63, 31 dla RGB565)
+Red - 1, 0, 0
+Green - 0, 1, 0
+Blue - 0, 0, 1
+Yellow - 1, 1, 0
+Cyan - 0, 1, 1
+Magenta - 1, 0, 1
+
+Szaro&#347;&#263;:
+Wszystkie bity na 0 daj&#261; w RGB kolor czarny, a na 1 kolor bia&#322;y. Aby uzyska&#263; odpowiedni&#261; szaro&#347;&#263; podan&#261; w procentach nale&#380;y wzi&#261;&#263; odpowiedni&#261; ilo&#347;&#263; &ldquo;procentowo&rdquo; bit&oacute;w ka&#380;dego koloru R,G, B. Z racji, &#380;e s&#261; to pot&#281;gi dw&oacute;jki mo&#380;emy &#322;atwo uzyska&#263; kolejne warto&#347;ci procentowe(50%, 25%, 12,5%).
+Aby otrzyma&#263; szaro&#347;&#263; 50%, chcemy% bia&#322;ego&rdquo;, &ldquo;50 wi&#281;c zamiast ustawia&#263; wszystkie bity(np. 11111), bierzemy po&#322;ow&#281; tej liczby, wi&#281;c: (01111).
+
+Przyk&#322;adowo 50% szaro&#347;ci dla RGB565:
+01111 011111 01111, spacje separuj&#261; R, G, B. S&#261; to odpowiednio warto&#347;ci 15, 31, 15.
+
+Nale&#380;y r&oacute;wnie&#380; umie&#263; zamieni&#263; to na warto&#347;&#263; heksadecymaln&#261;, powy&#380;sza to np. 0x7BEF. 
+Prosty spos&oacute;b - zapisujemy liczb&#281; jako ci&#261;g:
+0111101111101111
+Dzielimy na czw&oacute;rki:
+0111 1011 1110 1111
+Zamieniamy &ldquo;poszczeg&oacute;lne&rdquo; czw&oacute;rki na hex:
+0111 = 7, 1011 = 11 = B, 1110 = 14 = E, 1111 = 15 = F
+Otrzymujemy 0x7BEF</p></body></html>

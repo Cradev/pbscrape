@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#if defined _colorchat_included
+  #endinput
+#endif
+#define _colorchat_included
+ 
+/* ColorChat Support */
+#define NORMAL DontChange
+#define GREEN DontChange
+#define TEAM_COLOR DontChange
+#define RED Red
+#define BLUE Blue
+#define GREY Grey
+#define ColorChat client_print_color
+/* ColorChat Support */
+ 
+enum _:Colors {
+   DontChange,
+   Red,
+   Blue,
+   Grey
+}
+ 
+stock const g_szTeamName[Colors][] = 
+{
+   "UNASSIGNED",
+   "TERRORIST",
+   "CT",
+   "SPECTATOR"
+}
+ 
+stock client_print_color(id, iColor=DontChange, const szMsg[], any:...)
+{
+   // check if id is different from 0
+   if( id &amp;&amp; !is_user_connected(id) )
+   {
+      return 0;
+   }
+ 
+   if( iColor &gt; Grey )
+   {
+      iColor = DontChange;
+   }
+ 
+   new szMessage[192];
+   if( iColor == DontChange )
+   {
+      szMessage[0] = 0x04;
+   }
+   else
+   {
+      szMessage[0] = 0x03;
+   }
+ 
+   new iParams = numargs();
+   // Specific player code
+   if(id)
+   {
+      if( iParams == 3 )
+      {
+         copy(szMessage[1], charsmax(szMessage)-1, szMsg);
+      }
+      else
+      {
+         vformat(szMessage[1], charsmax(szMessage)-1, szMsg, 4);
+      }
+ 
+      if( iColor )
+      {
+         new szTeam[11]; // store current team so we can restore it
+         get_user_team(id, szTeam, charsmax(szTeam));
+ 
+         // set id TeamInfo in consequence
+         // so SayText msg gonna show the right color
+         Send_TeamInfo(id, id, g_szTeamName[iColor]);
+ 
+         // Send the message
+         Send_SayText(id, id, szMessage);
+ 
+         // restore TeamInfo
+         Send_TeamInfo(id, id, szTeam);
+      }
+      else
+      {
+         Send_SayText(id, id, szMessage);
+      }
+   } 
+ 
+   // Send message to all players
+   else
+   {
+      // Figure out if at least 1 player is connected
+      // so we don't send useless message if not
+      // and we gonna use that player as team reference (aka SayText message sender) for color change
+      new iPlayers[32], iNum;
+      get_players(iPlayers, iNum, "ch");
+      if( !iNum )
+      {
+         return 0;
+      }
+ 
+      new iFool = iPlayers[0];
+ 
+      new iMlNumber, i, j;
+      new Array:aStoreML = ArrayCreate();
+      if( iParams &gt;= 5 ) // ML can be used
+      {
+         for(j=4; j<iparams j retrieve original param value and check if it lang_player getarg i="0;" as next parm string is a registered language translation while szmessage getlangtranskey transkey_bad store that arg so we can alter later arraypushcell update ml array saire know used how many args have to alterate imlnumber arraysize="=" not only send msg_broadcast message iparams="=" copy charsmax szmsg else vformat icolor new szteam get_user_team send_teaminfo ifool g_szteamname send_saytext need loop through all players format text msg_one_unreliable saytext szfaketeam for inum id="iPlayers[i];" set player index the specific setarg _ arraydestroy return stock iplayerid static iteaminfo="0;" message_begin : .player="iReceiver);" write_byte write_string message_end isaytext="0;" register_dictionary_colored filename szfilename get_localinfo fp="fopen(szFileName," log_amx open szbuffer szlang szkey sztranslation transkey:ikey fgets trim strtok strbreak ikey="GetLangTransKey(szKey);" replace addtranslation fclose></iparams></p></body></html>

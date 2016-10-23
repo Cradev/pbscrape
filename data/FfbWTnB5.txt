@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Auto-Speed I-II - Gives Speed I-II potion effects while wearing/holding item.
+Unstable I-III - A bad enchant that rarely appears; Decays durability slowly.
+Nightvision I - Gives Nightvision I potion effect while wearing/holding item.
+Venom I-III - Poisons an enemy when hitting it with the enchant. 
+Auto-Smelting I - Smelts down iron and gold; Stacks with fortune.
+Regain I (105) - Regains durability when mining same type of ore the pickaxe is made out of.
+Rejuvination I-III - Regains durability slowly while holding/wearing item.
+Waterbreathing I - Gives Waterbreathing I potion effect while wearing/holding item.
+Reinforced I-III - Instantly mines all ores. (higher the enchant level, less durability it uses).
+Slowness I-III - Slows down an enemy when hitting it with the enchant.
+Heavy I-III - Slows you down and adds mining fatigue whilst holding/wearing
+Regeneration I-III - When you heal half a heart with full food, adds extra chance to heal a full heart (more armor with that enchant stacks and gives more chances)
+Auto-Jump I-III - Gives Jumping I-III potion effects while wearing/holding item.
+Excavation I-II - Digs a 3x3(3x3x2 if level 2) area. Applicable to shovels ,axes and pickaxes. (fortune, auto-smelt ,reinforced and other enchants stack up).
+Blindness I-III - Blinds an enemy when hitting it with the enchant.
+Withering I-III - Withers an enemy when hitting it with the enchant.
+Life Leech I-II - Can leech some health off of an enemy when hitting him
+Poison Arrows I-III - Same as Venom ,for bows
+Withered Arrows I-III - Same as Withering ,for bows
+Flashing Arrows I-III - Same as Blindness ,for bows
+Soulbound I - When you die ,you will still have the item with this enchant. (configurable if you lose it afterwards)
+Ice Aspect I-II - can freeze someone in place for a short amount of time. (configurable in configs)
+Lucky I-II - Gives more XP when killing any living entity (except players)
+Beheading I-III - Has a progressively higher chance to behead skeletons, creepers, zombies and players.
+Life I - Extends your life by a certain amount (default 0.5 hearts per level &amp; armor piece)
+Electrocute I-III - Can cause nausea and deals more damage to armored living entities.
+Explosive Arrows I-III - Random chance to shoot an arrow which will explode on impact; highly configurable
+Well Fed I-II - Keeps your food levels higher.
+Hunger I-II - Another bad enchant near instability and heavy - makes your hunger go down quicker
+Multishoot I-II - Can shoot multiple arrows at once.
+Agility I-III - Adds haste when holding a weapon. Configurable max level!
+Plasma I-II - Like electrocute, but for diamond and leather armors - deals more damage.
+Insulation I-III - Combats Plasma and Electrocute - makes them deal less damage on you.</p></body></html>

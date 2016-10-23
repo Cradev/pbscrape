@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package nl.hva;
+
+import java.util.Scanner;
+import java.util.Random;
+import java.util.Arrays;
+
+/**
+ *
+ * @author 
+ */
+public class LastAssignment {
+
+    /* Een random generator, welke drie verschillende randoms creert
+       net zo lang tot het drie unieke integers zijn. */
+    public static int[] generateRandoms() {
+        Random rand = new Random();
+        int[] randomgetallen = new int[3];
+        do {
+            randomgetallen[0] = rand.nextInt(10) + 1;
+            randomgetallen[1] = rand.nextInt(10) + 1;
+            randomgetallen[2] = rand.nextInt(10) + 1;
+        } while (randomgetallen[0] == randomgetallen[1] || randomgetallen[0]
+                == randomgetallen[2] || randomgetallen[1] == randomgetallen[2]);
+        Arrays.sort(randomgetallen);
+        return randomgetallen;
+    }
+
+    /* Controleert of de ingevoerde integer voorkomt in de lijst met gegenereerde 
+       random integers. */
+    public static boolean equalstoRandom(int zoekgetal, int[] lijst) {
+        boolean startValue = false;
+        if (zoekgetal == lijst[0] || zoekgetal == lijst[1] || zoekgetal == lijst[2]) {
+            startValue = true;
+            return startValue;
+        } else {
+            startValue = false;
+            return startValue;
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int[] maakGetal = generateRandoms();
+        int[] zoekGetal = new int[3];
+        int goodRolls = 0;
+        int amountRolls = 0;
+        
+        while (goodRolls &lt; 3) {
+            amountRolls++;
+            System.out.print("Raad getallen ( 0..10 ) met een spatie tussen getallen: ");
+            for (int i = 0; i &lt; zoekGetal.length; i++) {
+                zoekGetal[i] = input.nextInt();
+            }
+            for (int i = 0; i &lt; zoekGetal.length; i++) {
+                if (equalstoRandom(zoekGetal[i], maakGetal) == true) {
+                    goodRolls++;
+                }
+            }
+            if(goodRolls &gt; 3) 
+            {
+                goodRolls = 4; }
+            System.out.println("Je hebt " + goodRolls + " getallen goed geraden.");
+        }
+        
+        System.out.println("Je hebt " + amountRolls + " keer geraden.");
+        System.out.print("De random getallen zijn: ");
+        for(int i = 0; i &lt; zoekGetal.length; i++) {
+            System.out.print(maakGetal[i]);
+        }
+    }
+
+}</p></body></html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>import java.util.Scanner ;
+public class PodatekVAT {
+    public static void main(String[]args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Podaj nazwe towaru");
+        String towar = input.nextLine();
+        System.out.println("podaj cene netto");
+        double netto = input.nextDouble();
+        final double vat = 0.22;
+        double brutto = netto/0.78;
+        double VAT = brutto-netto;
+        System.out.println("Cena brutto towaru wynosi:"+brutto);
+        System.out.println("Cena poadtku vat dla tego towaru wynosi:"+VAT);
+
+
+    }
+
+}</p></body></html>

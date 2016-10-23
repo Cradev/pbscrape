@@ -1,0 +1,5 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>def testrsubError(self):
+        """TypeError!!!"""
+        self.b2=2.0-self.b2
+        self.assertRaises(TypeError, self.b2.__rsub__, 2.0)</p></body></html>

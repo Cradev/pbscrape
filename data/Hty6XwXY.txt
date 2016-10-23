@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>//--------------------------------------------------------------------------------------------
+// Dependencies
+//--------------------------------------------------------------------------------------------
+var util	 	= require('util')
+,request 		= require('request')
+,deep   		= require('deep-diff')
+,async 			= require('async')
+,co 			= require('co')
+,rp 			= require('request-promise')
+,fs 			= require('fs');
+
+//--------------------------------------------------------------------------------------------
+// The git posthook will pass the branch.
+//--------------------------------------------------------------------------------------------
+var argv = require('minimist')(process.argv.slice(2));
+var branch = argv.branch;
+
+if(!branch) {
+	branch = 'DEFAULT';
+}
+
+var DATADIRECTORY 	= './data';
+var INPUT_DIR 		= DATADIRECTORY + '/' + branch;
+var OUTPUT_DIR 		= DATADIRECTORY + '/' + branch + '/results';
+var INPUTFILE 		= INPUT_DIR + '/DEFAULT.json';
+
+var lsDiffJSON = require(INPUTFILE);
+
+async.forEach(lsDiffJSON, function(task, callback) {
+	var options1 = {
+		url: task.left,
+		json: true
+	};
+	var options2 = {
+		url: task.right,
+		json: true
+	};
+
+	co(function* () {
+		var lhs;
+		var rhs;
+		var diffs;
+		rp = require('request-promise')
+
+		lhs = yield rp(options1);
+		rhs = yield rp(options2)
+
+		// do stuff after all requests
+		var differences = deep.diff(lhs, rhs, function(path, key) {
+			return task.ignoredProperties.indexOf(key) &gt;= 0;
+		});
+
+		if(!differences || differences == 'undefined') {
+			console.log("#---------------------------------------------------------------------");
+			console.log("# " + task.name + " - pass");
+			console.log("#---------------------------------------------------------------------");
+			diffs = 0;
+		} else {
+			diffs = differences.length;
+			console.log("#---------------------------------------------------------------------");
+			console.log("# " + task.name + " - " + diffs + " DIFFERENCES");
+			console.log("#---------------------------------------------------------------------");
+			console.log("# LEFT: " + task.left);
+			console.log("# RIGHT: " + task.right);
+			if(diffs &gt; 0) {
+				var dir = './data/'+branch;
+				if (!fs.existsSync(dir)){
+				    fs.mkdirSync(dir);
+				}
+				var filename = "./data/"+branch+'/'+task.name+'.json';
+				filename = filename.replace(' ','-');
+				var stream = fs.createWriteStream(filename).write(JSON.stringify(differences));
+				console.log("# Diff written to: " + filename);
+			}
+			console.log("#---------------------------------------------------------------------");
+		}
+	});
+});</p></body></html>

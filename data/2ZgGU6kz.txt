@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Map <string double> map = new HashMap<string double>();
+        for(int k=0;k<hallgatok.size map.put hallgatok.get list double>&gt; list = new LinkedList<map.entry>&gt;(map.entrySet());
+
+        Collections.sort(list, new Comparator&lt; Map.Entry<string> &gt;() {
+        @Override
+        public double compare(
+                Entry<string double> e1,
+                Entry<string double> e2) {
+            return e2.getValue().compareTo(e1.getValue());
+        }
+    });
+      for(Entry<string double> lValue:list)
+        System.out.println("value = "+lValue.getValue() +" , Index = "+lValue.getKey());</string></string></string></string></map.entry></hallgatok.size></string></string></p></body></html>

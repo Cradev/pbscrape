@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta charset="utf-8">
+	<title>Avon Pedido</title>
+
+<script type="text/javascript">
+var i = 1;
+function addKid(){
+	//if (i <= 3){
+		i++;	
+    	var div = document.createElement('div');
+    	div.style.marginBottom = "-20px";
+    	div.style.marginLeft = "12px";
+		div.style.width = "550px";
+		div.style.height = "50px";
+		div.style.color = "white";
+		div.setAttribute('class', 'myclass');
+    	div.innerHTML = '<input placeholder="Clave de producto" class="nuevo1" type="text" name="producto"><input class="nuevo2" type="number" name="cantidad"> <input type="button" value="-" onclick="removeKid(this)">';
+    	document.getElementById('nuevo').appendChild(div);
+    	i++;	
+    	var div = document.createElement('div');
+    	div.style.marginBottom = "-20px";
+    	div.style.marginLeft = "12px";
+		div.style.width = "550px";
+		div.style.height = "50px";
+		div.style.color = "white";
+		div.setAttribute('class', 'myclass');
+    	div.innerHTML = '<input placeholder="Clave de producto" class="nuevo1" type="text" name="producto"><input class="nuevo2" type="number" name="cantidad"> <input type="button" value="-" onclick="removeKid(this)">';
+    	document.getElementById('nuevo').appendChild(div);
+	//}
+}
+
+function removeKid(div) {	
+    document.getElementById('nuevo').removeChild( div.parentNode );
+	i--;
+}
+</script>
+
+
+
+</head>
+<body>
+
+
+<div class="contenido">
+	<form>
+<div>
+		<span class="texto1">Número de Registro:</span> <input placeholder="Número de registro" type="text" name="registro"><br>
+		<span class="texto1 texto2">Nombre completo: </span> <input placeholder="Nombre completo" type="text" name="nombre">
+</div>
+		<hr>
+		<div class="todo">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+		<input placeholder="Clave de producto" class="pedido" type="text" name="producto"><input class="cantidad" type="number" name="cantidad">
+</div>
+<div id="nuevo">
+		<input name="child_1" placeholder="Clave de producto" class="pedido" type="text"><input class="cantidad" type="number" name="cantidad">
+</div>
+
+		   <div class="todo"> 
+      <input class="botonchido" type="button" id="add_kid()" onclick="addKid()" value="+">
+    	
+		<input class="botonenviar" type="submit" name="submit">
+		
+</div>
+	</form>
+
+</div>
+
+
+</body>
+</html>

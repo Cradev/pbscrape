@@ -1,0 +1,2 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/run local id=11152 a=0 b=0 for j=0,2,1 do a=0 b=0 c=GetAchievementNumCriteria(id+j) for i=1,c,1 do local _,_,_,x,y=GetAchievementCriteriaInfo(id+j,i) a=a+x b=b+y end print(((j==0 and "Dungeons") or (j==1 and "WQs") or "Kills")..": "..a.."/"..(b/c)) end</p></body></html>

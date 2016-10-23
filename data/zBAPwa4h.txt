@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>var uuid = require('node-uuid');
+var sessionStore = {};
+// manageSession and parseCookies
+
+function parseCookies(req, res, next){
+	//get request 
+	if(req){
+		console.log(req);
+		var cookiePairs = req.get("Cookie");
+		if(cookiePairs){
+			var cookies = cookiePairs.split(';');
+			var keyValue = [];
+			for(var j = 0; j &lt; cookies.length; j++){ 
+				var el = cookies[j];
+				keyValue.push(el.split("="));
+			}
+				
+			req.hwCookies = {};
+			
+			for(var i = 0; i &lt; keyValue.length; i++){
+				var nameVal = keyValue[i]; 
+				req.hwCookies[nameVal[0]] = nameVal[1];
+			}
+		}
+	}
+	next();
+};
+
+function manageSession(req, res, next){
+		var id;
+		//check if cookies have session id
+		//check if session store has that id
+		if(!req.hasOwnProperty("hwCookies")){ 
+			req.hwCookies = {};
+		}
+		
+		if(!req.hasOwnProperty("hwSession")){ 
+			req.hwSession = {};
+		}
+		
+		if(req.hwCookies.hasOwnProperty("sessionId") &amp;&amp; sessionStore.hasOwnProperty(req.hwCookies["sessionId"])){ 
+			//set 
+			id = req.hwCookies["sessionId"]; 
+			var sessionStoreData = sessionStore.id;
+			console.log("session already exists:", id);
+			req.hwSession = sessionStoreData;
+			req.hwSession["sessionId"] = id;
+		}
+		else{ 
+			//then generate a new session id and create an empty object for that ids data in the session store
+			id = uuid.v4();
+			console.log("session generated:", id);
+			
+			var idData = {};
+			sessionStore[id] = idData;
+			res.append("Set-Cookie", "sessionId="+id+"; HttpOnly;");  
+			req.hwSession["sessionId"] = id;
+		}
+	
+	next();
+}
+
+module.exports = {
+	parseCookies : parseCookies,
+	manageSession : manageSession, 
+	sessionStore : sessionStore
+};</p></body></html>

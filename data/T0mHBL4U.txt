@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public struct Settings {
+    public static int firstParam { get; set; }
+    public static int secondParam { get; set; }
+
+    public static void Initialize()
+    {
+        loadFromFile();
+    }
+
+    public static void loadFromFile()
+    {
+        if (!File.Exists(@"./config.xml"))
+        {
+             //Write file with default values                 
+             setDefault();
+
+             XElement fP = new XElement("firstParam");
+             XElement sP = new XElement("secondParam");
+             fp.Value = firstParam.ToString();
+             sp.Value = secondParam.ToString();
+             XElement root = new XElement("settings", fp, sp);
+             new XDocument(root).Save(@"./config.xml");
+        }
+        else
+        {
+             //Read the existed file and set 
+        }
+    }
+
+    private static void setDefault()
+    {
+        firstParam = 5;
+        secondParam = 5;
+    }
+}
+	
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+  <firstparam>5</firstparam>
+  <secondparam>5</secondparam>
+</settings></p></body></html>

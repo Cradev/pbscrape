@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>group,Filmes "Lan&ccedil;amentos"
+avi,A Lenda de Tarzan (DUB) 2016,http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ALNDETRZN.mp4
+avi,90 MINUTOS NO PARA&Iacute;SO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/90MINPRSO.mp4
+avi,A ERA DO GELO: A GRANDE CA&Ccedil;ADA AOS OVOS DE P&Aacute;SCOA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AERDGLAGRNDCAOVS.mp4
+avi,A ERA DO GELO: O BIG BANG [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/AERDGLOBB.mp4
+avi,A HERDEIRA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AHRDIRA.mp4
+avi,&Agrave; PROCURA DA LIBERDADE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/APRCURDLBRD.mp4
+avi,A RESSURREICAO DO ANTICRISTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ARSRCAODANTCRST.mp4
+avi,A SEITA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ASITA.mp4
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASREDVRGNTCNVGNT.mp4
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ASREDVRGNTCNVGNTLEG.mp4
+avi,A VIATURA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/AVIATURA.mp4
+avi,ALICE ATRAV&Eacute;S DO ESPELHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ALCATRVSDESLHO.mp4
+avi,ALICE ATRAV&Eacute;S DO ESPELHO [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ALCATRVSDESLHOLEGN.mp4
+avi,ALVIN E OS ESQUILOS: NA ESTRADA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ALVNEOSESQULSNESTRD.mp4
+avi,AMOR POR ACIDENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AMRPRACDNT.mp4
+avi,ANGRY BIRDS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ANGRYBRDSFLM.mp4
+avi,ANGRY BIRDS - O FILME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ANGRYBRDSFLMLEG.mp4
+avi,APRENDENDO COM A VOV&Oacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/APRNDOCMAVO.mp4
+avi,AS TARTARUGAS NINJA: FORA DAS SOMBRAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASTARTGUSNJSFRDSSMBRS.mp4
+avi,ASSALTO AO PODER [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASLTOAOPDR.mp4
+avi,AT&Eacute; QUE A SORTE NOS SEPARE 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ATQASRTNSPR3.mp4
+avi,BARBIE: AVENTURA NAS ESTRELAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/BARBIRAVNESTLS.mp4
+avi,BATMAN VS SUPERMAN: A ORIGEM DA JUSTI&Ccedil;A [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNVSPRMNAODJT.mp4
+avi,BATMAN: SANGUE RUIM [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNSNGRUIM.mp4
+avi,BOB ESPONJA: UM HER&Oacute;I FORA D\'&Aacute;GUA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/BOBESPJUHRFRDGUA.mp4
+avi,BRAVETOWN [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BRVTWN.mp4
+avi,CACADORES DE EMOCAO: AL&Eacute;M DO LIMITE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CACDRSDEMCOSALMDLMT.mp4
+avi,CANIBAIS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CANBS.mp4
+avi,CAPIT&Atilde;O AM&Eacute;RICA: GUERRA CIVIL [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/CAPTAMRC3.mp4
+avi,CAPIT&Atilde;O AM&Eacute;RICA: GUERRA CIVIL [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/CAPTAMRC3LEG.mp4
+avi,CAROL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CRL.mp4
+avi,CASAMENTO DE VERDADE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JNYWDNGLEG.mp4
+avi,CINQUENTA TONS DE CINZA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/CNQNTNSDCNZ.mp4
+avi,CINQUENTA TONS DE PRETO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CQNTATNSDPRT.mp4
+avi,COMO SOBREVIVER A UM ATAQUE ZUMBI [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CMSBRVVERAUATQZMB.mp4
+avi,DEADPOOL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEADP.mp4
+avi,DEADPOOL [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEADPLEG.mp4
+avi,DESNORTEADOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/DESNRTAD.mp4
+avi,DEUS N&Atilde;O EST&Aacute; MORTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DSNESTMRT.mp4
+avi,DEUS N&Atilde;O EST&Aacute; MORTO 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/DSNESTMRT2.mp4
+avi,DEUSES DO EGITO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEUSDEGTO.mp4
+avi,DIABLO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DIABLODUB.mp4
+avi,DIVERTIDA MENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DVRTDMNT.mp4
+avi,DOCE VINGAN&Ccedil;A 3: A VINGAN&Ccedil;A &Eacute; MINHA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DCVNGCA3.mp4
+avi,ELE NUNCA MORRE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ELENCMRR.mp4
+avi,ENSINA-ME O AMOR [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ESNMOAMR.mp4
+avi,Epa Cade o Noe - Anima&ccedil;&atilde;o HD (Dub),https://www.youtube.com/watch?v=lERyn_HMA5k
+avi,ESPECIALISTA EM CRISE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ESPCLSEMCRS.mp4
+avi,FRANKENSTEIN [DUB],http://storage-rc.edgedns.us/RedeCanais/RCFServer3/ondemand/FRNKSTEN.mp4
+avi,GET A JOB [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/GETJBLEG.mp4
+avi,GRACE DE M&Ocirc;NACO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/GRCDMNC.mp4
+avi,HANGMAN [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HGMNLEG.mp4
+avi,HARDCORE: MISS&Atilde;O EXTREMA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/HARDCRMSEXTRM.mp4
+avi,HOMEM IRRACIONAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OHOMNIRCIONL.mp4
+avi,HOMEM-FORMIGA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HMNFRMG.mp4
+avi,HOTEL TRANSILV&Acirc;NIA 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HOTLTRNSVLNA2.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNT.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNTLEG.mp4
+avi,INVOCACAO DO MAL 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INVCAODML2.mp4
+avi,IRM&Atilde;S [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/IRMAS.mp4
+avi,JEM E AS HOLOGRAMAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JMEASHLFRMS.mp4
+avi,JOGO DE ASSASSINOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSDASINS.mp4
+avi,JOGOS VORAZES: A ESPERAN&Ccedil;A - O FINAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSVRZSAESPRPT2.mp4
+avi,KUNG FU PANDA 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/KUNGFUPND3.mp4
+avi,KUNG FU PANDA: SEGREDOS DO PERGAMINHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/KUNGFUPNDSGRDDPRGMH.mp4
+avi,Landmine Goes Click,https://lh3.googleusercontent.com/jsfTRDr2c9mhaj6nkJcfk9uWFDwSzvFt8TCphaYgECT8LmZWPbGHJZ4MhVYaoaHBZgAGTEc3wA=m37
+avi,LEGO DC COMICS SUPER HER&Oacute;IS: LIGA DA JUSTI&Ccedil;A - COMBATE C&Oacute;SMICO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LEGLGDJSTCCMBTCSMCO.mp4
+avi,LEGO FRIEND: GIRLZ 4 LIFE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LEGOFRNDS.mp4
+avi,LIGA DA JUSTI&Ccedil;A VS. JOVENS TIT&Atilde;S [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LIGDJSTVSTNTITNSUEA.mp4
+avi,LORDS OF LONDON [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LDSODLNDLEG.mp4
+avi,LOVE LIVE! SCHOOL IDOL PROJECT MOVIE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LOVLVTSCHLIDLMV.mp4
+avi,MACBETH: AMBICAO &amp; GUERRA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MCBETHABCOEGURR.mp4
+avi,MELHOR E SEM CORTES [DUB],http://transforrede.com/vd/dd/RC/RCServer01/videos/STHPRKFILME01.mp4
+avi,MENTE CRIMONOSA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MENTCRMINSA.mp4
+avi,MINIONS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MINIONS.mp4
+avi,MOGLI: O MENINO LOBO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MGLOMENLB.mp4
+avi,MUMIA: A RESSURREICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MUMARSRCAO.mp4
+avi,O BOM DINOSSAURO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OBOMDINO.mp4
+avi,O ENCONTRO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OENCTRO.mp4
+avi,O GRANDE MESTRE 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OGRNDMSTR3.mp4
+avi,O GRANDE MESTRE 3 [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OGRNDMSTR3LEG.mp4
+avi,O REGRESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGRSODUB.mp4
+avi,O TIGRE E O DRAG&Atilde;O: A ESPADA DO DESTINO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OTRIGEDRG.mp4
+avi,O &Uacute;LTIMO CA&Ccedil;ADOR DE BRUXAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OULTMCADRDBRXDUB.mp4
+avi,OPERACAO RESGATE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OPRCORSGT.mp4
+avi,ORGULHO E PRECONCEITO E ZUMBIS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGLHEPRCTZMBLEG.mp4
+avi,OS 33 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OS33.mp4
+avi,OS CONDENADOS 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OSCNDNS2.mp4
+avi,OS DEZ MANDAMENTOS: O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OSDZMANDMTS.mp4
+avi,OS SIMPSONS: O FILME [DUB],http://transforrede.com/vd/dd/RC/RCServer01/videos/OSMPSFILME.mp4
+avi,PERSEGUICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGCAO.mp4
+avi,PERSEGUINDO ABBOTT [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGUNDABOT.mp4
+avi,PETS: A VIDA SECRETA DOS BICHOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/PETSAVSDBS.mp4
+avi,PIXELS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/PIXRLS.mp4
+avi,PRESS&Aacute;GIOS DE UM CRIME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGDUCRM.mp4
+avi,QUARTETO FANT&Aacute;STICO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/QRTFNTSC2015.mp4
+avi,REBELI&Atilde;O [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/RBLOA.mp4
+avi,REGRESSO DO MAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/RGRSDMAL.mp4
+avi,SNOOPY E CHARLIE BROWN: PEANUTS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SNPYECRLIBRPANRSOFLM.mp4
+avi,SPOTILIGHT: SEGREDOS REVELADOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SPTGHTSCRDSRVLDS.mp4
+avi,STEVE JOBS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/STVJBS.mp4
+avi,SUBMERGED [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SBMRGDLEG.mp4
+avi,TED 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TED2.mp4
+avi,TERMINUS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TRIMNUSLEG.mp4
+avi,THE BEACH BOYS: UMA HIST&Oacute;RIA DE SUCESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/THBCHBYSUHDS.mp4
+avi,THE RIDICULOUS 6 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/THRDCULOS6.mp4
+avi,THE WALKING DECEASED [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TWLKDCSD.mp4
+avi,TOMORROWLAND: UM LUGAR ONDE NADA &Eacute; IMPOSS&Iacute;VEL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TOMROWLND.mp4
+avi,TRIPLE 9 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TRPL9.mp4
+avi,UM SENHOR ESTAGI&Aacute;RIO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/UMSNHRESTGIARIO.mp4
+avi,UMA AVENTURA DE BABAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/UMAVNTRDBABS.mp4
+avi,VAI QUE D&Aacute; CERTO 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/VQDRCRT2.mp4
+avi,VELOZES &amp; FURIOSOS 7 [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/VLZEFROSOS07.mp4
+avi,VINGADORES: ERA DE ULTRON [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/VNGDRSEDURON.mp4
+avi,VOLTANDO DO INFERNO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/VLTNDINF.mp4
+avi,WARCRAFT: O PRIMEIRO ENCONTRO DE DOIS MUNDOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/WARCRFT.mp4
+avi,WOODLAWN: TALENTO E F&Eacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TLNTEFWODLWN.mp4
+avi,X-MEN: APOCALIPSE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/XMENAPCLPSE.mp4
+avi,ZOOTOPIA: ESSA CIDADE &Eacute; O BICHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ZOTPIA.mp4
+
+group,Aventura
+avi,A Lenda de Tarzan (DUB) 2016,http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ALNDETRZN.mp4
+avi,A HERDEIRA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AHRDIRA.mp4
+avi,ALICE ATRAV&Eacute;S DO ESPELHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ALCATRVSDESLHO.mp4
+avi,ALICE ATRAV&Eacute;S DO ESPELHO [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ALCATRVSDESLHOLEGN.mp4
+avi,ALVIN E OS ESQUILOS: NA ESTRADA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ALVNEOSESQULSNESTRD.mp4
+avi,ANGRY BIRDS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ANGRYBRDSFLM.mp4
+avi,ANGRY BIRDS - O FILME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ANGRYBRDSFLMLEG.mp4
+avi,BATMAN VS SUPERMAN: A ORIGEM DA JUSTI&Ccedil;A [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNVSPRMNAODJT.mp4
+avi,BATMAN: SANGUE RUIM [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNSNGRUIM.mp4
+avi,CACADORES DE EMOCAO: AL&Eacute;M DO LIMITE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CACDRSDEMCOSALMDLMT.mp4
+avi,CANIBAIS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CANBS.mp4
+avi,DEUSES DO EGITO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEUSDEGTO.mp4
+avi,DIABLO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DIABLODUB.mp4
+avi,HARDCORE: MISS&Atilde;O EXTREMA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/HARDCRMSEXTRM.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNT.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNTLEG.mp4
+avi,JEM E AS HOLOGRAMAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JMEASHLFRMS.mp4
+avi,JOGO DE ASSASSINOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSDASINS.mp4
+avi,JOGOS VORAZES: A ESPERAN&Ccedil;A - O FINAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSVRZSAESPRPT2.mp4
+avi,MOGLI: O MENINO LOBO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MGLOMENLB.mp4
+avi,MUMIA: A RESSURREICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MUMARSRCAO.mp4
+avi,O REGRESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGRSODUB.mp4
+avi,QUARTETO FANT&Aacute;STICO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/QRTFNTSC2015.mp4
+avi,TOMORROWLAND: UM LUGAR ONDE NADA &Eacute; IMPOSS&Iacute;VEL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TOMROWLND.mp4
+avi,VINGADORES: ERA DE ULTRON [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/VNGDRSEDURON.mp4
+avi,WARCRAFT: O PRIMEIRO ENCONTRO DE DOIS MUNDOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/WARCRFT.mp4
+
+group,A&ccedil;&atilde;o
+avi,A Lenda de Tarzan (DUB) 2016,http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ALNDETRZN.mp4
+avi,AS TARTARUGAS NINJA: FORA DAS SOMBRAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASTARTGUSNJSFRDSSMBRS.mp4
+avi,ASSALTO AO PODER [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASLTOAOPDR.mp4
+avi,BATMAN VS SUPERMAN: A ORIGEM DA JUSTI&Ccedil;A [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNVSPRMNAODJT.mp4
+avi,BATMAN: SANGUE RUIM [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BTMNSNGRUIM.mp4
+avi,CAPIT&Atilde;O AM&Eacute;RICA: GUERRA CIVIL [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/CAPTAMRC3.mp4
+avi,CAPIT&Atilde;O AM&Eacute;RICA: GUERRA CIVIL [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/CAPTAMRC3LEG.mp4
+avi,DEADPOOL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEADP.mp4
+avi,DEADPOOL [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEADPLEG.mp4
+avi,DEUSES DO EGITO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DEUSDEGTO.mp4
+avi,DIABLO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DIABLODUB.mp4
+avi,HARDCORE: MISS&Atilde;O EXTREMA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/HARDCRMSEXTRM.mp4
+avi,HOMEM-FORMIGA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HMNFRMG.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNT.mp4
+avi,INDEPENDENCE DAY: O RESSURGIMENTO [LEG],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INDPNDAYORSGMNTLEG.mp4
+avi,JOGO DE ASSASSINOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSDASINS.mp4
+avi,LORDS OF LONDON [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LDSODLNDLEG.mp4
+avi,MENTE CRIMONOSA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MENTCRMINSA.mp4
+avi,O GRANDE MESTRE 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OGRNDMSTR3.mp4
+avi,O GRANDE MESTRE 3 [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OGRNDMSTR3LEG.mp4
+avi,O TIGRE E O DRAG&Atilde;O: A ESPADA DO DESTINO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OTRIGEDRG.mp4
+avi,O &Uacute;LTIMO CA&Ccedil;ADOR DE BRUXAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OULTMCADRDBRXDUB.mp4
+avi,OPERACAO RESGATE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OPRCORSGT.mp4
+avi,ORGULHO E PRECONCEITO E ZUMBIS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGLHEPRCTZMBLEG.mp4
+avi,OS CONDENADOS 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OSCNDNS2.mp4
+avi,PERSEGUINDO ABBOTT [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGUNDABOT.mp4
+avi,PIXELS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/PIXRLS.mp4
+avi,QUARTETO FANT&Aacute;STICO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/QRTFNTSC2015.mp4
+avi,REBELI&Atilde;O [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/RBLOA.mp4
+avi,VELOZES &amp; FURIOSOS 7 [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/VLZEFROSOS07.mp4
+avi,VINGADORES: ERA DE ULTRON [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/VNGDRSEDURON.mp4
+avi,X-MEN: APOCALIPSE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/XMENAPCLPSE.mp4
+
+group,Drama
+avi,90 MINUTOS NO PARA&Iacute;SO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/90MINPRSO.mp4
+avi,&Agrave; PROCURA DA LIBERDADE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/APRCURDLBRD.mp4
+avi,APRENDENDO COM A VOV&Oacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/APRNDOCMAVO.mp4
+avi,BRAVETOWN [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BRVTWN.mp4
+avi,CAROL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CRL.mp4
+avi,CASAMENTO DE VERDADE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JNYWDNGLEG.mp4
+avi,CINQUENTA TONS DE CINZA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/CNQNTNSDCNZ.mp4
+avi,DEUS N&Atilde;O EST&Aacute; MORTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DSNESTMRT.mp4
+avi,DEUS N&Atilde;O EST&Aacute; MORTO 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/DSNESTMRT2.mp4
+avi,ELE NUNCA MORRE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ELENCMRR.mp4
+avi,ESPECIALISTA EM CRISE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ESPCLSEMCRS.mp4
+avi,GRACE DE M&Ocirc;NACO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/GRCDMNC.mp4
+avi,HOMEM IRRACIONAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OHOMNIRCIONL.mp4
+avi,MACBETH: AMBICAO &amp; GUERRA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MCBETHABCOEGURR.mp4
+avi,O ENCONTRO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OENCTRO.mp4
+avi,O REGRESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGRSODUB.mp4
+avi,OS 33 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OS33.mp4
+avi,PERSEGUICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGCAO.mp4
+avi,PRESS&Aacute;GIOS DE UM CRIME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGDUCRM.mp4
+avi,SPOTILIGHT: SEGREDOS REVELADOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SPTGHTSCRDSRVLDS.mp4
+avi,STEVE JOBS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/STVJBS.mp4
+avi,SUBMERGED [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SBMRGDLEG.mp4
+avi,THE BEACH BOYS: UMA HIST&Oacute;RIA DE SUCESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/THBCHBYSUHDS.mp4
+avi,TRIPLE 9 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TRPL9.mp4
+avi,WOODLAWN: TALENTO E F&Eacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TLNTEFWODLWN.mp4
+
+group,Infantil
+avi,A ERA DO GELO: A GRANDE CA&Ccedil;ADA AOS OVOS DE P&Aacute;SCOA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AERDGLAGRNDCAOVS.mp4
+avi,A ERA DO GELO: O BIG BANG [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/AERDGLOBB.mp4
+avi,ALVIN E OS ESQUILOS: NA ESTRADA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ALVNEOSESQULSNESTRD.mp4
+avi,ANGRY BIRDS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ANGRYBRDSFLM.mp4
+avi,ANGRY BIRDS - O FILME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ANGRYBRDSFLMLEG.mp4
+avi,BARBIE: AVENTURA NAS ESTRELAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/BARBIRAVNESTLS.mp4
+avi,BOB ESPONJA: UM HER&Oacute;I FORA D\'&Aacute;GUA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/BOBESPJUHRFRDGUA.mp4
+avi,DIVERTIDA MENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DVRTDMNT.mp4
+avi,Epa Cade o Noe - Anima&ccedil;&atilde;o HD (Dub),https://www.youtube.com/watch?v=lERyn_HMA5k
+avi,HOTEL TRANSILV&Acirc;NIA 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HOTLTRNSVLNA2.mp4
+avi,KUNG FU PANDA 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/KUNGFUPND3.mp4
+avi,KUNG FU PANDA: SEGREDOS DO PERGAMINHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/KUNGFUPNDSGRDDPRGMH.mp4
+avi,LEGO DC COMICS SUPER HER&Oacute;IS: LIGA DA JUSTI&Ccedil;A - COMBATE C&Oacute;SMICO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LEGLGDJSTCCMBTCSMCO.mp4
+avi,LEGO FRIEND: GIRLZ 4 LIFE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LEGOFRNDS.mp4
+avi,LIGA DA JUSTI&Ccedil;A VS. JOVENS TIT&Atilde;S [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LIGDJSTVSTNTITNSUEA.mp4
+avi,LOVE LIVE! SCHOOL IDOL PROJECT MOVIE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/LOVLVTSCHLIDLMV.mp4
+avi,MELHOR E SEM CORTES [DUB],http://transforrede.com/vd/dd/RC/RCServer01/videos/STHPRKFILME01.mp4
+avi,MINIONS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MINIONS.mp4
+avi,MOGLI: O MENINO LOBO [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MGLOMENLB.mp4
+avi,O BOM DINOSSAURO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OBOMDINO.mp4
+avi,OS SIMPSONS: O FILME [DUB],http://transforrede.com/vd/dd/RC/RCServer01/videos/OSMPSFILME.mp4
+avi,PETS: A VIDA SECRETA DOS BICHOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/PETSAVSDBS.mp4
+avi,SNOOPY E CHARLIE BROWN: PEANUTS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SNPYECRLIBRPANRSOFLM.mp4
+avi,TED 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TED2.mp4
+avi,VOLTANDO DO INFERNO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/VLTNDINF.mp4
+avi,ZOOTOPIA: ESSA CIDADE &Eacute; O BICHO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ZOTPIA.mp4
+
+group,Terror
+avi,A RESSURREICAO DO ANTICRISTO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ARSRCAODANTCRST.mp4
+avi,A SEITA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ASITA.mp4
+avi,CANIBAIS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CANBS.mp4
+avi,COMO SOBREVIVER A UM ATAQUE ZUMBI [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CMSBRVVERAUATQZMB.mp4
+avi,DOCE VINGAN&Ccedil;A 3: A VINGAN&Ccedil;A &Eacute; MINHA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DCVNGCA3.mp4
+avi,FRANKENSTEIN [DUB],http://storage-rc.edgedns.us/RedeCanais/RCFServer3/ondemand/FRNKSTEN.mp4
+avi,INVOCACAO DO MAL 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/INVCAODML2.mp4
+avi,IRM&Atilde;S [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/IRMAS.mp4
+avi,MUMIA: A RESSURREICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MUMARSRCAO.mp4
+avi,O &Uacute;LTIMO CA&Ccedil;ADOR DE BRUXAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OULTMCADRDBRXDUB.mp4
+avi,ORGULHO E PRECONCEITO E ZUMBIS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGLHEPRCTZMBLEG.mp4
+avi,PERSEGUICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGCAO.mp4
+avi,REGRESSO DO MAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/RGRSDMAL.mp4
+
+group,Suspense
+avi,A VIATURA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/AVIATURA.mp4
+avi,CANIBAIS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CANBS.mp4
+avi,DIABLO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/DIABLODUB.mp4
+avi,HANGMAN [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HGMNLEG.mp4
+avi,HOMEM IRRACIONAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OHOMNIRCIONL.mp4
+avi,JOGO DE ASSASSINOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSDASINS.mp4
+avi,Landmine Goes Click,https://lh3.googleusercontent.com/jsfTRDr2c9mhaj6nkJcfk9uWFDwSzvFt8TCphaYgECT8LmZWPbGHJZ4MhVYaoaHBZgAGTEc3wA=m37
+avi,MENTE CRIMONOSA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MENTCRMINSA.mp4
+avi,O REGRESSO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGRSODUB.mp4
+avi,PERSEGUICAO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGCAO.mp4
+avi,PRESS&Aacute;GIOS DE UM CRIME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGDUCRM.mp4
+avi,SPOTILIGHT: SEGREDOS REVELADOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/SPTGHTSCRDSRVLDS.mp4
+
+group,Fic&ccedil;&atilde;o
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASREDVRGNTCNVGNT.mp4
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ASREDVRGNTCNVGNTLEG.mp4
+avi,HOMEM-FORMIGA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/HMNFRMG.mp4
+avi,JOGOS VORAZES: A ESPERAN&Ccedil;A - O FINAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JGSVRZSAESPRPT2.mp4
+avi,MENTE CRIMONOSA [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/MENTCRMINSA.mp4
+avi,PIXELS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/PIXRLS.mp4
+avi,TERMINUS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TRIMNUSLEG.mp4
+avi,WARCRAFT: O PRIMEIRO ENCONTRO DE DOIS MUNDOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/WARCRFT.mp4
+avi,X-MEN: APOCALIPSE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/XMENAPCLPSE.mp4
+
+group,Romance
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ASREDVRGNTCNVGNT.mp4
+avi,A S&Eacute;RIE DIVERGENTE: CONVERGENTE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ASREDVRGNTCNVGNTLEG.mp4
+avi,BRAVETOWN [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/BRVTWN.mp4
+avi,CAROL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CRL.mp4
+avi,HOMEM IRRACIONAL [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OHOMNIRCIONL.mp4
+avi,ORGULHO E PRECONCEITO E ZUMBIS [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ORGLHEPRCTZMBLEG.mp4
+
+group,Com&eacute;dia
+avi,AMOR POR ACIDENTE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/AMRPRACDNT.mp4
+avi,ANGRY BIRDS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ANGRYBRDSFLM.mp4
+avi,ANGRY BIRDS - O FILME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ANGRYBRDSFLMLEG.mp4
+avi,APRENDENDO COM A VOV&Oacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/APRNDOCMAVO.mp4
+avi,AT&Eacute; QUE A SORTE NOS SEPARE 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ATQASRTNSPR3.mp4
+avi,CASAMENTO DE VERDADE [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/JNYWDNGLEG.mp4
+avi,CINQUENTA TONS DE PRETO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CQNTATNSDPRT.mp4
+avi,COMO SOBREVIVER A UM ATAQUE ZUMBI [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/CMSBRVVERAUATQZMB.mp4
+avi,DESNORTEADOS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/DESNRTAD.mp4
+avi,ELE NUNCA MORRE [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/ELENCMRR.mp4
+avi,ENSINA-ME O AMOR [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ESNMOAMR.mp4
+avi,ESPECIALISTA EM CRISE [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ESPCLSEMCRS.mp4
+avi,GET A JOB [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/GETJBLEG.mp4
+avi,PIXELS - O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/PIXRLS.mp4
+avi,THE WALKING DECEASED [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TWLKDCSD.mp4
+avi,UM SENHOR ESTAGI&Aacute;RIO [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/UMSNHRESTGIARIO.mp4
+avi,UMA AVENTURA DE BABAS [DUB],http://transforrede.com/vd/dd/RC/RCFServer3/ondemand/UMAVNTRDBABS.mp4
+avi,VAI QUE D&Aacute; CERTO 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/VQDRCRT2.mp4
+
+group,Policial
+avi,Landmine Goes Click,https://lh3.googleusercontent.com/jsfTRDr2c9mhaj6nkJcfk9uWFDwSzvFt8TCphaYgECT8LmZWPbGHJZ4MhVYaoaHBZgAGTEc3wA=m37
+avi,PRESS&Aacute;GIOS DE UM CRIME [LEG],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/PRSGDUCRM.mp4
+
+group,Nacional
+avi,AT&Eacute; QUE A SORTE NOS SEPARE 3 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/ATQASRTNSPR3.mp4
+avi,OS DEZ MANDAMENTOS: O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OSDZMANDMTS.mp4
+avi,VAI QUE D&Aacute; CERTO 2 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/VQDRCRT2.mp4
+
+group,GUERRA
+avi,MACBETH: AMBICAO &amp; GUERRA [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/MCBETHABCOEGURR.mp4
+
+group,faroeste
+avi,THE RIDICULOUS 6 [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/THRDCULOS6.mp4
+
+group,Religioso
+avi,OS DEZ MANDAMENTOS: O FILME [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/OSDZMANDMTS.mp4
+avi,WOODLAWN: TALENTO E F&Eacute; [DUB],http://transforrede.com/vd/dd/RC/RCFServer2/ondemand/TLNTEFWODLWN.mp4
+
+group,Er&oacute;tico
+avi,CINQUENTA TONS DE CINZA [DUB],http://transforrede.com/vd/dd/RC/RCFServer1/ondemand/CNQNTNSDCNZ.mp4
+avi,FILMES PORN&Ocirc;,http://videos.galleries.pornpros.com/galleries.tiny4k.com/htdocs/fb01/fb01_dakotaskye040314/content/vid01.mp4
+avi,FILMES PORN&Ocirc;,http://videos.galleries.pornpros.com/galleries.tiny4k.com/htdocs/fb01/fb01_sabrinabanks071414/content/vid01.mp4
+avi,FILMES PORN&Ocirc;,http://videos.galleries.pornpros.com/galleries.tiny4k.com/htdocs/fb01/fb01_tiffanyfox030514/content/vid01.mp4
+avi,FILMES PORN&Ocirc;,http://videos.galleries.pornpros.com/galleries.tiny4k.com/htdocs/fb01/fb01_kaceyjordan061914/content/vid01.mp4</p></body></html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <iostream>
+using namespace std;
+int a, f[100], i;
+int main(){
+	freopen("input.txt", "r", stdin);
+	freopen("output.txt", "w", stdout);
+	cin &gt;&gt; a;
+	for(i = 0; i != a; i++){
+		cin &gt;&gt; f[i];
+	}
+	int same = 0;
+	for(int k = 0; k != i; k++){
+		if(f[k] == f[k + 1]){
+			same++;
+		}
+	}
+	cout &lt;&lt; same;
+	return 0;
+}</iostream></p></body></html>

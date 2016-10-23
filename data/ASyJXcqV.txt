@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#pragma once
+DWORD WINAPI Trigger(LPVOID lpParameter)
+{
+	while (true)
+	{
+		DWORD MyTeam;
+		DWORD tTeam;
+		DWORD tEntity;
+		DWORD InCross;
+
+		int LocalBase = sxvh.ReadInt(Offsets::Base::_client + Offsets::Client::m_dwLocalPlayer);
+		InCross = sxvh.ReadInt(LocalBase + Offsets::General::m_iCrossHairID);
+		MyTeam = sxvh.ReadInt(LocalBase + Offsets::General::m_iTeamNum);
+		tEntity = sxvh.ReadByte(Offsets::Base::_client + Offsets::Client::m_dwEntityList + ((InCross - 1) * 16));
+		tTeam = sxvh.ReadInt(tEntity + Offsets::General::m_iTeamNum);
+
+		if (Functions::triggerON)
+		{
+			if (MyTeam != tTeam &amp;&amp; tTeam &gt; 1 &amp;&amp; GetAsyncKeyState(VK_XBUTTON2) &amp;&amp; InCross &gt; 0 &amp;&amp; InCross &lt; 64)
+			{
+
+				Sleep(7);
+				sxvh.WriteInt(Offsets::Base::_client + Offsets::Client::m_dwForceAttack, 1);
+				Sleep(1);
+				sxvh.WriteInt(Offsets::Base::_client + Offsets::Client::m_dwForceAttack, 0);
+
+			}
+		}
+		else
+		{
+			Sleep(25);
+		}
+	}
+}</p></body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package Bank;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class UnitTest {
+
+	
+
+	@Test
+	public void testWithdraw() {
+		
+		Account bankAccount = new Account("Sek", 1000);
+		/*
+		 * Test to check that withdraw works as intended.
+		 * Will fail if balance has not been reduced to correct amount.
+		 */
+		bankAccount.withdraw(500);
+		assertEquals(500, bankAccount.getBalance(), 0);
+		
+		/*
+		 * Test to check if you can withdraw more than your total balance.
+		 * Will fail if balance has been changed.
+		 */
+		bankAccount.withdraw(1000);
+		assertEquals(500, bankAccount.getBalance(), 0);
+		
+		/*
+		 * Test to check if withdrawing funds can increase account balance.
+		 * Will fail if balance has been changed.
+		 */
+		bankAccount.setBalance(0);
+		bankAccount.withdraw(-1000);
+		assertEquals(0, bankAccount.getBalance(), 0);
+		
+		
+	}
+	
+	@Test 
+	public void testDeposit() {
+		Account bankAccount = new Account("SEK", 0);
+		/*
+		 * Test to check if deposit works as intended.
+		 * Will fail if balance has not been increased to correct amount.
+		 */
+		bankAccount.deposit(1000);
+		assertEquals(1000, bankAccount.getBalance(), 0);
+		/*
+		 * Test to check if you can deposit negative funds.
+		 * Will fail if balance has been changed.
+		 */
+		bankAccount.deposit(-100);
+		assertEquals(1000, bankAccount.getBalance(), 0);
+		/*
+		 * Test to check if deposit can handle floating points that cause 
+		 * strange behavior with double data type.
+		 * Will fail if exception is not handled.
+		 */
+		bankAccount.setBalance(0);
+		bankAccount.deposit((1.03-0.42));
+		assertEquals(0.61, bankAccount.getBalance(), 0);
+	}
+	
+	@Test
+	public void testConvertToCurrency() {
+		Account bankAccount = new Account("SEK", 1000);
+		/*
+		 * Test to check if convertToCurrency works as intended.
+		 * Will fail if conversion if not done.
+		 */
+		bankAccount.convertToCurrency("USD", 0.1);
+		assertEquals(100, bankAccount.getBalance(), 0);
+		
+		/*
+		 * Test to check if convertToCurrency accepts and converts using negative conversions.
+		 * Will fail if balance is changed.
+		 */
+		bankAccount.convertToCurrency("NEG", -0.1);
+		assertEquals(100, bankAccount.getBalance(), 0);
+		
+		/*
+		 * Test to check if balance becomes zero if converted into a worthless currancy.
+		 * Will fail if balance becomes zero.
+		 */
+		bankAccount.setBalance(1000);
+		bankAccount.convertToCurrency("WOL", 0);
+		assertNotEquals(0, bankAccount.getBalance(), 0);
+	}
+	
+	@Test
+	public void testTransferToAccount() {
+		
+		Account bankAccountSender = new Account("SEK", 2000);
+		Account bankAccountReceiver = new Account("SEK", 1000);
+		/*
+		 * Test to check if TransferToAccount works as intended.
+		 * Will fail if balance is not fully sent.
+		 */
+		bankAccountSender.TransferToAccount(bankAccountReceiver);
+		
+		assertEquals(3000, bankAccountReceiver.getBalance(), 0);
+		assertEquals(0, bankAccountSender.getBalance(), 0);
+		
+		/*
+		 * Test to check that if a account receives a value more than what a double can represent
+		 * that
+		 * Will fail if transfer if completed.
+		 */
+		bankAccountSender.setBalance(0);
+		bankAccountReceiver.setBalance(500);
+		bankAccountSender.deposit(0.5);
+		bankAccountSender.TransferToAccount(bankAccountReceiver);
+		
+		assertNotEquals(500.5, bankAccountReceiver.getBalance(), 0);
+		
+		/*
+		 * Test to check if transfer between two currencies only transfers value of 
+		 * balance without conversion.
+		 * Will fail if if receiver is sum of itself and sender.
+		 */
+		bankAccountSender.setCurrency("USD");
+		bankAccountSender.setBalance(1000);
+		bankAccountReceiver.setCurrency("SEK");
+		bankAccountReceiver.setBalance(2000);
+		
+		bankAccountSender.TransferToAccount(bankAccountReceiver);
+		assertNotEquals(3000, bankAccountReceiver.getBalance(), 0);	
+		
+	}
+}</p></body></html>

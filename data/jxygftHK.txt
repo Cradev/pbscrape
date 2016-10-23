@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+entity mod_m_counter is
+   generic(
+      N: integer := 18;     -- number of bits
+      M: integer := 988     -- mod-M
+  );
+   port(
+      clk, reset: in std_logic;
+      to_m_in: in unsigned(17 downto 0);
+      max_tick: out std_logic
+   );
+end mod_m_counter;
+
+architecture arch of mod_m_counter is
+   signal r_reg: unsigned(N-1 downto 0);
+   signal r_next: unsigned(N-1 downto 0);
+begin
+   -- register
+   process(clk,reset,to_m_in)
+   begin
+      if (reset='1') then
+         r_reg &lt;= (others=&gt;'0');
+      elsif (clk'event and clk='1') then
+         r_reg &lt;= r_next;
+      end if;
+   end process;
+   -- next-state logic
+   r_next &lt;= (others=&gt;'0') when r_reg=(to_m_in-1) else
+             r_reg + 1;
+   -- output logic
+   max_tick &lt;= '1' when r_reg=(to_m_in-1) else '0';
+end arch;</p></body></html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>//&#1040;&#1074;&#1090;&#1086;&#1076;&#1080;&#1079;&#1077;&#1081;&#1073;&#1083; &#1080;&#1085;&#1080;&#1094;&#1080;&#1072;&#1090;&#1086;&#1088;&#1086;&#1074;.
+//&#1072;&#1081;&#1090;&#1077;&#1084;&#1099; &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1093; &#1073;&#1091;&#1076;&#1077;&#1084; &#1076;&#1080;&#1079;&#1077;&#1081;&#1073;&#1083;&#1080;&#1090;&#1100;
+var DisableItems = [
+	"item_orchid",
+	"item_bloodthorn",
+	"item_sheepstick",
+	"item_cyclone"
+]
+
+//&#1072;&#1073;&#1080;&#1083;&#1082;&#1080; &#1089; &#1087;&#1086;&#1084;&#1086;&#1097;&#1100;&#1102; &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1093; &#1073;&#1091;&#1076;&#1077;&#1084; &#1076;&#1080;&#1079;&#1077;&#1081;&#1073;&#1083;&#1080;&#1090;&#1100;
+var DisableAbils = [
+	"pudge_dismember",
+	"lion_voodoo",
+	"puck_waning_rift",
+	"shadow_shaman_voodoo",
+	"dragon_knight_dragon_tail",
+	"rubick_telekinesis"
+]
+
+//&#1089;&#1087;&#1077;&#1083;&#1099; &#1074;&#1088;&#1072;&#1075;&#1086;&#1074; &#1085;&#1072; &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1077; &#1073;&#1091;&#1076;&#1077;&#1090; &#1088;&#1077;&#1072;&#1075;&#1080;&#1088;&#1086;&#1074;&#1072;&#1090;&#1100; &#1089;&#1082;&#1088;&#1080;&#1087;&#1090;
+var InitSpells = [
+	"tidehunter_ravage",
+	"enigma_black_hole",
+	"axe_berserkers_call",
+	"magnataur_reverse_polarity",
+	"legion_commander_duel",
+	"beastmaster_primal_roar",
+	"treant_overgrowth",
+	"faceless_void_chronosphere",
+	"batrider_flaming_lasso",
+	"dark_seer_wall_of_replica",
+	"slardar_slithereen_crush",
+	"queenofpain_sonic_wave",
+	"centaur_hoof_stomp",
+	"sven_storm_bolt"
+]
+
+var LenseBonusRange = 200
+var interval = 0
+var flag = false
+var threads = 3 //threads :D
+
+function AntiInitiationF(){
+	if ( !AntiInitiation.checked || flag )
+		return
+	var MyEnt = Players.GetPlayerHeroEntityIndex(Game.GetLocalPlayerID())
+	var item=-1
+	c: // C:
+	for(i in DisableItems)
+		for(m = 0; m&lt;6; m++){
+			var it = Entities.GetItemInSlot( MyEnt, m )
+			if(DisableItems[i]==Abilities.GetAbilityName(it) &amp;&amp; Abilities.GetCooldownTimeRemaining(it)==0){
+				item = it
+				break c;
+			}
+		}
+	C:
+	if(item==-1){
+		for(i in DisableAbils)
+		for(m = 0; m<entities.getabilitycount m var it="Entities.GetAbility(" myent if abilities.getcooldowntimeremaining item="it" break c return itemname="Abilities.GetAbilityName(item)" behavior="Game.Behaviors(item)" hents="Game.PlayersHeroEnts()" for in ent="parseInt(HEnts[i])" continue itemrange="Abilities.GetCastRange(item)" range="Entities.GetRangeToUnit(MyEnt,">itemrange &amp;&amp; itemrange!=0)
+			continue
+		for(m=0;m<entities.getabilitycount var abil="Entities.GetAbility(ent," m abilname="Abilities.GetAbilityName(Abil)" cast="Abilities.IsInAbilityPhase(Abil)" if abilities.getcooldowntimeremaining abilities.getlevel initspells.indexof continue gameui.selectunit game.entstop false game.castnotarget item else abilities.createdoubletapcastorder myent game.casttarget flag="true" return autocritfoncheckboxclick="function(){" game.scriptlogmsg disabled: antiinitiation function f interval antiinitiationf for enabled: temp="$.CreatePanel(" temp.setpanelevent temp.bloadlayoutfromstring><styles><include src="s2r://panorama/styles/dotastyles.vcss_c"></include><include src="s2r://panorama/styles/magadan.vcss_c"></include></styles><panel><togglebutton class="CheckBox" id="AntiInitiation" text="AntiInitiation"></togglebutton></panel>', false, false)  
+var AntiInitiation = $.GetContextPanel().FindChildTraverse( 'AntiInitiation' ).Children()[0]</entities.getabilitycount></entities.getabilitycount></p></body></html>

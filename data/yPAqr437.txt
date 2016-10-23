@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>///==================================================================//
+/// Problem     : Contest Code                                       //
+/// Author      : NSU Aristocrats                                    //
+/// Represents  : North South University                             //
+/// Email       : nsu3aristocrats@gmail.com                          //
+/// Codeforces  : http://codeforces.com/team/21235                   //
+/// Verdict     : In Queue                                           //
+/// Date        : 02/10/2016                                         //
+///==================================================================//
+
+///====================== TEMPLATE STARTS HERE =====================///
+//#include <bits>
+#include<cstdio>
+#include<cstring>
+#include<cmath>
+#include<algorithm>
+#include<map>
+#include<queue>
+#include<stack>
+#include<vector>
+#include<deque>
+#include<functional>
+#include<string>
+#include<iostream>
+#include<cctype>
+#include<set>
+#include<climits>
+#include<iomanip>
+#include<cassert>
+#include<sstream>
+
+#define pb push_back
+#define nl puts ("")
+#define phl printf ( "hello\n" )
+#define ff first
+#define ss second
+#define POPCOUNT __builtin_popcountll
+#define RIGHTMOST __builtin_ctzll
+#define LEFTMOST(x) (63-__builtin_clzll((x)))
+#define MP make_pair
+#define FOR(i,x,y) for(vlong i = (x) ; i &lt;= (y) ; ++i)
+#define ROF(i,x,y) for(vlong i = (y) ; i &gt;= (x) ; --i)
+#define CLR(x,y) memset(x,y,sizeof(x))
+#define UNIQUE(V) (V).erase(unique((V).begin(),(V).end()),(V).end())
+#define MIN(a,b) ((a)(b)?(a):(b))
+#define NUMDIGIT(x,y) (((vlong)(log10((x))/log10((y))))+1)
+#define SQ(x) ((x)*(x))
+#define ABS(x) ((x)&lt;0?-(x):(x))
+#define FABS(x) ((x)+eps&lt;0?-(x):(x))
+#define ALL(x) (x).begin(),(x).end()
+#define LCM(x,y) (((x)/gcd((x),(y)))*(y))
+#define SZ(x) ((vlong)(x).size())
+#define NORM(x) if(x&gt;=mod)x-=mod;
+#define MOD(x,y) (((x)*(y))%mod)
+#define ODD(x) (((x)&amp;1)==0?(0):(1))
+#define dbgA(A,i) debug("[",i,"] = ",A[i])
+#define pf printf
+#define sf scanf
+#define LL long long
+#define LLU long long unsigned int
+#define fast_cin ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define pline pf("\n\n/// ================================ ///\n\n")
+
+using namespace std;
+
+typedef long long vlong;
+typedef unsigned long long uvlong;
+typedef pair &lt; vlong, vlong &gt; pll;
+typedef pair &lt; int, int &gt; pii;
+typedef vector<pll> vll;
+typedef vector<vlong> vl;
+
+#ifdef forthright48
+     #include <ctime>
+     clock_t tStart = clock();
+     #define debug(args...) {dbg,args; cerr&lt;<endl timestamp debug time: tstart bug printf just strip off all tokens struct debugger template t> debugger&amp; operator , (const T&amp; v){
+        cerr&lt;<v return knightdir dir4 dir8 inline vlong gcd a b while swap ext_gcd x2 y2 x1 y1 x y r2 r1 q r for modinv m if power p res="1,">&gt;= 1;
+    }
+    return res;
+}
+
+inline vlong bigmod ( vlong a, vlong p, vlong m ) {
+    vlong res = 1 % m, x = a % m;
+    while ( p ) {
+        if ( p &amp; 1 ) res = ( res * x ) % m;
+        x = ( x * x ) % m; p &gt;&gt;= 1;
+    }
+    return res;
+}
+
+int  Set(int N,int cur){ return N = N | (1&lt;<cur int reset n cur return bool check const vlong inf="1000000000;" double pi="2" acos eps="1e-9;" template ends here="====================///" ll mod="1000000007;" size="1000005;" len1 vector> Graph1[150];
+vector<int> Graph2[150];
+string s1,s2;
+
+int calcCost(int pos,int lp1,int rp1,char d) {
+    int idx = Graph2[d][pos];
+    int lp2 = idx - 1;
+    int rp2 = Len2 - lp2;
+    int res = abs(lp1 - lp2) + abs(lp1 - rp2) + abs(rp1 - lp2) + abs(rp1 - rp2);
+    return res;
+}
+
+int ternarySearch(int lp,int rp,char d) {
+	int L = 0, R = Graph2[d].size()-1;
+	while ((R-L)&gt;2) {
+		int mid_L = (2*L + R) / 3;
+		int mid_R = (L + 2*R) / 3;
+		int LR = calcCost(mid_L,lp,rp,d);
+		int RR = calcCost(mid_R,lp,rp,d);
+		if (LR &lt;= RR){
+			R = mid_R;
+		}else{
+			L = mid_L;
+		}
+	}
+	int res =  min(calcCost(L,lp,rp,d),calcCost(R,lp,rp,d));
+	return res;
+}
+
+void solve(){
+    for(int i = 0;i<len1 char d="s1[i];" graph1 for i="0;i&lt;Len2;i++){" graph2 int res="inf;" sz="Graph1[d].size();" if continue pos="Graph1[d][i];" lp="pos" rp="Len1" ret="ternarySearch(lp,rp,d);" pf main ncase cin>&gt; nCase;
+    for(int cs = 1;cs&lt;=nCase;cs++){
+        cin &gt;&gt; s1 &gt;&gt; s2;
+        Len1 = s1.length();
+        Len2 = s2.length();
+        for(int i = 0;i&lt;150;i++){
+            Graph1[i].clear();
+            Graph2[i].clear();
+        }
+        solve();
+    }
+    return 0;
+}</len1></int></cur></v></endl></ctime></vlong></pll></sstream></cassert></iomanip></climits></set></cctype></iostream></string></functional></deque></vector></stack></queue></map></algorithm></cmath></cstring></cstdio></bits></p></body></html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>load('D:\Dropbox\data_lab1.mat')
+
+%Length calculation for samples
+
+estimatedArrayLength = floor(length(data.x)*0.9);
+randRows=randperm(length(data.x));
+
+distances=transpose(data.x);
+powers=transpose(data.y);
+%uncertainty in a measurement
+
+unc= max(powers)-min(powers);
+unc
+
+%Estimation
+
+eSampleSetX = distances(randRows(1:estimatedArrayLength),:);
+eSampleSetY = powers(randRows(1:estimatedArrayLength),:);
+
+
+for i = 1:(length(eSampleSetX))
+        eSampleSetX(i,1) = 10 * log10(1/eSampleSetX(i,1));
+end
+K = [transpose(ones(1,length(eSampleSetX))) eSampleSetX];
+Estimation=K\eSampleSetY;
+Estimation
+
+
+
+%VALIDATION
+vSampleSetX = distances(randRows(estimatedArrayLength:end),:);
+vSampleSetY = powers(randRows(estimatedArrayLength:end),:);
+
+for i = 1:(length(vSampleSetX))
+        vSampleSetX(i,1) = 10 * log10(1/vSampleSetX(i,1));
+end
+K = [transpose(ones(1,length(vSampleSetX))) vSampleSetX];
+Validation=K\vSampleSetY;
+Validation
+
+x=1:1200;
+
+y1=transpose(x);
+for i = 1:(length(y1))
+        y1(i,1) = -9.0795+2.29*10 * log10(1/y1(i,1));
+end
+
+%WALFISCH-IKEGAMI
+
+x2=21:1200;
+y2=transpose(1:1180);
+length(x2)
+length(y2)
+for i = 21:1200
+        %33dBm(2W- pathloss due to WI)
+        y2(i-20,1) = 33-(42.6 + 26*log(i/1000)+20*log(3500));
+end
+
+
+figure
+loglog(data.x,data.y)
+hold('all');
+loglog(x,y1)
+hold('all');
+loglog(x2,y2);
+ylabel('Signal strength dB') % x-axis label
+xlabel('Distance in meter') % y-axis label
+hold off</p></body></html>

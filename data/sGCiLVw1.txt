@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>import { connectUi } from './ui'
+import reducer, { increment } from './reducer'
+
+
+export default const compose(
+  connectUi(
+    { reducer, initialState: { value: 0 } },
+    ({ value }) =&gt; ({ value }),
+    (dispatch, { uiKey }) =&gt; ({
+        onSomeEvent: item =&gt; dispatch(increment(uiKey))
+    })
+  )
+)(({ name, value, onSomeEvent }) =&gt; (
+    </p>
+<div>
+      <h5>{name}</h5>
+      <div>{value}</div>
+      <button onclick="{onSomeEvent}"></button>
+    </div>
+))</body></html>

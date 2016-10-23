@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package hw4;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+        import dao.CustomerDao;
+
+        import javax.servlet.ServletException;
+        import javax.servlet.annotation.WebServlet;
+        import javax.servlet.http.HttpServlet;
+        import javax.servlet.http.HttpServletRequest;
+        import javax.servlet.http.HttpServletResponse;
+        import java.io.IOException;
+
+@WebServlet("/api/customers")
+public class Servlet2 extends HttpServlet {
+
+    private static final long serialVersionUID = 1L;
+    CustomerDao customerDao = new CustomerDao();
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("application/json");
+
+        if (req.getParameter("id") == null) {
+            new ObjectMapper().writeValue(resp.getOutputStream(), customerDao.getCustomers());
+        } else {
+            new ObjectMapper().writeValue(resp.getOutputStream(), customerDao.findById(Long.parseLong(req.getParameter("id"))));
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        Customer customer = new ObjectMapper().readValue(req.getInputStream(), Customer.class);
+        customerDao.insertCustomer(customer);
+
+    }
+    @Override
+    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        if (req.getParameter("id") == null) {
+            customerDao.deleteCustomers();
+        } else {
+            customerDao.deleteById(Long.parseLong(req.getParameter("id")));
+        }
+    }
+}</p></body></html>

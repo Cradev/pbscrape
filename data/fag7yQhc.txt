@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Pumpkin mage
+
+Pumpkin Pal
+
+Summons a football-sized, sentient Jack 'o Lantern for 7 turns. It spawns within 2 squares of the caster.
+
+Jack 'o Lantern
+10hp
+1d4 movement,
+Vine whip - 2d3 dmg, @2 range, 95% acc
+Ensnare - ensnares an adjacent target, completely immobilizing them, for the remainder of it's existance, or till damaged, 75% chance of success</p></body></html>

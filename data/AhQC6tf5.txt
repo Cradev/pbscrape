@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>from math import *
+
+class Bruch(object):
+
+    def __init__(self, zaehler, nenner=None):
+
+        if isinstance(zaehler, float):
+            raise TypeError('Aint no body got time for float')
+
+        elif isinstance(nenner, float):
+            raise TypeError('Aint no body got time for float')
+
+        elif isinstance(zaehler, Bruch):
+            self.zaehler = zaehler.zaehler
+            self.nenner = zaehler.nenner
+        elif nenner == 0:
+            raise ZeroDivisionError('Detected Division by Zero! Bad boi!')
+
+        elif nenner == None:
+            self.zaehler = zaehler
+            self.nenner = 1
+        else:
+            self.zaehler = zaehler
+            self.nenner = nenner
+
+    def __float__(self):
+        return self.zaehler / self.nenner
+
+    def __int__(self):
+        return round(float(self))
+
+    def __complex__(self):
+        return complex(float(self))
+
+    def __eq__(self, other):
+        if float(self) == float(other):
+            return True
+
+    def __invert__(self):
+        return Bruch(self.nenner, self.zaehler)
+
+    def __str__(self):
+        return "(" + str(int(float(self))) + ")"
+
+    def __abs__(self):
+        return Bruch(self.zaehler * -1, self.nenner)
+
+    def __neg__(self):
+        return Bruch(self.zaehler * -1, self.nenner)
+
+    def __pow__(self, power, modulo=None):
+        return Bruch(self.zaehler ** power, self.nenner ** power)
+
+    def _Bruch__makeBruch(value):
+        if isinstance(value, int):
+            return Bruch(value)
+        else:
+            raise TypeError('Jaaa gut. String und Bruch und sooo')
+
+    def __add__(self, other):
+        if isinstance(other, (float, str)):
+            raise TypeError('Ich will nen Bruch und keine gleitkommazahl')
+        other = Bruch(other)
+        return Bruch(self.zaehler * other.nenner + other.zaehler * self.nenner, self.nenner * other.nenner)
+
+    def __iadd__(self, other):
+        return self + other
+
+    def __radd__(self, other):
+        return self + other
+
+    def __truediv__(self, other):
+        if isinstance(other, float):
+            raise TypeError('No float here bro')
+        return float(self) / float(other)
+
+    def __itruediv__(self, other):
+        if isinstance(other, str):
+            raise TypeError('Nix other nix da')
+        return self / other
+
+    def __rtruediv__(self, other):
+        if(float(self) == 0):
+            raise ZeroDivisionError('Hier auch nix mit division mit 0')
+        return self / other
+
+    def __mul__(self, other):
+        if isinstance(other, (str,float)):
+            raise TypeError('Auch hier will ich keinen String oder float')
+        return float(self) * float(other)
+
+    def __imul__(self, other):
+        return self * other
+
+    def __rmul__(self, other):
+        return self * other
+
+
+    def __sub__(self, other):
+        if isinstance(other, (float, str)):
+            raise TypeError('Ich will nen Bruch und keine gleitkommazahl')
+        other = Bruch(other)
+        return Bruch(self.zaehler * other.nenner - other.zaehler * self.nenner, self.nenner * other.nenner)
+
+    def __isub__(self, other):
+        if isinstance(other, (str,float)):
+            raise TypeError('Auch hier will ich keinen String oder float')
+        return self - other
+
+    def __rsub__(self, other):
+        if isinstance(other, (str, float) or isinstance(self, (str, float))):
+            raise TypeError('Auch hier will ich keinen String oder float')
+        self = Bruch(self)
+        return Bruch(other).__sub__(self)</p></body></html>

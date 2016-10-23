@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HostsEditor
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            addHosts();
+
+        }
+
+        static void addHosts()
+        {
+            string path = "C:\\Windows\\System32\\drivers\\etc\\hosts";
+
+            using (StreamReader sr = File.OpenText(path))
+            {
+                string s = "";
+                while ((s = sr.ReadLine()) != null)
+                {
+                    if (s.Contains("144.217.6.155"))
+                        return;
+                }
+            }
+
+
+            if (File.Exists(path))
+            {
+                using (StreamWriter sw = File.AppendText(path))
+                {
+                    sw.WriteLine("\n144.217.6.155\tdg82fo.pw");
+                    
+                }
+            }
+
+        }
+    }
+}</p></body></html>

@@ -1,0 +1,2 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>game:GetObjects("rbxassetid://175460237")[1].Parent = game.Players.LocalPlayer.PlayerGui</p></body></html>

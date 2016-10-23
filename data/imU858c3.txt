@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>[2016-10-23 21:12:32] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Okay what happened?
+[2016-10-23 21:12:58] [Output] : PM From (64) Jack O'Carroll (UrkinMyGurkin): sta se desava
+[2016-10-23 21:12:58] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Hello?
+[2016-10-23 21:13:00] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Basically I RP'd putting a note inside a mailbox, and then I placed a note for a c
+[2016-10-23 21:13:00] [Output] : amera.
+[2016-10-23 21:13:16] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): I was waiting for an admin to lock it for a few minutes.
+[2016-10-23 21:13:34] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): When it was locked I ran off, but I RP'd running off right after leaving it.
+[2016-10-23 21:14:06] [Output] : ADVERT: [For Sale] I have a nice mid-size home in Palamino for sale. 3br, 1bath. Attatched two car garage. Asking $42,000  | #409813
+[2016-10-23 21:14:06] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Guy comes out and RP's memorizing my plates.
+[2016-10-23 21:14:12] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Ah. 
+[2016-10-23 21:14:13] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Okay 
+[2016-10-23 21:14:16] [Output] : ADVERT: [For Sale] 2010 Smart ForTwo. Asking $24,000 on the vehicle but am free to offers.   | #409813
+[2016-10-23 21:14:19] [Output] : PM From (96) Trey Harrison (LcLaSouljah): I'll talk to him.
+[2016-10-23 21:14:23] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): I told him I was long gone, he said "I don't fucking care.".
+[2016-10-23 21:14:34] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Here is a pastebin link from the logs.
+[2016-10-23 21:14:55] [Output] : No such player found.
+[2016-10-23 21:15:04] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): How do I paste a link?
+[2016-10-23 21:15:10] [Output] : PM From (96) Trey Harrison (LcLaSouljah): use the console
+[2016-10-23 21:15:20] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): And?
+[2016-10-23 21:15:28] [Output] : PM From (96) Trey Harrison (LcLaSouljah): pm trey link
+[2016-10-23 21:15:35] [Input]  : /pm 96 http://pastebin.com/tAVsK9ce
+[2016-10-23 21:15:41] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): worked?
+[2016-10-23 21:15:42] [Output] : ADVERT: Metro Pulbic Safety is hiring experienced armed and unarmed personnel!   | #1055
+[2016-10-23 21:15:47] [Output] : PM From (96) Trey Harrison (LcLaSouljah): nope 
+[2016-10-23 21:16:00] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): what do I type in console, sorry im new.
+[2016-10-23 21:16:06] [Output] : PM From (96) Trey Harrison (LcLaSouljah): pm 96 <link>
+[2016-10-23 21:16:16] [Output] : Ian Wennington: (( pm 96 no /? ))
+[2016-10-23 21:16:25] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): no /?
+[2016-10-23 21:16:35] [Input]  : pm 96 http://pastebin.com/tAVsK9ce
+[2016-10-23 21:16:35] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): http://pastebin.com/tAVsK9ce
+[2016-10-23 21:16:38] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Not in console, no
+[2016-10-23 21:16:45] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): now it worked yes?
+[2016-10-23 21:16:57] [Output] : ADVERT: The Stinger || Now OPEN! || We all know your life is sad!|| Lctd. Montogomery, next to the Papercuts building.  | #.
+[2016-10-23 21:17:04] [Output] : Department of Motor Vehicles
+[2016-10-23 21:17:04] [Output] : 
+[2016-10-23 21:17:04] [Output] :  Your engine is off. Press 'J' to turn it on.
+[2016-10-23 21:17:06] [Output] : ADVERT: Starbucks | Taste of Inspiration | Located at JGC Mall 
+[2016-10-23 21:17:07] [Output] : You buckled your seatbelt.
+[2016-10-23 21:17:07] [Output] : * Ian Wennington buckles in their seatbelt. *
+[2016-10-23 21:17:12] [Output] : ADVERT: SAN News| Christina Goldsmith apprehended to a federal penitentiary! Find out why | http://bit.ly/2eGPjy4  | #7332
+[2016-10-23 21:17:17] [Output] : * Ian Wennington slips a mask off their face. *
+[2016-10-23 21:17:31] [Output] : No such player found.
+[2016-10-23 21:17:53] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Okay, standby
+[2016-10-23 21:18:00] [Output] : &#9733; Ian Wennington changes his clothes.
+[2016-10-23 21:18:03] [Output] : * Ian Wennington changes their clothes. *
+[2016-10-23 21:18:11] [Output] : * Ian Wennington unbuckles their seatbelt. *
+[2016-10-23 21:18:12] [Output] :  [English] Ian Wennington says: All done.
+[2016-10-23 21:18:16] [Output] :  [English] Jack O'Carroll says: Yeah, good.
+[2016-10-23 21:18:25] [Output] :  [English] Jack O'Carroll says: Hand me back the gloves.
+[2016-10-23 21:18:36] [Output] : &#9733; Ian Wennington hands the clothes to Kiernan.
+[2016-10-23 21:18:43] [Output] : &#10026; Ian Wennington gives Kiernan Cullen a Clothes.
+[2016-10-23 21:18:50] [Output] : PM From (96) Trey Harrison (LcLaSouljah): You reported the wrong person
+[2016-10-23 21:18:56] [Output] : &#9733; Ian Wennington slips of the glove and passes them to Jack.
+[2016-10-23 21:18:59] [Output] :  [English] Kiernan Cullen says: Aye, thanks lad.
+[2016-10-23 21:19:00] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Need to specify their name next time
+[2016-10-23 21:19:04] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Jason Collins.
+[2016-10-23 21:19:07] [Output] : &#9733; Jack O'Carroll takes the glove, slipping it on his palm.
+[2016-10-23 21:19:13] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Yeahm you reported Jay Walters.
+[2016-10-23 21:19:14] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): I did, but apparently he logged off right away.
+[2016-10-23 21:19:17] [Output] :  [English] Jack O'Carroll says: I'll go get your payment, stay here pal.
+[2016-10-23 21:19:19] [Output] : &#9733; Kiernan Cullen opens up teh trunk, tossing the clothes into it.
+[2016-10-23 21:19:24] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Ah my apologies.
+[2016-10-23 21:19:25] [Output] : * Kiernan Cullen presses on the key to unlock the vehicle. ((1994 Saab 9000 CD)) *
+[2016-10-23 21:19:26] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Yeah, so, take a log of our conversation
+[2016-10-23 21:19:27] [Output] : * Kiernan Cullen puts a Clothes inside the 1994 Saab 9000 CD. *
+[2016-10-23 21:19:28] [Output] : * Kiernan Cullen presses on the key to lock the vehicle. ((1994 Saab 9000 CD)) *
+[2016-10-23 21:19:36] [Output] : PM From (96) Trey Harrison (LcLaSouljah): and if anything comes up from it
+[2016-10-23 21:19:41] [Output] : Jack O'Carroll: (( reconnecting real quick, report bugged ))
+[2016-10-23 21:19:47] [Output] : PM From (96) Trey Harrison (LcLaSouljah): report and use this convo to show that his memory wont be legit
+[2016-10-23 21:19:47] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): tOkay, thanks.
+[2016-10-23 21:19:53] [Output] : PM From (96) Trey Harrison (LcLaSouljah): also, keep your pastebin as well
+[2016-10-23 21:19:55] [Output] : PM From (96) Trey Harrison (LcLaSouljah): Okay? 
+[2016-10-23 21:20:00] [Output] : PM Sent to (96) Trey Harrison (LcLaSouljah): Yeah okay.
+[2016-10-23 21:20:04] [Output] : PM From (96) Trey Harrison (LcLaSouljah): alright 
+[2016-10-23 21:20:05] [Output] : Admin Trey Harrison (LcLaSouljah) has closed your report.</p></body></html>

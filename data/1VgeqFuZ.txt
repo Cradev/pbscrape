@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package com.example.teacher.lab10_includemergetransition;
+
+import android.content.Intent;
+import android.view.View;
+
+public class Activity1 extends QuestionActivity {
+
+    public static final String Q1_ANSWER_KEY = "Q1";
+
+    // &#25353;&#19979; NEXT
+    public void next(View view) {
+
+        // &#24314;&#31435;&#26032; Intent: new Intent( &#20358;&#28304; , &#30446;&#30340;)
+        Intent intent = new Intent(this, Activity2.class);
+        intent.putExtra(Q1_ANSWER_KEY, m_answer);
+
+        // &#23559;&#20808;&#21069;&#30340; Acvivity &#31227;&#21040;&#26368;&#19978;&#23652;&#65292;&#32780;&#38750;&#29986;&#29983;&#26032;&#30340; Activity
+        intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+
+        startActivity(intent);
+
+        // overridePendingTransition( &#36914;&#22580;&#25928;&#26524; , &#20986;&#22580;&#25928;&#26524; )
+        overridePendingTransition(R.anim.push_right_in, R.anim.push_left_out);
+
+    }
+
+    @Override
+    public void back(View view) {
+    }
+}</p></body></html>

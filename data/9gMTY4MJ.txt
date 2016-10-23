@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#EXTM3U
+#EXTINF:-1,#### Deutsch Channels ####
+http://ip.kmsat.info:8000/live/salah/salah/972.ts
+#EXTINF:-1,DE: SKY HISTORY CHANNEL HD
+http://ip.kmsat.info:8000/live/salah/salah/1403.ts
+#EXTINF:-1,DE: SKY AXN ACTION HD
+http://ip.kmsat.info:8000/live/salah/salah/1404.ts
+#EXTINF:-1,DE: VOX
+http://ip.kmsat.info:8000/live/salah/salah/1321.ts
+#EXTINF:-1,DE: SKY SPORT NEWS HD
+http://ip.kmsat.info:8000/live/salah/salah/1325.ts
+#EXTINF:-1,DE: Sky Rtl Passion
+http://ip.kmsat.info:8000/live/salah/salah/1326.ts
+#EXTINF:-1,DE: Sky Planet HD
+http://ip.kmsat.info:8000/live/salah/salah/1327.ts
+#EXTINF:-1,DE: Sky Nostalgie
+http://ip.kmsat.info:8000/live/salah/salah/1328.ts
+#EXTINF:-1,DE: Sky Krimi
+http://ip.kmsat.info:8000/live/salah/salah/1239.ts
+#EXTINF:-1,DE: ORF 2 HD
+http://ip.kmsat.info:8000/live/salah/salah/1245.ts
+#EXTINF:-1,DE: ORF 1 HD
+http://ip.kmsat.info:8000/live/salah/salah/1244.ts
+#EXTINF:-1,DE: National Geo HD
+http://ip.kmsat.info:8000/live/salah/salah/1242.ts
+#EXTINF:-1,DE: Nat Geo Wild
+http://ip.kmsat.info:8000/live/salah/salah/1241.ts
+#EXTINF:-1,DE: Sky Emotion
+http://ip.kmsat.info:8000/live/salah/salah/1137.ts
+#EXTINF:-1,DE: Sky Cinema
+http://ip.kmsat.info:8000/live/salah/salah/1138.ts
+#EXTINF:-1,DE: TNT SERIES HD
+http://ip.kmsat.info:8000/live/salah/salah/960.ts
+#EXTINF:-1,DE: SKY TNT FILME HD
+http://ip.kmsat.info:8000/live/salah/salah/959.ts
+#EXTINF:-1,DE: SKY SYFY HD
+http://ip.kmsat.info:8000/live/salah/salah/956.ts
+#EXTINF:-1,DE: SKY HITS HD
+http://ip.kmsat.info:8000/live/salah/salah/955.ts
+#EXTINF:-1,DE: SKY DMAX HD
+http://ip.kmsat.info:8000/live/salah/salah/958.ts
+#EXTINF:-1,DE: SKY COMEDY HD
+http://ip.kmsat.info:8000/live/salah/salah/952.ts
+#EXTINF:-1,DE: SKY ACTION HD
+http://ip.kmsat.info:8000/live/salah/salah/953.ts
+#EXTINF:-1,DE: SKY 13 STREET HD
+http://ip.kmsat.info:8000/live/salah/salah/954.ts
+#EXTINF:-1,DE: SIXX HD
+http://ip.kmsat.info:8000/live/salah/salah/957.ts
+#EXTINF:-1,DE: SAT 1 HD
+http://ip.kmsat.info:8000/live/salah/salah/967.ts
+#EXTINF:-1,DE: RTL PASS?ON
+http://ip.kmsat.info:8000/live/salah/salah/966.ts
+#EXTINF:-1,DE: RTL CR?ME
+http://ip.kmsat.info:8000/live/salah/salah/964.ts
+#EXTINF:-1,DE: RTL 2 HD
+http://ip.kmsat.info:8000/live/salah/salah/962.ts
+#EXTINF:-1,DE: PRO MAXX HD
+http://ip.kmsat.info:8000/live/salah/salah/969.ts
+#EXTINF:-1,DE: PRO 7 HD
+http://ip.kmsat.info:8000/live/salah/salah/968.ts
+#EXTINF:-1,DE: ARTE
+http://ip.kmsat.info:8000/live/salah/salah/961.ts
+#EXTINF:-1,DE: A E DE
+http://ip.kmsat.info:8000/live/salah/salah/970.ts
+#EXTINF:-1,DE: VEVO DE HD
+http://ip.kmsat.info:8000/live/salah/salah/799.ts
+#EXTINF:-1,DE: Super RTL HD
+http://ip.kmsat.info:8000/live/salah/salah/791.ts
+#EXTINF:-1,DE: SKY Bundesliga HD1
+http://ip.kmsat.info:8000/live/salah/salah/786.ts
+#EXTINF:-1,DE: SKY Bundesliga HD2
+http://ip.kmsat.info:8000/live/salah/salah/787.ts
+#EXTINF:-1,DE: RTL HD
+http://ip.kmsat.info:8000/live/salah/salah/790.ts
+#EXTINF:-1,DE: RIC
+http://ip.kmsat.info:8000/live/salah/salah/800.ts
+#EXTINF:-1,DE: Kabel 1 HD
+http://ip.kmsat.info:8000/live/salah/salah/792.ts
+#EXTINF:-1,DE: Deluxe Music
+http://ip.kmsat.info:8000/live/salah/salah/798.ts
+#EXTINF:-1,DE: Sky-Select HD 1
+http://ip.kmsat.info:8000/live/salah/salah/613.ts
+#EXTINF:-1,DE: Sky-Select HD 2
+http://ip.kmsat.info:8000/live/salah/salah/612.ts
+#EXTINF:-1,DE: Sky-Select HD 3
+http://ip.kmsat.info:8000/live/salah/salah/611.ts
+#EXTINF:-1,DE: Sky-Select HD 4
+http://ip.kmsat.info:8000/live/salah/salah/610.ts
+#EXTINF:-1,DE: Sky-Select HD 5
+http://ip.kmsat.info:8000/live/salah/salah/609.ts
+#EXTINF:-1,DE:  Sky-Select HD 6
+http://ip.kmsat.info:8000/live/salah/salah/608.ts
+#EXTINF:-1,DE: Sky-Select HD 7
+http://ip.kmsat.info:8000/live/salah/salah/607.ts
+#EXTINF:-1,DE :SKY HITS
+http://ip.kmsat.info:8000/live/salah/salah/542.ts
+#EXTINF:-1,DE :SKY CINEMA
+http://ip.kmsat.info:8000/live/salah/salah/545.ts
+#EXTINF:-1,DE :SKY CINEMA 24
+http://ip.kmsat.info:8000/live/salah/salah/543.ts
+#EXTINF:-1,DE: ZDF
+http://ip.kmsat.info:8000/live/salah/salah/345.ts
+#EXTINF:-1,DE: Sky Sport1 HD
+http://ip.kmsat.info:8000/live/salah/salah/344.ts
+#EXTINF:-1,DE: Sky Sport2 HD
+http://ip.kmsat.info:8000/live/salah/salah/1457.ts
+#EXTINF:-1,DE: Sky MGM HD
+http://ip.kmsat.info:8000/live/salah/salah/343.ts
+#EXTINF:-1,DE: Sky Bundes liga 1 HD
+http://ip.kmsat.info:8000/live/salah/salah/341.ts
+#EXTINF:-1,DE: Sky AXN HD
+http://ip.kmsat.info:8000/live/salah/salah/340.ts</p></body></html>

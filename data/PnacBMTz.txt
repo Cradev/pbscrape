@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using UnityEngine;
+using System.Collections;
+
+[System.Serializable]
+public class Boundary
+{
+    public float xMin, xMax, zMin, zMax;
+}
+
+public class Player_Controller : MonoBehaviour
+{
+    public float speed;
+    public float tilt;
+    public Boundary boundary;
+    public GameObject shot;
+    public Transform shotSpawn;
+    public float fireRate;
+
+    private float nextFire;
+    private Rigidbody rb;
+    private AudioSource audioSource;
+
+    void Start()
+    {
+        rb = GetComponent<rigidbody>();
+        audioSource = GetComponent<audiosource>();
+    }
+
+    void Update ()
+
+    {
+        if (Input.GetKey(KeyCode.Space) &amp;&amp; Time.time &gt; nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            // GameObject clone = 
+            Instantiate
+            (shot, shotSpawn.position, shotSpawn.rotation); //as GameObject;
+
+            audioSource.Play();
+        }
+       
+    }
+
+    void FixedUpdate ()
+
+    {
+    
+        float movehorizontal = Input.GetAxisRaw("Horizontal");
+        float movevertical = Input.GetAxisRaw("Vertical");
+
+        Vector3 movement = new Vector3(movehorizontal, 0.0f, movevertical);
+        rb.velocity = movement * speed;
+
+        rb.position = new Vector3
+            (Mathf.Clamp (rb.position.x, boundary.xMin, boundary.xMax),
+            0.0f, 
+            Mathf.Clamp (rb.position.z, boundary.zMin, boundary.zMax));
+
+        rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
+    }
+
+    public void DestroyPlayer ()
+    {
+        audioSource.Play();
+    }
+}</audiosource></rigidbody></p></body></html>

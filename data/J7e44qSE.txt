@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package com.example.teacher.lab10_includemergetransition;
+
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.text.Html;
+import android.text.Spanned;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.TextView;
+
+// &#25277;&#35937;&#39006;&#21029;
+abstract public class QuestionActivity extends AppCompatActivity {
+
+    protected TextView m_tv_no;
+    protected TextView m_tv_question;
+    protected RadioButton m_radio_a;
+    protected RadioButton m_radio_b;
+    protected RadioButton m_radio_c;
+
+    // protected &#23376;&#39006;&#21029;&#21487;&#23384;&#21462;
+    protected CharSequence m_answer; // &#25152;&#36984;&#25799;&#30340;&#31572;&#26696; A or B or C
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_2);
+        init();
+    }
+
+    private void init() {
+
+        m_tv_no = (TextView) findViewById(R.id.tv_no);
+        m_tv_question = (TextView) findViewById(R.id.tv_question);
+        m_radio_a = (RadioButton) findViewById(R.id.radio_a);
+        m_radio_b = (RadioButton) findViewById(R.id.radio_b);
+        m_radio_c = (RadioButton) findViewById(R.id.radio_c);
+
+        m_tv_no.setText("1");
+
+        m_tv_question.setText(toHtmlString(R.string.question_1));
+        m_radio_a.setText(toHtmlString(R.string.question_1_radio_a));
+        m_radio_b.setText(toHtmlString(R.string.question_1_radio_b));
+        m_radio_c.setText(toHtmlString(R.string.question_1_radio_c));
+
+    }
+
+    // &#22810;&#36617;(Overloading) toHtmlStrign()
+    public Spanned toHtmlString(int resId) {
+        return toHtmlString(getString(resId));
+    }
+
+    // &#22810;&#36617;(Overloading) toHtmlStrign()
+    public Spanned toHtmlString(String s) {
+
+        Spanned result;
+
+        if (Build.VERSION.SDK_INT &gt;= Build.VERSION_CODES.N) {
+            result = Html.fromHtml(s, Html.FROM_HTML_MODE_LEGACY);
+        } else {
+            result = Html.fromHtml(s);
+        }
+
+        return result;
+
+    }
+
+
+    public void click(View view) {
+        m_answer = view.getTag().toString() + ". " + ((RadioButton)view).getText();
+    }
+
+    // &#25353;&#19979; BACK
+    abstract public void back(View view);
+
+    // &#25353;&#19979; NEXT
+    abstract public void next(View view);
+
+
+}</p></body></html>
