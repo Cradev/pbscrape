@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>--4) Donn&eacute; pour chaque Equipe le Nombre de But marqu&eacute;.
+
+select E.CodeEquipe, E.NomEquipe, Sum(NombreButMarqu&eacute;) as NombreButMarqu&eacute;
+from	(
+		select CodeEquipeLocale as CodeEquipe, Sum(NombreButLocale) as NombreButMarqu&eacute;
+		from Matche
+		group by CodeEquipeLocale
+		union
+		select CodeEquipeVisiteure as CodeEquipe, Sum(NombreButVisiteure) as NombreButMarqu&eacute;
+		from Matche M
+		group by CodeEquipeVisiteure
+		) R inner join Equipe E on R.CodeEquipe=E.CodeEquipe
+group by E.CodeEquipe, E.NomEquipe</p></body></html>

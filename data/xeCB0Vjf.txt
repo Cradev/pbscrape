@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Spiritomb @ Dread Plate  
+Ability: Pressure  
+EVs: 248 HP / 252 Atk / 8 Def  
+Adamant Nature  
+- Pain Split  
+- Will-O-Wisp  
+- Sucker Punch  
+- Foul Play  
+
+Roserade @ Expert Belt  
+Ability: Technician  
+EVs: 12 HP / 248 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk / 30 SpA / 30 Spe  
+- Sleep Powder  
+- Sludge Bomb  
+- Hidden Power [Fire]  
+- Magical Leaf  
+
+Togekiss @ Leftovers  
+Ability: Serene Grace  
+EVs: 228 HP / 104 Def / 176 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Heal Bell  
+- Roost  
+- Air Slash  
+- Nasty Plot  
+
+Milotic @ Pecha Berry  
+Ability: Marvel Scale  
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Ice Beam  
+- Recover  
+- Haze  
+- Scald  
+
+Lucario @ Life Orb  
+Ability: Justified  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Swords Dance  
+- Extreme Speed  
+- Close Combat  
+- Bullet Punch  
+
+Garchomp (F) @ Rocky Helmet  
+Ability: Rough Skin  
+EVs: 240 HP / 176 Def / 92 Spe  
+Impish Nature  
+- Earthquake  
+- Fire Blast  
+- Stealth Rock  
+- Dragon Tail  
+
+Spiritomb @ Dread Plate  
+Ability: Pressure  
+EVs: 248 HP / 252 Atk / 8 Def  
+Adamant Nature  
+- Pain Split  
+- Will-O-Wisp  
+- Sucker Punch  
+- Foul Play  
+
+Roserade @ Expert Belt  
+Ability: Technician  
+EVs: 12 HP / 248 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk / 30 SpA / 30 Spe  
+- Sleep Powder  
+- Sludge Bomb  
+- Hidden Power [Fire]  
+- Magical Leaf  
+
+Togekiss @ Leftovers  
+Ability: Serene Grace  
+EVs: 228 HP / 104 Def / 176 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Heal Bell  
+- Roost  
+- Air Slash  
+- Nasty Plot  
+
+Milotic @ Pecha Berry  
+Ability: Marvel Scale  
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+IVs: 0 Atk  
+- Ice Beam  
+- Recover  
+- Haze  
+- Scald  
+
+Lucario @ Life Orb  
+Ability: Justified  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Swords Dance  
+- Extreme Speed  
+- Close Combat  
+- Bullet Punch  
+
+Garchomp (F) @ Rocky Helmet  
+Ability: Rough Skin  
+EVs: 240 HP / 176 Def / 92 Spe  
+Impish Nature  
+- Earthquake  
+- Fire Blast  
+- Stealth Rock  
+- Dragon Tail</p></body></html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>dope skill (Gallade-Mega) @ Galladite  
+Ability: Justified  
+EVs: 80 HP / 252 Atk / 176 Spe  
+Adamant Nature  
+- Drain Punch  
+- Zen Headbutt  
+- Shadow Sneak  
+- Swords Dance  
+
+Serperior @ Leftovers  
+Ability: Contrary  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Leaf Storm  
+- Hidden Power [Fire]  
+- Glare  
+- Knock Off  
+
+Landorus-Therian @ Rocky Helmet  
+Ability: Intimidate  
+EVs: 248 HP / 248 Def / 12 Spe  
+Lax Nature  
+- Earthquake  
+- U-turn  
+- Hidden Power [Ice]  
+- Stealth Rock  
+
+Latias @ Life Orb  
+Ability: Levitate  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Draco Meteor  
+- Surf  
+- Defog  
+- Recover  
+
+Great Day (Jirachi) @ Choice Scarf  
+Ability: Serene Grace  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Iron Head  
+- U-turn  
+- Trick  
+- Healing Wish  
+
+deep fried frenz (Volcanion) @ Leftovers  
+Ability: Water Absorb  
+EVs: 248 HP / 248 Def / 12 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Steam Eruption  
+- Flamethrower  
+- Haze  
+- Toxic</p></body></html>

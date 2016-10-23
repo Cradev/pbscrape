@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>[Bifrost, NewCraig v7 +000]
+
+Ballistic Control System II
+Crosslink Compact Ballistic Control System
+Co-Processor II
+
+5MN Cold-Gas Enduring Microwarpdrive
+Medium Ancillary Shield Booster, Navy Cap Booster 50
+Astro-Inertial Compact Missile Guidance Computer, Missile Range Script
+Eutectic Compact Cap Recharger
+Warp Disruptor II
+
+Skirmish Warfare Link - Interdiction Maneuvers II
+Light Missile Launcher II, Caldari Navy Scourge Light Missile
+Light Missile Launcher II, Caldari Navy Scourge Light Missile
+Light Missile Launcher II, Caldari Navy Scourge Light Missile
+Light Missile Launcher II, Caldari Navy Scourge Light Missile
+Light Missile Launcher II, Caldari Navy Scourge Light Missile
+
+Small Processor Overclocking Unit I
+Small Polycarbon Engine Housing II
+
+
+Caldari Navy Scourge Light Missile x1900
+Caldari Navy Mjolnir Light Missile x1900
+Nanite Repair Paste x200
+Synth Crash Booster x10
+Synth X-Instinct Booster x10</p></body></html>

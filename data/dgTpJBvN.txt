@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#EXTINF:-1,PINK HOROR
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/107.ts
+#EXTINF:-1,PINK ACTION
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/105.ts
+#EXTINF:-1,PINK MOVES
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/126.ts
+#EXTINF:-1,PINK SHOW
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/1464.ts
+#EXTINF:-1,PINK KONCERT
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/1463.ts
+#EXTINF:-1,PINK KUVAR
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/127.ts
+#EXTINF:-1,PINK SERIJE
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/364.ts
+#EXTINF:-1,PINK PEDIA
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/128.ts
+#EXTINF:-1,PINK EXTRA
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/121.ts
+#EXTINF:-1,PINK SOAP
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/112.ts
+#EXTINF:-1,PINK PLUS
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/113.ts
+#EXTINF:-1,PINK HITS
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/119.ts
+#EXTINF:-1,PINK HITS 2
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/1643.ts
+#EXTINF:-1,PINK FOLK
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/115.ts
+#EXTINF:-1,PINK FOLK 2
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/116.ts
+#EXTINF:-1,PINK FILM
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/124.ts
+#EXTINF:-1,PINK KIDS
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/266.ts
+#EXTINF:-1,PINK BiH
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/123.ts
+#EXTINF:-1,PINK M
+http://opasnivirus.dynns.com:8000/live/Safet/Safet123/125.ts</p></body></html>

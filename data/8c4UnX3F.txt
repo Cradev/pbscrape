@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>sharmin@sharmin:~/projects/the_page_building/the_page_building$ rake db:schema:load
+-- enable_extension("plpgsql")
+   -&gt; 0.0093s
+-- enable_extension("pg_stat_statements")
+   -&gt; 0.0000s
+-- create_table("appointments", {:force=&gt;:cascade})
+   -&gt; 0.3384s
+-- add_index("appointments", ["domain_id"], {:name=&gt;"index_appointments_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.2145s
+-- create_table("authorities", {:force=&gt;:cascade})
+   -&gt; 0.0896s
+-- add_index("authorities", ["competitor_id"], {:name=&gt;"index_authorities_on_competitor_id", :using=&gt;:btree})
+   -&gt; 0.1792s
+-- add_index("authorities", ["domain_id"], {:name=&gt;"index_authorities_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.1793s
+-- create_table("competitors", {:force=&gt;:cascade})
+   -&gt; 0.1229s
+-- add_index("competitors", ["domain_id", "name"], {:name=&gt;"index_competitors_on_domain_id_and_name", :unique=&gt;true, :using=&gt;:btree})
+   -&gt; 0.2009s
+-- create_table("domain_links", {:force=&gt;:cascade})
+   -&gt; 0.0902s
+-- add_index("domain_links", ["competitor_id"], {:name=&gt;"index_domain_links_on_competitor_id", :using=&gt;:btree})
+   -&gt; 0.1794s
+-- add_index("domain_links", ["domain_id"], {:name=&gt;"index_domain_links_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.1808s
+-- create_table("domains", {:force=&gt;:cascade})
+   -&gt; 0.0894s
+-- add_index("domains", ["site_id"], {:name=&gt;"index_domains_on_site_id", :using=&gt;:btree})
+   -&gt; 0.2017s
+-- add_index("domains", ["user_id", "position", "name"], {:name=&gt;"index_domains_on_user_id_and_position_and_name", :using=&gt;:btree})
+   -&gt; 0.1680s
+-- create_table("review_businesses", {:force=&gt;:cascade})
+   -&gt; 0.0782s
+-- add_index("review_businesses", ["review_id"], {:name=&gt;"index_review_businesses_on_review_id", :using=&gt;:btree})
+   -&gt; 0.1682s
+-- create_table("reviews", {:force=&gt;:cascade})
+   -&gt; 0.1228s
+-- add_index("reviews", ["competitor_id"], {:name=&gt;"index_reviews_on_competitor_id", :using=&gt;:btree})
+   -&gt; 0.2022s
+-- add_index("reviews", ["domain_id"], {:name=&gt;"index_reviews_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.1808s
+-- create_table("seo_headings", {:force=&gt;:cascade})
+   -&gt; 0.1005s
+-- add_index("seo_headings", ["seo_page_id"], {:name=&gt;"index_seo_headings_on_seo_page_id", :using=&gt;:btree})
+   -&gt; 0.1797s
+-- create_table("seo_images", {:force=&gt;:cascade})
+   -&gt; 0.0781s
+-- add_index("seo_images", ["seo_page_id"], {:name=&gt;"index_seo_images_on_seo_page_id", :using=&gt;:btree})
+   -&gt; 0.1676s
+-- create_table("seo_keywords", {:force=&gt;:cascade})
+   -&gt; 0.1117s
+-- add_index("seo_keywords", ["seo_page_id"], {:name=&gt;"index_seo_keywords_on_seo_page_id", :using=&gt;:btree})
+   -&gt; 0.2138s
+-- create_table("seo_links", {:force=&gt;:cascade})
+   -&gt; 0.0895s
+-- add_index("seo_links", ["seo_page_id"], {:name=&gt;"index_seo_links_on_seo_page_id", :using=&gt;:btree})
+   -&gt; 0.2032s
+-- create_table("seo_pages", {:force=&gt;:cascade})
+   -&gt; 0.1110s
+-- add_index("seo_pages", ["domain_id"], {:name=&gt;"index_seo_pages_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.1582s
+-- create_table("seo_rating_histories", {:force=&gt;:cascade})
+   -&gt; 0.0771s
+-- add_index("seo_rating_histories", ["domain_id"], {:name=&gt;"index_seo_rating_histories_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.1909s
+-- create_table("settings", {:force=&gt;:cascade})
+   -&gt; 0.1014s
+-- add_index("settings", ["domain_id"], {:name=&gt;"index_settings_on_domain_id", :using=&gt;:btree})
+   -&gt; 0.2014s
+-- add_index("settings", ["industry_domain_id"], {:name=&gt;"index_settings_on_industry_domain_id", :using=&gt;:btree})
+   -&gt; 0.2010s
+-- create_table("users", {:force=&gt;:cascade})
+   -&gt; 0.0903s
+-- add_index("users", ["email"], {:name=&gt;"index_users_on_email", :unique=&gt;true, :using=&gt;:btree})
+   -&gt; 0.1808s
+-- add_foreign_key("appointments", "domains")
+   -&gt; 0.2187s
+-- add_foreign_key("authorities", "competitors")
+   -&gt; 0.2182s
+-- add_foreign_key("authorities", "domains")
+   -&gt; 0.2801s
+-- add_foreign_key("competitors", "domains", {:on_delete=&gt;:cascade})
+   -&gt; 0.2458s
+-- add_foreign_key("domain_infos", "domains")
+rake aborted!
+ActiveRecord::StatementInvalid: Mysql2::Error: Table 'the_page_building.domain_infos' doesn't exist: ALTER TABLE `domain_infos` ADD CONSTRAINT `fk_rails_900f7cd2c1`
+FOREIGN KEY (`domain_id`)
+  REFERENCES `domains` (`id`)
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `_query'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/mysql2-0.4.4/lib/mysql2/client.rb:107:in `block in query'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `handle_interrupt'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/mysql2-0.4.4/lib/mysql2/client.rb:106:in `query'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:305:in `block in execute'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:472:in `block in log'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activesupport-4.2.5/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_adapter.rb:466:in `log'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract_mysql_adapter.rb:305:in `execute'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/mysql2_adapter.rb:231:in `execute'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/connection_adapters/abstract/schema_statements.rb:762:in `add_foreign_key'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/migration.rb:665:in `block in method_missing'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `block in say_with_time'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/migration.rb:634:in `say_with_time'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/migration.rb:654:in `method_missing'
+/home/sharmin/projects/the_page_building/the_page_building/db/schema.rb:300:in `block in <top>'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/schema.rb:41:in `instance_eval'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/schema.rb:41:in `define'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/schema.rb:61:in `define'
+/home/sharmin/projects/the_page_building/the_page_building/db/schema.rb:14:in `<top>'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:268:in `load'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:268:in `block in load'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:240:in `load_dependency'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activesupport-4.2.5/lib/active_support/dependencies.rb:268:in `load'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:218:in `load_schema_for'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:235:in `block in load_schema_current'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:275:in `block in each_current_configuration'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:274:in `each'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:274:in `each_current_configuration'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/tasks/database_tasks.rb:234:in `load_schema_current'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/activerecord-4.2.5/lib/active_record/railties/databases.rake:247:in `block (3 levels) in <top>'
+/home/sharmin/.rvm/gems/ruby-2.2.2/gems/rake-11.3.0/exe/rake:27:in `<top>'
+/home/sharmin/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `eval'
+/home/sharmin/.rvm/gems/ruby-2.2.2/bin/ruby_executable_hooks:15:in `<main>'</main></top></top></top></top></p></body></html>

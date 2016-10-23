@@ -7,7 +7,7 @@ require 'mechanize'
 require 'nokogiri'
 require 'json'
 
-url = "http://pastebin.com/api_scraping.php?limit=10"
+url = "http://pastebin.com/api_scraping.php?limit=50"
 
 # Scrape the given URL.
 def scrape(url)
@@ -22,20 +22,19 @@ end
 def save(parsed_url, parsed_key)
     content_to_store = scrape(parsed_url)
     current_files = Dir.glob("data/*.txt")
-    # Check if the file already exists, if not, write to it.
+
+   # Check if the file already exists, if not, write to it.
     current_files.each do |i|
-        if "#{parsed_key}.txt" != i
-            File.open("data/#{parsed_key}.txt",'w') { |file| file.write(content_to_store)}
-        end
+      if  File.file?("data/#{parsed_key}.txt") != true
+        File.open("data/#{parsed_key}.txt",'w') { |file| file.write(content_to_store) }
+        puts "Paste (#{parsed_key}) stored sucessfully."
+      end
     end
 end
 
 parsed = JSON.parse(scrape(url))
 
-parsed_url = parsed[0]["scrape_url"]
-parsed_key = parsed[0]["key"]
-
-save(parsed_url, parsed_key)
-
-
+parsed.each do |i|
+    save(i["scrape_url"], i["key"])
+end
 

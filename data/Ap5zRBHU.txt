@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public boolean divide(int depth){                         
+    //
+	if (depth&gt;=0){                        
+        if (depth&gt;0){             
+            this.divide(); // vypocita a nastavi atributy subVerts v tomto trojuholniku, nastavi bIsDivided na True 
+                           
+            //pre kazdy trojuholnik ktory vznikol rozdelenim tohoto trojuholnika (vzdy 3)               
+            for(int i=0; i&lt;3; i++) {
+				//pokial uz nebol rozdeleny (otestovane, podmienka prejde bez problemov)
+                if (!getSubTriangle(i).bIsDivided) {
+					// getSubTriangle(i) - vytvori novy trojuholnik z atributov vertex a subVert tohoto trojuholnika, vrati trojuholnik
+					// .bIsDivided - na vytvorenom trojuholniku i potom volam divide s hlbkou o jedno mensou ako tento troj. (rekurzia)
+					// </p></body></html>

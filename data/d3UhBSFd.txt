@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <bits>
+using namespace std;
+
+int main()
+{
+    long n, i, cnt, len, fall;
+    char bum[200000];
+    int flag;
+
+    scanf("%ld", &amp;n);
+    scanf("%s", bum);
+
+    //len = strlen(bum);
+    //printf("\n%d", len);
+    cnt = n;
+    //i = len - 1;
+    fall = 0;
+
+    while (cnt--) {
+        i = cnt;
+        //printf("%ld\n", i);
+
+        flag = true;
+
+        while (flag) {
+            if (bum[i] == '&gt;') i = i + 1;
+                else break;
+
+            if (i &gt; n - 1) {
+                ++fall;
+                break;
+            }
+        }
+        //printf("Brk from %c\n", bum[i]);
+
+        flag = true;
+
+        while (flag) {
+            if (bum[i] == '</bits></p></body></html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public void fromText(String str)
+	{		
+		// x y %offood %ofobstacles numberof species number of species...
+		String array[] = str.split(" ");
+		this.xSize = Integer.parseInt(array[0]);
+		this.ySize = Integer.parseInt(array[1]);
+		int area = xSize * ySize, quant;
+		String name;
+		
+		int noOfFood = area * (1/Integer.parseInt(array[2]));
+		int noOfObst = area * (1/Integer.parseInt(array[3]));
+		
+		int speciesCount = (array.length - 4)/2;
+		
+		System.out.println("Adding stuff now");
+		
+		for(int i = 0; i &lt; speciesCount; i++)
+		{					
+			name = array[(i * 2 + 5)];
+			quant = Integer.parseInt(array[(i * 2 + 4)]);
+			System.out.println(name + "," + quant);
+			for(int j = 0; j &lt; quant; j++)
+			{
+				name = array[(i * 2 + 5)];
+				addEntity(name.charAt(0), name, 5, i*j);
+			}
+		}
+		
+		for(int i = 0; i &lt; noOfFood; i++)
+		{
+			addEntity('f', "food", 5, 6);
+		}
+		
+		for(int i = 0; i &lt; noOfObst; i++)
+		{
+			addEntity('o', "obst", 5, 6);
+		}
+	}
+}</p></body></html>

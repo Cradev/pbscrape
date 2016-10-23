@@ -1,0 +1,279 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>=== [1v1] 1v1v1v1v1v1 ===
+
+Espeon @ Choice Specs  
+Ability: Magic Bounce  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 1 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe  
+- Trick  
+- Psyshock  
+- Hidden Power [Fighting]  
+- Protect  
+
+Aron @ Berry Juice  
+Ability: Sturdy  
+Level: 1  
+Serious Nature  
+IVs: 0 Atk  
+- Endeavor  
+- Sandstorm  
+- Toxic  
+- Protect  
+
+Sylveon @ Choice Specs  
+Ability: Pixilate  
+Shiny: Yes  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 0 Atk  
+- Hyper Voice  
+- Hyper Beam  
+- Protect  
+- Toxic  
+
+
+=== [1v1] YAS SMOGON ===
+
+Lopunny-Mega @ Lopunnite  
+Ability: Scrappy  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Naive Nature  
+- Fake Out  
+- Last Resort  
+
+Magnemite @ Berry Juice  
+Ability: Sturdy  
+Level: 1  
+EVs: 116 Def / 236 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Recycle  
+- Protect  
+- Toxic  
+
+Smeargle @ Leftovers  
+Ability: Own Tempo  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Spore  
+- Imprison  
+- Transform  
+- Protect  
+
+
+=== [doublesou] Untitled 2 ===
+
+Shedinja @ Lum Berry  
+Ability: Wonder Guard  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Shadow Sneak  
+- X-Scissor  
+- Shadow Claw  
+
+Audino @ Audinite  
+Ability: Regenerator  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Skill Swap  
+- Entrainment  
+- Heal Bell  
+- Play Nice  
+
+Carbink @ Heat Rock  
+Ability: Sturdy  
+EVs: 252 HP / 4 Def / 252 Spe  
+Jolly Nature  
+- Sunny Day  
+- Stealth Rock  
+- Explosion  
+- Magic Coat  
+
+Gliscor @ Toxic Orb  
+Ability: Poison Heal  
+EVs: 244 HP / 8 Def / 200 SpD / 56 Spe  
+Careful Nature  
+- Swords Dance  
+- Earthquake  
+- Knock Off  
+- Diamond Storm  
+
+Nosepain (Nosepass) @ Berry Juice  
+Ability: Sturdy  
+Level: 1  
+Shiny: Yes  
+- Pain Split  
+- Toxic  
+- Explosion  
+- Protect  
+
+Cloyster @ Focus Sash  
+Ability: Skill Link  
+EVs: 252 Atk / 4 SpA / 252 Spe  
+Jolly Nature  
+- Shell Smash  
+- Icicle Spear  
+- Rock Blast  
+- Ice Shard  
+
+
+=== [1v1] 1v1 ===
+
+Pinsir @ Pinsirite  
+Ability: Mold Breaker  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Swords Dance  
+- Quick Attack  
+- X-Scissor  
+- Close Combat  
+
+Nosepass @ Berry Juice  
+Ability: Sturdy  
+Level: 1  
+EVs: 36 Spe  
+Bold Nature  
+IVs: 0 Atk  
+- Pain Split  
+- Stealth Rock  
+- Toxic  
+- Protect  
+
+Lanturn  
+Ability: Volt Absorb  
+EVs: 252 Def / 4 SpA / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Soak  
+- Confuse Ray  
+- Thunderbolt  
+- Thunder Wave  
+
+
+=== [1v1] op op ===
+
+Tankeiro returns (Slowbro-Mega) (M) @ Slowbronite  
+Ability: Oblivious  
+EVs: 248 HP / 8 SpA / 252 SpD  
+Sassy Nature  
+IVs: 0 Atk / 0 Spe  
+- Calm Mind  
+- Iron Defense  
+- Slack Off  
+- Scald  
+
+SOLAR BEAM (Charizard) @ Charizardite X  
+Ability: Blaze  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+- Substitute  
+- Dragon Dance  
+- Flare Blitz  
+- Outrage  
+
+Lopunny-Mega @ Lopunnite  
+Ability: Limber  
+Shiny: Yes  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Fake Out  
+- Last Resort  
+
+
+=== [1v1] 1v1 3 ===
+
+Porygon-Z @ Choice Specs  
+Ability: Analytic  
+Shiny: Yes  
+EVs: 252 HP / 4 Def / 252 SpA  
+Quiet Nature  
+IVs: 0 Atk  
+- Hyper Beam  
+- Dark Pulse  
+- Psychic  
+
+Mega Stoned (Mawile) @ Mawilite  
+Ability: Intimidate  
+EVs: 224 HP / 252 Atk / 32 Spe  
+Adamant Nature  
+- Play Rough  
+- Iron Head  
+- Sucker Punch  
+- Swords Dance  
+
+Playtime's Over (Skuntank) @ Rocky Helmet  
+Ability: Aftermath  
+EVs: 12 HP / 120 Atk / 212 Def / 104 SpA / 60 Spe  
+Rash Nature  
+- Sucker Punch  
+- Flamethrower  
+- Sludge Bomb  
+- Endure  
+
+
+=== [1v1] lelelele ===
+
+Charizard-Mega-Y (M) @ Charizardite Y  
+Ability: Drought  
+Shiny: Yes  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Blast Burn  
+- Solar Beam  
+- Roost  
+- Will-O-Wisp  
+
+Gardevoir-Mega (F) @ Gardevoirite  
+Ability: Pixilate  
+Shiny: Yes  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Hyper Beam  
+- Calm Mind  
+- Moonblast  
+- Toxic  
+
+Jirachi @ Leftovers  
+Ability: Serene Grace  
+EVs: 252 HP / 224 SpD / 32 Spe  
+Careful Nature  
+- Iron Head  
+- Thunder Wave  
+- Toxic  
+- Protect  
+
+
+=== [1v1] high five bubble ===
+
+Crack (Victini) @ Charcoal  
+Ability: Victory Star  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Adamant Nature  
+- V-create  
+- Bolt Strike  
+- Zen Headbutt  
+- Quick Attack  
+
+Your (Lopunny-Mega) @ Lopunnite  
+Ability: Limber  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Fake Out  
+- Giga Impact  
+- High Jump Kick  
+- Ice Punch  
+
+Cranium (Greninja) @ Life Orb  
+Ability: Protean  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Mild Nature  
+- Hydro Cannon  
+- Ice Beam  
+- Grass Knot  
+- Shadow Sneak</p></body></html>

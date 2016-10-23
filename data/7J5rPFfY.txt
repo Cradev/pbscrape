@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>identite
+    prenom
+        Samuel
+    nom
+        Fissot
+    passwords
+        "internet" ( plus utilis&eacute; depuis longtemps )
+    pseudos
+        jvc
+            iPen
+            ]-sam-[
+            ]-sam-[2
+        twitter
+            https://twitter.com/SamuelFissot
+    mails
+        samuelfissot_4@hotmail.fr
+        samuelfissot@gmail.com
+        fissotsamuel@gmail.com
+
+localisation
+    prebac
+        ~
+            Dinan - Bretagne
+            https://www.google.fr/maps/place/22100+Dinan/@48.4545402,-2.0615908,14.75z/data=!4m5!3m4!1s0x480e8a19322f72d9:0x40ca5cd36e637e0!8m2!3d48.454366!4d-2.047327
+        lycee
+            Lycee Les Cordeliers
+            https://www.google.fr/maps/place/Les+Cordeliers/@48.454396,-2.0447417,15z/data=!4m2!3m1!1s0x0:0xde44ad15027c26ef?sa=X&amp;ved=0ahUKEwjtrtaIrvHPAhWE7hoKHdWdBhcQ_BIIiAEwCg
+    postbac
+        EM Normandie - Campus de Caen
+        https://www.google.com/maps?ll=49.210879,-0.357114&amp;z=14&amp;t=m&amp;hl=fr&amp;gl=US&amp;mapclient=embed&amp;cid=2265334656597289198
+
+etudes
+    prebac
+        Lyc&eacute;e Les Cordeliers
+        BAC ES - Mention Bien
+    postbac
+        EM Normandie ( &eacute;cole moisie )
+
+profil
+    pattern
+    social
+        roadtrip ( pr&eacute;voir sac &agrave; vomi )
+            https://www.youtube.com/watch?v=L8u1-xfL27k
+    intellectuel</p></body></html>

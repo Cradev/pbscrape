@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// laborki instrukcje sterujace.cpp: Okre&#347;la punkt wej&#347;cia dla aplikacji konsoli.
+//
+
+#include "stdafx.h"
+#include <conio.h>
+#include <math.h>
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	float a,b,c,d;
+	printf("Podaj liczbe a = ");
+	scanf("%f",&amp;a);
+	printf("Podaj liczbe b =");
+	scanf("%f",&amp;b);
+	printf("Podaj liczbe c = ");
+	scanf("%f",&amp;c);
+	printf("Podaj liczbe d = ");
+	scanf("%f",&amp;d);
+	if(c==0 || b==4 || d&lt;0 || (a+b)&lt;0)
+	{
+		printf("nie ma rozwiazania dla tego rowniania");
+	}
+	else
+	{
+		float y= (sqrt(a+b)/(c*c))-((sqrt(d)+5)/(b-4));
+		printf("rozwiazanie rownania = %f",y);
+	}
+
+	_getch();
+	return 0;
+}</math.h></conio.h></p></body></html>

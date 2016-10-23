@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>groups:
+  Peasant:
+    options:
+      prefix: '&amp;e[Peasant] '
+      default: true
+    permissions:
+    - essentials.build.break
+    - essentials.build
+    - essentials.build.craft
+    - essentials.build.drop
+    - essentials.build.place
+    - essentials.build.pickup
+    - essentials.build.interact</p></body></html>

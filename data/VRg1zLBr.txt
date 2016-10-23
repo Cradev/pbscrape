@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Groups is the CEO of Group Incorporated Tech
+ 
+Exertioz is the CEO of Exer Stores
+ 
+Jefemy is the CEO of Jef Emy Records
+ 
+Will is the CEO of Will Incorporated
+
+The adventure begins, everybody starts with 100$ to fund their business.
+
+Groups makes his business decision first, Build an office or Start a website and advertise it?
+
+He decides to start a website named Groupapple.com
+
+Exertioz is next he has to choose between Advertising or Building a small corner store.
+
+He builds a corner store and calls it EXER LOCAL STORE
+
+Jefemy is next, he has to choose from signing Loop Dog or signing Dustin Sleever.
+
+He signs Loop Dog.
+
+And finally Will, he has to choose from Hiring employees or hiring a personal assistant.
+
+He hires a personal assistant to help with business.
+
+PROFIT TURNOUT OF THE DECISIONS.
+
+Groups net worth has grown to 175$
+Exertioz net worth has grown to 245$
+Jefemys net worth has grown to 407$
+Wills net worth has grown to -65$ (tough luck)</p></body></html>

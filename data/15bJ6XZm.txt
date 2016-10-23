@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <iostream>
+
+using namespace std;
+
+int lSyn(int i)
+{
+    return (2*i+1);
+
+}
+
+int pSyn(int i)
+{
+    return (2*i+2);
+
+}
+
+
+void heapFix(int *tab, int i, int heapsize)
+{
+
+int largest=i,pom;
+int lewySyn=lSyn(i);
+int prawySyn=pSyn(i);
+
+if(lewySyn<heapsize tab largest="lewySyn;" if>tab[largest])
+    largest=prawySyn;
+
+if(i!=largest){
+    pom=tab[i];
+    tab[i]=tab[largest];
+    tab[largest]=pom;
+    heapFix(tab,largest,heapsize);
+}
+
+
+}
+
+void buildHeap(int *tab, int n)
+{
+    for(int i=n/2;i&gt;=0;i--)
+    {
+        heapFix(tab,i,n);
+    }
+}
+
+void heapSort(int *tab,int dl)
+{
+    buildHeap(tab,dl);
+        int heapsize = dl;
+
+    while(heapsize&gt;0)
+    {
+        heapsize--;
+        int pom = tab[0];
+        tab[0]=tab[heapsize];
+        tab[heapsize]=pom;
+        heapFix(tab,0,heapsize);
+
+    }
+}
+
+void bezwzgledna(int *tab, int dl){
+    int wartosc = 999999;
+        for(int i = 0 ; i &lt; dl - 1; i++){
+            if( (tab[i+1] - tab[i]) &lt; wartosc)
+                                wartosc = tab[i+1] - tab[i];
+        }
+            cout &lt;&lt; "wartosc = " &lt;&lt; endl;
+            cout &lt;&lt; wartosc &lt;&lt; endl;
+
+            cout &lt;&lt; " Pary = " &lt;&lt; endl;
+            for(int i = 0 ; i &lt; dl - 1; i++){
+                        if((tab[i+1] - tab[i]) == wartosc){
+                    cout &lt;&lt; tab[i] &lt;&lt; " " &lt;&lt; tab[i+1] &lt;&lt; endl;
+            }
+
+
+        }
+}
+int main()
+{
+    int n;
+    cout &lt;&lt; "Podaj ilosc liczb" &lt;&lt; endl;
+    cin &gt;&gt; n;
+    cout &lt;&lt; "Podaj elementy tablicy" &lt;&lt; endl;
+    int tab[n];
+    for(int i = 0; i &lt; n; i++)
+        cin &gt;&gt; tab[i];
+
+        heapSort(tab, n);
+        bezwzgledna(tab, n);
+    return 0;
+}</heapsize></iostream></p></body></html>

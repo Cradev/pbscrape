@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>mcaustin1
+mcaustin1@gmail.com
+Attempting to build version: 'latest' use --rev <version> to override
+Found version
+{
+	"name": "979",
+	"description": "Jenkins build 979",
+	"refs": {
+		"BuildData": "f37e6395d8f7d4865df27a4ab77e0c0d45de8fb9",
+		"Bukkit": "cdf11d567708cfb03453e4a139de7abc60f89cf9",
+		"CraftBukkit": "2e39de698d0998d4d5a2283686d192614505b7fa",
+		"Spigot": "850da7e0741c8af9a852d495092dc98249162950"
+	},
+	"toolsVersion": 47
+}
+
+Pulling updates for C:\Servers\Test Server\BuildData\.git
+Successfully fetched updates!
+Checked out: f37e6395d8f7d4865df27a4ab77e0c0d45de8fb9
+Pulling updates for C:\Servers\Test Server\Bukkit\.git
+Successfully fetched updates!
+Checked out: cdf11d567708cfb03453e4a139de7abc60f89cf9
+Pulling updates for C:\Servers\Test Server\CraftBukkit\.git
+Successfully fetched updates!
+Checked out: 2e39de698d0998d4d5a2283686d192614505b7fa
+Pulling updates for C:\Servers\Test Server\Spigot\.git
+Successfully fetched updates!
+Checked out: 850da7e0741c8af9a852d495092dc98249162950
+Attempting to build Minecraft with details: VersionInfo(minecraftVersion=1.10.2, accessTransforms=bukkit-1.10.2.at, classMappings=bukkit-1.10.2-cl.csrg, memberMappings=bukkit-1.10.2-members.csrg, packageMappings=package.srg, minecraftHash=41c4e081defd80b09cb0391c894c2f3c, decompileCommand=java -jar BuildData/bin/fernflower.jar -dgs=1 -hdc=0 -asc=1 -udv=0 {0} {1})
+Found good Minecraft hash (41c4e081defd80b09cb0391c894c2f3c)
+Found good Minecraft hash (41c4e081defd80b09cb0391c894c2f3c)
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install-file (default-cli) @ standalone-pom ---
+[INFO] Installing C:\Servers\Test Server\work\mapped.1ae486b6.jar to C:\Users\mcaus_000\.m2\repository\org\spigotmc\minecraft-server\1.10.2-SNAPSHOT\minecraft-server-1.10.2-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.895 s
+[INFO] Finished at: 2016-10-23T11:29:22-07:00
+[INFO] Final Memory: 7M/245M
+[INFO] ------------------------------------------------------------------------
+Applying CraftBukkit Patches
+Backing up NMS dir
+Patching with Block.patch
+Patching with BlockButtonAbstract.patch
+Patching with BlockCactus.patch
+Patching with BlockCake.patch
+Patching with BlockCauldron.patch
+Patching with BlockChorusFlower.patch
+Patching with BlockCocoa.patch
+Patching with BlockCommand.patch
+Patching with BlockCrops.patch
+Patching with BlockDaylightDetector.patch
+Patching with BlockDiodeAbstract.patch
+Patching with BlockDispenser.patch
+Patching with BlockDoor.patch
+Patching with BlockDragonEgg.patch
+Patching with BlockDropper.patch
+Patching with BlockEnderPortal.patch
+Patching with BlockFire.patch
+Patching with BlockFlowing.patch
+Patching with BlockGrass.patch
+Patching with BlockIce.patch
+Patching with BlockJukeBox.patch
+Patching with BlockLeaves.patch
+Patching with BlockLever.patch
+Patching with BlockMagma.patch
+Patching with BlockMinecartDetector.patch
+Patching with BlockMobSpawner.patch
+Patching with BlockMonsterEggs.patch
+Patching with BlockMushroom.patch
+Patching with BlockMycel.patch
+Patching with BlockNetherWart.patch
+Patching with BlockOre.patch
+Patching with BlockPiston.patch
+Patching with BlockPlant.patch
+Patching with BlockPortal.patch
+Patching with BlockPoweredRail.patch
+Patching with BlockPressurePlateAbstract.patch
+Patching with BlockPressurePlateBinary.patch
+Patching with BlockPressurePlateWeighted.patch
+Patching with BlockPumpkin.patch
+Patching with BlockRedstoneLamp.patch
+Patching with BlockRedstoneOre.patch
+Patching with BlockRedstoneTorch.patch
+Patching with BlockRedstoneWire.patch
+Patching with BlockReed.patch
+Patching with BlockSapling.patch
+Patching with BlockSkull.patch
+Patching with BlockSnow.patch
+Patching with BlockSoil.patch
+Patching with BlockStationary.patch
+Patching with BlockStem.patch
+Patching with BlockTNT.patch
+Patching with BlockTrapdoor.patch
+Patching with BlockTripwire.patch
+Patching with BlockTripwireHook.patch
+Patching with BlockVine.patch
+Patching with BlockWaterLily.patch
+Patching with ChatBaseComponent.patch
+Patching with ChatModifier.patch
+Patching with Chunk.patch
+Patching with ChunkProviderGenerate.patch
+Patching with ChunkProviderServer.patch
+Patching with ChunkRegionLoader.patch
+Patching with ChunkSection.patch
+Patching with CommandBlockListenerAbstract.patch
+Patching with CommandExecute.patch
+Patching with CommandGamemode.patch
+Patching with CommandGamerule.patch
+Patching with CommandSpreadPlayers.patch
+Patching with CommandTp.patch
+Patching with Container.patch
+Patching with ContainerAnvil.patch
+Patching with ContainerBeacon.patch
+Patching with ContainerBrewingStand.patch
+Patching with ContainerChest.patch
+Patching with ContainerDispenser.patch
+Patching with ContainerEnchantTable.patch
+Patching with ContainerFurnace.patch
+Patching with ContainerHopper.patch
+Patching with ContainerHorse.patch
+Patching with ContainerMerchant.patch
+Patching with ContainerPlayer.patch
+Patching with ContainerWorkbench.patch
+Patching with CraftingManager.patch
+Patching with CrashReport.patch
+Patching with DataPaletteBlock.patch
+Patching with DataWatcher.patch
+Patching with DedicatedServer.patch
+Patching with DispenseBehaviorItem.patch
+Patching with DispenseBehaviorProjectile.patch
+Patching with DispenserRegistry.patch
+Patching with DragonControllerManager.patch
+Patching with Enchantment.patch
+Patching with EnchantmentFrostWalker.patch
+Patching with EnchantmentThorns.patch
+Patching with Entity.patch
+Patching with EntityAgeable.patch
+Patching with EntityAnimal.patch
+Patching with EntityAreaEffectCloud.patch
+Patching with EntityArmorStand.patch
+Patching with EntityArrow.patch
+Patching with EntityBoat.patch
+Patching with EntityChicken.patch
+Patching with EntityCow.patch
+Patching with EntityCreature.patch
+Patching with EntityCreeper.patch
+Patching with EntityDamageSourceIndirect.patch
+Patching with EntityEgg.patch
+Patching with EntityEnderCrystal.patch
+Patching with EntityEnderDragon.patch
+Patching with EntityEnderman.patch
+Patching with EntityEnderPearl.patch
+Patching with EntityExperienceOrb.patch
+Patching with EntityFallingBlock.patch
+Patching with EntityFireball.patch
+Patching with EntityFireworks.patch
+Patching with EntityFishingHook.patch
+Patching with EntityGhast.patch
+Patching with EntityHanging.patch
+Patching with EntityHorse.patch
+Patching with EntityHuman.patch
+Patching with EntityInsentient.patch
+Patching with EntityIronGolem.patch
+Patching with EntityItem.patch
+Patching with EntityItemFrame.patch
+Patching with EntityLargeFireball.patch
+Patching with EntityLeash.patch
+Patching with EntityLightning.patch
+Patching with EntityLiving.patch
+Patching with EntityMinecartAbstract.patch
+Patching with EntityMinecartCommandBlock.patch
+Patching with EntityMinecartContainer.patch
+Patching with EntityMonster.patch
+Patching with EntityMushroomCow.patch
+Patching with EntityOcelot.patch
+Patching with EntityPainting.patch
+Patching with EntityPig.patch
+Patching with EntityPlayer.patch
+Patching with EntityPotion.patch
+Patching with EntityProjectile.patch
+Patching with EntityRabbit.patch
+Patching with EntitySheep.patch
+Patching with EntityShulkerBullet.patch
+Patching with EntitySilverfish.patch
+Patching with EntitySkeleton.patch
+Patching with EntitySlice.patch
+Patching with EntitySlime.patch
+Patching with EntitySmallFireball.patch
+Patching with EntitySnowman.patch
+Patching with EntitySpider.patch
+Patching with EntityThrownExpBottle.patch
+Patching with EntityTippedArrow.patch
+Patching with EntityTNTPrimed.patch
+Patching with EntityTracker.patch
+Patching with EntityTrackerEntry.patch
+Patching with EntityVillager.patch
+Patching with EntityWither.patch
+Patching with EntityWitherSkull.patch
+Patching with EntityWolf.patch
+Patching with EntityZombie.patch
+Patching with ExpirableListEntry.patch
+Patching with Explosion.patch
+Patching with FoodMetaData.patch
+Patching with HandshakeListener.patch
+Patching with IDataManager.patch
+Patching with IInventory.patch
+Patching with InventoryCrafting.patch
+Patching with InventoryCraftResult.patch
+Patching with InventoryEnderChest.patch
+Patching with InventoryHorseChest.patch
+Patching with InventoryLargeChest.patch
+Patching with InventoryMerchant.patch
+Patching with InventorySubcontainer.patch
+Patching with IRecipe.patch
+Patching with ItemArmor.patch
+Patching with ItemBlock.patch
+Patching with ItemBoat.patch
+Patching with ItemBow.patch
+Patching with ItemBucket.patch
+Patching with ItemChorusFruit.patch
+Patching with ItemDye.patch
+Patching with ItemFireball.patch
+Patching with ItemFishingRod.patch
+Patching with ItemFlintAndSteel.patch
+Patching with ItemHanging.patch
+Patching with ItemLeash.patch
+Patching with ItemMapEmpty.patch
+Patching with ItemMinecart.patch
+Patching with ItemMonsterEgg.patch
+Patching with ItemRecord.patch
+Patching with ItemSkull.patch
+Patching with ItemSnowball.patch
+Patching with ItemStack.patch
+Patching with ItemWaterLily.patch
+Patching with ItemWorldMap.patch
+Patching with JsonList.patch
+Patching with LoginListener.patch
+Patching with MerchantRecipe.patch
+Patching with MethodProfiler.patch
+Patching with MinecraftServer.patch
+Patching with MobEffectList.patch
+Patching with MobSpawnerAbstract.patch
+Patching with NameReferencingFileConverter.patch
+Patching with NetworkManager.patch
+Patching with PacketDataSerializer.patch
+Patching with PacketPlayInCloseWindow.patch
+Patching with PacketStatusListener.patch
+Patching with PathfinderGoalBreakDoor.patch
+Patching with PathfinderGoalBreed.patch
+Patching with PathfinderGoalDefendVillage.patch
+Patching with PathfinderGoalEatTile.patch
+Patching with PathfinderGoalHorseTrap.patch
+Patching with PathfinderGoalHurtByTarget.patch
+Patching with PathfinderGoalMakeLove.patch
+Patching with PathfinderGoalNearestAttackableTarget.patch
+Patching with PathfinderGoalNearestAttackableTargetInsentient.patch
+Patching with PathfinderGoalOwnerHurtByTarget.patch
+Patching with PathfinderGoalOwnerHurtTarget.patch
+Patching with PathfinderGoalPanic.patch
+Patching with PathfinderGoalSit.patch
+Patching with PathfinderGoalTame.patch
+Patching with PathfinderGoalTarget.patch
+Patching with PathfinderGoalTargetNearestPlayer.patch
+Patching with PathfinderGoalTempt.patch
+Patching with PathfinderGoalVillagerFarm.patch
+Patching with PlayerChunk.patch
+Patching with PlayerChunkMap.patch
+Patching with PlayerConnection.patch
+Patching with PlayerInteractManager.patch
+Patching with PlayerInventory.patch
+Patching with PlayerList.patch
+Patching with PortalTravelAgent.patch
+Patching with PropertyManager.patch
+Patching with RecipeArmorDye.patch
+Patching with RecipeBookClone.patch
+Patching with RecipeFireworks.patch
+Patching with RecipeMapClone.patch
+Patching with RecipeRepair.patch
+Patching with RecipesBanner.patch
+Patching with RecipesFurnace.patch
+Patching with RecipeTippedArrow.patch
+Patching with RecipiesShield.patch
+Patching with RegionFile.patch
+Patching with RegionFileCache.patch
+Patching with RemoteControlCommandListener.patch
+Patching with ScoreboardServer.patch
+Patching with SecondaryWorldServer.patch
+Patching with ShapedRecipes.patch
+Patching with ShapelessRecipes.patch
+Patching with Slot.patch
+Patching with SlotFurnaceResult.patch
+Patching with SpawnerCreature.patch
+Patching with StatisticManager.patch
+Patching with StructureGenerator.patch
+Patching with TileEntity.patch
+Patching with TileEntityBanner.patch
+Patching with TileEntityBeacon.patch
+Patching with TileEntityBrewingStand.patch
+Patching with TileEntityChest.patch
+Patching with TileEntityCommand.patch
+Patching with TileEntityContainer.patch
+Patching with TileEntityDispenser.patch
+Patching with TileEntityEndGateway.patch
+Patching with TileEntityFurnace.patch
+Patching with TileEntityHopper.patch
+Patching with TileEntityNote.patch
+Patching with TileEntityPiston.patch
+Patching with TileEntitySign.patch
+Patching with UserCache.patch
+Patching with Village.patch
+Patching with VillageSiege.patch
+Patching with World.patch
+Patching with WorldBorder.patch
+Patching with WorldData.patch
+Patching with WorldGenGroundBush.patch
+Patching with WorldGenMegaTreeAbstract.patch
+Patching with WorldGenRegistration.patch
+Patching with WorldGenVillagePieces.patch
+Patching with WorldManager.patch
+Patching with WorldMap.patch
+Patching with WorldNBTStorage.patch
+Patching with WorldServer.patch
+Compiling Bukkit
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Bukkit 1.10.2-R0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bukkit ---
+[INFO] Deleting C:\Servers\Test Server\Bukkit\target
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.2:enforce (enforce-maven) @ bukkit ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Servers\Test Server\Bukkit\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ bukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ bukkit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Servers\Test Server\Bukkit\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ bukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bukkit ---
+[INFO] Surefire report directory: C:\Servers\Test Server\Bukkit\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.bukkit.ArtTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 sec
+Running org.bukkit.BukkitMirrorTest
+Tests run: 485, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 sec
+Running org.bukkit.ChatColorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.ChatPaginatorTest
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.CoalTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.ColorTest
+Tests run: 52, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 sec
+Running org.bukkit.configuration.file.YamlConfigurationTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 sec
+Running org.bukkit.configuration.MemoryConfigurationTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.configuration.MemorySectionTest
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
+Running org.bukkit.conversations.ConversationContextTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.conversations.ConversationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.conversations.ValidatingPromptTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.CropStateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.DifficultyTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.DyeColorTest
+Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.EffectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.EntityEffectTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.event.PlayerChatTabCompleteEventTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.event.SyntheticEventTest
+Oct 23, 2016 11:29:56 AM org.bukkit.Bukkit setServer
+INFO: This server is running TestServer version Version_null (Implementing API version BukkitVersion_null)
+Invk org.bukkit.event.TestEvent@13e39c73
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec
+Running org.bukkit.GameModeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.GrassSpeciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.InstrumentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.LocationTest
+Tests run: 60, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.materials.MaterialDataTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.MaterialTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Running org.bukkit.metadata.FixedMetadataValueTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.LazyMetadataValueTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.MetadataConversionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.MetadataStoreTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.metadata.MetadataValueAdapterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.NoteTest
+Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.messaging.StandardMessengerTest
+Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.PluginManagerTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.plugin.TimedRegisteredListenerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.TreeSpeciesTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.util.io.BukkitObjectStreamTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.033 sec
+Running org.bukkit.util.StringUtilStartsWithTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.util.StringUtilTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running org.bukkit.WorldTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+
+Results :
+
+Tests run: 913, Failures: 0, Errors: 0, Skipped: 3
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ bukkit ---
+[INFO] Building jar: C:\Servers\Test Server\Bukkit\target\bukkit-1.10.2-R0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.4.1:shade (default) @ bukkit ---
+[INFO] Including commons-lang:commons-lang:jar:2.6 in the shaded jar.
+[INFO] Including com.googlecode.json-simple:json-simple:jar:1.1.1 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:17.0 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.2.4 in the shaded jar.
+[INFO] Including org.avaje:ebean:jar:2.8.1 in the shaded jar.
+[INFO] Including javax.persistence:persistence-api:jar:1.0 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.15 in the shaded jar.
+[INFO] Attaching shaded artifact.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ bukkit ---
+[INFO] Installing C:\Servers\Test Server\Bukkit\target\bukkit-1.10.2-R0.1-SNAPSHOT.jar to C:\Users\mcaus_000\.m2\repository\org\bukkit\bukkit\1.10.2-R0.1-SNAPSHOT\bukkit-1.10.2-R0.1-SNAPSHOT.jar
+[INFO] Installing C:\Servers\Test Server\Bukkit\pom.xml to C:\Users\mcaus_000\.m2\repository\org\bukkit\bukkit\1.10.2-R0.1-SNAPSHOT\bukkit-1.10.2-R0.1-SNAPSHOT.pom
+[INFO] Installing C:\Servers\Test Server\Bukkit\target\bukkit-1.10.2-R0.1-SNAPSHOT-shaded.jar to C:\Users\mcaus_000\.m2\repository\org\bukkit\bukkit\1.10.2-R0.1-SNAPSHOT\bukkit-1.10.2-R0.1-SNAPSHOT-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 24.178 s
+[INFO] Finished at: 2016-10-23T11:29:59-07:00
+[INFO] Final Memory: 39M/298M
+[INFO] ------------------------------------------------------------------------
+Compiling CraftBukkit
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CraftBukkit 1.10.2-R0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ craftbukkit ---
+[INFO] Deleting C:\Servers\Test Server\CraftBukkit\target
+[INFO] 
+[INFO] --- scriptus:0.2:describe (default) @ craftbukkit ---
+[INFO] Set property "describe" to "git-Bukkit-2e39de6"
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ craftbukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ craftbukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- animal-sniffer-maven-plugin:1.14:check (default) @ craftbukkit ---
+[INFO] Checking unresolved references to org.codehaus.mojo.signature:java16:1.1
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ craftbukkit ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Servers\Test Server\CraftBukkit\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ craftbukkit ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19:test (default-test) @ craftbukkit ---
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.bukkit.ArtTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 sec - in org.bukkit.ArtTest
+Running org.bukkit.BiomeTest
+2016-10-23 11:30:25,828 WARN Unable to instantiate org.fusesource.jansi.WindowsAnsiOutputStream
+Oct 23, 2016 11:30:27 AM org.bukkit.Bukkit setServer
+INFO: This server is running org.bukkit.support.DummyServer version null (Implementing API version 1.10.2-R0.1-SNAPSHOT)
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.435 sec - in org.bukkit.BiomeTest
+Running org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+Tests run: 1488, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.922 sec - in org.bukkit.craftbukkit.inventory.FactoryItemMaterialTest
+Running org.bukkit.craftbukkit.inventory.ItemFactoryTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.434 sec - in org.bukkit.craftbukkit.inventory.ItemFactoryTest
+Running org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+Tests run: 99, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in org.bukkit.craftbukkit.inventory.ItemMetaImplementationOverrideTest
+Running org.bukkit.craftbukkit.inventory.ItemMetaTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.craftbukkit.inventory.ItemMetaTest
+Running org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.craftbukkit.inventory.NMSCraftItemStackTest
+Running org.bukkit.DyeColorsTest
+Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in org.bukkit.DyeColorsTest
+Running org.bukkit.entity.EnderDragonPhaseTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec - in org.bukkit.entity.EnderDragonPhaseTest
+Running org.bukkit.map.MapTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.map.MapTest
+Running org.bukkit.MaterialTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.MaterialTest
+Running org.bukkit.ParticleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.ParticleTest
+Running org.bukkit.PerMaterialTest
+Tests run: 4664, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 sec - in org.bukkit.PerMaterialTest
+Running org.bukkit.potion.PotionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.potion.PotionTest
+Running org.bukkit.SoundTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.SoundTest
+Running org.bukkit.StatisticsAndAchievementsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.StatisticsAndAchievementsTest
+Running org.bukkit.WorldTypeTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec - in org.bukkit.WorldTypeTest
+
+Results :
+
+Tests run: 6314, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ craftbukkit ---
+[INFO] Building jar: C:\Servers\Test Server\CraftBukkit\target\craftbukkit-1.10.2-R0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-shade-plugin:2.4.1:shade (default) @ craftbukkit ---
+[INFO] Including org.bukkit:bukkit:jar:1.10.2-R0.1-SNAPSHOT in the shaded jar.
+[INFO] Including commons-lang:commons-lang:jar:2.6 in the shaded jar.
+[INFO] Including com.googlecode.json-simple:json-simple:jar:1.1.1 in the shaded jar.
+[INFO] Including com.google.guava:guava:jar:17.0 in the shaded jar.
+[INFO] Including com.google.code.gson:gson:jar:2.2.4 in the shaded jar.
+[INFO] Including org.avaje:ebean:jar:2.8.1 in the shaded jar.
+[INFO] Including javax.persistence:persistence-api:jar:1.0 in the shaded jar.
+[INFO] Including org.yaml:snakeyaml:jar:1.15 in the shaded jar.
+[INFO] Including org.spigotmc:minecraft-server:jar:1.10.2-SNAPSHOT in the shaded jar.
+[INFO] Including net.sf.jopt-simple:jopt-simple:jar:4.9 in the shaded jar.
+[INFO] Including jline:jline:jar:2.12 in the shaded jar.
+[INFO] Including org.xerial:sqlite-jdbc:jar:3.7.2 in the shaded jar.
+[INFO] Including mysql:mysql-connector-java:jar:5.1.37 in the shaded jar.
+[WARNING] minecraft-server-1.10.2-SNAPSHOT.jar, craftbukkit-1.10.2-R0.1-SNAPSHOT.jar define 524 overlapping classes: 
+[WARNING]   - org.apache.logging.log4j.core.appender.ConsoleAppender$ConsoleManagerFactory
+[WARNING]   - net.minecraft.server.DispenserRegistry$2
+[WARNING]   - net.minecraft.server.DispenserRegistry$12
+[WARNING]   - net.minecraft.server.PathfinderGoalNearestAttackableTargetInsentient
+[WARNING]   - net.minecraft.server.BlockWaterLily
+[WARNING]   - net.minecraft.server.PathfinderGoalHurtByTarget
+[WARNING]   - net.minecraft.server.Entity$4
+[WARNING]   - net.minecraft.server.BlockGrass
+[WARNING]   - net.minecraft.server.PlayerChunkMap$5
+[WARNING]   - net.minecraft.server.Chunk$1
+[WARNING]   - 514 more...
+[WARNING] minecraft-server-1.10.2-SNAPSHOT.jar, guava-17.0.jar define 1686 overlapping classes: 
+[WARNING]   - com.google.common.collect.ImmutableMapValues$1
+[WARNING]   - com.google.common.io.LineProcessor
+[WARNING]   - com.google.common.util.concurrent.AbstractService$5
+[WARNING]   - com.google.common.io.BaseEncoding$StandardBaseEncoding$2
+[WARNING]   - com.google.common.io.ByteProcessor
+[WARNING]   - com.google.common.math.package-info
+[WARNING]   - com.google.common.util.concurrent.SimpleTimeLimiter
+[WARNING]   - com.google.common.io.GwtWorkarounds$5
+[WARNING]   - com.google.common.cache.AbstractCache$StatsCounter
+[WARNING]   - com.google.common.util.concurrent.CycleDetectingLockFactory$Policies
+[WARNING]   - 1676 more...
+[WARNING] minecraft-server-1.10.2-SNAPSHOT.jar, gson-2.2.4.jar define 153 overlapping classes: 
+[WARNING]   - com.google.gson.internal.bind.JsonTreeWriter
+[WARNING]   - com.google.gson.internal.Excluder
+[WARNING]   - com.google.gson.JsonDeserializationContext
+[WARNING]   - com.google.gson.internal.$Gson$Types
+[WARNING]   - com.google.gson.internal.LinkedTreeMap$KeySet
+[WARNING]   - com.google.gson.FieldNamingPolicy$5
+[WARNING]   - com.google.gson.internal.bind.SqlDateTypeAdapter$1
+[WARNING]   - com.google.gson.internal.UnsafeAllocator$2
+[WARNING]   - com.google.gson.FieldAttributes
+[WARNING]   - com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl
+[WARNING]   - 143 more...
+[WARNING] maven-shade-plugin has detected that some class files are
+[WARNING] present in two or more JARs. When this happens, only one
+[WARNING] single version of the class is copied to the uber jar.
+[WARNING] Usually this is not harmful and you can skip these warnings,
+[WARNING] otherwise try to manually exclude artifacts based on
+[WARNING] mvn dependency:tree -Ddetail=true and the above output.
+[WARNING] See http://docs.codehaus.org/display/MAVENUSER/Shade+Plugin
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing C:\Servers\Test Server\CraftBukkit\target\craftbukkit-1.10.2-R0.1-SNAPSHOT.jar with C:\Servers\Test Server\CraftBukkit\target\craftbukkit-1.10.2-R0.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: C:\Servers\Test Server\CraftBukkit\dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: C:\Servers\Test Server\CraftBukkit\dependency-reduced-pom.xml
+[INFO] Dependency-reduced POM written at: C:\Servers\Test Server\CraftBukkit\dependency-reduced-pom.xml
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ craftbukkit ---
+[INFO] Installing C:\Servers\Test Server\CraftBukkit\target\craftbukkit-1.10.2-R0.1-SNAPSHOT.jar to C:\Users\mcaus_000\.m2\repository\org\bukkit\craftbukkit\1.10.2-R0.1-SNAPSHOT\craftbukkit-1.10.2-R0.1-SNAPSHOT.jar
+[INFO] Installing C:\Servers\Test Server\CraftBukkit\dependency-reduced-pom.xml to C:\Users\mcaus_000\.m2\repository\org\bukkit\craftbukkit\1.10.2-R0.1-SNAPSHOT\craftbukkit-1.10.2-R0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 42.076 s
+[INFO] Finished at: 2016-10-23T11:30:43-07:00
+[INFO] Final Memory: 24M/537M
+[INFO] ------------------------------------------------------------------------
+Rebuilding Forked projects.... 
+HEAD is now at cdf11d5 SPIGOT-2706: Implement support for Lock NBT Tag
+Resetting Spigot-API to Bukkit...
+HEAD is now at cdf11d5 SPIGOT-2706: Implement support for Lock NBT Tag
+  Applying patches to Spigot-API...
+fatal: Resolve operation not in progress, we are not resuming.
+Applying: POM Changes
+Applying: Spigot Timings
+Applying: Add PlayerItemDamageEvent
+Applying: BungeeCord Support
+Applying: Add Arrow API
+Applying: Add Particle API
+Applying: Define EntitySpawnEvent and SpawnerSpawnEvent
+Applying: Entity Mount and Dismount Events
+Applying: InventoryClickEvent getClickedInventory
+Applying: Added getAllSessionData() to the Conversation API.
+Applying: Catch Conversation API Errors
+Applying: Player Collision API
+Applying: Expand Boolean Prompt Values
+Applying: Add Getter for Entity Invulnerability
+Applying: Add respawn API.
+Applying: Fix Plugin Message API Disconnects
+Applying: Fix Tab Completion for Some Commands
+Applying: Implement Locale Getter for Players
+Applying: Add support for fetching hidden players
+Applying: Silenceable Lightning API
+Applying: Remove deprecation on some player lookup methods
+Applying: Add Score.isScoreSet()Z API.
+Applying: Add PlayerSpawnLocationEvent.
+Applying: Ease ClassLoader Deadlocks Where Possible
+Applying: Fix slow tab complete for some commands.
+Applying: Undeprecate Player#updateInventory()V
+Applying: Added isUnbreakable and setUnbreakable to ItemMeta
+Applying: BungeeCord Chat API
+Applying: Add restart API.
+  Patches applied cleanly to Spigot-API
+From file:///C:\Servers\Test Server\CraftBukkit
+ + 9766ea4...e5dd6ee patched    -&gt; origin/patched  (forced update)
+HEAD is now at e5dd6ee CraftBukkit $ Sun Oct 23 11:29:33 PDT 2016
+Resetting Spigot-Server to CraftBukkit...
+HEAD is now at e5dd6ee CraftBukkit $ Sun Oct 23 11:29:33 PDT 2016
+  Applying patches to Spigot-Server...
+error: You seem to have moved HEAD since the last 'am' failure.
+Not rewinding to ORIG_HEAD
+Applying: POM Changes
+Applying: Skeleton API Implementations
+Applying: mc-dev imports
+Applying: Obfuscation Helpers
+fatal: sha1 information is lacking or useless (src/main/java/net/minecraft/server/MinecraftServer.java).
+error: could not build fake ancestor
+Patch failed at 0004 Obfuscation Helpers
+The copy of the patch that failed is found in: .git/rebase-apply/patch
+When you have resolved this problem, run "git am --continue".
+If you prefer to skip this patch, run "git am --skip" instead.
+To restore the original branch and stop patching, run "git am --abort".
+  Something did not apply cleanly to Spigot-Server.
+  Please review above details and finish the apply then
+  save the changes with rebuildPatches.sh
+Error compiling Spigot. Please check the wiki for FAQs.
+If this does not resolve your issue then please pastebin the entire BuildTools.log.txt file when seeking support.
+java.lang.RuntimeException: Error running command, return status !=0: [bash, applyPatches.sh]
+	at org.spigotmc.builder.Builder.runProcess(Builder.java:547)
+	at org.spigotmc.builder.Builder.main(Builder.java:429)</version></p></body></html>

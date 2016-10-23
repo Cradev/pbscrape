@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Old:
+
+# [400] for r := 0 to src.count-1 do
+	movl	8(%ebx),%eax
+	leal	-1(%eax),%edi
+# Var r located in register ebp
+	xorl	%ebp,%ebp
+	cmpl	%ebp,%edi
+	jl	.Lj1761
+	subl	$1,%ebp
+	.balign 4,0x90
+
+
+New:
+
+# [400] for r := 0 to src.count-1 do
+	movl	8(%ebx),%eax
+	leal	-1(%eax),%edi
+	testl	%edi,%edi
+	jnge	.Lj1811
+	xorl	%ebp,%ebp
+	movl	$-1,%ebp
+	.balign 4,0x90</p></body></html>

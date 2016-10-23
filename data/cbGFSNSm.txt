@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public enum ExceptionHandle
+  {
+    Abort,
+    Retry,
+    Ignore
+  }
+
+  public class ExceptionEventArgs
+  {
+    public Exception Exception { get; }
+
+    public ExceptionHandle? Handled { get; set; }
+
+    public ExceptionEventArgs(Exception ex)
+    {
+      this.Exception = ex;
+    }
+  }
+
+  public static class ExceptionHandler
+  {
+    public static event EventHandler<exceptioneventargs> Handler;
+
+    public static void TryExecute(Action action)
+    {
+      ExceptionHandler<bool>.TryExecute(() =&gt; { action(); return true; }, false);
+    }
+
+    public static ExceptionHandle? OnHandler(ExceptionEventArgs e)
+    {
+      if (Handler == null || !Handler.GetInvocationList().Any())
+      {
+        ExceptionDispatchInfo.Capture(e.Exception).Throw();
+      }
+      else
+      {
+        Handler.Invoke(null, e);
+      }
+      return e.Handled;
+    }
+  }
+
+  public static class ExceptionHandler<t>
+  {
+    public static T TryExecute(Func<t> action, T whenFailed)
+    {
+      ExceptionHandle? handled = ExceptionHandle.Retry;
+      while (handled == ExceptionHandle.Retry)
+      {
+        try
+        {
+          return action();
+        }
+        catch (Exception ex)
+        {
+          handled = ExceptionHandler.OnHandler(new ExceptionEventArgs(ex));
+          if (handled.HasValue)
+          {
+            switch (handled.Value)
+            {
+              case ExceptionHandle.Abort:
+                throw;
+                break;
+              case ExceptionHandle.Retry:
+                break;
+              case ExceptionHandle.Ignore:
+                return whenFailed;
+                break;
+              default:
+                throw new ArgumentOutOfRangeException();
+            }
+          }
+          else
+          {
+            throw;
+          }
+        }
+      }
+      return whenFailed;
+    }
+  }
+	
+var tested = ExceptionHandler<bool>.TryExecute(() =&gt;
+      {
+        using (var destination = new MemoryStream())
+        {
+          using (Stream stream = entry.Open())
+            stream.CopyTo(destination);
+          return destination.Length == entry.Length;
+        }
+      }, false);</bool></t></t></bool></exceptioneventargs></p></body></html>

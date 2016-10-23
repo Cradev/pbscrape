@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public void genererE( CoreRSA User1 ){
+    	int pg = pgcd(User1.getPhi(),User1.getE());
+    	
+    	while (true)
+    	{
+    		if (pg == 1) 
+            	User1.setPhi(User1.getE());
+            else if (pg != 1) {
+                User1.setE(User1.getE()+1);
+                pg = pgcd(User1.getPhi(),User1.getE());
+            }
+    	}</p></body></html>

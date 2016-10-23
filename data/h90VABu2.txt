@@ -1,0 +1,14 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Config:
+  PatchRecipes: true
+Smelting:
+  SMELTING:
+    Tier1:
+      Permission: permission.tier.1
+      Items:
+        - COAL:0
+  CRAFTING:
+    Tier1:
+      Permission: permission.tier.1
+      Items:
+        - IRON_CHESTPLATE:0</p></body></html>

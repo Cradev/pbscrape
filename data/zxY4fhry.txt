@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public void drawParallelepiped(int A, int B, int C)
+    {
+        GL11.glRotatef(22.5f, 1, 1, 1);
+           
+        GL11.glBegin(GL_QUADS);      
+       
+        GL11.glColor3f(1, 0, 0);            //red front
+        GL11.glVertex3f( 0, 0, 0 );                
+        GL11.glVertex3f( A, 0, 0 );            
+        GL11.glVertex3f( A, B, 0 );            
+        GL11.glVertex3f( 0, B, 0 );              
+       
+        GL11.glColor3f(1, 0, 0);            //red back
+        GL11.glVertex3f( 0, 0, C );                
+        GL11.glVertex3f( A, 0, C );            
+        GL11.glVertex3f( A, B, C );            
+        GL11.glVertex3f( 0, B, C );              
+       
+        GL11.glColor3f(0, 1, 0);            //green up
+        GL11.glVertex3f( 0, 0, C );                
+        GL11.glVertex3f( A, 0, C );            
+        GL11.glVertex3f( A, 0, 0 );            
+        GL11.glVertex3f( 0, 0, 0 );              
+       
+        GL11.glColor3f(0, 1, 0);            //green bottom
+        GL11.glVertex3f( 0, B, C );                
+        GL11.glVertex3f( A, B, C );            
+        GL11.glVertex3f( A, B, 0 );            
+        GL11.glVertex3f( 0, B, 0 );              
+       
+        GL11.glColor3f(0, 0, 1);            //blue left
+        GL11.glVertex3f( 0, 0, 0 );                
+        GL11.glVertex3f( 0, 0, C );            
+        GL11.glVertex3f( 0, B, C );            
+        GL11.glVertex3f( 0, B, 0 );              
+       
+        GL11.glColor3f(0, 0, 1);            //blue right
+        GL11.glVertex3f( A, 0, 0 );                
+        GL11.glVertex3f( A, 0, C );            
+        GL11.glVertex3f( A, B, C );            
+        GL11.glVertex3f( A, B, 0 );              
+       
+        GL11.glEnd();  
+    }</p></body></html>

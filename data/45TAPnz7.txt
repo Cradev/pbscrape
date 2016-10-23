@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*oblicza wartosc funkcji e^x z rozwiniecia szeregu Taylora*/
+#include <stdio.h>
+#include <math.h>
+#include <ctype.h>
+#include <string.h>
+#include <stdlib.h>
+
+
+void error(char *s){
+  printf("ERROR: %s\n",s);
+  exit(1);
+}
+
+//ta funkcja zwraca 0 kiedy liczba jest ujemna,
+// 1 kiedy liczba jest dodatnia
+// wywala program jezeli input nie jest liczba
+int Sanitize(char * s){
+  int znak = 1;
+  if(s[0] == '-'){
+    znak = 0;
+  }
+  else if(isdigit(s[0]) == 0){
+    printf("WRONG INPUT");
+    exit(1);
+  }
+  for(int i = 1; i&lt; strlen(s); i++){
+    if(isdigit(s[i]) == 0){
+      printf("WRONG INPUT");
+      exit(1);
+    }
+  }
+  return znak;
+}
+
+
+
+
+int main(int argc, char**argv)
+{
+	float x;
+	int n;
+	float blad;
+  float y; 
+  int i;          /*pomocnicza*/
+ 	float suma = 1;
+  long double ostatnie=1;
+
+  if(argc&gt;=2){
+    Sanitize(argv[1]);
+    x=atof(argv[1]);
+	}
+	if(argc&gt;=3){
+    if(Sanitize(argv[2])==1){
+        n = atoi(argv[2]);
+      }
+    else{
+      error("n must be positive integer");
+    }
+	}
+
+	if(argc&gt;=4){
+    if(Sanitize(argv[3])==1){
+      blad=atof(argv[3]);
+    }
+    else{
+      printf("ERROR: blad must be positive real\n");
+      exit(1);
+    }
+	}
+	y = expf(x);
+	for(i=1; i<n i ostatnie suma if printf osiagnal wprowadzona dokladnosc break wartosc wynosi: return></n></stdlib.h></string.h></ctype.h></math.h></stdio.h></p></body></html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?php $fh = fopen('php://stdin', 'r');
+$last_line = false;
+$message = '';
+while (!$last_line) {
+    $next_line = fgets($fp, 1024); // read the special file to get the user input from keyboard
+    if (".n" == $next_line) {
+      $last_line = true;
+    } else {
+      $message .= $next_line;
+    }
+}
+?>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>-- Aufgabe 1
+facInv :: Integer -&gt; Integer
+facInv 1 = 1
+facInv m = (facInv2 0 m)
+
+facInv2 :: Integer -&gt; Integer -&gt; Integer -- 1. loop counter / 2. m
+facInv2 k m 
+	| k==m 		= -1 -- when loop is at end
+	| fac(k)==m = k -- when !k=m
+	| otherwise = facInv2(k+1)(m)
+
+fac :: Integer -&gt; Integer
+fac 0 = 1
+fac n = n * fac(n-1)
+
+-- Aufgabe 2
+
+extractDigits :: String -&gt; String
+extractDigits str = extractDigits2("")(str)
+	
+extractDigits2 :: String -&gt; String -&gt; String -- 1. prev string / 2. next string
+extractDigits2 prev "" = prev
+extractDigits2 prev (next_x:next_xs) 
+	| next_x&gt;='0' &amp;&amp; next_x&lt;='9' = extractDigits2(prev++[next_x])(next_xs) -- when next char is digit
+	| otherwise = extractDigits2(prev)(next_xs) -- when not
+	
+-- Aufgabe 3
+
+convert :: String -&gt; Integer 
+convert str 
+	| num == "" = 0
+	| otherwise = read (num) :: Integer
+	where num = extractDigits(str)
+
+	
+-- Aufgabe 4
+
+findLeftMostPrime :: String -&gt; Int -&gt; Integer
+findLeftMostPrime str n
+	| n&lt;=0 = 0
+	| num=="" = 0
+	| otherwise = findLeftMostPrime2(num)(n)
+	where num = extractDigits(str)
+	
+findLeftMostPrime2 :: String -&gt; Int -&gt; Integer
+findLeftMostPrime2 str@(x:xs) n
+	| num&gt;=10^(n-1) &amp;&amp; prim(num)==True = num --check if number digit count is realy n and not for example 007 (n=3) and if its a prime
+	| str==[x] || str=="" = 0 -- when loop is at end
+	| otherwise = findLeftMostPrime2(xs)(n)
+	where num = convert(substring(str)(n))
+	
+prim :: Integer -&gt; Bool
+prim a
+	| a&lt;=1 = False
+	| otherwise = prim2(a)(a-1)
+
+prim2 :: Integer -&gt; Integer -&gt; Bool -- 1. number / 2. every loop run number minus 1
+prim2 a b
+	| b==1 = True
+	| mod(a)(b)==0 = False
+	| otherwise = prim2(a)(b-1)
+	
+substring :: String -&gt; Int -&gt; String
+substring str n
+	| n&lt;0 = ""
+	| otherwise = substring2("")(str)(n)
+	
+substring2 :: String -&gt; String -&gt; Int -&gt; String -- 1. prev string / 2. next string / 3. n
+substring2 prev next 0 = prev
+substring2 prev "" n = ""
+substring2 prev (next_x:next_xs) n = substring2(prev++[next_x])(next_xs)(n-1)
+
+-- Aufgabe 5
+
+findAllPrimes :: String -&gt; Int -&gt; [Integer]
+findAllPrimes str n
+	| n&lt;=0 = []
+	| num=="" = []
+	| otherwise = findAllPrimes2(num)(n)([])
+	where num = extractDigits(str)
+	
+findAllPrimes2 :: String -&gt; Int -&gt; [Integer] -&gt; [Integer] -- 1. number / 2. n / 3. list of primes
+findAllPrimes2 str@(x:xs) n list
+	| isPrim==True &amp;&amp; xs==[] = list++[num] -- when number is prime and loop is at end
+	| isPrim==True = findAllPrimes2(xs)(n)(list++[num]) -- when numbers is prime and loop is not at end
+	| str=="" || xs==[] = list -- when loop is at end
+	| otherwise = findAllPrimes2(xs)(n)(list) -- when loop is not at end
+	where	{
+		num = convert(substring(str)(n))
+		;
+		isPrim = num&gt;=10^(n-1) &amp;&amp; prim(num)	 -- if number is prime and numbers digit cound id realy nd (f.e. 007 not n=3)
+		}</p></body></html>

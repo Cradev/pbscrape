@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// Tablice.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <time.h>
+#include <algorithm>
+#include <vector>
+#include <windows.h>
+#include <ctime>
+using namespace std;
+/*
+Dla 1k element&oacute;w czas wyni&oacute;s&#322; 133ms
+Dla 10k	element&oacute;w czas wyni&oacute;s&#322; 1109ms
+Dla 100k element&oacute;w czas wyni&oacute;s&#322; 10488ms
+Dla 1mln element&oacute;w czas wyni&oacute;s&#322; 106828ms
+Dla 10mln element&oacute;w czas wyni&oacute;s&#322; 990203ms
+*/
+double start() {
+	double czas;
+	czas = clock();
+	return czas;
+}
+
+double koniec(double start) {
+	double czas;
+	czas = clock() - start;
+	return czas / CLOCKS_PER_SEC;
+}
+
+int main()
+{
+	double czas;
+	int min = 20, max = -20;
+	vector &lt; int &gt; tab;
+	srand(time(NULL));
+	czas = start();
+	for (int i = 0; i &lt; 10000000; i++) {
+		tab.push_back(rand() % 41 - 20);
+		cout &lt;&lt; tab[i] &lt;&lt; " ";
+		if (min &gt; tab[i])
+			min = tab[i];
+		if (max &lt; tab[i])
+			max = tab[i];
+	}
+	czas = koniec(czas);
+	cout &lt;&lt; endl;
+	cout &lt;&lt; "Tworzenie tablicy zajelo " &lt;&lt; czas &lt;&lt; " sekund" &lt;&lt; endl;
+	cout &lt;&lt; "Max=" &lt;&lt; max &lt;&lt; endl;
+	cout &lt;&lt; "Min=" &lt;&lt; min &lt;&lt; endl;
+
+	system("PAUSE");
+	return 0;
+}</ctime></windows.h></vector></algorithm></time.h></string></cstdlib></iostream></p></body></html>

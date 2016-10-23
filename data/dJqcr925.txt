@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>documentclass[10pt,unicode,a4paper]{moderncv}
+moderncvtheme[blue]{casual}
+usepackage[utf8]{inputenc}
+usepackage{ragged2e}
+usepackage[ngerman]{babel}
+usepackage{datetime}
+usepackage{pdfpages}       %http://www.sascha-frank.com/Faq/include_pdf.html &amp; http://mirrors.ctan.org/macros/latex/contrib/pdfpages/pdfpages.pdf
+usepackage[scale=0.8,top=3.0cm,bottom=3.0cm]{geometry} % scale widens the margins, top=1cm moves the whole up
+%usepackage{lipsum} % just for dummy text
+setlength{hintscolumnwidth}{2.9cm}
+usepackage{array}
+%usepackage[includeheadfoot,left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+AtBeginDocument{recomputelengths}
+
+%CV-Name-Schriftgr&ouml;&szlig;e &auml;ndern:
+renewcommand*{namefont}{fontsize{26}{8}mdseriesupshape}
+% Quelle: http://tex.stackexchange.com/questions/128052/font-size-in-moderncv
+
+% http://tex.stackexchange.com/questions/162568/how-to-change-date-format-to-german
+newdateformat{myformat}{THEDAY{. }monthname[THEMONTH], THEYEAR}
+
+
+% begin of inserted 1st block http://tex.stackexchange.com/questions/231388/howto-insert-text-beside-of-the-portrait-in-moderncv-casual-style#answers-header
+makeatletter  
+definsertpersonalinformation#1{def@insertpersonalinformation{#1}}
+% commands
+renewcommand*{makecvtitle}{%
+  % recompute lengths (in case we are switching from letter to resume, or vice versa)
+recomputecvlengths%
+  % ensure footer with personal information
+makecvfooter%
+  % optional picture
+  newbox{makecvtitlepicturebox}%
+  savebox{makecvtitlepicturebox}{%
+        ifthenelse{isundefined{@photo}}%
+  {}%
+  {%
+       setlengthfboxrule{@photoframewidth}%
+       ifdim@photoframewidth=0pt%
+         setlength{fboxsep}{0pt}fi%
+       {color{color1}framebox{includegraphics[width=@photowidth]{@photo}}}}}%
+  usebox{makecvtitlepicturebox}%
+  % name
+  @initializelength{makecvtitlepicturewidth}%
+  settowidth{makecvtitlepicturewidth}{usebox{makecvtitlepicturebox}}%
+  parbox[b]{textwidth-makecvtitlepicturewidth}{%
+%raggedleft%
+    ifthenelse{isundefined{@insertpersonalinformation}}
+      {raggedleft}
+      {hspace*{10pt}{personalinfofont@insertpersonalinformation}hfill}% alternate design: MakeLowercase
+    {namefont{color{color2!50}@firstname} {color{color2}@lastname}}
+  }
+  {color{color2!50}rule{textwidth}{.25ex}}%
+  % optional title
+  ifthenelse{equal{@title}{}}{}{\[1.25em]nullhfilltitlestyle{@title}}\[2.5em]% null is required as there is no box on the line after \, so glue (and leaders) disappears; this is in contrast to after par, where the next line starts with an indent box (even after noindent).
+  % optional quote
+  ifthenelse{isundefined{@quote}}%
+    {}%
+    {{nullhfillbegin{minipage}{quotewidth}centeringquotestyle{@quote}end{minipage}hfillnull\[2.5em]}}%
+  par}% to avoid weird spacing bug at the first section if no blank line is left after maketitle
+makeatother
+
+defpersonalinfofont{normalfontsmall}
+% end of inserted 1st block http://tex.stackexchange.com/questions/231388/howto-insert-text-beside-of-the-portrait-in-moderncv-casual-style#answers-header
+
+
+%title{emty}
+firstname{Max}
+familyname{Mustermann}
+
+photo[100pt][0.1pt]{Portrait-MaxMustermann.jpg}                             % '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+
+usepackage{etoolbox} % http://tex.aspcode.net/view/635399273629833626153770/increase-spacing-in-closing-of-cover-letter-in-moderncv
+patchcmd{makeletterclosing}{3em}{1em}{}{} % reducing the space betweeen greetings and name in application writing from the original 3em to 1em
+
+begin{document}
+
+% begin of inserted 2nd block http://tex.stackexchange.com/questions/231388/howto-insert-text-beside-of-the-portrait-in-moderncv-casual-style#answers-header
+insertpersonalinformation{%
+  begin{minipage}[b]{2cm}%</p></body></html>

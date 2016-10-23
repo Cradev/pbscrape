@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>**Pilot Name:** "Farrin"
+{DELETE THIS ONES REVOBLAm FFS}
+{True Name: Matias Leuby}
+
+Biography: 
+
+Farrin is a South American with Brown hair eyes Green eyes, Born in 1995 ,He lived his Childhood Fighting Troublemakers in school and acting as the "hero" of sorts, always doing weird stuff others wouldn't do. He Loved The Humanoid Mechs and how they worked, he Always tried to keep up with the news in Mech technology related to the Humanoid models, When One of the Companies that were in his Watchlist Listed that they wanted Pilots for a Mech Project, He instantly Applied, but was Rejected due to his Aggressivity in the Testing Field and the fact that he left the other prototypes in Critical conditions during The Ability test, He felt Betrayed and Studied For 4 years until he was accepted into the same company that Rejected him As a Clerk, One of his Friends, Jimm Harriot, Invited him to a Test Simulator initiative, Everyone was surprised by his Aggressiveness and His Endurance, Breaking the record of 4 Hours Straight without being Taken down, This earned him a Chance to Test a new initiative, A Humanoid Mech that would incorporate A new Technology Named "Artificial Nanomachine Sub-System" or also known as "A.N.S-S.". Farrin accepted, but was told that the project wouldn't be finished until the very end of 2016, approximately 2 years later, He became the pilot of the Unit CP-553, Cordeophant, The first of its kind to Have an AI in the form of nanomachines that Constantly Cover the Body of the Mech, Protecting it from incoming Blows and Augmenting its Attacks. About A year later, the Frist Contact with Aliens was done and he was immediately Requested To Join an army to Combat the alien menace, Without Refusing he accepted and Prepared to Join the Main Squadron, which was in Germany at the time of Writing. He went with a mask, Which uses LEDs to Show patterns and such.
+ 
+During this Campaign, an enemy pilot Mocked and defeated him, Farrin Request To proceed with Phase 2 of the Cordeo Project, which meant Rebuilding the Cordeophant from scratch, Fixing mistakes as pointed by the pilot, who began training in simulators, pretty much changing his whole Piloting-Style, he now IS dangerous, and nobody wants to fight him in Simulations. He is still salty about that and once in a while he Fantasizes about destroying Kings, quite creepy.
+
+ {He liked the Nickname of Farrin during testing for whatever reason, thus he kept it and decided not to tell his real name}
+
+30 PSP
+
+**Stats** | Base | Pts | Level | Total
+-----|-----|-----|-----|-----
+Melee | 80 | +0 | +0 | Total
+Ranged | 80 |+0 | +0 | Total
+Hit | 80 |+0 | +0 | Total
+Skill | 80 | +0 | +0 | Total 
+Avoid | 80 | +0 | +0 | Total
+Defense | 80 | +0 | +0 | Total
+Repair | 80 | +0 | +0 | Total
+
+{Archetype: Trained Experimental Pilot. He wroks testign the Cordeophant Models, Specificed in Close Range Assaults.}
+
+**Spirits**: 50 SP 
+
+Name | Cost | Description
+-----|-----|:-----
+Spirit1 | Cost | Description
+Spirit2 | Cost | Description
+------- | Post Creation Spirits | --------
+Spirit3 | Cost | Description
+
+**PP**: 50
+
+Skills | Level | Description
+-----|-----|:-----
+Skill | Level | Description 
+Skill | Level | Description
+--------
+
+**Mech Name:** ____
+
+ **SIZE** | **Base** | **Pts** | **Total**
+-----|-----|-----|-----
+HP | Base | +0 | Base + 500*Pts
+EN | 100 | +0 | 100 + 25*Pts
+Armor | Base | +0 | Base + 100*Pts
+Mobility | Base | +0 | Base + 10*Pts
+Regen | Base | +0 | Base + 50*Pts
+Recharge | Base | +0 | Base + 5*Pts
+Part slots | Base | +0 | Base +0.5*Pts
+
+**Abilities:**
+
+**Name** | **Cost** | **Description**
+-----|----|:-----
+Ability | Cost | Description
+Ability | Cost | Description
+
+**Parts**
+Name | Effect
+---- | ----
+Part | Effect
+
+**Weapons**
+
+1\. Weapon Name: 
+Weapon Description
+
+**Melee/Range** | **Base** | **Pts** | **Total**
+:------:|:------:|:-----:|:-----:
+POW | 3000 | +0 | 3000 + Pts*150
+Ammo | 2 | +0 | 2 + 2*Pts **OR**
+Energy | 50 | +0 | 50 - 5*Pts
+Range | 1~2 | +0 | Min Range ~ Max Range
+Hit Bonus | 10 | +0 | 10 + 10*Pts 
+Crit | 0 | +0 | 0 + 10*Pts
+Will | 120 | +0 | 120 - 5*Pts 
+Post-Move | Yes | +0 | Yes or No -- If range is 5 or greater, CANNOT be Post-Move
+Land Rank | -- | +0 | Actual Rank
+Sea Rank | -- | +0 | Actual Rank 
+Air Rank | -- | +0 | Actual Rank
+Debuff? | No | +0 | Debuff Type
+
+2\. Weapon Name: 
+Weapon Description
+
+**Melee/Range** | **Base** | **Pts** | **Total**
+:-----:|:-----:|:-----:|:-----:
+POW | 2500 | +0 | 2500 + 100*Pts
+Ammo | 6 | +0 | 6 + Pts*2 **OR**
+Energy | 25 | +0 | 25 - 5*Pts
+Range | 1~6 | +0 | MinRange ~ MaxRange 
+Hit Bonus | 10 | +0 | 10 + 10*Pts
+Crit | 10 | +0 | 10 + 10*Pts 
+Will | 110 | +0 | 110 - 5*Pts
+Post-Move | No | +0 | Yes or No -- If Range is 5 or greater, CANNOT be post-move
+Land Rank | -- | +0 | Actual Rank
+Sea Rank | -- | +0 | Actual Rank 
+Air Rank | -- | +0 | Actual Rank
+Debuff? | No | +0 | Debuff Type
+
+3\. Weapon Name: 
+Weapon Description
+
+**Melee/Range** | **Base** | **Pts** | **Total**
+:-----:|:-----:|:-----:|:-----:
+POW | 2200 | +0 | 2200 + 100*Pts
+Ammo | 12 | +0 | 12 + 2*Pts **OR**
+Energy | 10 | +0 | 10 - 5*Pts
+Range | 1~4 | +0 | MinRange ~ MaxRange 
+Hit Bonus | 20 | +0 | 20 + 10*Pts
+Crit | 10 | +0 | 10 + 10*Pts
+Will | 100 | +0 | 100 - 5*Pts
+Post-Move | Yes | +0 | Yes or No -- If Range is 5 or greater, CANNOT be post-move
+Land Rank | -- | +0 | Actual Rank
+Sea Rank | -- | +0 | Actual Rank 
+Air Rank | -- | +0 | Actual Rank
+Debuff? | No | +0 | Debuff Type
+
+4\. Weapon Name: 
+Weapon description
+
+**Melee** | **Base** | **Pts** | **Total**
+:-----:|:-----:|:-----:|:-----:
+POW | 2000 | +0 | 2000 
+No Ammo | +0 | N/A | N/A 
+Range | 1~1 | +0 | Min Range ~ Max Range 
+Hit Bonus | 40 | +0 | 40 + 10*Pts
+Crit | 20 | +0 | 20 + 10*Pts
+Will | 100 | +0 | 100 - 5*Pts
+Post-Move | Yes | +0 | Yes or No -- If Range is 5 or greater, CANNOT be post-move
+Land Rank | -- | +0 | Actual Rank
+Sea Rank | -- | +0 | Actual Rank 
+Air Rank | -- | +0 | Actual Rank
+Debuff? | No | +0 | Debuff Type</p></body></html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>void escreverRanking(int pontuacao_jogador, char nome_jogador1[15]){
+  char url[]="ranking.txt";
+    FILE *arq;
+    arq = fopen(url, "a");
+
+    fprintf(arq, "%d %s\n", pontuacao_jogador, nome_jogador1);
+
+    fclose(arq);
+}</p></body></html>

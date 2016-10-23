@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package pizza;
+
+public class PizzaMakerApp {
+
+	public static void main(String[] args) {
+		Pizza pizza = new PizzaDecorator(new Mozzarella(new TomatoSauce(new PlainPizza())));
+		System.out.println(pizza.getDescription());
+		System.out.println(pizza.getCost());
+	}
+
+}</p></body></html>

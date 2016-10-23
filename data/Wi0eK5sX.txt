@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>groups:
+  Default:
+    default: true
+    build: true
+    prefix: '&amp;7[Member]&amp;f'
+    permissions:
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.warps.spawn
+    - essentials.balanace
+    - essentials.balancetop
+    - essentials.kit
+    - essentials.afk
+    - essentials.afk.auto
+    - essentials.pay
+    - modifyworld.chat
+    - modifyworld.*
+    - essentials.home
+    - essentials.sethome
+    - essentials.back
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.spawn
+    - factions.claim
+    - factions.claim.one
+    - factions.claim.auto
+    - factions.claim.fill
+    - factions.claim.square
+    - factions.claim.circle
+    - factions.create
+    - factions.description
+    - factions.disband
+    - factions.faction
+    - factions.flag
+    - factions.flag.list
+    - factions.flag.set
+    - factions.flag.show
+    - factions.home
+    - factions.invite
+    - factions.invite.list
+    - factions.invite.list.other
+    - factions.invite.add
+    - factions.invite.remove
+    - factions.join
+    - factions.join.others
+    - factions.kick
+    - factions.leave
+    - factions.list
+    - factions.map
+    - factions.money
+    - factions.money.balance
+    - factions.money.balance.any
+    - factions.money.deposit
+    - factions.money.f2f
+    - factions.money.p2f
+    - factions.money.withdrawl
+    - factions.motd
+    - factions.player
+    - factions.rank
+    - factions.rank.show
+    - factions.sethome
+    - factions.unclaim.*
+    - factions.unsethome
+  Moderator:
+    build: true
+    inheritance:
+    - Default
+    prefix: '&amp;b[Moderator]&amp;7'
+    suffix: '&amp;7'
+    permissions:
+    - essentials.repair
+    - essentials.heal
+    - essentials.item
+    - essentials.give
+    - essentials.fly
+    - essentials.kick
+    - essentials.mute
+    - essentials.tjail
+    - essentials.jail
+    - essentials.tempban
+    - essentials.vanish
+  Streamer:
+    build: true
+    inheritance:
+    - Moderator
+    prefix: '&amp;4[&amp;cStreamer&amp;4]&amp;e'
+    suffix: '&amp;7'
+    permissions:
+    - essentials.kick
+    - essentials.ignore
+    - essentials.fly
+    - essentials.vanish
+  Owner:
+    build:true
+    inheritance:
+    - Admin
+    prefix: '&amp;4[Owner]'
+    suffix: '&amp;b'
+    permissions:
+    - '*'</p></body></html>

@@ -1,0 +1,6 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>ECE 8813: TOR: The Second Generation Onion Router
+Michael Capone
+10/23/2016
+
+	The authors of the paper present TOR, a circuit based low-latency communication service that attempts to prevent attackers from linking multiple communications to or from a single user. The TOR design improves on many of the original weaknesses of the original onion routing paradigm such as perfecting the forward secrecy prevent hostile nodes from compromising the system, separating the protocol cleaning from anonymity which original required the support of multiple protocols, addressing issues with congestion control, etc.</p></body></html>

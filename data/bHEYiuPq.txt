@@ -1,0 +1,8 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>//Quine
+#include <stdio.h>
+#include <stdlib.h>
+void __quine()
+{
+    printf("const unsigned char __data[]={");
+    for(int i=0;i<sizeof printf for i="0;i&lt;sizeof(__data);i++)" putchar exit quine __quine></sizeof></stdlib.h></stdio.h></p></body></html>

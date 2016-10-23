@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>[16:35:36 INFO]: _TheCrazzyGamer_ issued server command: /minerar
+[16:35:36 INFO]: A Folder/World already exists with this name!
+[16:35:36 INFO]: If you are confident it is a world you can import with /mvimpor
+t
+[16:35:36 INFO]: A Folder/World already exists with this name!
+[16:35:36 INFO]: If you are confident it is a world you can import with /mvimpor
+t
+[16:35:36 INFO]: Multiverse cannot create another world named atum_world
+[16:35:53 INFO]: A Folder/World already exists with this name!
+[16:35:53 INFO]: If you are confident it is a world you can import with /mvimpor
+t
+[16:35:53 INFO]: A Folder/World already exists with this name!
+[16:35:53 INFO]: If you are confident it is a world you can import with /mvimpor
+t
+[16:35:53 INFO]: Multiverse cannot create another world named atum_world
+[16:35:53 ERROR]: Could not pass event PlayerTeleportEvent to Multiverse-Core v2
+.5-b699
+org.bukkit.event.EventException
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:338) ~[JavaPluginLoader$1.class:1.7.10-1614.58]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.jav
+a:62) ~[RegisteredListener.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.j
+ava:507) [SimplePluginManager.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.j
+ava:492) [SimplePluginManager.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer.teleport(CraftPlaye
+r.java:484) [CraftPlayer.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftEntity.teleport(CraftEntit
+y.java:410) [CraftEntity.class:1.7.10-1614.58]
+        at Server.WorldTeleportation.tp(WorldTeleportation.java:62) [MCPack.jar:
+?]
+        at Commands.Player.Minerar.onCommand(Minerar.java:53) [MCPack.jar:?]
+        at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44) [Plug
+inCommand.class:1.7.10-1614.58]
+        at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:18
+1) [SimpleCommandMap.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.CraftServer.dispatchCommand(CraftServe
+r.java:740) [CraftServer.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer.performCommand(Craf
+tPlayer.java:279) [CraftPlayer.class:1.7.10-1614.58]
+        at Commands.Player.Minerar.mineSelectorOnClick(Minerar.java:109) [MCPack
+.jar:?]
+        at sun.reflect.GeneratedMethodAccessor118.invoke(Unknown Source) ~[?:?]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1
+.8.0_77]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_77]
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:334) [JavaPluginLoader$1.class:1.7.10-1614.58]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.jav
+a:62) [RegisteredListener.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.j
+ava:507) [SimplePluginManager.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.j
+ava:492) [SimplePluginManager.class:1.7.10-1614.58]
+        at net.minecraft.network.NetHandlerPlayServer.func_147351_a(NetHandlerPl
+ayServer.java:2069) [nh.class:?]
+        at net.minecraft.network.play.client.C0EPacketClickWindow.func_148833_a(
+SourceFile:32) [ix.class:?]
+        at net.minecraft.network.play.client.C0EPacketClickWindow.func_148833_a(
+SourceFile:10) [ix.class:?]
+        at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java
+:245) [ej.class:?]
+        at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:
+181) [nc.class:?]
+        at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.jav
+a:1023) [MinecraftServer.class:?]
+        at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(Dedicated
+Server.java:432) [lt.class:?]
+        at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.jav
+a:841) [MinecraftServer.class:?]
+        at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:693) [M
+inecraftServer.class:?]
+        at java.lang.Thread.run(Unknown Source) [?:1.8.0_77]
+Caused by: java.lang.NullPointerException
+        at com.onarandombox.MultiverseCore.listeners.MVPlayerListener.playerTele
+port(MVPlayerListener.java:178) ~[?:?]
+        at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source) ~[?:?]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1
+.8.0_77]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_77]
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:334) ~[JavaPluginLoader$1.class:1.7.10-1614.58]
+        ... 29 more
+[16:35:53 ERROR]: Could not pass event InventoryClickEvent to MCPack v1.0
+org.bukkit.event.EventException
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:338) ~[JavaPluginLoader$1.class:1.7.10-1614.58]
+        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.jav
+a:62) ~[RegisteredListener.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.j
+ava:507) [SimplePluginManager.class:1.7.10-1614.58]
+        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.j
+ava:492) [SimplePluginManager.class:1.7.10-1614.58]
+        at net.minecraft.network.NetHandlerPlayServer.func_147351_a(NetHandlerPl
+ayServer.java:2069) [nh.class:?]
+        at net.minecraft.network.play.client.C0EPacketClickWindow.func_148833_a(
+SourceFile:32) [ix.class:?]
+        at net.minecraft.network.play.client.C0EPacketClickWindow.func_148833_a(
+SourceFile:10) [ix.class:?]
+        at net.minecraft.network.NetworkManager.func_74428_b(NetworkManager.java
+:245) [ej.class:?]
+        at net.minecraft.network.NetworkSystem.func_151269_c(NetworkSystem.java:
+181) [nc.class:?]
+        at net.minecraft.server.MinecraftServer.func_71190_q(MinecraftServer.jav
+a:1023) [MinecraftServer.class:?]
+        at net.minecraft.server.dedicated.DedicatedServer.func_71190_q(Dedicated
+Server.java:432) [lt.class:?]
+        at net.minecraft.server.MinecraftServer.func_71217_p(MinecraftServer.jav
+a:841) [MinecraftServer.class:?]
+        at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:693) [M
+inecraftServer.class:?]
+        at java.lang.Thread.run(Unknown Source) [?:1.8.0_77]
+Caused by: org.bukkit.command.CommandException: Unhandled exception executing co
+mmand 'minerar' in plugin MCPack v1.0
+        at org.bukkit.command.PluginCommand.execute(PluginCommand.java:46) ~[Plu
+ginCommand.class:1.7.10-1614.58]
+        at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:18
+1) ~[SimpleCommandMap.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.CraftServer.dispatchCommand(CraftServe
+r.java:740) ~[CraftServer.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer.performCommand(Craf
+tPlayer.java:279) ~[CraftPlayer.class:1.7.10-1614.58]
+        at Commands.Player.Minerar.mineSelectorOnClick(Minerar.java:109) ~[?:?]
+        at sun.reflect.GeneratedMethodAccessor118.invoke(Unknown Source) ~[?:?]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1
+.8.0_77]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_77]
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:334) ~[JavaPluginLoader$1.class:1.7.10-1614.58]
+        ... 13 more
+Caused by: java.lang.NullPointerException
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer.teleport(CraftPlaye
+r.java:502) ~[CraftPlayer.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftEntity.teleport(CraftEntit
+y.java:410) ~[CraftEntity.class:1.7.10-1614.58]
+        at Server.WorldTeleportation.tp(WorldTeleportation.java:62) ~[?:?]
+        at Commands.Player.Minerar.onCommand(Minerar.java:53) ~[?:?]
+        at org.bukkit.command.PluginCommand.execute(PluginCommand.java:44) ~[Plu
+ginCommand.class:1.7.10-1614.58]
+        at org.bukkit.command.SimpleCommandMap.dispatch(SimpleCommandMap.java:18
+1) ~[SimpleCommandMap.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.CraftServer.dispatchCommand(CraftServe
+r.java:740) ~[CraftServer.class:1.7.10-1614.58]
+        at org.bukkit.craftbukkit.v1_7_R4.entity.CraftPlayer.performCommand(Craf
+tPlayer.java:279) ~[CraftPlayer.class:1.7.10-1614.58]
+        at Commands.Player.Minerar.mineSelectorOnClick(Minerar.java:109) ~[?:?]
+        at sun.reflect.GeneratedMethodAccessor118.invoke(Unknown Source) ~[?:?]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1
+.8.0_77]
+        at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_77]
+        at org.bukkit.plugin.java.JavaPluginLoader$1.execute(JavaPluginLoader.ja
+va:334) ~[JavaPluginLoader$1.class:1.7.10-1614.58]
+        ... 13 more</p></body></html>

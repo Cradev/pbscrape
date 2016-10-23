@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Point3D.h
+
+#pragma once
+
+struct Point
+{
+	double x;
+	double y;
+	double z;
+};
+
+
+
+
+
+BinaryReader.h
+
+#pragma once
+
+#include<fstream>
+#include"Point3D.h"
+
+using namespace std;
+
+class CBinaryReader
+{
+private:
+
+	ifstream plik_in;
+
+public:
+
+	CBinaryReader(const char *sciezka);
+	~CBinaryReader(void);
+
+
+
+
+};
+
+
+
+BinaryReader.cpp
+
+
+#include "BinaryReader.h"
+
+
+
+CBinaryReader::CBinaryReader(const char *sciezka)
+{
+	plik_in.open(sciezka, ios::in | ios::binary);
+}
+
+
+CBinaryReader::~CBinaryReader()
+{
+
+}
+
+
+
+
+Logger.h
+
+
+#pragma once
+
+#include<iostream>
+#include<fstream>
+#include"Point3D.h"
+
+
+using namespace std;
+
+class CLogger
+{
+private:
+
+	ofstream plik_out;
+
+	bool bin;		
+
+public:
+	CLogger(const char *sciezka, bool binary);
+
+	~CLogger(void);
+
+	void Log(Point newPoint);
+	
+
+
+};
+
+
+
+
+Logger.cpp
+
+#include"Point3D.h"
+#include"Logger.h"
+
+using namespace std;
+
+Point point3D;
+
+
+CLogger::CLogger(const char *sciezka, bool bin)
+{
+	if (bin)
+	{
+		plik_out.open(sciezka, ios::binary | ios::out);
+	}
+	else
+	{
+		plik_out.open(sciezka, ios::out);
+	}
+
+
+}
+
+CLogger::~CLogger()
+{
+	plik_out.close();
+}
+
+void CLogger::Log(Point newPoint)
+{
+	if (bin)
+	{
+		plik_out.write((const char *)&amp;newPoint, sizeof(Point));
+	}
+	else
+	{
+		plik_out &lt;&lt; newPoint.x &lt;&lt; " | " &lt;&lt; newPoint.y &lt;&lt; " | " &lt;&lt; newPoint.z &lt;&lt; endl;
+	}
+}
+
+
+
+main.cpp
+
+
+#include<iostream>
+#include<fstream>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+
+
+
+	
+
+	system("pause");
+	return 0;
+}</string></fstream></iostream></fstream></iostream></fstream></p></body></html>

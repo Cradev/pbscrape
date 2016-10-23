@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>for(schema.Account acc:Trigger.new){
+    if(acc.Type =='propect' &amp;&amp; acc.Industry=='Healthcare'){
+        acc =[select id,Name,AccountNumber,Site from Account];
+
+
+
+       }
+     System.debug(''+acc);
+
+
+}</p></body></html>

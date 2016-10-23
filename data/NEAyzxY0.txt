@@ -1,0 +1,6 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Just bcoz u (think  that u) look like Preity Zinta give u right to flame other ppl ? xD
+
+(note : syntax highlighting is being kept Objective C bcoz thats what u understand :P)
+
+int a=0; // for display purpose</p></body></html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Merge(n_device: Device{identifier: {deviceId}}) ON CREATE SET n_device.created=timestamp()
+WITH n_device
+OPTIONAL MATCH (n_device)-[r_prev:{deviceRel}{active:true}]-&gt;() 
+WITH n_device, r_prev   
+Merge(n_deviceOs: Device{{deviceRelProp}: {deviceRelPropVal}}) ON CREATE SET n_deviceOs :DeviceOs,  n_deviceOs.created=timestamp(), n_deviceOs.newNode=true
+WITH n_device, n_deviceOs, r_prev
+Merge (n_device)-[r_cur:{deviceRel}]-&gt;(n_deviceOs) ON CREATE SET r_cur.active=true, r_cur.created=timestamp()
+WITH n_deviceOs, r_prev
+Match(n_deviceOs) where n_deviceOs.newNode=true set r_prev.active = false, r_prev.modified=timestamp()
+REMOVE n_deviceOs.newNode
+
+"params": {
+    "deviceId": "1234",
+    "deviceRel": ["HAS_DEVICE_OS", "HAS_DEVICE_OSINFO", "HAS_DEVICE_MODEL", "HAS_DEVICE_APPVERSION"],
+    "deviceRelProp": ["os", "osinfo", "model", "version"],
+    "deviceRelPropVal": ["android", "kitkat", "samsung", "1.64.2"]
+}</p></body></html>

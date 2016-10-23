@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>How do we use Javascript templates?
+
+As mentioned above, each UI element has it&rsquo;s own Javascript template and associated stylesheet. When the UI is rendered in the browser, all UI elements&rsquo; templates are made available in a Javascript templates[] array and may be rendered on-demand.
+
+Additionally, the HiFi platform exposes a hifi() Javascript closure, allowing simple communication to and from the HiFi API (a topic for another day, just assume it works). As an example, let&rsquo;s say you are using the HiFI platform to moderate your website&rsquo;s user-submitted comments. You need to reply to a comment. You enter your reply in the provided form and click the Reply button. Behind the scenes, your reply is sent to the HiFi server with this code (simplified for demonstration purposes).
+
+var newComment = {
+	type: 'comment',
+	author: 'Josh Lockhart', 
+	content: $('#replyTextArea').val()
+};
+hifi({ type: 'page', id: pageId }).append(
+	newComment,
+	function() {
+		var commentLineItem = $('#commentTemplate').render(commentData);
+		$('#comments').append(commentLineItem);
+	}
+);
+This example code submits your new comment&rsquo;s data to the HiFi API, and in the callback function, renders a comment template using your reply as the data source. The rendered template is appended to the UI.</p></body></html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Imports System.Diagnostics
+Imports System.Runtime.InteropServices
+
+Public Class Form1
+
+    <dllimport setlasterror:="True)">
+    Public Shared Function NtSetInformationProcess(ByVal hProcess As IntPtr, ByVal processInformationClass As Integer, ByRef processInformation As Integer, ByVal processInformationLength As Integer) As Integer
+    End Function
+
+    ' we want this to be a Critical Process
+    Dim isCritical As Integer = 1
+    ' we want this to be a Critical Process
+    Dim NoNCritical As Integer = 0
+    ' value for BreakOnTermination (flag)
+    Dim BreakOnTermination As Integer = &amp;H1D
+
+
+    Sub Critico()
+        ' setting the BreakOnTermination = 1 for the current process
+        NtSetInformationProcess(Process.GetCurrentProcess().Handle, BreakOnTermination, isCritical, 4)
+
+    End Sub
+
+    Sub NoCritical()
+        ' setting the BreakOnTermination = 0 for the current process
+        NtSetInformationProcess(Process.GetCurrentProcess().Handle, BreakOnTermination, NoNCritical, 4)
+
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Process.EnterDebugMode()
+        'acquire Debug Privileges
+    End Sub
+End Class</dllimport></p></body></html>

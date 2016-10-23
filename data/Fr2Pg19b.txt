@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package MAGICSQUAREPRACTICAL;
+
+/**
+ *
+ * @author frtalabis
+ */
+import java.lang.*;
+import javax.swing.*;
+import java.awt.event.*; 
+import java.awt.*;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.*;
+
+
+public class MagicSquare extends JFrame implements ActionListener {
+
+    
+    
+    JTextField t1,t2,t3,t4,t5,t6,t7,t8,t9;
+    Timer timer;
+    static JButton check,reset,close;
+    static JLabel tim;
+    static JLabel scr;
+    static JLabel att;
+    boolean dupe;
+    static int min;
+    int mxsec=60;
+    int mnsec=0;
+    
+    
+    
+    static String[] options = {"Go to Game Menu", "Exit" };
+    int add,sum,b1,b2,b3,b4,b5,b6,b7,b8,b9,r1,c1,r2,c2,r3,c3;
+    int attempts = GameMenu.dattempts;
+    static int score; 
+    
+        
+    public MagicSquare(){
+        
+        super("Magic Square");
+        GameMenu gm = new GameMenu();
+        setLayout(null);
+        
+        setVisible(true);
+        setSize(457,650);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setResizable(false);
+        
+        t1 = new JTextField();      
+        t2 = new JTextField("");
+        t3 = new JTextField("");
+        t4 = new JTextField("");
+        t5 = new JTextField("");
+        t6 = new JTextField("");
+        t7 = new JTextField("");
+        t8 = new JTextField("");
+        t9 = new JTextField("");
+        
+        check = new JButton("CHECK");
+        reset = new JButton("RESET GAME");
+        close = new JButton("CLOSE");
+        
+        
+        
+        att = new JLabel("    ATEMPTS: "+attempts);
+        tim = new JLabel("    Timer     "+min+":"+mxsec);
+        scr = new JLabel("     SCORE: "+score);
+        
+        att.setBorder(BorderFactory.createEtchedBorder());
+        tim.setBorder(BorderFactory.createEtchedBorder());
+        scr.setBorder(BorderFactory.createEtchedBorder());
+        
+        t1.setFont(new Font("Arial", Font.BOLD, 70));
+        t2.setFont(new Font("Arial", Font.BOLD, 70));
+        t3.setFont(new Font("Arial", Font.BOLD, 70));
+        t4.setFont(new Font("Arial", Font.BOLD, 70));
+        t5.setFont(new Font("Arial", Font.BOLD, 70));
+        t6.setFont(new Font("Arial", Font.BOLD, 70));
+        t7.setFont(new Font("Arial", Font.BOLD, 70));
+        t8.setFont(new Font("Arial", Font.BOLD, 70));
+        t9.setFont(new Font("Arial", Font.BOLD, 70));
+        att.setFont(new Font("Arial", Font.BOLD, 15));
+        scr.setFont(new Font("Arial", Font.BOLD, 15));
+        tim.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        
+        
+        add(t1);
+        add(t2);
+        add(t3);
+        add(t4);
+        add(t5);
+        add(t6);
+        add(t7);
+        add(t8);
+        add(t9);
+        add(check);
+        add(reset);
+        add(close);
+        add(att);
+        add(tim);
+        add(scr);
+        
+        t1.setBounds(0,0,150,150);
+        t2.setBounds(150,0,150,150);
+        t3.setBounds(300,0,150,150);
+        t4.setBounds(0,150,150,150);
+        t5.setBounds(150,150,150,150);
+        t6.setBounds(300,150,150,150);
+        t7.setBounds(0,300,150,150);
+        check.setBounds(0,450,150,70);
+        t8.setBounds(150,300,150,150);
+        reset.setBounds(150,450,150,70);
+        t9.setBounds(300,300,150,150);
+        close.setBounds(300,450,150,70);
+        att.setBounds(0,530,150,70);
+        tim.setBounds(150,530,150,70);
+        scr.setBounds(300,530,150,70);
+        
+        
+        
+        gm.setVisible(false);
+        timer = new Timer(1000, new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                if(mxsec &gt; mnsec){
+                    mxsec--;
+                    tim.setText("    Timer     "+min+":"+mxsec);
+                    
+                        if(mxsec == 0 &amp;&amp; attempts != 0){
+                            mxsec = 60;
+                            attempts--;
+                            att.setText("    ATTEMPTS: "+attempts);
+                        }
+                        if(mxsec == 0 &amp;&amp; attempts == 0){
+                            int res2 = JOptionPane.showConfirmDialog(null, "Your Final Score is "+score+"! Exit?", "Ok", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+                            
+
+                            if(res2 == 0){ 
+                                    System.exit(0);                          
+                                }
+                            if(res2 == 1){
+                                    
+                            }
+                        }
+                }
+            }
+        });
+        timer.start();
+        check.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                try{
+        
+            b1 = Integer.parseInt(t1.getText());
+            b2 = Integer.parseInt(t2.getText());
+            b3 = Integer.parseInt(t3.getText());
+            b4 = Integer.parseInt(t4.getText());
+            b5 = Integer.parseInt(t5.getText());
+            b6 = Integer.parseInt(t6.getText());
+            b7 = Integer.parseInt(t7.getText());
+            b8 = Integer.parseInt(t8.getText());
+            b9 = Integer.parseInt(t9.getText());
+            r1 = (b1+b2+b3);
+            c1 = (b1+b4+b7);
+            r2 = (b4+b5+b6);
+            c2 = (b2+b5+b8);
+            r3 = (b7+b8+b9);
+            c3 = (b3+b6+b9);
+
+            if(r1 == 15 &amp;&amp; c1 == 15 &amp;&amp; r2 == 15 &amp;&amp; c2 == 15 &amp;&amp; r3 == 15 &amp;&amp; c3 == 15){
+                JOptionPane.showMessageDialog(null, "It's A Magic Square!", "Congratulations!", JOptionPane.INFORMATION_MESSAGE);
+                score =  score + 100;
+                scr.setText("  SCORE: "+score);
+                t1.setText("");
+                t2.setText("");
+                t3.setText("");
+                t4.setText("");
+                t5.setText("");
+                t6.setText("");
+                t7.setText("");
+                t8.setText("");
+                t9.setText(""); 
+                
+                if(attempts != 0){
+                    attempts--;
+                            if(attempts == 0){
+                            int res2 = JOptionPane.showConfirmDialog(null, "Your Final Score is "+score+"! Exit?", "Game Over", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+                            System.out.println(res2);
+                                    if(res2 == 0){ 
+                                        System.exit(0);                         
+                                        }
+                                    if(res2 == 1){
+                                        mxsec = 0;
+                                        tim.setText("    Timer     "+min+":"+mxsec);
+                                    }
+                            }
+                            
+                    att.setText("    ATEMPTS: "+attempts);
+                }
+            }
+                
+            else{
+                JOptionPane.showMessageDialog(null, "Not A Magic Square", "Sad", JOptionPane.INFORMATION_MESSAGE);
+                t1.setText("");
+                t2.setText("");
+                t3.setText("");
+                t4.setText("");
+                t5.setText("");
+                t6.setText("");
+                t7.setText("");
+                t8.setText("");
+                t9.setText("");
+                if(attempts != 0){
+                    attempts--;
+                            if(attempts == 0){
+                            int res2 = JOptionPane.showConfirmDialog(null, "Your Final Score is "+score+"! Exit?", "Game Over", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+                            System.out.println(res2);
+                                    if(res2 == 0){ 
+                                        System.exit(0);                         
+                                        }
+                                    if(res2 == 1){
+                                        mxsec = 0;
+                                        tim.setText("    Timer     "+min+":"+mxsec);
+                                    }
+                            }
+                    att.setText("    ATEMPTS: "+attempts);
+                }   
+            }
+            }
+            catch(NumberFormatException s){
+                JOptionPane.showMessageDialog(null, "Invalid input only numbers 1-9 are allowed!", "Error", JOptionPane.INFORMATION_MESSAGE);
+            }
+            }
+        });
+        
+        reset.addActionListener(new ActionListener(){
+            
+            @Override
+            public void actionPerformed(ActionEvent e){
+                t1.setText("");
+                t2.setText("");
+                t3.setText("");
+                t4.setText("");
+                t5.setText("");
+                t6.setText("");
+                t7.setText("");
+                t8.setText("");
+                t9.setText(""); 
+                attempts = gm.dattempts;
+                mxsec = 60;
+                score = 0;
+                att.setText("    ATEMPTS: "+attempts);
+                tim.setText("    Timer     "+min+":"+mxsec);
+                scr.setText("     SCORE: "+score);
+            }
+        });
+        close.addActionListener(new ActionListener(){ 
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.exit(0);
+            }
+        });
+        
+        timer.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                timer.start();
+            }
+        });
+
+        
+    }
+
+    
+    public static void main(String args[]){
+        new MagicSquare();
+    }
+    
+    
+
+    public void actionPerformed(ActionEvent e){
+    }
+}</p></body></html>

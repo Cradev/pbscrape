@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// DcMotor.ino
+// for DC motor full-bridge driver TA9721P
+// -*- coding:utf-8 -*-
+
+#define DEBUG
+
+#define SERIAL_SPEED 115200
+
+#define SPEED_MIN 0
+#define SPEED_MAX 255
+
+#define PORT_IN1 9
+#define PORT_IN2 10
+
+#define ST_STOP 0
+#define ST_FORWARD 2
+#define ST_BACKWARD 1
+#define ST_BREAK 3
+
+#define STATE_CHANGE_WAIT_TIME 300
+
+int Last_state;
+
+const char *Comma = ",";
+
+void eat(void) {
+  while (Serial.available() &gt; 0) {
+    delay(10);
+    (void)Serial.read();
+  }
+}
+
+void state_change_wait(void) {
+  digitalWrite(PORT_IN1, LOW);
+  digitalWrite(PORT_IN2, LOW);
+  delay(STATE_CHANGE_WAIT_TIME);
+}
+
+void cmd_info(void) {
+  Serial.println("O:I");
+  Serial.print(F("Last state:"));
+  Serial.println(Last_state, HEX);
+  Serial.print(F("IN1,IN2:"));
+  Serial.print(PORT_IN1);
+  Serial.print(Comma);
+  Serial.println(PORT_IN2);
+}
+
+void cmd_forward(int speed) {
+  if (Last_state &amp; ST_BACKWARD ||
+      Last_state &amp; ST_BREAK) {
+    state_change_wait();
+  }
+  analogWrite(PORT_IN1, speed &amp; 0xff);
+  digitalWrite(PORT_IN2, LOW);
+  Last_state = ST_FORWARD;
+  Serial.print("O:+");
+}
+
+void cmd_backward(int speed) {
+  if (Last_state &amp; ST_FORWARD ||
+      Last_state &amp; ST_BREAK) {
+    state_change_wait();
+  }
+  digitalWrite(PORT_IN1, LOW);
+  analogWrite(PORT_IN2, speed &amp; 0xff);
+  Last_state = ST_BACKWARD;
+  Serial.print("O:-");
+}
+
+void cmd_break(void) {
+  if (Last_state &amp; ST_FORWARD ||
+      Last_state &amp; ST_BACKWARD) {
+    state_change_wait();
+  }
+  digitalWrite(PORT_IN1, HIGH);
+  digitalWrite(PORT_IN2, HIGH);
+  Last_state = ST_BREAK;
+  Serial.print("O:B");
+}
+
+void cmd_end(void) {
+  digitalWrite(PORT_IN1, LOW);
+  digitalWrite(PORT_IN2, LOW);
+  Last_state = ST_STOP;
+  Serial.print("O:E");
+}
+
+void cmd_signature(void) {
+  Serial.print(__DATE__ " " __TIME__);
+}
+
+void setup()
+{
+  Serial.begin(SERIAL_SPEED);
+  Serial.print("O:S " __DATE__ " " __TIME__);
+}
+
+void loop()
+{
+  int c;
+  int speed;
+  if (Serial.available() &gt; 0) {
+    delay(100);
+    c = Serial.read();
+    switch (c) {
+    case '-': // backward counter clock wise
+      speed = Serial.read();
+      if (speed == -1) {
+	eat();
+	return;
+      }
+      cmd_backward(speed);
+      break;
+    case '+': // forward. clock wise
+      speed = Serial.read();
+      if (speed == -1) {
+	eat();
+	return;
+      }
+      cmd_forward(speed);
+      break;
+    case 'B': // break
+      cmd_break();
+      break;
+    case 'E': // end. no use break.
+      cmd_end();
+      break;
+    case 'I': // info
+      cmd_info();
+      break;
+    case 'S':
+      cmd_signature();
+      break;
+    default:
+      eat();
+      break;
+    }
+  } else {
+    delay(100);
+  }
+}</p></body></html>

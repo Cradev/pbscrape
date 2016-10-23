@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>console.log('title: BestSkins Profile');
+console.log('author: DeeW.');
+console.log('version: v2.0');
+console.log('version: punBB');
+console.log('platform: Forumotion');
+console.log('http://bestskins.net');
+console.log('If remove my credits of code, your forum will be excluded by forumotion');
+if (window.location.pathname.indexOf('/u') === 0) {
+   $(document).ready(function(){
+      var sCover = $('#field_id2 .field_uneditable').text();
+      var sAvatar = $('.center &gt; img').attr('src');
+      var sReputation = $('#field_id-14 .field_uneditable').text();
+      var sPoints = $('#field_id-13 .field_uneditable').text();
+      $('#profile-advanced-right').hide();
+      $('#profile-advanced-layout').prepend('</p>
+<div class="profile-cover">'+
+         '<div class="profile-avatar"><img src="'+sAvatar+'"></div>'+
+            '<div class="boxInfo">'+
+               '<div class="sPoints">'+
+                  '<span>'+sPoints+'</span>'+
+                  '<span>Moedas</span>'+
+               '</div>'+
+               '<div class="sReputation">'+
+                  '<span>'+sReputation+'</span>'+
+                  '<span>Reputa&ccedil;&atilde;o</span>'+
+               '</div>'+
+            '</div>'+   
+         '</div>');
+      $('.profile-cover').attr('style','background-image:url('+sCover+')');
+      $(function() {
+                var ajaxTAB = function() {
+                    $('#tabs li').click(function(e) {
+                        e.preventDefault();
+                        var url = this.firstChild.href;
+                        if (url == '#') return;
+                        $('#profile-advanced-left').load(url + ' #profile-advanced-left', ajaxTAB);
+                    });
+                };
+                ajaxTAB();
+        });
+      $('body').append(
+         '<style type="text/css">'+
+         '.profile-cover {'+
+         'background: #FFF;'+
+         'height: 250px;'+
+         'margin: 0 auto;'+
+         'box-shadow: inset 0 -25px 50px rgba(0, 0, 0, 0.55);'+
+         'border-bottom: 3px solid #333;'+
+         '}'+
+         '#profile-advanced-layout #new-message {'+
+         'margin-top: 0!important;'+
+         'position: relative!important;'+
+         'margin: 0 auto;'+
+         'text-align: center;'+
+         '}'+
+         '#tabs ul li a {'+
+         'background-color: rgba(0, 0, 0, 0.5);'+
+         'border: 1px solid rgba(0, 0, 0, 0.5);'+
+         'float: left;'+
+         'font-size: 13px;'+
+         'font-weight: 400;'+
+         'line-height: 2em;'+
+         'padding: 4px 10px;'+
+         'text-decoration: none;'+
+         'border-bottom: 0 none;'+
+         'color: #FFF;'+
+         'text-transform: uppercase;'+
+         '}'+
+         '#tabs ul li.activetab a {'+
+         'background-color: rgba(51, 51, 51, 0.79)!important;'+
+         'border-color: #000!important;'+
+         'color: #FFF;'+
+         'text-decoration: none!important;'+
+         'font-weight: bold!important;'+
+         '}'+
+         '#tabs ul li.activetab a:hover {'+
+         'background-color: #4C4C4C;'+
+         '}'+
+         '#tabs ul li a:hover {'+
+         'background-color: rgba(244, 244, 244, 0.5);'+
+         '}'+
+         '.profile-avatar {'+
+         'background: #FFF;'+
+         'float: left;'+
+         'padding: 5px;'+
+         'box-shadow: 0 0 15px #333;'+
+         'border-radius: 3px;'+
+         'margin: 10px;'+
+         '}'+
+         '.profile-avatar img {'+
+         'max-width: 150px;'+
+         'max-height: 150px;'+
+         '}'+
+         '.boxInfo {'+
+         'padding: 15px;'+
+         'margin-top: 100px;'+
+         'float: right;'+
+         'width: 15%;'+
+         '}'+
+         '.sPoints,.sReputation {'+
+         'display: block;'+
+         'float: none;'+
+         'font-weight: normal;'+
+         'margin: 0px 0px 8px;'+
+         'padding: 10px 10px;'+
+         'text-align: center;'+
+         'border-radius: 5px;'+
+         'color: #FFF;'+
+         'background: none repeat scroll 0px 0px #27AACA;'+
+         '}'+
+         '.sReputation {'+
+         'background: #6F8F52;'+
+         '}'+
+         '.sReputation > span,.sPoints > span {'+
+         'display: block;'+
+         '}'+
+         '#profile-advanced-left{'+
+         'margin-right: 0!important'+
+         '}'+
+         '</style>');
+   });   
+};</body></html>

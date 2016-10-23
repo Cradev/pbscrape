@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>class BuildingComponent : UObject
+{
+protected:
+	AStaticMeshACtor* m_StaticMeshActor;
+}
+
+class BuildingWall : BuildingComponent
+{
+	
+	// Use a spine to get lenght and how many static meshes fit in
+}
+
+class BuildingRoom : BuildingComponent
+{
+	BuildingWall* m_North, m_South, m_West, m_East;
+	
+}
+
+// more stuff like floor / roof etc
+
+class Building
+{
+	UPROPERTY(EditAnywhere)
+	TArray<buildingcomponent> m_BuildingParts;
+
+}</buildingcomponent></p></body></html>

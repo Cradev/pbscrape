@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>-- Author: Viraj Kanwade
+-- Initial inspiration was iOS 'Night Shift' like feature on Mac
+-- Hacked together from various code snippets on forums
+-- Tested only on El Capitan for main display
+
+
+(*
+Pre-steps:
+Create display profiles
+System Preferences &gt; Dispalys &gt; Color
+
+Calibrate
+Continue
+Check "Use native white point"
+Continue
+Continue
+Save profile as "Day"
+
+Calibrate
+Continue
+Uncheck "Use native white point"
+Move slider all the way to the left (4,500)
+Continue
+Continue
+Save profile as "Night"
+
+*)
+
+(*
+Export as "Application". Check "Stay open after run handler". Leave others unchecked.
+
+vim DisplayProfileSwitcher.app/Contents/Info.plist
+Below 
+
+	<key>LSRequiresCarbon</key>
+    	<true></true>
+
+add
+
+	<key>LSUIElement</key>
+	<true></true>
+
+*)
+
+use scripting additions
+use framework "Foundation"
+use framework "AppKit"
+
+property StatusItem : ""
+property newMenu : class "NSMenu"
+
+to DisplayAssistanceInstructions()
+	tell application "System Preferences"
+		activate
+		set current pane to pane "com.apple.preference.security"
+		display alert "UI element scripting is not enabled. Check \"Enable access for assistive devices\""
+	end tell
+end DisplayAssistanceInstructions
+
+on checkAccessibility()
+	tell application "System Events"
+		if not UI elements enabled then
+			DisplayAssistanceInstructions() of me
+			return false
+		end if
+	end tell
+	
+	return true
+end checkAccessibility
+
+to openDisplaysPrefPane()
+	tell application "System Preferences"
+		set current pane to pane "Displays"
+	end tell
+end openDisplaysPrefPane
+
+to quitPrefs()
+	quit application "System Preferences"
+end quitPrefs
+
+to changeDisplayProfile(profileName)
+	tell application "System Events"
+		openDisplaysPrefPane() of me
+		
+		tell process "System Preferences"
+			click radio button "Color" of tab group 1 of window 1
+			set selected of first row of table of scroll area of tab group 1 of window 1 where its first static text's name is profileName to true
+		end tell
+		
+		quitPrefs() of me
+	end tell
+	
+	return
+end changeDisplayProfile
+
+to getCurrentDisplayProfile()
+	set profileName to ""
+	
+	tell application "System Events"
+		openDisplaysPrefPane() of me
+		
+		tell process "System Preferences"
+			click radio button "Color" of tab group 1 of window 1
+			
+			set theCheckbox to checkbox "Show profiles for this display only" of tab group 1 of window 1
+			tell theCheckbox
+				if not (its value as boolean) then click theCheckbox
+			end tell
+			
+			set profileName to static text's name of first UI element of table of scroll area of tab group 1 of window 1 whose selected is true
+		end tell
+		
+		quitPrefs() of me
+	end tell
+	
+	return profileName as text
+end getCurrentDisplayProfile
+
+to getAllDisplayProfiles()
+	set names to {}
+	
+	tell application "System Events"
+		openDisplaysPrefPane() of me
+		
+		tell process "System Preferences"
+			click radio button "Color" of tab group 1 of window 1
+			
+			with timeout of 0 seconds
+				set theCheckbox to checkbox "Show profiles for this display only" of tab group 1 of window 1
+				tell theCheckbox
+					if not (its value as boolean) then click theCheckbox
+				end tell
+			end timeout
+			
+			set elemNames to static text's name of every UI element of table of scroll area of tab group 1 of window 1
+			repeat with i in first item of first item of elemNames
+				if number of items in i = 1 then
+					copy first item of i to the end of names
+				end if
+			end repeat
+			
+		end tell
+		
+		quitPrefs() of me
+	end tell
+	
+	return names
+end getAllDisplayProfiles
+
+on handleMenuItemSelect:sender
+	set profileName to title of sender as text
+	changeDisplayProfile(profileName)
+	
+	StatusItem's setTitle:profileName
+end handleMenuItemSelect:
+
+on quitApp:sender
+	tell current application
+		quit
+	end tell
+end quitApp:
+
+on makeMenus()
+	
+	newMenu's removeAllItems() -- remove existing menu items
+	
+	set allProfiles to getAllDisplayProfiles()
+	
+	repeat with profileName in allProfiles
+		set thisMenuItem to (current application's NSMenuItem's alloc()'s initWithTitle:profileName action:"handleMenuItemSelect:" keyEquivalent:"")
+		
+		log me
+		(thisMenuItem's setTarget:me) -- required for enabling the menu item
+		
+		(newMenu's addItem:thisMenuItem)
+	end repeat
+	
+	(newMenu's addItem:(current application's NSMenuItem's separatorItem)) -- add a seperator
+	
+	set thisMenuItem to (current application's NSMenuItem's alloc()'s initWithTitle:"Quit" action:"quitApp:" keyEquivalent:"")
+	
+	(thisMenuItem's setTarget:me) -- required for enabling the menu item
+	
+	(newMenu's addItem:thisMenuItem)
+end makeMenus
+
+on menuNeedsUpdate:(menu)
+	(* NSMenu's delegates method, when the menu is clicked this is called.
+
+    We use it here to call the method makeMenus(). Which removes the old menuItems and builds new ones.
+
+    This means the menu items can be changed dynamically.
+    *)
+	
+	my makeMenus()
+end menuNeedsUpdate:
+
+on makeStatusBar()
+	set bar to current application's NSStatusBar's systemStatusBar
+	
+	set StatusItem to bar's statusItemWithLength:-1.0
+	
+	set curProfileName to getCurrentDisplayProfile()
+	
+	StatusItem's setTitle:curProfileName
+	
+	set newMenu to current application's NSMenu's alloc()'s initWithTitle:"Custom"
+	
+	newMenu's setDelegate:me (*
+    Requied delegation for when the Status bar Menu is clicked  the menu will use the delegates method (menuNeedsUpdate:(menu)) to run dynamically update.
+    *)
+	
+	StatusItem's setMenu:newMenu
+end makeStatusBar
+
+on checkMainThread()
+	-- check we are running in foreground - YOU MUST RUN AS APPLICATION. to be thread safe and not crash
+	if not (current application's NSThread's isMainThread()) as boolean then
+		display alert "This script must be run from the main thread." buttons {"Cancel"} as critical
+		error number -128
+	end if
+end checkMainThread
+
+my checkMainThread()
+set accessibility to my checkAccessibility()
+if accessibility then
+	my makeStatusBar()
+else
+	tell current application
+		quit
+	end tell
+end if</p></body></html>

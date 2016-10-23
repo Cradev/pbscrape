@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Dodrio (F) @ Choice Band  
+Ability: Early Bird  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Brave Bird  
+- Return  
+- Knock Off  
+- Quick Attack  
+
+Monferno (F) @ Eviolite  
+Ability: Iron Fist  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- U-turn  
+- Close Combat  
+- Flare Blitz  
+- Mach Punch  
+
+Zebstrika (F) @ Choice Scarf  
+Ability: Sap Sipper  
+EVs: 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 30 HP / 30 SpA  
+- Thunderbolt  
+- Volt Switch  
+- Overheat  
+- Hidden Power [Grass]  
+
+Sawsbuck (M) @ Choice Band  
+Ability: Sap Sipper  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Jump Kick  
+- Double-Edge  
+- Horn Leech  
+- Facade  
+
+Stunfisk @ Leftovers  
+Ability: Static  
+EVs: 252 HP / 220 Def / 36 Spe  
+Bold Nature  
+- Discharge  
+- Scald  
+- Earth Power  
+- Stealth Rock  
+
+Politoed @ Leftovers  
+Ability: Water Absorb  
+EVs: 252 HP / 252 SpA / 4 Spe  
+Modest Nature  
+- Scald  
+- Toxic  
+- Protect  
+- Ice Beam</p></body></html>

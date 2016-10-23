@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>int main(int argc, char* argv[]) {
+    MySniffer snf;
+
+    if(argc == 1 || argc == 3 || argc &gt; 4) {
+        cout &lt;&lt; "Wrong options. Read program options.n" &lt;&lt; snf.usage_inf() &lt;&lt; endl;
+        exit(1);
+    }
+    for(int i = 1; i &lt; argc; ++i) {
+        if(strcmp(argv[i], "select") == 0) {
+                cout &lt;&lt; "hello" &lt;&lt; endl;
+            for(int j = i; j &lt; argc; ++j){
+                if(strcmp(argv[j], "iface") == 0){
+                    string str = string(argv[3]);
+                    snf.setIface(str);
+                    snf.pkgMonitor(snf.get_cmd());
+                }
+            }       
+        }
+
+        if(strcmp(argv[i], "show") == 0) {
+            for(int j = i; j &lt; argc; ++j) {
+                if(strcmp(argv[j], " count")){
+                    if(snf.select_data(argv[2])==1){
+                        cout &lt;&lt; "There is no adress " &lt;&lt; argv[2] &lt;&lt; " or data base wasn't created.n"
+                        &lt;&lt; "Check if you select network interface.n";
+                    }
+                    snf.pkgMonitor(snf.get_cmd());
+
+                }
+            }
+        }
+
+        if(strcmp(argv[i], "--help") == 0) {
+            for(int i = 0; i &lt; argc; ++i)
+                cout &lt;&lt; argv[i] &lt;&lt; endl;
+            cout &lt;&lt; snf.usage_inf() &lt;&lt; endl;
+            snf.pkgMonitor(snf.get_cmd());
+        }
+
+        if(strcmp(argv[i], "stop") == 0) {
+            cout &lt;&lt; "Packets are not sniffed.n" &lt;&lt; endl;
+            snf.set_cmd(true);
+        }
+
+        if(strcmp(argv[i], "start") == 0){
+            if(snf.isIfaceDeff()){
+                cout &lt;&lt; "Packets are being sniffed from now onn" &lt;&lt; endl;
+            }
+
+            else {
+                cout &lt;&lt; "You first need to select your interface. Read program options.n" &lt;&lt; snf.usage_inf() &lt;&lt; endl;
+            }
+            snf.set_cmd(false);
+            snf.pkgMonitor(snf.get_cmd());
+        }
+    }
+
+    return 0;
+}</p></body></html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Mods permitidos:
+Optifine, 5zig, ItemPhysic, KeystrokesMod, Shaders, ArmorStatusHUD, StatusEffectHUD, DirectionHUD
+OBS: Se voc&ecirc; usar um mod n&atilde;o permitido voc&ecirc; ser&aacute; avisado, na segunda vez, voc&ecirc; ser&aacute; banido permanentemente.
+
+Flood/Spam
+OBS: Primeiro voc&ecirc; &eacute; avisado. 
+1&ordf; 1 hora
+2&ordf; 3 horas
+3&ordf; 6 horas
+4&ordf; 8 horas
+5&ordf; 10 horas
+6&ordf; 3 dias
+
+Iniciativa de flood
+OBS: Primeiro voc&ecirc; &eacute; avisado. 
+1&ordf; 3 horas
+2&ordf; 8 horas
+3&ordf; 10 horas
+OBS: Punido apenas se abusar.
+
+Iniciativa de brigas
+OBS: Primeiro voc&ecirc; &eacute; avisado. 
+1&ordf; Mute de 3 horas
+2&ordf; Mute de 6 horas
+3&ordf; Mute de 16 horas
+
+Ofensa &agrave; staff
+1&ordf; 5 horas
+2&ordm; Banido temporariamente por 5 dias
+3&ordf; Banimento permanente
+
+Ofensa &agrave; jogador
+1&ordf; 1 hora
+2&ordf; 3 horas
+3&ordf; 6 horas
+OBS: S&oacute; sera valido no chat GLOBAL e LOCAL.
+
+Hack
+1&ordf; Banimendo permanente
+
+Chargeback
+1&ordf; Banimento permanente por ip
+
+Atitude de descrimina&ccedil;&atilde;o
+1&ordf; 6 horas
+2&ordf; 12 horas
+3&ordf; 32 horas
+
+Amea&ccedil;a
+1&ordf; Banimento temporario de 7 dias
+2&ordf; Permanente
+
+Nick inapropriado
+1&ordf; Banimento permanente
+
+Anti-Jogo
+1&ordf; Banimento temporario de 1 dia
+2&ordf; Banimento temporario de 3 dias
+3&ordf; Banimento temporario de 5 dias
+
+Divulga&ccedil;&atilde;o
+1&ordf; Mutado permanentemente
+
+Palavras inadequdas
+OBS: Primeiro voc&ecirc; &eacute; avisado.
+1&ordf; 1 hora
+2&ordf; 5 horas
+3&ordf; 8 horas
+
+Mensagem fake
+OBS: Primeiro voc&ecirc; &eacute; avisado.
+1&ordf; Mute temporario de 6 horas
+2&ordf; Mute temporario de 10 horas
+3&ordf; Mute temporario de 24 horas
+
+Conta fake
+1&ordf; Banimento permanente
+
+Atenciosamente,
+Equipe SmartMC.</p></body></html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// Schedule an alarm for 8 a.m. in the morning
+
+// Create a calender object to specify the time alarm has to be triggered
+Calendar calendar = Calendar.getInstance();
+
+calendar.setTimeInMillis(System.currentTimeMillis());
+calendar.set(Calendar.HOUR_OF_DAY, 8);
+calendar.set(Calendar.MINUTE, 0);
+
+// Create an intent to indicate which component should be triggered upon the alarm
+// being triggered
+Intent myIntent = new Intent(context, Receiver.class);
+pendingIntent = PendingIntent.getBroadcast(context, 0, myIntent,0);
+
+// Get an alarm manager object from the system service
+AlarmManager alarmManager = (AlarmManager)this.getSystemService(ALARM_SERVICE);
+
+// API 19 &gt; non repeating single alarm trigger
+alarmManager.setExact(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+
+// Repeating everyday alarm trigger (Won't run immediately)
+alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
+                AlarmManager.INTERVAL_DAY, pendingIntent);</p></body></html>

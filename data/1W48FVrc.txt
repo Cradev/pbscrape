@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>@app.route("/test")
+def lubielody():
+
+    tree = objectpath.Tree(data)
+    ids = tree.execute('$.*.interface[@.boardPositionColumn is "A" and @.boardPositionRow is 1]')
+
+    pprint('Typ: ' + str(type(ids)))
+    pprint(ids)
+    pprint(list(ids))
+
+    json1 = str(ids)
+    json_string = json.loads(json1)
+
+    ids3 = json_string.mcp
+
+    pprint('Typ: ' + str(type(ids3)))
+    pprint(ids3)
+    pprint(list(ids3))
+
+    return jsonify(list(ids3))</p></body></html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>type UnbufferedReaderAt struct {
+    R io.Reader
+    n int64
+}
+
+func (u *UnbufferedReaderAt) ReadAt(p []byte, off int64) (n int, err error) {
+    if off &lt; 0 || off &lt; u.n {
+        return 0, errors.New("invalid offset")
+    }
+
+    diff := off - u.n
+    written, err := io.CopyN(ioutil.Discard, u.R, diff)
+    u.n += written
+    if err != nil {
+        return 0, err
+    }
+
+    n, err = u.R.Read(p)
+    u.n += int64(n)
+    return
+}
+	
+s := strings.NewReader("hello world")
+
+var b [5]byte
+ura := &amp;UnbufferedReaderAt{R: s}
+if _, err := ura.ReadAt(b[:], 0); err != nil {
+    panic(err)
+}
+fmt.Printf("%sn", b[:]) // prints "hello"
+
+/*
+if _, err := ura.ReadAt(b[:], 0); err != nil {
+    panic(err) // panics
+}
+fmt.Printf("%sn", b[:])
+*/
+
+if _, err := ura.ReadAt(b[:], 6); err != nil {
+    panic(err)
+}
+fmt.Printf("%sn", b[:]) // prints "world"</p></body></html>

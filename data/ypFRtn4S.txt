@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include "i8254.h"
+
+.global _assembly_handler
+
+
+.data
+   break: .string "Breakcode: 0x%\n"         #normal breakcode
+   make: .string "Makecode: 0x%\n"           #normal makecode
+   2break: .string "Breakcode: 0xE0%\n"      # 2 byte breakcode
+   2make: .string "Makecode: 0xE0%\n"        # 2 byte makecode
+
+ .text
+
+ _assembly_handler:
+
+ movl 4(%esp), %edx                # read argument
+
+ in $KBD_OUTBUF, %eax			# read scancode from OUT_BUF
+
+ mov $0xE0, %cl
+ cmp %dl, %cl					# compare last scancode to 0x60, if equal, 2 byte scancode
+ jne j
+
+ mov $0, %ecx
+ mov $BIT(7), %cl
+ test %al, %cl					# checks if scancode is make or break
+ jz k
+ mov $0, %ecx                   #puts ecx=0,then the scancode in ecx
+ mov %al, %cl
+ push %ecx
+ push $2break
+ call _printf					# prints 2 byte breakcode string
+ add $8, %esp
+ jmp fim
+
+j:
+	mov $TWO_BYTE_SCAN, %cl
+	cmp %al, %cl					# compares scancode to 0x60, if equal, must return to check 2nd byte of scancode
+	je fim
+
+	mov $BIT(7), %cl
+	test %al, %cl					# checks if scancode is make or break
+	jz l
+	mov $0, %ecx                    #puts ecx=0,then the scancode in ecx
+	mov %al, %cl
+	push %ecx
+	push $break
+	call _printf					# Prints breakcode string
+	add $8, %esp
+	jmp fim
+
+k:
+	mov $0, %ecx                     #puts ecx=0,then the scancode in ecx
+	mov %al, %cl
+	push %ecx
+	push $2make
+	call _printf					# prints 2 byte makecode string
+	add $8, %esp
+	jmp fim
+
+l:
+	mov $0, %ecx                    #puts ecx=0,then the scancode in ecx
+	mov %al, %cl
+	push %ecx
+	push $make
+	call _printf					# prints makecode string
+	add $8, %esp
+	jmp fim
+
+fim:
+	pop %ecx
+	mov $0, %eax
+	mov %cl, %al                      # returns al (scancode)
+	ret
+	.end _assembly_handler</p></body></html>

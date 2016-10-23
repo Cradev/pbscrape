@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <iostream>
+
+#define MIN(a, b) (((a) &lt; (b)) ? (a) : (b))
+#define MAX(a, b) (((a) &gt; (b)) ? (a) : (b))
+
+class Point2D
+{
+public:
+
+    enum Location{First = 0, Second, Third, Fourth, AxisX, AxisY, Zero};
+
+    Point2D() : m_x(0.0) , m_y(0.0)
+    {
+
+    }
+
+    Point2D(double x, double y) : m_x(x) , m_y(y)
+    {
+
+    }
+
+    Point2D(const Point2D&amp; copy)
+    {
+        m_x = copy.m_x;
+        m_y = copy.m_y;
+    }
+
+    double x() const
+    {
+        return m_x;
+    }
+
+    double y() const
+    {
+        return m_y;
+    }
+
+    void set(double x, double y)
+    {
+        m_x = x;
+        m_y = y;
+    }
+
+    void show() const
+    {
+        std::cout &lt;&lt; m_x &lt;&lt; ' ' &lt;&lt; m_y &lt;&lt; std::endl;
+    }
+
+    void scan()
+    {
+        std::cin &gt;&gt; m_x &gt;&gt; m_y;
+    }
+
+    Location location()
+    {
+        if(m_x == 0.0 &amp;&amp; m_y == 0.0)
+            return Location::Zero;
+
+        if(m_x == 0.0)
+            return Location::AxisY;
+
+        if(m_y == 0.0)
+            return Location::AxisX;
+
+        if(m_x &gt; 0.0 &amp;&amp; m_y &gt; 0.0)
+            return Location::First;
+
+        if(m_x &lt; 0.0 &amp;&amp; m_y &gt; 0.0)
+            return Location::Second;
+
+        if(m_x &lt; 0.0 &amp;&amp; m_y &lt; 0.0)
+            return Location::Third;
+
+        if(m_x &gt; 0.0 &amp;&amp; m_y &lt; 0.0)
+            return Location::Fourth;
+    }
+
+private:
+    double m_x;
+    double m_y;
+};
+
+
+int main(int argc, char **argv)
+{
+    Point2D matrix[2][10];
+
+    for(int i = 0; i &lt; 2; ++i)
+        for(int j = 0; j &lt; 10; ++j)
+            matrix[i][j].scan();
+
+
+
+
+    return 0;
+}</iostream></p></body></html>

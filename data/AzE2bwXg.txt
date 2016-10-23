@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>$ cat t31.cu
+#include <stdio.h>
+
+__global__ void kernel(int *data){
+
+  int idx=threadIdx.x+blockDim.x*blockIdx.x;
+  int sum = 0;
+  sum += data[idx];
+  sum += data[idx+8];
+  sum += data[idx+16];
+  sum += data[idx+24];
+  data[idx] = sum;
+}
+
+int main(){
+  const int blk = 32;
+  const int thr = 128;
+  const int offset = 32;
+  const int dsize = blk*thr+offset;
+  int *d_data;
+  cudaMalloc(&amp;d_data, dsize*sizeof(int));
+  cudaMemset(d_data, 0, dsize*sizeof(int));
+  kernel&lt;&lt;<blk thr>&gt;&gt;(d_data);
+  cudaDeviceSynchronize();
+}
+$ nvcc -Xptxas -dlcm=ca -arch=sm_52 -o t31 t31.cu
+$ nvprof --metrics tex_cache_hit_rate,tex_cache_transactions ./t31
+==7018== NVPROF is profiling process 7018, command: ./t31
+==7018== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+==7018== Replaying kernel "kernel(int*)" (done)
+==7018== Profiling application: ./t31
+==7018== Profiling result:
+==7018== Metric result:
+Invocations                               Metric Name                        Metric Description         Min         Max         Avg
+Device "GeForce GTX 960 (0)"
+        Kernel: kernel(int*)
+          1                        tex_cache_hit_rate                    Unified Cache Hit Rate      78.12%      78.12%      78.12%
+          1                    tex_cache_transactions                Unified Cache Transactions        2048        2048        2048
+$</blk></stdio.h></p></body></html>

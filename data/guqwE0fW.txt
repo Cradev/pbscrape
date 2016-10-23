@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public OnPlayerDeath(playerid, killerid, reason)
+{
+	if(PlayerCuffed{playerid}) TogglePlayerControllableAC(playerid,true), PlayerCuffed{playerid}=0, TazerTime[playerid]=0;
+	if(rstart) { for(new i; i&lt;7; i++) { if(RaceInfo[i][rID]==playerid) { RaceInfo[i][rID]=-1; SCM(playerid,COLOR_GREY,"&Acirc;&ucirc; &aacute;&ucirc;&euml;&egrave; &egrave;&ntilde;&ecirc;&euml;&thorn;&divide;&aring;&iacute;&ucirc; &ntilde; &atilde;&icirc;&iacute;&icirc;&ecirc;."); break; } } }
+	if(Trenag[playerid]) SCM(playerid,0xEBEBEBFF,"&Acirc;&ucirc; &ccedil;&agrave;&ecirc;&icirc;&iacute;&divide;&egrave;&euml;&egrave; &ccedil;&agrave;&iacute;&yuml;&ograve;&egrave;&aring;."), EndKach(playerid,Trenag[playerid]);
+	if(AlhambraDJ == playerid) AlhambraDJ = INVALID_PLAYER_ID;
+	if(JizzyDJ == playerid) JizzyDJ = INVALID_PLAYER_ID;
+	if(use_skate{playerid}) use_skate{playerid} = 0, RemovePlayerAttachedObject(playerid,9),DestroyObject(obj_skate[playerid]);
+	if(killerid != INVALID_PLAYER_ID)
+	{
+	    foreach(Player, i) if(p_admin{i}) SendDeathMessageToPlayer(i, killerid, playerid, reason);
+	    if(FightNumber != -1 &amp;&amp; (killerid == FightPlayer[FightNumber][0] || killerid == FightPlayer[FightNumber][1]) &amp;&amp; (playerid == FightPlayer[FightNumber][0] || playerid == FightPlayer[FightNumber][1]))
+		{
+			SCMF(killerid,-1,"&Acirc;&ucirc; &icirc;&auml;&aring;&eth;&aelig;&agrave;&euml;&egrave; &iuml;&icirc;&aacute;&aring;&auml;&oacute; &acirc; &aacute;&icirc;&thorn;, &acirc;&agrave;&oslash; &iuml;&eth;&egrave;&ccedil;: $%i.",FightCost[FightNumber]*2);
+			SCM(playerid,0xEBEBEBFF,"&Acirc;&ucirc; &iuml;&eth;&icirc;&egrave;&atilde;&eth;&agrave;&euml;&egrave; &aacute;&icirc;&eacute;."), OnPlayerSpawnAC(killerid);
+			GiveMoney(killerid,FightCost[FightNumber]*2);
+			FightPlayer[FightNumber][0]=-1, FightNumber=-1, UpdateFighText();
+		}</p></body></html>

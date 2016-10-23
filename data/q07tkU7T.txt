@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Groudon @ Red Orb  
+Ability: Drought  
+EVs: 248 HP / 8 Def / 252 SpD  
+Sassy Nature  
+- Stealth Rock  
+- Precipice Blades  
+- Lava Plume  
+- Roar  
+
+Lugia @ Leftovers  
+Ability: Multiscale  
+EVs: 252 HP / 120 Def / 136 SpD  
+Bold Nature  
+IVs: 0 Atk  
+- Roost  
+- Whirlwind  
+- Toxic  
+- Ice Beam  
+
+Xerneas @ Power Herb  
+Ability: Fairy Aura  
+Shiny: Yes  
+EVs: 184 HP / 28 Def / 252 SpA / 44 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Geomancy  
+- Moonblast  
+- Aromatherapy  
+- Focus Blast  
+
+Darkrai @ Life Orb  
+Ability: Bad Dreams  
+EVs: 4 Def / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dark Void  
+- Nasty Plot  
+- Dark Pulse  
+- Sludge Bomb  
+
+Salamence @ Salamencite  
+Ability: Intimidate  
+EVs: 80 HP / 252 Atk / 176 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Roost  
+- Return  
+- Earthquake  
+
+Arceus @ Spooky Plate  
+Ability: Multitype  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Shadow Force  
+- Brick Break  
+- Extreme Speed</p></body></html>

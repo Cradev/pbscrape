@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#ifndef ANYLIST_H
+#define ANYLIST_H
+
+#include<iostream>
+#include <string>			
+using namespace std;
+
+template <typename t>
+class Node
+{
+public:
+	Node() : data(0), next(NULL) {}
+	Node(T&amp; theData, Node *newNext) : data(theData), next(newNext){}
+	Node* getNext() const { return next; }
+	T getData( ) const { return data; }
+    void setData(T&amp; theData) { data = theData; }
+	void setNext(Node *newNext) { next = newNext; }
+	~Node(){}
+private:
+    T data;		
+    Node *next;	//pointer that points to next node
+};
+
+template <typename t>
+class AnyList
+{	
+	friend ostream&amp; operator&lt;&amp; theList);
+
+public:
+	AnyList();	
+
+	void insert(const T&amp; elem);
+
+	int getNumOfElem() const;
+
+	void destroyList();
+
+	~AnyList();
+
+private:
+	Node<t> *first;
+	int count;		
+};</t></typename></typename></string></iostream></p></body></html>

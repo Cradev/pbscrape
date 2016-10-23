@@ -1,0 +1,9 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>.su-column-size-1-2 {
+  width: 46%;
+}
+	
+.su-row .su-column {
+  padding: 0 0 0 4%;
+  margin: 0;
+}</p></body></html>

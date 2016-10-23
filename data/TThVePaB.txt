@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<p>controllers.controller("mainCtrl", ["$scope", "$rootScope", "$http", function($scope, $rootScope, $http) {
+$scope.q ="";
+$scope.searchData = function(url, id, callBack, apiCall, promise) {
+  var url="http://api.openweathermap.org/data/2.5/find?q="+$scope.q+"&amp;type=like";
+  var id = "&amp;appid=d436c04d23a5a44329eb8255190a84be";
+  var callBack = "&amp;callback=JSON_CALLBACK";
+  var apiCall = url + id + callBack;
+  if($scope.q.length &gt;= 3) {
+    var promise = $http.jsonp(apiCall);
+    promise.success(function(data){
+      $rootScope.data = data;
+      console.log($rootScope.data);
+    });
+  };
+
+};
+
+$scope.editing = false;
+$scope.addItem = function(item) {
+    $scope.items.push(item);
+    $scope.item = {};
+};
+
+$scope.listItems = [];
+$scope.addToList = function(item) {
+  $scope.listItems.push(item);
+  console.log($scope.listItems);
+}
+ }]);
+
+      </p>
+<div ng-controller="mainCtrl">
+    <input type="text" ng-model="q" ng-keyup="searchData()">
+    <table class="table">
+      <tr contenteditable>
+          <th>City</th>
+      </tr>
+<tr ng-repeat="cityName in data.list | filter:{name:q}">
+          <td>
+<a ng-href="#/{{ cityName.id }}"></a>{{ cityName.name }}</td>
+          <td><button type="button" ng-click="addToList(item)">Add to cart</button></td>
+      </tr>
+  </table>
+  </div>
+  <div ng-controller="mainCtrl">
+    <h2>Testlist</h2>
+    <table>
+     <tr ng-repeat="item in myListItems.list">
+        <td>{{item.name}}</td>
+     </tr>
+    </table>
+    </div>
+	
+Object {message: "like", cod: "200", count: 11, list: Array[11]}
+cod:"200"count:11list:Array[11]0:Object$$hashKey:"object:7"clouds:
+Object coord:Object dt:1477247354id:3675975main:Object name:"Los Patios"
+rain:Object sys:Object weather:Array[1] wind:Object __proto__:Object</body></html>

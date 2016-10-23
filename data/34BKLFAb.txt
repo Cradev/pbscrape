@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Nuke:
+Speedek - Outside
+Kacper - A
+Patryk - A
+Krisu - Rampa
+Seba - Rampa
+
+Cache:
+Seba - A z siatki
+Mayor - A z &#380;&oacute;&#322;tego
+Speedek - Mid
+Krisu - B
+Kacper - B
+
+Cobblestone:
+Speedek - A/Matrix
+Seba - A/Mid
+Kacper - Drop
+Krisu - B/Drzewko
+Patryk - Long
+
+Train:
+Kacper - B
+Krisu - B
+Patryk - Odnoga
+Seba - A
+Speedek - A
+
+Overpass:
+Speedek - A/Kible
+Seba - A/Long
+Kacper - B/Syf
+Patryk - B
+Krisu - B/Monster
+
+Mirage:
+Kacper - A
+Seba - A
+Speedek - Mid
+Patryk - B
+Krisu - B</p></body></html>

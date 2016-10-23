@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>CREATE TABLE address
+
+(
+
+  id bigserial NOT NULL,
+
+  addressline VARCHAR (200),
+
+  city VARCHAR (200),
+
+  postalcode VARCHAR (20),
+
+  provinceid (bigint),
+
+)
+
+
+
+CREATE TABLE province
+
+(
+
+  id bigserial NOT NULL,
+
+  name VARCHAR (100),
+
+  abbreviation CHAR (2),
+
+  countryid (bigint),
+
+
+  CONSTRAINT "KeyprovincePK" PRIMARY KEY (id)
+
+)
+
+
+
+CREATE TABLE country
+
+(
+
+  id bigserial NOT NULL,
+
+  name VARCHAR (100),
+
+  abbreviation CHAR (5),
+
+
+  CONSTRAINT "KeycountryPK" PRIMARY KEY (id)
+
+)
+
+
+
+ALTER TABLE address
+	ADD CONSTRAINT provinceid FOREIGN KEY (id)
+		REFERENCES province (id) MATCH SIMPLE
+		ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE province
+	ADD CONSTRAINT countryid FOREIGN KEY (countryid)
+		REFERENCES country (id) MATCH SIMPLE
+		ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+
+
+CREATE TABLE addressxstudent
+(
+	id bigserial NOT NULL,
+	addressid bigint,
+	studentid bigint
+);
+
+
+
+CREATE TABLE professorxaddress
+(
+	id bigserial NOT NULL,
+	professorid bigint,
+	addressid bigint
+);
+
+
+
+ALTER TABLE addressxstudent
+	ADD CONSTRAINT studenttoaddress FOREIGN KEY (studentid)
+		REFERENCES students (id) MATCH SIMPLE
+		ON UPDATE NO ACTION ON DELETE NO ACTION;
+
+ALTER TABLE addressxstudent
+	ADD CONSTRAINT addressxtostudent PRIMARY KEY (addressid)
+
+
+ALTER TABLE professorxaddress
+	ADD CONSTRAINT professortoaddress FOREIGN KEY (professorid)
+		REFERENCES professor (id) MATCH SIMPLE
+		ON UPDATE NO ACTION ON DELETE NO ACTION;
+		
+ALTER TABLE professorxaddress
+	ADD CONSTRAINT addresstoprofessor PRIMARY KEY(addressid)
+
+
+
+CREATE OR REPLACE VIEW "vw_AddressesWithStudents" AS
+SELECT
+a."id" AddressID,
+a."addressline" AddressLine,
+a."city" City,
+a."postalcode" PostalCode,
+a."provinceid" ProvinceID,
+s."id" StudentID,
+s."firstname" StudentFirstName, 
+s."lastname" StudentLastName, 
+"gender", 
+"age"
+FROM address a
+INNER JOIN students s ON a.id = s.id
+
+
+
+CREATE OR REPLACE VIEW "vw_AddressInfoRegardlessOfProfessorHavingAnAddress" AS
+SELECT
+
+p."id" ProfessorID,
+p."firstname" ProfessorFirstName,
+p."lastname" ProfessorLastName,
+p."email",
+p."phone",
+
+x."id" ProfessorXAddressID,
+x."professorid" ProfessorWithAddressID,
+x."addressid" AddressOfProfessorID,
+
+a."id" AddressID,
+a."addressline" AddressLine,
+a."city" City,
+a."postalcode" PostalCode,
+a."provinceid" ADDRESSProvinceID,
+
+v."id" ProvinceID,
+v."name" ProvinceName,
+v."countryid" ProvinceOfCountry,
+
+c."id" CountryID,
+c."name" CountryName
+
+FROM professor p
+LEFT JOIN professorxaddress x ON p."id" = x."id"
+LEFT JOIN address a ON a."id" = x."addressid"
+LEFT JOIN province v ON v."id" = a."provinceid"
+LEFT JOIN country c ON v."countryid" = v."countryid"
+
+
+
+CREATE OR REPLACE VIEW "vw_ProvinceCountryInfo" AS
+SELECT
+
+v."id" ProvinceID,
+v."name" ProvinceName,
+v."abbreviation" ProvinceAbbreviation,
+v."countryid" ProvinceOfCountry,
+
+c."id" CountryID,
+c."name" CountryName,
+c."abbreviation" CountryAbbreviation
+
+FROM province v
+LEFT JOIN country c ON v."countryid" = c."id"</p></body></html>

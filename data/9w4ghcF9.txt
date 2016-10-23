@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>import sys
+
+def fizbuzz(data):
+    d = data.split()
+    result = []
+    fizz, buzz, num = int(d[0]), int(d[1]), int(d[2])
+    for n in range(1, num+1):
+        if n % fizz == 0 and n % buzz == 0:
+            result.append("FB")
+        elif n % fizz == 0:
+            result.append("F")
+        elif n % buzz == 0:
+            result.append("B")
+        else:
+            result.append(str(n))
+    return result
+
+with open(sys.argv[1], 'r') as test_cases:
+    for test in test_cases:
+        print(' '.join(fizbuzz(test)))</p></body></html>

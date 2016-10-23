@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>// controlling io ***
+// main.c
+
+#include <stdio.h>
+#include <freertos.h>
+#include <task.h>
+
+
+/*
+ * ARTS-Lab-2016, HHs Electrotechniek, W.Muhammad
+ * Assignment 1- Project Template
+     *
+     * Initial Steps for hardware configuration required for Assignment 1:
+     * 1) Setup source clocks, use the clock frequency of 48 MHz. Read through Clock System Operation section
+     *    of the MSP432 Datasheet. Use driver lib API document to find the correct functions to use.
+     * 	  In this assignment you only need to set MCK, see MSP432 CSS examples.
+     * 2) Configure General purpose I/O (GPIO) pin P1.0 (Port1 pin0) as output , see example projects
+     *    and Driver Lib API document to find out how you can configure a specific pin as digital output
+     * 3) Add the appropiate delay mentioned on the assignment document, you can use busy waiting (loop).
+     * 4) Toggle the output PIN (P1.0) connected to LED
+     * 5) Print the current state of the LED on the CCS output console. Always use fflush(stdout); after
+     *    printf() call.
+     *
+     *  Good Luck!
+     */
+void FunBlinkLED(void);
+void FunDelay(void);
+void FunPrint(void);
+
+
+int main(void) {
+    WDTCTL = WDTPW | WDTHOLD;  /* Stop watchdog timer */
+    GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN0);
+
+    while(1){
+    	FunBlinkLED();
+    	FunDelay();
+    	FunPrint();
+    }
+
+	return 0;
+}
+
+
+void FunBlinkLED(void){
+    MAP_GPIO_toggleOutputOnPin( GPIO_PORT_P1, GPIO_PIN0);
+}
+void FunDelay(void){
+	int i;
+	for(i = 0; i &lt; 2666666; i++);
+}
+void FunPrint(void){
+	if (GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN0))
+		printf("Led is on\n");
+	else
+		printf("Led is off\n");
+}</task.h></freertos.h></stdio.h></p></body></html>

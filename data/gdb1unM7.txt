@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>int b1IN = 10;
+int LED1 = 11;
+int b2IN = 4;
+int LED2 = 3;
+boolean lastButton = LOW;
+boolean ledOn = false;
+boolean currentButton = LOW;
+void setup() {
+
+  pinMode(b1IN, INPUT);
+  pinMode(LED1, OUTPUT);
+  pinMode(b2IN, INPUT);
+  pinMode(LED2, OUTPUT);
+
+}
+
+  boolean debounce(boolean last){
+
+    boolean current = digitalRead(b2IN);
+    if (last != current){
+
+      delay (15);
+      current = digitalRead(b2IN);
+    }
+
+    return current;
+  }
+
+
+
+void loop() {
+
+  currentButton = debounce(lastButton);
+
+  if (digitalRead(b1IN) == HIGH) {
+    digitalWrite(LED1, HIGH);
+    delay(20000);
+    digitalWrite(LED1, LOW);
+  }
+
+  if (lastButton == LOW &amp;&amp; currentButton == HIGH) {
+
+    ledOn = !ledOn;
+
+  }
+
+    lastButton = currentButton;
+    digitalWrite(LED2, ledOn);
+}</p></body></html>

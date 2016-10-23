@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#!/bin/bash
+
+if [ $# == 0 ]; then
+  echo "Correct call: $0 [-t target-dir] [-d destination-dir] <suffix-list...>"
+  #echo "backup [&minus;s size] [&minus;t tarDir] [&minus;d destDir] &lt; ext_list &gt;"
+  exit;
+fi
+
+targetDir="."    # default target directory
+destDir="."      # default destination directory
+
+let "i = 0"
+
+if [[ $1 == "-t" ]]; then
+  if [ -d $2 ]; then
+    targetDir=$2
+    let "i = 2"     # i points to the position after this option
+  else
+    echo $2 is an invalid target directory
+    exit 1
+  fi 
+fi
+
+if [[ $1 == "-d" ]]; then
+  if [ -d $2 ]; then
+    destDir=$2
+    let "i = 2"     # i points to the position after this option
+  else
+    echo $2 is an invalid destination directory
+    exit 1
+  fi 
+fi
+
+if [[ $3 == "-d" ]]; then
+  if [ -d $4 ]; then
+    destDir=$4
+    let "i = 4"     # i points to the position after this option
+  else
+    echo $4 is an invalid destination directory
+    exit 1
+  fi 
+fi
+
+argv=( $* )                    # make an array of all parameters
+extensions=${argv[@]:$i:$#}    # get the extension parameters from arguments
+
+echo $targetDir
+echo $destDir
+
+for ext in $extensions; do
+   echo $ext
+   for file in `ls $targetDir/*$ext`; do
+       echo gzip $file
+       gzip $file
+       mv  ${file}.gz $destDir/.
+   done
+done</suffix-list...></p></body></html>

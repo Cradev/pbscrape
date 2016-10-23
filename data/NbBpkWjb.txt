@@ -1,0 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#include <iostream>
+
+using namespace std;
+
+int a[100][100];
+int n,m,sch,g,v;
+
+int main()
+{
+    cin&gt;&gt;n&gt;&gt;m;
+
+    for (int i=0;i<n v="0;" g="i;" while a g-- sch for i="n;i&lt;m;i++)" j="0;j&lt;m;j++)" cout return></n></iostream></p></body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+
+namespace _03.Problem
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SortedDictionary<string list>&gt; stastsByDemons = new SortedDictionary<string list>&gt;();
+
+            string pattern = @"((?:\-|\+|)\d+(?:\.*?\d+)*)";
+            Regex rgx = new Regex(pattern);
+
+            string[] demons = Console.ReadLine()
+                .Split(new char[] { ' ', ',' }, StringSplitOptions.RemoveEmptyEntries)
+                .ToArray();
+
+            for (int i = 0; i &lt; demons.Length; i++)
+            {
+                if (!stastsByDemons.ContainsKey(demons[i]))
+                {
+                    stastsByDemons.Add(demons[i], new List<double>());
+                }
+
+                double demonsHealth = 0;
+                foreach (var ch in demons[i])
+                {
+                    if (char.IsLetter(ch))
+                    {
+                        demonsHealth += ch;
+                    }
+                }
+
+                double demonsDamage = 0;
+                List<double> dmgPoints = new List<double>();
+                MatchCollection matches = rgx.Matches(demons[i]);
+                foreach (Match item in matches)
+                {
+                    demonsDamage += double.Parse(item.Value);
+                }
+
+                int multiplyCount = demons[i]
+                    .Count(x =&gt; x == '*');
+                int delimetersCount = demons[i]
+                    .Count(x =&gt; x == '/');
+
+                if (multiplyCount &gt; delimetersCount)
+                {
+                    int iterations = multiplyCount - delimetersCount;
+                    for (int j = 0; j &lt; iterations; j++)
+                    {
+                        demonsDamage *= 2;
+                    }
+                }
+                else
+                {
+                    int iterations = delimetersCount - multiplyCount;
+                    for (int j = 0; j &lt; iterations; j++)
+                    {
+                        delimetersCount /= 2;
+                    }
+                }
+
+                stastsByDemons[demons[i]].Add(demonsHealth);
+                stastsByDemons[demons[i]].Add(demonsDamage);
+            }
+
+            foreach (var demon in stastsByDemons)
+            {
+                Console.Write(demon.Key + " - ");
+                bool isDMG = false;
+                foreach (var stat in demon.Value)
+                {
+                    if (!isDMG)
+                    {
+                        Console.Write(stat + " health" + ", ");
+                        isDMG = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("{0:0.00} damage", stat);
+                    }
+                }
+            }
+        }
+    }
+}</double></double></double></string></string></p></body></html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- dodajesz jquery z CDN, bo potrzebne -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- tutaj skrypt pobieraj&#261;cy, w html te&#380; mo&#380;e by&#263;, ale lepiej go wyrzuci&#263; do oddzielnego pliku, bo tego sporo b&#281;dzie -->
+    <script>
+    $(document).ready(function(){
+        // przypisanie GETa na klikni&#281;cie buttona
+        $("button").click(function(){
+            // tutaj dajesz link do swojego lokalnego api
+            $.get("http://localhost:3000/api/items", function(data, status){
+                // ja mam w bazie kilka przedmiot&oacute;w dlatego to jest wrzucone w eacha (bo ma mi pokaza&#263; wszystkie)
+                $.each(data, function(i, field){
+                    // console log (&#380;eby w konsoli pokaza&#322;y si&#281; ca&#322;e obiekty)
+                    console.log(data[i]);
+
+                    // a tak przypisujesz wszystko do DIVa
+                    // w zale&#380;no&#347;ci co ci zwraca serwer b&#281;dzie to r&oacute;&#380;ne, ja akurat dostaje od serwera name, category, count dlatego 
+                    // to napisa&#322;em w tej formie
+                    $("div").append(
+                        "<b>NAZWA: </b>" + data[i].name + " " + 
+                        "<b>KATEGORIA: </b>" + data[i].category + " " +
+                        "<b>ILO&#346;&#262;: </b>" + data[i].count+ "</br>");
+
+                    // to samo co wcze&#347;niej ale wpisuje w liste zamiast div'a
+                    $("#superLista").append(
+                        "<li><b>NAZWA: </b>" + data[i].name + " " + 
+                        "<b>KATEGORIA: </b>" + data[i].category + " " +
+                        "<b>ILO&#346;&#262;: </b>" + data[i].count+ "</br></li>");
+                });
+            });
+        });
+    });
+</script>
+</head>
+
+<body>
+
+	<button>GET(pobiera dane z api)</button>
+
+    <!-- tu jest ten div do kt&oacute;rego funkcja wrzuca dane. zamiast diva mo&#380;e by&#263; cokolwiek, np lista czy tabela-->
+	<div></div>
+
+
+    <!--to samo ale na liscie-->
+    <ul id="superLista"></ul>
+</body>
+
+</html>

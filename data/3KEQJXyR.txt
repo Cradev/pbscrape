@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>documentclass{scrartcl}
+
+usepackage{ucs}
+usepackage[utf8x]{inputenc}
+
+%% ADJUSTMENTS FOR IAC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Get stupid underlining for headings right
+usepackage[]{ulem}
+
+%% Change heading style
+usepackage{sectsty}
+    sectionfont{MakeUppercasermfamilycenterunderline}
+
+begin{document}
+    section{Test Section}
+end{document}
+	
+documentclass{scrartcl}
+
+usepackage[explicit]{titlesec}
+usepackage[normalem]{ulem}
+usepackage{lipsum}
+
+titleformat{section}
+  {normalfontLargesffamilybfseriesfilcenter}{}{0em}{uline{thesectionhspace*{ 1em}MakeUppercase{#1}}}
+titleformat{name=section,numberless}
+  {normalfontLargesffamilybfseriesfilcenter}{}{0em}{uline{MakeUppercase{#1}}}
+
+renewcommand*{thesection}{Roman{section}}
+
+begin{document}
+
+section{Test Section}
+
+lipsum[1]
+
+begin{thebibliography}{9}
+bibitem{A01} A. Author. emph{Alpha}. 2001.
+end{thebibliography}
+
+end{document}
+	
+documentclass{scrartcl}
+
+usepackage[explicit]{titlesec}
+usepackage[normalem]{ulem}
+usepackage{lipsum}
+
+titleformat{section}
+  {normalfontLargesffamilybfseriesfilcenter}{uline{thesectionhspace*{ 1em}}}{0em}{uline{MakeUppercase{#1}}}
+
+renewcommand*{thesection}{Roman{section}}
+
+begin{document}
+section{Test Section}
+
+lipsum[1]
+
+begin{thebibliography}{9}
+bibitem{A01} A. Author. emph{Alpha}. 2001.
+end{thebibliography}
+
+end{document}
+	
+documentclass{article} 
+usepackage{fontspec}
+usepackage{lipsum}
+
+begin{document} 
+thispagestyle{empty} 
+fontuc="Times New Roman" at 12pt
+begin{center}
+underbar{uc{But it may be enough to get you started, at least. }}
+end{center}
+lipsum[1]
+
+begin{thebibliography}{9}
+bibitem{A01} A. Author. emph{Alpha}. 2011.
+end{thebibliography}
+
+end{document}
+	
+documentclass{article}
+
+usepackage[normalem]{ulem}
+usepackage{lipsum}
+usepackage{titlesec}
+usepackage{sectsty}
+
+allsectionsfont{sffamilyunderline}
+titleformat{section}
+{normalsizebfseriesraggedright}
+   {llap{makebox[3mm][l]{thesection}}}
+   {0em}
+   {}
+
+begin{document}
+section{This is a really long section heading and I'm proud of it}
+lipsum[1]
+end{document}</p></body></html>

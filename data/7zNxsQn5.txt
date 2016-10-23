@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<?xml version="1.0"?><html><body><card_v2 exportversion="1">
+	<filename text="PSYCHIC_INTRUSION_CW_373695"></filename>
+	<cardname text="PSYCHIC_INTRUSION"></cardname>
+	<title>
+		<localised_text languagecode="en-US"></localised_text>
+		<localised_text languagecode="fr-FR"></localised_text>
+		<localised_text languagecode="es-ES"></localised_text>
+		<localised_text languagecode="de-DE"></localised_text>
+		<localised_text languagecode="it-IT"></localised_text>
+		<localised_text languagecode="jp-JA"></localised_text>
+		<localised_text languagecode="ko-KR"></localised_text>
+		<localised_text languagecode="ru-RU"></localised_text>
+		<localised_text languagecode="pt-BR"></localised_text>
+		<localised_text languagecode="zh-CN"></localised_text>
+		<localised_text languagecode="zh-HK"></localised_text>
+	</title>
+	<multiverseid value="373695"></multiverseid>
+	<artid value="PSYCHIC_INTRUSION"></artid>
+	<artist name="Jaime Jones"></artist>
+	<casting_cost cost="{3}{U}{B}"></casting_cost>
+	<type metaname="Sorcery"></type>
+	<expansion value="THS"></expansion>
+	<rarity metaname="R"></rarity>
+ 	<spell_ability linked_ability_group="1">
+		<localised_text languagecode="en-US"></localised_text>
+		<localised_text languagecode="fr-FR"></localised_text>
+		<localised_text languagecode="es-ES"></localised_text>
+		<localised_text languagecode="de-DE"></localised_text>
+		<localised_text languagecode="it-IT"></localised_text>
+		<localised_text languagecode="jp-JA"></localised_text>
+		<localised_text languagecode="ko-KR"></localised_text>
+		<localised_text languagecode="ru-RU"></localised_text>
+		<localised_text languagecode="pt-BR"></localised_text>
+		<localised_text languagecode="zh-CN"></localised_text>
+		<localised_text languagecode="zh-HK"></localised_text>
+		<target tag="SPL_CARD_QUERY_CHOOSE_OPPONENT" definition="0" compartment="0" count="1"></target>
+		<target_definition id="0">
+			local filter = ClearFilter()
+			filter:SetFilterType( FILTER_TYPE_PLAYERS )
+			filter:Add( FE_TEAM, OP_NOT, EffectController():GetTeam() )
+		</target_definition>
+		<resolution_time_action>
+			local target_player = EffectDC():Get_Targets(0) and EffectDC():Get_Targets(0):Get_PlayerPtr(0)
+			if target_player ~= nil then
+				target_player:RevealHand()
+			end
+		</resolution_time_action>
+		<resolution_time_action>
+			EffectDC():Set_Int(33, 0)
+			EffectDC():Set_Int(66, 0)
+			EffectDC():Set_Int(99, 0)
+			local target_player = EffectDC():Get_Targets(0) and EffectDC():Get_Targets(0):Get_PlayerPtr(0)
+			if target_player:Hand_Count() == 0 then
+				EffectDC():Set_Int(66, 1)
+			end
+			if target_player:Graveyard_Count() == 0 then
+				EffectDC():Set_Int(99, 1)
+			end
+			if target_player ~= nil and EffectDC():Get_Int(66) ~= 1 and EffectDC():Get_Int(99) ~= 1 then
+				EffectController():BeginNewMultipleChoice()
+					EffectController():AddMultipleChoiceAnswer( "SPL_CARD_QUERY_EXILE_CARD_FROM_TARGET_PLAYERS_HAND" )
+					EffectController():AddMultipleChoiceAnswer( "SPL_CARD_QUERY_EXILE_CARD_FROM_TARGET_PLAYERS_GRAVEYARD" )
+				EffectController():AskMultipleChoiceQuestion( "SPL_CARD_QUERY_PSYCHIC_INTRUSION" )
+				EffectDC():Set_Int(33, 1)
+			end				
+		</resolution_time_action>
+		<resolution_time_action>
+			local target_player = EffectDC():Get_Targets(0) and EffectDC():Get_Targets(0):Get_PlayerPtr(0)
+			if EffectDC():Get_Int(33) == 1 then
+				if target_player ~= nil then
+					local filter = ClearFilter()
+					if EffectController():GetMultipleChoiceResult() == 0 then
+						filter:SetZone( ZONE_HAND, target_player )
+					end	
+					if EffectController():GetMultipleChoiceResult() == 1 then
+						filter:SetZone( ZONE_GRAVEYARD, target_player )
+					end	
+					filter:Add( FE_TYPE, OP_NOT, CARD_TYPE_LAND )
+					EffectController():ChooseItem( "SPL_CARD_QUERY_CHOOSE_CARD_TO_EXILE", EffectDC():Make_Targets(1), QUERY_FLAG_UP_TO )
+				end
+			elseif EffectDC():Get_Int(33) == 0 and EffectDC():Get_Int(66) == 1 then
+				if target_player ~= nil then
+					local filter = ClearFilter()
+					filter:SetZone( ZONE_GRAVEYARD, target_player )
+					filter:Add( FE_TYPE, OP_NOT, CARD_TYPE_LAND )
+					EffectController():ChooseItem( "SPL_CARD_QUERY_CHOOSE_CARD_TO_EXILE", EffectDC():Make_Targets(1), QUERY_FLAG_UP_TO )
+				end	
+			elseif EffectDC():Get_Int(33) == 0 and EffectDC():Get_Int(99) == 1 then
+				if target_player ~= nil then
+					local filter = ClearFilter()
+					filter:SetZone( ZONE_HAND, target_player )
+					filter:Add( FE_TYPE, OP_NOT, CARD_TYPE_LAND )
+					EffectController():ChooseItem( "SPL_CARD_QUERY_CHOOSE_CARD_TO_EXILE", EffectDC():Make_Targets(1), QUERY_FLAG_UP_TO )
+				end
+			end
+		</resolution_time_action>
+		<resolution_time_action>
+			local target_player = EffectDC():Get_Targets(0) and EffectDC():Get_Targets(0):Get_PlayerPtr(0)
+			local target_card = EffectDC():Get_Targets(1) and EffectDC():Get_Targets(1):Get_CardPtr(0)
+			if target_player ~= nil and target_card ~= nil then
+				EffectDC():Set_CardPtr(2, target_card)
+				EffectDC():Protect_CardPtr(2)
+				local cmc = target_card:GetConvertedManaCost()
+				target_card:Exile()
+				LinkedDC():Set_Int(66, cmc)
+			end
+		</resolution_time_action>
+		<continuous_action layer="8">
+			local Card = EffectDC():Get_CardPtr(2)
+			if Card ~= nil then
+				Card:GetCurrentCharacteristics():GrantAbility(3)
+			end
+		</continuous_action>
+		<duration>
+			return EffectDC():Get_CardPtr(2) == nil or EffectDC():Get_CardPtr(2):GetZone() ~= ZONE_EXILE
+		</duration>
+	</spell_ability>
+	<utility_ability linked_ability_group="1" resource_id="3" qualifier="Alternate" origin_controller_can_use="1" active_zone="ZONE_EXILE">
+		<localised_text languagecode="en-US"></localised_text>
+		<localised_text languagecode="fr-FR"></localised_text>
+		<localised_text languagecode="es-ES"></localised_text>
+		<localised_text languagecode="de-DE"></localised_text>
+		<localised_text languagecode="it-IT"></localised_text>
+		<localised_text languagecode="jp-JA"></localised_text>
+		<localised_text languagecode="ko-KR"></localised_text>
+		<localised_text languagecode="ru-RU"></localised_text>
+		<localised_text languagecode="pt-BR"></localised_text>
+		<cost type="generic">
+			<prerequisite>
+				return true
+			</prerequisite>
+			<resolution_time_action>
+				local cmc = EffectSource():GetConvertedManaCost()
+				EffectController():PayManaCost(cmc)
+			</resolution_time_action>
+		</cost>
+			<!-- <RESOLUTION_TIME_ACTION>
+				local cmc = LinkedDC():Get_Int(66)
+				local cmc_cost = "{"..cmc.."}"
+				EffectController():PayManaCost(cmc_cost)
+			</RESOLUTION_TIME_ACTION> -->
+		<!-- <COST mana_cost="*" type="Mana" /> -->
+		<!-- <COST type="Generic"> -->
+	</utility_ability>
+	<author></author>
+	<editors></editors>
+	<date></date>
+</card_v2></body></html>

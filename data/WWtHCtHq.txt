@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using System;
+
+namespace Tasks
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            // input
+
+            var rangesCount = int.Parse(Console.ReadLine());
+            var ranges = new int[rangesCount, 2];
+
+            for (var i = 0; i &lt; rangesCount; i++)
+            {
+                var line = Console.ReadLine();
+                var lineSplited = line.Split(' ');
+
+                ranges[i, 0] = int.Parse(lineSplited[0]);
+                ranges[i, 1] = int.Parse(lineSplited[1]);
+            }
+
+            // output
+
+            for (var i = 0; i &lt; rangesCount; i++)
+            {
+                var m = ranges[i, 0];
+                var n = ranges[i, 1];
+
+                for (var j = m; j &lt;= n; j++)
+                {
+                    if (IsPrime(j))
+                    {
+                        Console.WriteLine(j);
+                    }
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        private static bool IsPrime(int number)
+        {
+            if (number == 2) return true; 
+            if (number == 1) return false;
+
+            var boundary = (int) Math.Floor(Math.Sqrt(number));
+
+            for (var i = 2; i &lt;= boundary; i++)
+            {
+                if (number % i == 0) return false;
+            }
+
+            return true;
+        }
+    }
+}</p></body></html>

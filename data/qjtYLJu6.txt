@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package de.puja.mod.mods;
+
+import net.minecraft.network.play.client.C03PacketPlayer;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.MovingObjectPosition.MovingObjectType;
+import net.minecraft.util.Vec3;
+
+import org.lwjgl.input.Keyboard;
+
+import de.puja.event.Event;
+import de.puja.event.events.EventLivingUpdate;
+import de.puja.mod.Module;
+
+public class Teleport extends Module {
+	
+	public static boolean enabled;
+	public boolean t = true;
+	double x,y,z;
+
+	public Teleport() {
+		super("Teleport", Keyboard.KEY_V, 0xFFFF49);
+	}
+
+	@Override
+	public void onEnable() {
+		enabled = true;
+	}
+
+	@Override
+	public void onDisable() {
+		enabled = false;
+	}
+
+	@Override
+	public void onEvent(Event e) {
+		if(!this.isAct) return;
+			if(e instanceof EventLivingUpdate) {
+				if(mc.gameSettings.keyBindUseItem.getIsKeyPressed()) {
+					if(t) {
+						
+						if(mc.objectMouseOver.typeOfHit == MovingObjectType.ENTITY) return;
+						
+						Vec3 v = mc.objectMouseOver.hitVec;
+						
+						x = v.xCoord;
+						y = v.yCoord + 1;
+						z = v.zCoord;
+						
+						mc.thePlayer.addChatComponentMessage(new ChatComponentText("&sect;6Postition [X: &sect;c" + (int)x + "&sect;6, Y: &sect;c" + (int)y + "&sect;6, Z: &sect;c" + (int)z + "&sect;6] gesetzt. Dr&uuml;cke SNEAK um dich &sect;6zu &sect;6teleportieren."));
+						
+						t = false;
+					}
+				}
+				
+				if(mc.gameSettings.keyBindSneak.getIsKeyPressed()) {
+					t = true;
+					
+//					mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(mc.thePlayer.posX, mc.thePlayer.posY + 1, mc.thePlayer.posZ, true));
+//					mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(x, mc.thePlayer.posY - 0.2, z, true));
+//					mc.thePlayer.setPosition(x, y, z);
+//					mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(x, y - 0.5, z, true));
+//					mc.thePlayer.sendQueue.addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(x, mc.thePlayer.posY + 1, z, true));
+					
+					mc.getNetHandler().addToSendQueue(new C03PacketPlayer.C04PacketPlayerPosition(x, y + 0.5f, z, true));
+		            mc.thePlayer.setPosition(x, y + 0.5f, z);
+					
+				}
+				
+			}
+	}
+
+}</p></body></html>

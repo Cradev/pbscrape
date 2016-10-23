@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>ArrayAdapter&gt; adapter =
+        ArrayAdapter.createFromResource(this, R.array.importance_list, android.R.layout.simple_spinner_item);
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+spinner.setAdapter(adapter);
+
+
+Log.v("&#1080;&#1090;&#1077;&#1084;","item = "+spinner.getSelectedItem().toString());
+switch (spinner.getSelectedItem().toString()) {
+
+    case "0":
+        Log.v("&#1080;&#1090;&#1077;&#1084;","item = 0");
+        intent = new Intent();
+        intent.putExtra("importance", "no_matter");
+
+        break;
+    case "1":
+        Log.v("&#1080;&#1090;&#1077;&#1084;","item = 1");
+        intent = new Intent();
+        intent.putExtra("importance", "green");
+        Log.v("&#1080;&#1090;&#1077;&#1084;","item = 2");
+        break;
+    case "2":
+        intent = new Intent();
+        intent.putExtra("importance", "yellow");
+        Log.v("&#1080;&#1090;&#1077;&#1084;","item = 3");
+        break;
+    case "3":
+        intent = new Intent();
+        intent.putExtra("importance", "red");
+        Log.v("&#1080;&#1090;&#1077;&#1084;","item = 4");
+        break;
+    default:
+        intent = new Intent();
+        intent.putExtra("importance", "no_matter");
+        Log.v("&#1080;&#1090;&#1077;&#1084;","&#1076;&#1077;&#1092;&#1086;&#1083;&#1090;");
+        break;
+}</p></body></html>

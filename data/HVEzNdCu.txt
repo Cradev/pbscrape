@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>private void PurgeListOfStudies(ListView.ListViewItemCollection lvic)
+{
+    /// process items in the list...
+}
+	
+PurgeListOfStudies(myStudiesPageCurrent.ListView.Items);
+	
+PurgeListOfStudies(myStudiesPageCurrent.ListView.SelectedItems);
+	
+private void PurgeListOfStudies(IEnumerable items)
+{
+    foreach(MyType currentItem in items) //implicit casting to desired type
+    {
+        // process current item in the list...
+    }
+}
+	
+private void PurgeListOfStudies(IEnumerable<listviewitem> items)
+{
+    /// process items in the list...
+}
+	
+PurgeListOfStudies(myStudiesPageCurrent.ListView.Items.OfType<listviewitem>());
+	
+PurgeListOfStudies(myStudiesPageCurrent.ListView.SelectedItems.OfType<listviewitem>());</listviewitem></listviewitem></listviewitem></p></body></html>

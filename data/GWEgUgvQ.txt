@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>[Rendering]
+EffectsQuality=2
+OverallQuality=-1
+TextureQuality=3
+ShadowQuality=0
+FloraQuality=1
+RenderDistance=1100.000000
+UseDepthOfField=0.000000
+Gamma=0.000000
+MaximumFPS=-1
+UseLod0a=1
+Smoothing=0
+SpeedTreeLOD=0
+ModelQuality=3
+FogShadowsEnable=0
+AO=0
+InteriorLighting=0
+VerticalFOV=69
+HoizontalFOV=67
+LightingQuality=0
+ParticleLOD=2
+VSync=0</p></body></html>

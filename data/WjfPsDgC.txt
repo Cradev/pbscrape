@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>first_line = [int(item) for item in input().strip().split(" ")]
+
+N = first_line[0]
+seqList = [[] for i in range(N)]
+lastAns = 0
+
+def query1(x,y):
+    global N, seqList, lastAns
+    seqList[(x^lastAns) % N].append(y)
+    
+def query2(x,y):
+    global N, seqList, lastAns
+    if len(seqList[(x^lastAns) % N]) != 0:
+        temp = y%len(seqList[(x^lastAns) % N])
+        lastAns = seqList[(x^lastAns) % N][temp]
+    else:
+        temp = y
+        lastAns = seqList[(x^lastAns) % N][temp]
+    print (lastAns)
+    
+
+queries = [input().strip().split(" ") for i in range(first_line[1])]
+
+[query1(int(queries[i][1]), int(queries[i][2])) if int(queries[i][0]) == 1 else query2(int(queries[i][1]), int(queries[i][2])) for i in range(len(queries))]</p></body></html>

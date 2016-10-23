@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Metagross-Mega @ Metagrossite  
+Ability: Tough Claws  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Ice Punch  
+- Earthquake  
+- Meteor Mash  
+- Zen Headbutt  
+
+Hydreigon @ Choice Scarf  
+Ability: Levitate  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- U-turn  
+- Draco Meteor  
+- Dark Pulse  
+- Earth Power  
+
+Klefki @ Leftovers  
+Ability: Prankster  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Spikes  
+- Thunder Wave  
+- Flash Cannon  
+- Magnet Rise  
+
+Clefable @ Life Orb  
+Ability: Magic Guard  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Modest Nature  
+IVs: 1 Atk / 30 SpA / 30 SpD  
+- Moonblast  
+- Soft-Boiled  
+- Hidden Power [Ground]  
+- Flamethrower  
+
+Magnezone @ Air Balloon  
+Ability: Magnet Pull  
+EVs: 128 HP / 252 SpA / 128 Spe  
+Modest Nature  
+IVs: 0 Atk / 30 SpA / 30 Spe  
+- Hidden Power [Fire]  
+- Flash Cannon  
+- Thunderbolt  
+- Magnet Rise  
+
+Tyranitar @ Chople Berry  
+Ability: Sand Stream  
+EVs: 248 HP / 80 Def / 180 SpD  
+Relaxed Nature  
+- Stealth Rock  
+- Stone Edge  
+- Pursuit  
+- Ice Beam</p></body></html>

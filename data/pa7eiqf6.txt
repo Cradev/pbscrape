@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><form action="lockout.php" method="post">
+             <?php $stmt = $conn->("SELECT * FROM rob.members");
+              $stmt-&gt;execute();
+              $rowCount = $stmt-&gt;rowCount();
+              for ($i = 1; $i &lt; $rowCount; $i++) {
+                $lastSuccessIP = $conn-&gt;prepare("SELECT ip FROM rob.members WHERE userid = $i");
+                $lastSuccessIP-&gt;execute();
+                $lastFailIP = $conn-&gt;prepare("SELECT ip FROM rob.login_attempts WHERE userid = $i");
+                $lastFailIP-&gt;execute();
+                $isLocked = $conn-&gt;prepare("SELECT locked FROM rob.members WHERE userid = $i");
+                $islocked-&gt;execute();
+
+                if ($lastSuccessIP != $lastFailIP &amp;&amp; !$isLocked) {
+                  $stmt = $conn-&gt;prepare("SELECT * FROM rob.members WHERE userid = $i");
+                  $stmt-&gt;execute();
+
+                  $row = $stmt-&gt;fetch(PDO::FETCH_ASSOC);
+                  printf("
+                  <div class='\"form-group\"'>
+                    <label>" . row['email'] . "</label>
+                    <label>Failed Attempts: " . row['failed_attempts'] . "</label>
+                    <button type='\"submit\"' class='\"btn' btn-default value='\"Lock\"'></button>
+                  ");
+                }
+              }
+              ?&gt;
+            </div>
+</form></body></html>

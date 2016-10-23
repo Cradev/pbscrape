@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>public class GenericListEnumerator<x> : IEnumerator<x> where X : IComparable<x>
+    {
+        private GenericList<x> _collection = new GenericList<x>();
+        private int index;
+        private X _current;
+
+        public GenericListEnumerator()
+        {
+
+        }
+
+        public GenericListEnumerator(GenericList<x> collection)
+        {
+            _collection = collection;
+            index = -1;
+            _current = default(X);
+        }
+
+
+
+        public X Current
+        {
+            get
+            {
+                return _current;
+            }
+        }
+
+
+        object IEnumerator.Current
+        {
+            get
+            {
+                return _current;
+            }
+        }
+        public void Dispose()
+        {
+            _collection = null;
+            _current = default(X);
+            index = -1;
+        }
+
+        public bool MoveNext()
+        {
+            if (++index &gt;= _collection.Count)
+            {
+                return false;
+            }
+            else
+            {
+                _current = _collection.GetElement(index);
+            }
+            return true;
+        }
+
+        public void Reset()
+        {
+            _current = default(X);
+            index = -1;
+        }
+    }
+
+    public class Test
+    {
+        public static void ListExample(IIntegerList listOfIntegers)
+        {
+            listOfIntegers.Add(1);
+            listOfIntegers.Add(2);
+            listOfIntegers.Add(3);
+            listOfIntegers.Add(4);
+            listOfIntegers.Add(5);
+
+            for (int i = 0; i &lt; listOfIntegers.Count; i++)
+            {
+                Console.WriteLine(listOfIntegers.GetElement(i));
+            }
+
+            listOfIntegers.RemoveAt(0);
+            listOfIntegers.Remove(5);
+
+            Console.WriteLine();
+            for (int i = 0; i &lt; listOfIntegers.Count; i++)
+            {
+                Console.WriteLine(listOfIntegers.GetElement(i));
+            }
+            Console.WriteLine();
+            Console.WriteLine(listOfIntegers.Count);
+            Console.WriteLine(listOfIntegers.Remove(100));
+            Console.WriteLine(listOfIntegers.RemoveAt(5));
+            listOfIntegers.Clear();
+            Console.WriteLine(listOfIntegers.Count);
+
+            IGenericList<string> stringList = new GenericList<string>();
+            stringList.Add("Hello");
+            stringList.Add("World");
+            stringList.Add("!");
+
+            Console.WriteLine();
+            foreach (string value in stringList)
+            {
+                Console.WriteLine(value);
+            }
+        }
+    }
+
+}</string></string></x></x></x></x></x></x></p></body></html>

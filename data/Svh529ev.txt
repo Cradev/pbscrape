@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>package net.trentv.stattrak;
+
+import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.entity.Entity;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.nbt.NBTTagList;
+import net.minecraft.nbt.NBTTagString;
+import net.minecraft.util.text.translation.I18n;
+import net.minecraft.util.text.translation.LanguageMap;
+import net.minecraftforge.event.entity.living.LivingDeathEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+public class StatTrakEvents
+{
+	@SubscribeEvent
+	public void onLivingDeathEvent(LivingDeathEvent event)
+	{
+		if(!event.getEntity().getEntityWorld().isRemote)
+		{
+			Entity attacker = event.getSource().getEntity();
+			if(attacker != null)
+			{
+				Iterable<itemstack> b = attacker.getHeldEquipment();
+				ItemStack heldItem = b.iterator().next();
+				if(heldItem != null)
+				{
+					if(EnchantmentHelper.getEnchantmentLevel(StatTrak.STATTRAK, heldItem) &gt; 0)
+					{
+						if(heldItem.hasTagCompound())
+						{
+							int stattrakKillCount = (int) heldItem.getTagCompound().getInteger("stattrak-tracker") + 1;
+							heldItem.getTagCompound().setInteger("stattrak-tracker", stattrakKillCount);
+							NBTTagList loreTagList = new NBTTagList();
+							loreTagList.appendTag(new NBTTagString(I18n.translateToLocal("stattrak-killcount") + stattrakKillCount));
+							NBTTagCompound displayTag = heldItem.getTagCompound().getCompoundTag("display");
+							displayTag.setTag("Lore", loreTagList);
+							heldItem.getTagCompound().setTag("display", displayTag);
+						}
+					}
+				}
+			}
+		}
+	}
+}</itemstack></p></body></html>

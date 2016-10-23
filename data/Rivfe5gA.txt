@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>error CS1061: 'IEnumerable<bool>' does not contain a definition for 'AsParallel' and no extension method 'AsParallel' accepting a first argument of type 'IEnumerable<bool>' could be found (are you missing a using directive or an assembly reference?)
+	
+using System.Collections.Generic;
+using System.Linq;
+
+namespace PclTest
+{
+    public class Class1
+    {
+        public void Test()
+        {
+            List<string> list = new List<string> {"foo", "bar"};
+
+            var result = list.Select(x =&gt; x == "foo").AsParallel().ToList();
+
+            System.Diagnostics.Debug.Assert(result.Count == 1);
+
+        }
+    }
+}</string></string></bool></bool></p></body></html>

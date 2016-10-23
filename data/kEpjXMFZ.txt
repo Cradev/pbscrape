@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>&lt;&lt; NDSolve`FEM`  
+
+&lambda; = 0.53; k0 = 2 &pi;/&lambda;; R = &lambda;;
+
+mesh = ToElementMesh[FullRegion[2], {{0, R}, {0, R}}, 
+   "MaxCellMeasure" -&gt; 0.0005];
+
+mesh["Wireframe"]
+
+op = Most[
+  Curl[Curl[{u[x, y], v[x, y], 0}, {x, y, z}], {x, y, z}] - 
+   k0^2 {u[x, y], v[x, y], 0}]
+
+pde = op == {0, 0};
+
+Subscript[&Gamma;, D] = 
+  DirichletCondition[{u[x, y] == 0., v[x, y] == Exp[I k0 x]}, True];
+
+{us, vs} = 
+ NDSolveValue[{pde, Subscript[&Gamma;, D]}, {u, 
+   v}, {x, y} &isin; mesh, 
+  Method -&gt; {"FiniteElement", 
+    "InterpolationOrder" -&gt; {u -&gt; 1, v -&gt; 2}}]
+
+DensityPlot[Re[vs[x, y]], {x, y} &isin; mesh, 
+ ColorFunction -&gt; "Rainbow", PlotLegends -&gt; Automatic, 
+ PlotPoints -&gt; 50, PlotRange -&gt; All]</p></body></html>

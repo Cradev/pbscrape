@@ -1,0 +1,8 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>documentclass{article}
+
+newcommand{foo}[1]{a_#1}
+
+begin{document}
+$foo{hat{1}}$
+end{document}</p></body></html>

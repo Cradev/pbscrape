@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>#Lab 6: Family Relationships
+
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(RColorBrewer)
+library(scales)
+
+#Program to print plots
+printplot % filter(!(YEAR &lt; 1960 &amp; STATEFIP %in% c(2,15)))
+
+#Filter out people living in group quarters 
+ipums2 % filter(GQ==1)
+
+#Assign regions (Lab 3 designations, AK/HI in West)
+ipums2 % mutate(Region=factor(ifelse(STATEFIP %in% c(9,23,25,33,34,36,42,44,50),1,
+                                                 ifelse(STATEFIP %in% c(17,18,19,20,26,27,29,31,38,39,46,55),3,
+                                                        ifelse(STATEFIP %in% c(2,4,6,8,15,16,30,32,35,41,49,53,56),4,2))),
+                                          labels=c('Northeast','South','Midwest','West')))
+
+#1. Percent of households headed by: unmarried people, couples of different races, couples of same race
+
+#Create a data frame for heads, select only relevant variables, rename RACE
+heads % filter(RELATE==1) %&gt;%
+  select(YEAR,SERIAL,SPLOC,RACE,Region,HHWT) %&gt;% rename(Race1=RACE)
+
+#Create a data frame for spouses, select only relevant variables, rename RACE
+spouses % filter(RELATE==2) %&gt;%
+  select(YEAR,SERIAL,PERNUM,RACE) %&gt;% rename(Race2=RACE)
+
+#Join husbands/wives data frames by YEAR and SERIAL, SPLOC=PERNUM so wife ID matched to husband
+couples % mutate(Marital=factor(ifelse(SPLOC==0,1,ifelse(Race1!=Race2,2,3)),
+                                             labels=c('Head Unmarried','Different Races','Same Race')))
+
+#Compute percentages
+households % group_by(YEAR,Region) %&gt;% summarise(Number1=sum(HHWT))
+hhmarital % group_by(YEAR,Region,Marital) %&gt;% summarise(Number2=sum(HHWT))
+pctmarital % mutate(Percent=Number2/Number1*100)
+
+#Create spine graphs
+graph1 % filter(AGE&lt;=18 &amp; (POPLOC&gt;0 | MOMLOC&gt;0)) %&gt;%
+  select(YEAR,SERIAL,POPLOC,MOMLOC,PERNUM,Region,PERWT)
+
+#Create a data frame for fathers, select only relevant variables, rename RACE
+fathers % filter(SEX==1) %&gt;% 
+  select(YEAR,SERIAL,PERNUM,RACE) %&gt;% rename(Race1=RACE)
+
+#Create a data frame for fathers, select only relevant variables, rename RACE
+mothers % filter(SEX==2) %&gt;% 
+  select(YEAR,SERIAL,PERNUM,RACE) %&gt;% rename(Race2=RACE)
+
+#Join children, fathers, and mothers data frames by YEAR and SERIAL
+#POPLOC=PERNUM so father ID matched to POPLOC and MOMLOC=PERNUM so mother ID matched to MOMLOC
+parents % left_join(mothers,by=c('YEAR','SERIAL','MOMLOC'='PERNUM'))
+
+#Create variable for parental status (single parent, parents of different race, or parents of same race)
+parents % mutate(Parental=factor(ifelse(POPLOC==0 | MOMLOC==0,1,ifelse(Race1!=Race2,2,3)),
+                                              labels=c('Only One Parent','Different Races','Same Race')))
+
+#Compute percentages
+children2 % group_by(YEAR,Region) %&gt;% summarise(Number1=sum(PERWT))
+parents2 % group_by(YEAR,Region,Parental) %&gt;% summarise(Number2=sum(PERWT))
+pctparental % mutate(Percent=Number2/Number1*100)
+
+#Create spine graphs
+graph2 </p></body></html>

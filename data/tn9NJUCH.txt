@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*
+* BMI
+* Autor: Dominik Wo&#378;niczka (c) 2016
+* Numer albumu: 195324
+* Grupa dzieka&#324;ska: KrDZIs2015
+*
+* Program oblicza wska&#378;nik masy cia&#322;a BMI na podstawie podanego wzrostu w metrach oraz masy cia&#322;a w kg. 
+*
+* Uruchomienie: java BMI
+* 
+*/
+
+import java.util.Scanner;
+
+public class BMI {
+		public static void main(String[] args){
+			double BMI; // deklaracja zmiennej bedacej wskaznikiem BMI
+			Scanner input = new Scanner(System.in); // wprowadzamy dane do naszego programu
+			System.out.println("Prosz&#281; poda&#263; wzrost w m: "); // wypisanie polecenia odnosnie wzrostu
+			double height = input.nextDouble(); // deklaracja zmiennej od wzrostu
+			System.out.println("Prosz&#281; poda&#263; wag&#281; w kg"); // wypisanie polecenia odno&#347;nie wagi
+			double weight = input.nextDouble(); // deklaracja zmiennej od wagi
+			
+				BMI = (weight/(height*height)); // deklaracja obliczania warto&#347;ci BMI
+				System.out.println ("Twoje BMI to:" + BMI); // wyswietlenie wartosci BMI 
+				
+					if (BMI&gt;=18.5) // w tym miejscu formu&#322;a wy&#347;wietla w jakim przedziale jest nasze BMI
+					System.out.println ("BMI prawidlowe"); // wypisanie wyniku
+						else{
+							if (BMI&gt;=25.0)
+								System.out.println ("BMI za wysokie - nadwaga"); // wypisanie wyniku
+									else
+										System.out.println ("Twoje BMI jest zbyt niskie - niedowaga"); // wypisanie wyniku
+						}
+			}
+		}</p></body></html>

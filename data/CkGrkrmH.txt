@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>Infiltration report Castle_black
+
+Townname:	Castle_black
+Mayorname:	Ice_eve
+Level:	36
+Hero:	General Ironside
+Operation level:	7
+Defcon level:	Normal
+
+
+	
+
+Cash:	46637
+Food:	484322
+Wood:	145376
+Stone:	139881
+Fuel:	58414
+Power:	1000
+Population:	4035
+
+
+[Hunting cabin]
+70
+		
+[Farm]
+640
+		
+[Woodcutter]
+301
+		
+[Stone quarry]
+232
+		
+[Biomass powerplant]
+22
+		
+[Refinery]
+6
+		
+[Windmill]
+10
+
+[Warehouse]
+11
+		
+[House]
+0
+		
+[Apartment]
+0
+		
+[Flat]
+20
+		
+[Tavern]
+5
+		
+[Casino]
+7
+	
+[Garage]
+7
+
+[Storage]
+1
+		
+[Vault]
+3
+
+[Sentry]
+6
+		
+[Checkpost]
+51
+		
+[Trench]
+36
+		
+[Roadblock]
+23
+		
+[Bunker]
+39
+
+[Militia]
+0
+		
+[Policemen]
+0
+		
+[Vehicle]
+374
+		
+[Snipers]
+511
+		
+[Bikers]
+235
+	
+[Soldiers]
+975
+		
+[Mortar teams]
+965
+	
+
+
+
+From the General staff, week 503</p></body></html>

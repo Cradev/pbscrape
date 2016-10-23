@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace PBServer.Network.Game.Packets.ServerPackets
+{
+    public class SM_INVENTORY_ITEM_EQUIP : SendBaseGamePacket
+    {
+        private int _objId;
+
+        private int item_id;
+
+        private int _type;
+
+        private Account _p;
+
+        public SM_INVENTORY_ITEM_EQUIP(int id, int type, Account player)
+        {
+            makeme();
+            _objId = id;
+            _type = type;
+            _p = player;
+        }
+
+        protected internal override void write()
+        {
+            DateTime now;
+            writeH(535);
+            if (_type != 2)
+            {
+                writeD(1);
+                now = DateTime.Now;
+                string s = now.ToString("yyMMddHHmm");
+                writeD(Convert.ToInt32(now.ToString("yyMMddHHmm")));
+                writeD(1);
+                writeD(0);
+                writeD(0);
+                writeC(1);
+                writeD(0);
+            }
+            else
+            {
+                if (DAOM.getInstance().getItem(_objId) == null)
+                {
+                    item_id = 0;
+                }
+                else
+                {
+                    item_id = DAOM.getInstance().getItem(_objId).id;
+                }
+                writeD(1);
+                now = DateTime.Now;
+                writeD(Convert.ToInt32(now.ToString("yyMMddHHmm")));
+                writeQ(_objId);
+                if ((item_id &gt;= 1301510000 ? true : item_id &lt;= 1300002000))
+                {
+                    writeD(item_id);
+                    writeC(2);
+                    int count = 86400;
+                    if (DAOM.getInstance().getItem(_objId) != null)
+                    {
+                        count = DAOM.getInstance().getItem(_objId).count;
+                    }
+                    int days = count / 86400;
+                    DateTime data = new DateTime();
+                    data.AddDays(days);
+                    int tFinal = Convert.ToInt32(data.ToString("yyMMddHHmm"));
+                    writeD(tFinal);
+                }
+                else
+                {
+                    writeD(item_id);
+                    writeC(1);
+                    writeD(1);
+                }
+            }
+        }
+    }
+}</p></body></html>

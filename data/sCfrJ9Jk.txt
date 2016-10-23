@@ -1,0 +1,880 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>AzuL = {
+	
+	-- AzuL Tabs v1.0.0
+	-- Framework/Animation by Autumn
+	-- Commands by AzuLX
+	
+	-------------------------------	
+	NAME = "AzuLTabs";
+	VERSION = "2.0";
+	-------------------------------
+	
+	-- Configure all aspects of the script below
+	-- Make sure to never change names of important values
+	-- Report bugs in core functionality to Autumn
+	
+	Options = {
+		CommandPrefix = ";";
+		CommandDelimiter = "/";
+		DefaultTabLife = 15;
+	};
+	
+	Admins = {
+		["Xeradius"] = true;
+	};
+	
+	Commands = {
+		
+		cmds = {
+			admin = false;
+			desc = "List all commands";
+			func = function(plr, args)
+				AzuL.Dismiss(plr)
+				for cmdName, cmdTbl in next, AzuL.Commands do
+					AzuL.Output(plr, cmdName, 30, function()
+						AzuL.Dismiss(plr)
+						AzuL.Output(plr, "Name: " .. cmdName, 30)
+						AzuL.Output(plr, "Description: " .. cmdTbl.desc, 30)
+						AzuL.Output(plr, "Admin only: " .. (cmdTbl.admin and "Yes" or "No"), 30)
+						AzuL.Output(plr, "Back", 30, AzuL.Commands.cmds.func, {
+							plr,
+							args
+						})
+					end, {}, true)
+				end
+				AzuL.Output(plr, "Dismiss", 30, AzuL.Dismiss, {
+					plr
+				})
+			end
+		};
+		
+		dt = {
+			admin = false;
+			desc = "Dismiss all tabs";
+			func = function(plr, args)
+				AzuL.Dismiss(plr)
+			end
+		};
+		
+		kill = {
+			admin = true;
+			desc = "Kill a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid.Health = 0
+				AzuL.Output(plr, "Killed player " .. targPlr.Name .. "!")
+			end
+		};
+    
+		noclip = {
+			admin = true;
+			desc = "noclip localplayer";
+			func = function(plr, args)
+				AzuL.Variables.NoClipEnabled = true
+				AzuL.Output(plr, "Noclip has been given!", 5)
+			end
+		};
+
+		clip = {
+			admin = true;
+			desc = "clips localplayer";
+			func = function(plr, args)
+				AzuL.Variables.NoClipEnabled = false
+				AzuL.Output(plr, "LocalPlayer is now clipped.", 5)
+			end
+		};
+    
+		jesusfly = {
+			admin = true;
+			desc = "makes plr fly like jesus!";
+			func = function(plr, args)
+				AzuL.Variables.JesusflyEnabled = true
+				AzuL.Output(plr, "JesusFly is activated! Fly like jesus!", 5)
+			end
+		};
+		nofly = {
+			admin = true;
+			desc = "Stops Jesus' magical effect.";
+			func = function(plr, args)
+				AzuL.Variables.JesusflyEnabled = false
+				AzuL.Output(plr, "JesusFly's magical effects are disabled.", 5)
+			end
+		};
+
+		swim = {
+			admin = true;
+			desc = "Makes you swim.. In the air!";
+			func = function(plr, args)
+				AzuL.Variables.SwimEnabled = true
+				AzuL.Output(plr, "Swim is now enabled!", 5)
+			end
+		};
+		noswim = {
+			admin = true;
+			desc = "Stops the swimming";
+			func = function(plr, args)
+				AzuL.Variables.SwimEnabled = false
+				AzuL.Output(plr, "Swim is now disabled.", 5)
+			end
+		};
+		fixl = {
+			admin = true;
+			desc = "fixes the lighting";
+			func = function(plr, args)
+				game.Lighting.Ambient = Color3.new(0.5, 0.5, 0.5)
+				game.Lighting.Brightness = 1
+				game.Lighting.GlobalShadows = true
+				game.Lighting.Outlines = false
+				game.Lighting.TimeOfDay = 14
+				game.Lighting.FogEnd = 100000
+				game.Lighting.Ambient = Color3.new(0.5, 0.5, 0.5)
+				AzuL.Output(plr, "lighting Is Now Fixed!", 5)
+			end			
+		};
+		ff = {
+			admin = true;
+			desc = "gives plr a forcefield";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("ForceField", targPlr.Character)
+				AzuL.Output(plr, "Player now has a forcefield", 5)
+			end			
+		};
+
+		fire = {
+			admin = true;
+			desc = "gives plr heat";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("Fire", targPlr.Character.Torso)
+				AzuL.Output(plr, "Player has fire.", 5)
+			end
+		};
+
+		destroy = {
+			admin = true;
+			desc = "shuts down server";
+			func = function(plr, args)
+				game.Workspace:ClearAllChildren()
+				game.Workspace:Destroy()
+				game.Lighting:Destroy()
+				AzuL.Output(plr, "Server is shutdown", 5)
+			end	
+		};
+		unff = {
+			admin = true;
+			desc = "Removes the forcefield instance from player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+                for _, Obj in pairs(targPlr.Character:GetChildren()) do
+                if Obj:IsA("ForceField") then
+                Obj:Destroy()
+				AzuL.Output(plr, "Removed " ..targPlr.Name.. "'s ff!", 5)
+                else
+	            AzuL.Output(plr, "Player doesnt have ff!", 5)
+                end
+                end
+			    end
+		};
+		unfire = {
+			admin = true;
+			desc = "Removes the fire instance from player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+                for _, Obj in pairs(targPlr.Character.Torso:GetChildren()) do
+                if Obj:IsA("Fire") then
+                Obj:Destroy()
+				AzuL.Output(plr, "Removed " ..targPlr.Name.. "'s fire!", 5)
+                end
+                end
+                end
+		};
+		smoke = {
+			admin = true;
+			desc = "Gives player a smoke instance";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("Smoke", targPlr.Character.Torso)
+				AzuL.Output(plr, "Player has Smoke!", 5)
+			end
+		};
+		unsmoke = {
+			admin = true;
+			desc = "Removes the smoke instance from player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+                for _, Obj in pairs(targPlr.Character.Torso:GetChildren()) do
+                if Obj:IsA("Smoke") then
+                Obj:Destroy()
+				AzuL.Output(plr, "Removed " ..targPlr.Name.. "'s smoke!", 5)
+                end
+                end
+                end
+		};
+		sparkles = {
+			admin = true;
+			desc = "Gives player a sparkles instance";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("Sparkles", targPlr.Character.Torso)
+				AzuL.Output(plr, "Player has Sparkles", 5)
+			end
+		};
+		unsparkles = {
+			admin = true;
+			desc = "Removes the smoke instance from player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+                for _, Obj in pairs(targPlr.Character.Torso:GetChildren()) do
+                if Obj:IsA("Sparkles") then
+                Obj:Destroy()
+				AzuL.Output(plr, "Removed " ..targPlr.Name.. "'s sparkles!", 5)
+                end
+                end
+                end
+		};
+		
+		btools = {
+			admin = true;
+			desc = "Gives player a hopperbin tools";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("HopperBin", targPlr.Backpack).BinType = 2
+                Instance.new("HopperBin", targPlr.Backpack).BinType = 3
+                Instance.new("HopperBin", targPlr.Backpack).BinType = 4
+				AzuL.Output(plr, "Player has btools.", 5)
+			end
+		};
+
+		stun = {
+			admin = true;
+			desc = "Stuns a player a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid:Destroy()
+				AzuL.Output(plr, "Stunned plr " .. targPlr.Name .. "!")
+			end
+		};
+
+			god = {
+			admin = true;
+			desc = "Gods a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid.MaxHealth = math.huge
+				targPlr.Character.Humanoid.Health = math.huge
+				AzuL.Output(plr, "Godded plr " .. targPlr.Name .. "!")
+			end
+		};
+			
+		sgod = {
+			admin = true;
+			desc = "SGods a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid.MaxHealth = 100000000000
+				targPlr.Character.Humanoid.Health = 100000000000
+				AzuL.Output(plr, "SGodded " .. targPlr.Name .. "!")
+			end
+		};	
+
+		ungod = {
+			admin = true;
+			desc = "Ungods a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid.MaxHealth = 100
+				targPlr.Character.Humanoid.Health = 100
+				AzuL.Output(plr, "Ungodded " .. targPlr.Name .. "!")
+			end
+		};
+		
+		heal = {
+			admin = true;
+			desc = "heals a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Humanoid.Health = 100
+				AzuL.Output(plr, "Healed " .. targPlr.Name .. "!")
+			end
+		};
+
+
+		kick = {
+			admin = true;
+			desc = "Removes plr from workspace";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr:Remove()
+				targPlr:Remove()
+				AzuL.Output(plr, "Kicked " .. targPlr.Name .. "!")
+			end
+		};
+		
+		explode = {
+			admin = true;
+			desc = "explodes plr";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				Instance.new("Explosion", targPlr.Character).Position = targPlr.Character.Torso.Position
+				AzuL.Output(plr, "exploded " .. targPlr.Name .. "!")
+			end
+		};
+		
+		teapot = {
+			admin = true;
+			desc = "Teapot a player";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.CharacterAppearance = "http://www.roblox.com/Asset/CharacterFetch.ashx?userId=1311"
+				targPlr.Character:BreakJoints()
+				AzuL.Output(plr, "Teapotted " .. targPlr.Name .. "!")
+			end
+		};
+
+		freeze = {
+			admin = true;
+			desc = "Freezes plr";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Head.Anchored = true 
+				targPlr.Character.Torso.Anchored = true 
+				targPlr.Character["Right Arm"].Anchored = true
+				targPlr.Character["Right Leg"].Anchored = true
+				targPlr.Character["Left Arm"].Anchored = true
+				targPlr.Character["Left Leg"].Anchored = true
+				AzuL.Output(plr, "Froze " .. targPlr.Name .. "!")
+			end
+		};
+
+		thaw = {
+			admin = true;
+			desc = "Thaws plr if frozen";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				targPlr.Character.Head.Anchored = false
+				targPlr.Character.Torso.Anchored = false
+				targPlr.Character["Right Arm"].Anchored = false
+				targPlr.Character["Right Leg"].Anchored = false
+				targPlr.Character["Left Arm"].Anchored = false
+				targPlr.Character["Left Leg"].Anchored = false
+				AzuL.Output(plr, "Thawed " .. targPlr.Name .. "!")
+			end
+		};
+
+		
+		duck = {
+			admin = true;
+			desc = "Ducks plr";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+			local pchar = targPlr.Character
+
+		for i,v in pairs(pchar.Torso:GetChildren()) do
+    if v.ClassName == 'Decal' then
+         v:Destroy()
+    end
+end
+for i,v in pairs(pchar:GetChildren()) do
+    if v.ClassName == 'Hat' then
+        v:Destroy()
+    end
+end
+
+for i,v in pairs(pchar.Head:GetChildren()) do
+    if v.ClassName == 'Decal' then
+        v:Destroy()
+    end
+end
+
+local duck = Instance.new('SpecialMesh', pchar.Torso)
+duck.MeshType = 'FileMesh'
+duck.MeshId = 'http://www.roblox.com/asset/?id=9419831'
+duck.TextureId = 'http://www.roblox.com/asset/?id=9419827'
+duck.Scale = Vector3.new(5, 5, 5)
+pchar.Head.Transparency = 1
+pchar['Left Arm'].Transparency = 1
+pchar['Right Arm'].Transparency = 1
+pchar['Left Leg'].Transparency = 1
+pchar['Right Leg'].Transparency = 1
+				AzuL.Output(plr, "Ducked " .. targPlr.Name .. "!")
+			end
+		};
+
+		trump = {
+			admin = true;
+			desc = "TRUMP THE PLAYER";
+			func = function(plr, args)
+				if not args[1] or type(args[1]) ~= "string" then
+					return
+				end
+				local targPlr = AzuL.MatchPlayer(plr, args[1])
+				if not targPlr then
+					AzuL.Output(plr, "Failed to match player!")
+					return
+				end
+				if not targPlr.Character:FindFirstChild("Humanoid") then
+					return
+				end
+				for i,v in pairs (targPlr.Character:GetChildren()) do
+		if v.ClassName == 'Hat' then
+			v:Destroy()
+	end
+end
+	guiboard = Instance.new('BillboardGui')
+	guiboard.Parent = targPlr.Character.Head
+	guiboard.Adornee = targPlr.Character.Head
+	guiboard.Size=UDim2.new(2.5,0,2.5,0)
+	guiboard.StudsOffset=Vector3.new(0,0.2,0)
+	guiboard.AlwaysOnTop = true
+	pic = Instance.new('ImageLabel', guiboard)
+	pic.Image = 'rbxassetid://343377229'
+	pic.Size = UDim2.new(1,0,1,0)
+	pic.Position = UDim2.new(0,0,0,0)
+	pic.BackgroundTransparency = 1
+	targPlr.Character.Head.Transparency = 1
+				AzuL.Output(plr, "Trumped " .. targPlr.Name .. "!")
+			end
+		};
+
+		
+        	
+	
+	};
+	
+	-- Do not edit anything below
+	-- Changing core functions could result in instability
+	-- All command additions should be done using the table above
+  
+	Variables = {
+		NoClipEnabled = false;
+		JesusflyEnabled = false;
+		SwimEnabled = false;
+	};
+	
+	Tabs = {};
+	
+	GetTorso = function(char)
+		local torso
+		if char:FindFirstChild("Torso") then
+			torso = char.Torso
+		elseif char:FindFirstChild("UpperTorso") then
+			torso = char.UpperTorso
+		end
+		return torso
+	end;
+	Output = function(plr, msg, sec, func, args, nocolor)
+		local torso = AzuL.GetTorso(plr.Character)
+		if not torso then
+			return
+		end
+		local plrTabs = AzuL.Tabs[plr.Name]
+		if not plrTabs then
+			return
+		end
+		local tab = Instance.new("Part")
+		tab.Anchored = true
+		tab.CanCollide = false
+		tab.Size = Vector3.new(2, 2, 2)
+		tab.TopSurface = "Smooth"
+		tab.BottomSurface = "Smooth"
+		tab.BrickColor = BrickColor.new((func and not nocolor) and "Really black" or "Navy blue")
+		tab.Material = "Neon"
+		tab.Transparency = 0.5
+		tab.CFrame = torso.CFrame
+		local bgui = Instance.new("BillboardGui", tab)
+		bgui.Adornee = tab
+		bgui.Size = UDim2.new(10, 0, 2, 0)
+		bgui.StudsOffset = Vector3.new(0, 2.75, 0)
+		local tlabel = Instance.new("TextLabel", bgui)
+		tlabel.Text = msg or ""
+		tlabel.Font = "Arial"
+		tlabel.FontSize = "Size18"
+		tlabel.TextStrokeTransparency = .35
+		tlabel.TextStrokeColor3 = Color3.new(0, 0, 0)
+		tlabel.Size = UDim2.new(1, 0, 1, 0)
+		tlabel.TextColor3 = Color3.new(1, 1, 1)
+		tlabel.BorderColor3 = Color3.new(0, 0, 0)
+		tlabel.BackgroundTransparency = 1
+		tlabel.Font = Enum.Font.SourceSansLight
+		tlabel.BackgroundColor3 = Color3.new(1, 1, 1)
+		local cdet = Instance.new("ClickDetector", tab)
+		cdet.MouseClick:connect(function(clicker)
+			if clicker == plr then
+				if func then
+					func(unpack(args or {}))
+				else
+					for index, otab in next, plrTabs do
+						if otab == tab then
+							table.remove(plrTabs, index)
+							tab:destroy()
+						end
+					end
+				end
+			end
+		end)
+		table.insert(plrTabs, tab)
+		tab.Parent = game.Workspace
+		coroutine.wrap(function()
+			wait(sec or AzuL.Options.DefaultTabLife)
+			if not tab.Parent then
+				return
+			end
+			for index, otab in next, plrTabs do
+				if otab == tab then
+					table.remove(plrTabs, index)
+					tab:destroy()
+				end
+			end
+		end)()
+	end;
+	
+	Dismiss = function(plr)
+		local plrTabs = AzuL.Tabs[plr.Name]
+		if not plrTabs then
+			return
+		end
+		for index, tab in ipairs(plrTabs) do
+			plrTabs[index] = nil
+			tab:destroy()
+		end
+	end;
+	PlayersHandled = {};
+		
+	PlayerHandler = function(plr)
+		if not AzuL.Tabs[plr.Name] then
+			AzuL.Tabs[plr.Name] = {}
+		end
+		AzuL.PlayersHandled[plr.Name] = true
+		plr.Chatted:connect(function(msg)
+			if msg:sub(1, 1) == AzuL.Options.CommandPrefix then
+				local bet1 = AzuL.Options.CommandPrefix
+				local bet2 = AzuL.Options.CommandDelimiter
+				if #msg &lt;= #bet1 or msg:sub(1, #bet1) ~= bet1 then
+					return
+				else
+					msg = msg:sub(#bet1 + 1)
+				end
+				local args = {}
+				for arg in msg:gmatch("([^"..bet2.."]+)") do
+					table.insert(args, arg)
+				end
+				if AzuL.Commands[args[1]] then
+					local cmd = AzuL.Commands[args[1]]
+					table.remove(args, 1)
+					if cmd.admin and not (plr == game.Players.LocalPlayer or AzuL.Admins[plr.Name]) then
+						AzuL.Output(plr, "You do not have permission to execute that command!")
+					end
+					cmd.func(plr, args)
+				end
+			end
+		end)
+	end;
+	
+	PlayerRemoving = game.Players.PlayerRemoving:connect(function(plr)
+		if AzuL.PlayersHandled[plr.Name] then
+			AzuL.PlayersHandled[plr.Name] = nil
+			for _, tab in next, AzuL.Tabs[plr.Name] do
+				if tab:IsA("Part") then
+					tab:destroy()
+				end
+			end
+			AzuL.Tabs[plr.Name] = nil
+		end
+	end);
+	
+	MatchPlayer = function(caller, str)
+		if str == "me" then
+			return caller
+		end
+		local matched = {}
+		for _, plr in next, game.Players:GetPlayers() do
+			if plr.Name:sub(1, #str):lower() == str:lower() then
+				table.insert(matched, plr)
+			end
+		end
+		if #matched == 1 then
+			return matched[1]
+		end
+	end;
+	
+	Rot = 0;
+	
+	Tick = game:GetService("RunService").RenderStepped:connect(function(dt)
+		local mult = dt * 60
+		AzuL.Rot = AzuL.Rot + .1 * mult
+		for plrName, plrTabs in next, AzuL.Tabs do
+			local plr = game.Players:FindFirstChild(plrName)
+			local char = plr.Character
+			local torso = AzuL.GetTorso(char)
+			if plr and char and char.Parent and torso then
+				for index, tab in next, plrTabs do
+					local inc = (math.pi * 2 / #plrTabs) * index
+					local newcf = CFrame.Angles(0, inc - math.rad(AzuL.Rot), 0)
+					newcf = newcf * CFrame.new(7.5, math.sin(AzuL.Rot / 2 + index) / 2, 0)
+					newcf = newcf * CFrame.new(#plrTabs / 2, 0, 0)
+					newcf = CFrame.new(torso.Position) * newcf
+					tab.CFrame = tab.CFrame:lerp(newcf, .1 * mult)
+				end
+			end
+		end
+    
+		if AzuL.Variables.NoClipEnabled then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+		if AzuL.Variables.JesusflyEnabled then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(12)
+		end
+		if AzuL.Variables.SwimEnabled then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(4)
+		end    
+	end);
+
+}
+
+-- Initial tasks go below
+-- These are setup steps which will run once when the script is executed
+-- Most things can and should be done inside the AzuL table
+
+-- Connect all current players to PlayerHandler
+for _, plr in next, game:GetService("Players"):GetChildren() do
+	AzuL.PlayerHandler(plr)
+end
+
+-- Connect all future players to PlayerHandler
+PlayerAdded = game:GetService("Players").PlayerAdded:connect(AzuL.PlayerHandler)
+--Fe Checker
+
+function FE_CHECK()
+	if not workspace.FilteringEnabled then
+AzuL.Output(game.Players.LocalPlayer, "Filtering is disabled", 30)
+elseif workspace.FilteringEnabled then
+AzuL.Output(game.Players.LocalPlayer, "Filtering is ENABLED, tabs dont replicate to the server", 30)
+	end
+	end
+	
+-- Show welcome message
+repeat
+	wait()
+until game.Players.LocalPlayer.Character:FindFirstChild("Humanoid")
+local cmdNum = 0
+for _, _ in next, AzuL.Commands do
+	cmdNum = cmdNum + 1
+end
+AzuL.Output(game.Players.LocalPlayer, "Welcome to " .. AzuL.NAME .. " v" .. AzuL.VERSION .. "!", 30)
+FE_CHECK()
+AzuL.Output(game.Players.LocalPlayer, "Made by AzuLX, Autumn, Joint with help from PME and [AzuL] Broken. In memory of AzuLX.", 30)
+AzuL.Output(game.Players.LocalPlayer, "There are currently " .. cmdNum .. " commands available.", 30)
+AzuL.Output(game.Players.LocalPlayer, "Run the \"cmds\" command to see a listing of the available commands", 30)
+AzuL.Output(game.Players.LocalPlayer, "Start commands with " .. AzuL.Options.CommandPrefix .. " and separate args with " .. AzuL.Options.CommandDelimiter, 30)</p></body></html>

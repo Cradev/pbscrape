@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>18:13:08 "------------------------------------------------------------------------------------------------------"
+18:13:08 "--------------------------------- Starting Altis Life Client Init ----------------------------------"
+18:13:08 "------------------------------------------------------------------------------------------------------"
+18:13:08 "::Life Client:: Initialization Skillsystem"
+18:13:08 Attempt to override final function - life_fnc_d41_knastrep
+18:13:08 "::Life Client:: Skillsystem initialized"
+18:13:08 "::Life Client:: Initialization Variables"
+18:13:08 "::Life Client:: Variables initialized"
+18:13:08 "::Life Client:: Setting up Eventhandlers"
+18:13:08 "::Life Client:: Eventhandlers completed"
+18:13:08 "::Life Client:: Setting up user actions"
+18:13:08 "::Life Client:: User actions completed"
+18:13:08 "::Life Client:: Waiting for server functions to transfer.."
+18:13:08 "::Life Client:: Received server functions."
+18:13:08 "::Life Client:: Waiting for the server to be ready.."
+18:13:08  Mission id: 7c4d7e5a228970f23bae18475a6f979953c1abe8
+18:13:08 "D41_SafeZone"
+18:13:08 "::::::::: FEHLER: fnc_LockUpHouse: isNil _HouseInfos: _House: D41_SafeZone || Zusatz:(D41_SafeZone+D41_SafeZone_1 ausgenommen)"
+18:13:08 "D41_SafeZone_1"
+18:13:08 "::::::::: FEHLER: fnc_LockUpHouse: isNil _HouseInfos: _House: D41_SafeZone_1 || Zusatz:(D41_SafeZone+D41_SafeZone_1 ausgenommen)"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 0 = 7.65612e+016"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 1 = Yannek"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 2 = 15000"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 3 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 4 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 5 = 1"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 7 = false"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 9 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 10 = []"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 11 = []"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 12 = []"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 13 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 14 = 1"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 15 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 16 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 17 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 18 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 19 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 20 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 21 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 22 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 23 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 24 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 25 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 26 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 27 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 28 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 29 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 30 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 31 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 32 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 33 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 34 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 35 = 0"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 36 = [[0,0,0],[0,0,0,0]]"
+18:13:09 "::::: REQUEST RECEIVED: PARAM 50 = 0"
+18:13:09 Error in expression <mags _itemarray="life_gear;" waituntil>
+18:13:09   Error position: <life_gear waituntil>
+18:13:09   Error Undefined variable in expression: life_gear
+18:13:09 File mpmissions\__CUR_MP.bornholm\core\functions\fn_loadGear.sqf, line 9
+18:13:09 Error in expression <_param4 else if isequalto then missionna>
+18:13:09   Error position: <_param6 isequalto then missionna>
+18:13:09   Error Undefined variable in expression: _param6
+18:13:09 File mpmissions\__CUR_MP.bornholm\core\session\fn_requestReceived.sqf, line 51
+18:13:09 Error in expression <ituntil _handle if _itemarray="=" exitwith switch>
+18:13:09   Error position: <_itemarray exitwith switch>
+18:13:09   Error Undefined variable in expression: _itemarray
+18:13:09 File mpmissions\__CUR_MP.bornholm\core\functions\fn_loadGear.sqf, line 16</_itemarray></ituntil></_param6></_param4></life_gear></mags></p></body></html>

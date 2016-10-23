@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>function [] =chess()
+axis('off');
+axis('equal');
+view(axes,[-14.4 14.4]);
+
+[x,y,z] = Pawn();
+surf(x,y,z,'edgecolor','none', 'FaceColor', [0.274509803921569 0.12156862745098 0], 'facelighting', 'gouraud');
+light('Position',[-0.586743862956797 -0.0533583438964443 0.808012701892219]);
+
+[x,y,z] = Bishop();
+surf(x+12,y,z,'edgecolor','none', 'FaceColor', [0.274509803921569 0.12156862745098 0], 'facelighting', 'gouraud');
+light('Position',[-0.586743862956797 -0.0533583438964443 0.808012701892219]);
+
+plottools('on')
+end</p></body></html>

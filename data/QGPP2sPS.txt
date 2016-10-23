@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><p>/*
+ * File: CollectNewspaperKarel.java
+ * --------------------------------
+ * At present, the CollectNewspaperKarel subclass does nothing.
+ * Your job in the assignment is to add the necessary code to
+ * instruct Karel to walk to the door of its house, pick up the
+ * newspaper (represented by a beeper, of course), and then return
+ * to its initial position in the upper left corner of the house.
+ */
+
+import stanford.karel.*;
+
+public class CollectNewspaperKarel extends SuperKarel {
+
+	public void run() {
+		takeKarelToNewspaper();
+		pickNewspaper();
+		comeBackToStartPoint();
+
+	}
+
+	/*
+	 * precondition:Karel stands to start point
+	 * postcondition:karel comes to newspaper and facing east. 
+	 */
+	private void takeKarelToNewspaper() {
+		doubleMove();
+		turnRight();
+		move();
+		turnLeft();
+		move();
+
+	}
+
+	private void doubleMove() {
+		move();
+		move();
+	}
+
+	/*
+	 * precondition:Karel is at newspaper point and is facing east
+	 * postcondition:karel took the newspaper and is facing west
+	 */
+	private void pickNewspaper() {
+		turnAround();
+		pickBeeper();
+
+	}
+
+	/*
+	 * precondition:Karel has already taken newspaper, stands at newspaper point
+	 * and is facing west.
+	 * postcondition:Karel comes to start point ,facing
+	 * east.
+	 */
+	private void comeBackToStartPoint() {
+		doubleMove();
+		turnRight();
+		move();
+		turnLeft();
+		move();
+		turnAround();
+	}
+
+}</p></body></html>
